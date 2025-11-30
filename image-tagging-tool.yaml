@@ -1,0 +1,549 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Image Tagging Tool
+meta:
+  id: wrk_877ba18d3df84c9094b8a91470a4e97e
+  created: 1764497027808
+  modified: 1764497061260
+  description: ""
+collection:
+  - name: tagging tool
+    meta:
+      id: fld_2d5e232ffbaa49c1b6a613c249bfa501
+      created: 1764497027842
+      modified: 1764497027842
+      sortKey: -1764497025256
+      description: ""
+    children:
+      - name: products
+        meta:
+          id: fld_e2c4c67096a84acdb615951fcd39d9ab
+          created: 1764497027844
+          modified: 1764497027844
+          sortKey: -1764497025255
+          description: ""
+        children:
+          - url: "{{_['tagging-tool-domain']}}/products/"
+            name: list
+            meta:
+              id: req_ad3b6dd8659b449294121669e9c49c00
+              created: 1764497027845
+              modified: 1764497027845
+              isPrivate: false
+              description: ""
+              sortKey: -1764497025254
+            method: GET
+            body:
+              mimeType: multipart/form-data
+              params:
+                - name: name
+                  value: P1 upd
+                  disabled: false
+                  type: text
+                - name: image
+                  disabled: true
+                  fileName: /home/pavlo/Downloads/0b2d95aa6b2117b1698b65c90c7e3fcd304e8ad5aac13b963d3b799ea91c3a1c.png
+                  type: file
+            parameters:
+              - name: tagId
+                value: "109"
+                disabled: true
+              - name: searchByName
+                value: ""
+                disabled: false
+            headers:
+              - name: Content-Type
+                value: multipart/form-data
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['tagging-tool-domain']}}/products/1"
+            name: retrieve
+            meta:
+              id: req_a04319d1bb4c4d92a26a8723668e1618
+              created: 1764497027847
+              modified: 1764497027847
+              isPrivate: false
+              description: ""
+              sortKey: -1764497025253
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['tagging-tool-domain']}}/products/1"
+            name: delete
+            meta:
+              id: req_bd52e176e08e4dbcbd0983ae40c91acd
+              created: 1764497027848
+              modified: 1764497027848
+              isPrivate: false
+              description: ""
+              sortKey: -1764497025252
+            method: DELETE
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['tagging-tool-domain']}}/products"
+            name: create
+            meta:
+              id: req_9d49da8fea0a4ef9abf686fa24b4b62d
+              created: 1764497027849
+              modified: 1764497027849
+              isPrivate: false
+              description: ""
+              sortKey: -1764497025251
+            method: POST
+            body:
+              mimeType: multipart/form-data
+              params:
+                - name: name
+                  value: P7
+                  disabled: false
+                  type: text
+                - name: image
+                  disabled: false
+                  fileName: /home/pavlo/Downloads/0b2d95aa6b2117b1698b65c90c7e3fcd304e8ad5aac13b963d3b799ea91c3a1c.png
+                  type: file
+                - name: markers
+                  value: "{[1,2,3]}"
+                  disabled: false
+                  type: text
+            headers:
+              - name: Content-Type
+                value: multipart/form-data
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['tagging-tool-domain']}}/products/1"
+            name: update
+            meta:
+              id: req_2e201882d8974d358be9f9bfc6cbbacd
+              created: 1764497027851
+              modified: 1764497027851
+              isPrivate: false
+              description: ""
+              sortKey: -1764497025250
+            method: PATCH
+            body:
+              mimeType: multipart/form-data
+              params:
+                - name: name
+                  value: P1 upd
+                  disabled: true
+                  type: text
+                - name: image
+                  disabled: true
+                  fileName: /home/pavlo/Downloads/0b2d95aa6b2117b1698b65c90c7e3fcd304e8ad5aac13b963d3b799ea91c3a1c.png
+                  type: file
+                - name: metadata
+                  value: hello world
+                  disabled: false
+                  type: text
+                - name: markers
+                  value: "{[1,2,3]}"
+                  disabled: false
+                  type: text
+            headers:
+              - name: Content-Type
+                value: multipart/form-data
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: categories
+        meta:
+          id: fld_a88035ac6d40457fa7524d80c346b37a
+          created: 1764497027852
+          modified: 1764497027852
+          sortKey: -1764497025249
+          description: ""
+        children:
+          - url: "{{_['tagging-tool-domain']}}/categories"
+            name: create
+            meta:
+              id: req_10d33b4decb7495abdc9f8749026ce56
+              created: 1764497027852
+              modified: 1764497027852
+              isPrivate: false
+              description: ""
+              sortKey: -1764497025248
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                    "name": "Products child",
+                    "parentId": 7
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['tagging-tool-domain']}}/categories/1"
+            name: delete
+            meta:
+              id: req_1d353b54e9d8487197ea1342f582be72
+              created: 1764497027854
+              modified: 1764497027854
+              isPrivate: false
+              description: ""
+              sortKey: -1764497025247
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                    "name": "C2"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['tagging-tool-domain']}}/categories"
+            name: list
+            meta:
+              id: req_08f18d95999a4c018d84ea416a8255bf
+              created: 1764497027855
+              modified: 1764497027855
+              isPrivate: false
+              description: ""
+              sortKey: -1764497025246
+            method: GET
+            parameters:
+              - name: page
+                value: "1"
+                disabled: false
+              - name: limit
+                value: "10"
+                disabled: false
+              - name: tagSort
+                value: order
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['tagging-tool-domain']}}/categories/8"
+            name: retrieve
+            meta:
+              id: req_37069ff44ebe491ab953dd9698fd5929
+              created: 1764497027858
+              modified: 1764497027858
+              isPrivate: false
+              description: ""
+              sortKey: -1764497025245
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['tagging-tool-domain']}}/categories/3"
+            name: update
+            meta:
+              id: req_e92fa6220c6f4ac18335f35ec27bdad2
+              created: 1764497027859
+              modified: 1764497027859
+              isPrivate: false
+              description: ""
+              sortKey: -1764497025244
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                    
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: tags
+        meta:
+          id: fld_7922b5af9dd94fde8db5edf313f63783
+          created: 1764497027860
+          modified: 1764497027860
+          sortKey: -1764497025243
+          description: ""
+        children:
+          - url: "{{_['tagging-tool-domain']}}/tags"
+            name: create
+            meta:
+              id: req_6e28ce03b11f4946b600a165d91b8d85
+              created: 1764497027861
+              modified: 1764497027861
+              isPrivate: false
+              description: ""
+              sortKey: -1764497025242
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                    "name": "T8",
+                    "categoryId": 10
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['tagging-tool-domain']}}/tags/5"
+            name: delete
+            meta:
+              id: req_412a481f224c4ad0a2dda17243193625
+              created: 1764497027862
+              modified: 1764497027862
+              isPrivate: false
+              description: ""
+              sortKey: -1764497025241
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                    "name": "T3",
+                    "categoryId": 1
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['tagging-tool-domain']}}/tags/5"
+            name: update
+            meta:
+              id: req_7ab0987d389846dabe0de2e9babf09da
+              created: 1764497027863
+              modified: 1764497027863
+              isPrivate: false
+              description: ""
+              sortKey: -1764497025240
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                    "name": "T5",
+                    "order": 5
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: product - categories
+        meta:
+          id: fld_d29c0877d57e4c82876935f8da0d4170
+          created: 1764497027864
+          modified: 1764497027864
+          sortKey: -1764497025239
+          description: ""
+        children:
+          - url: "{{_['tagging-tool-domain']}}/product-category/connect"
+            name: connect
+            meta:
+              id: req_0c4eb50bfaa24b99966a6d1b326e99cd
+              created: 1764497027865
+              modified: 1764497027865
+              isPrivate: false
+              description: ""
+              sortKey: -1764497025238
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                    "productId": 1,
+                    "categoryId": 1
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['tagging-tool-domain']}}/product-category/disconnect"
+            name: disconnect
+            meta:
+              id: req_bec854e975d349eeb87e1b617fd0366a
+              created: 1764497027866
+              modified: 1764497027866
+              isPrivate: false
+              description: ""
+              sortKey: -1764497025237
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                    "productId": 1,
+                    "categoryId": 1
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: product - tags
+        meta:
+          id: fld_51665a5267874905b2926b31fe37cd26
+          created: 1764497027866
+          modified: 1764497027866
+          sortKey: -1764497025236
+          description: ""
+        children:
+          - url: "{{_['tagging-tool-domain']}}/product-tag/connect"
+            name: connect
+            meta:
+              id: req_56893e60e5d84e9a8a925feb95eeb1a5
+              created: 1764497027868
+              modified: 1764497027868
+              isPrivate: false
+              description: ""
+              sortKey: -1764497025235
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                    "productId": 1,
+                    "tagIds": [
+                        1,3
+                    ]
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['tagging-tool-domain']}}/product-tag/disconnect"
+            name: disconnect
+            meta:
+              id: req_4ddb2964d4244010bcff82cd3d5e8def
+              created: 1764497027870
+              modified: 1764497027870
+              isPrivate: false
+              description: ""
+              sortKey: -1764497025234
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                    "productId": 1,
+                    "tagIds": [
+                        1,3
+                    ]
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_25b0e58f34e6a34db98431d90dbd4f1c09e878ac
+    created: 1764497062748
+    modified: 1764497062748
+environments:
+  name: Base Environment
+  meta:
+    id: env_25b0e58f34e6a34db98431d90dbd4f1c09e878ac
+    created: 1764497027872
+    modified: 1764497027872
+    isPrivate: false
