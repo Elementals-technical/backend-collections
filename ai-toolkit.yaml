@@ -1,0 +1,514 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: AI Toolkit
+meta:
+  id: wrk_759888614af442c293d3f076600715da
+  created: 1764569715524
+  modified: 1764569750931
+  description: ""
+collection:
+  - name: ai-toolkit
+    meta:
+      id: fld_dfa93d86e4d64a959a3510b4801f30c3
+      created: 1764569715548
+      modified: 1764569715548
+      sortKey: -1764569712774
+      description: ""
+    children:
+      - name: containers
+        meta:
+          id: fld_7943072eb23640f293e42553d5ff7041
+          created: 1764569715553
+          modified: 1764569715553
+          sortKey: -1764569712773
+          description: ""
+        children:
+          - url: "{{_['ai-toolkit-domain']}}/containers"
+            name: list
+            meta:
+              id: req_60fa8337a2d745b296a31f67bf193a3d
+              created: 1764569715571
+              modified: 1764569715571
+              isPrivate: false
+              description: ""
+              sortKey: -1764569712772
+            method: GET
+            parameters:
+              - name: search
+                value: plo
+                disabled: true
+              - name: organizationId
+                value: 66698c6de1e07718b4904775
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://ai.vivid3d.tech/containers/2
+            name: retrieve
+            meta:
+              id: req_d4ffa870217f48239ca140873d18e381
+              created: 1764569715576
+              modified: 1764569715576
+              isPrivate: false
+              description: ""
+              sortKey: -1764569712771
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['ai-toolkit-domain']}}/containers/1"
+            name: delete
+            meta:
+              id: req_79bc3c999c65499d840db0309e235cb4
+              created: 1764569715582
+              modified: 1764569715582
+              isPrivate: false
+              description: ""
+              sortKey: -1764569712770
+            method: DELETE
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: jobs
+        meta:
+          id: fld_956834b645734a4791404ace15c13829
+          created: 1764569715588
+          modified: 1764569715588
+          sortKey: -1764569712769
+          description: ""
+        children:
+          - url: "{{_['ai-toolkit-domain']}}/jobs"
+            name: list
+            meta:
+              id: req_61d06b5461494061aed66c2ac92a4920
+              created: 1764569715593
+              modified: 1764569715593
+              isPrivate: false
+              description: ""
+              sortKey: -1764569712768
+            method: GET
+            parameters:
+              - name: containerId
+                value: "1"
+                disabled: false
+              - name: serialize
+                value: "true"
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['ai-toolkit-domain']}}/jobs/1"
+            name: retrieve
+            meta:
+              id: req_44d34a98dfa243928a150fb8edd9d8c6
+              created: 1764569715676
+              modified: 1764569715676
+              isPrivate: false
+              description: ""
+              sortKey: -1764569712767
+            method: GET
+            parameters:
+              - name: serialize
+                value: "true"
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['ai-toolkit-domain']}}/jobs/2"
+            name: delete
+            meta:
+              id: req_efd92341a12c472880af168b39c60fcb
+              created: 1764569715678
+              modified: 1764569715678
+              isPrivate: false
+              description: ""
+              sortKey: -1764569712766
+            method: DELETE
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['ai-toolkit-domain']}}/jobs"
+            name: create [ GENERATE MODEL (URLS) ]
+            meta:
+              id: req_b730d97ca7314a96847d31e7501ac6b3
+              created: 1764569715691
+              modified: 1764569715691
+              isPrivate: false
+              description: ""
+              sortKey: -1764569712765
+            method: POST
+            body:
+              mimeType: application/json
+              text: >-
+                {
+                    "type": "generate_model",
+                    "organizationId": "66698c6de1e07718b4904775",
+                    "container": {
+                		"type": "new",
+                		"name": "PLO_TEST"
+                	},
+                    "urls": [
+                        "https://vivid-storage.fra1.digitaloceanspaces.com/assets/676ab9e950d56382670a5bfd/referenceImages/1736171443613_AMALLO%20MOCHA%20SHADOW%20SIDE.png"
+                    ]
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['ai-toolkit-domain']}}/jobs"
+            name: upload [ UPLOAD MODEL (FILES) ]
+            meta:
+              id: req_a1397e3a86d942668e7bcae465b8a1c4
+              created: 1764569715692
+              modified: 1764569715692
+              isPrivate: false
+              description: ""
+              sortKey: -1764569712763
+            method: POST
+            body:
+              mimeType: multipart/form-data
+              params:
+                - name: type
+                  value: upload_model
+                  disabled: false
+                  type: text
+                - name: files
+                  disabled: false
+                  fileName: /home/pavlo/Downloads/14c3c96f80bebaa85b70c9ba76ac51d45af67b26d2ca5982ec641324027e1ea1.glb
+                  type: file
+                - name: organizationId
+                  value: 66698c6de1e07718b4904775
+                  disabled: false
+                  type: text
+                - name: container
+                  value: '{"type": "new","name":"TEST_CONTAINER"}'
+                  disabled: false
+                  type: text
+            headers:
+              - name: Content-Type
+                value: multipart/form-data
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['ai-toolkit-domain']}}/jobs"
+            name: create [ GENERATE MODEL (FILES) ]
+            meta:
+              id: req_c1bdb6c0e8c242fa8b85cd7743e45f5d
+              created: 1764569715692
+              modified: 1764569715692
+              isPrivate: false
+              description: ""
+              sortKey: -1764569712764
+            method: POST
+            body:
+              mimeType: multipart/form-data
+              params:
+                - name: type
+                  value: generate_model
+                  disabled: false
+                  type: text
+                - name: files
+                  disabled: false
+                  fileName: /home/pavlo/Downloads/0b2d95aa6b2117b1698b65c90c7e3fcd304e8ad5aac13b963d3b799ea91c3a1c.png
+                  type: file
+                - name: container
+                  value: '{ "type": "new", "name": "PLO_TEST122" }'
+                  disabled: false
+                  type: text
+                - name: organizationId
+                  value: 66698c6de1e07718b4904775
+                  disabled: false
+                  type: text
+            headers:
+              - name: Content-Type
+                value: multipart/form-data
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['ai-toolkit-domain']}}/jobs"
+            name: remesh [ REMESH EXISTING OUTPUT ]
+            meta:
+              id: req_e36ffb9300224f9a93e76bd06ff0691f
+              created: 1764569715693
+              modified: 1764569715693
+              isPrivate: false
+              description: ""
+              sortKey: -1764569712762
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                    "type": "remesh_model",
+                    "organizationId": "66698c6de1e07718b4904775",
+                    "container": {
+                        "type": "existing",
+                        "id": 1
+                    },
+                    "sourceJobId": 1
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: files
+        meta:
+          id: fld_1f06a40172004d42a2469c21fb5e1188
+          created: 1764569715694
+          modified: 1764569715694
+          sortKey: -1764569712761
+          description: ""
+        children:
+          - name: input
+            meta:
+              id: fld_80cdfbcfda694f1c82cb6b1f0f3f49d1
+              created: 1764569715695
+              modified: 1764569715695
+              sortKey: -1764569712760
+              description: ""
+            children:
+              - url: "{{_['ai-toolkit-domain']}}/files/input"
+                name: list
+                meta:
+                  id: req_57b75feec01c4ddeb8c51e449d7539ff
+                  created: 1764569715695
+                  modified: 1764569715695
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1764569712759
+                method: GET
+                body:
+                  mimeType: multipart/form-data
+                  params:
+                    - name: type
+                      value: generate_model
+                      disabled: false
+                      type: text
+                    - name: files
+                      disabled: false
+                      fileName: /home/pavlo/Downloads/12193ed4f6e7ec9333b54ce498bda14a6a9b91d69f18e514ade6e4f396917df5.png
+                      type: file
+                    - name: container
+                      value: '{ "type": "new", "name": "PLO_TEST" }'
+                      disabled: false
+                      type: text
+                    - name: organizationId
+                      value: 66698c6de1e07718b4904775
+                      disabled: false
+                      type: text
+                parameters:
+                  - name: id
+                    value: "1"
+                    disabled: false
+                  - name: id
+                    value: "2"
+                    disabled: false
+                  - name: id
+                    value: "4"
+                    disabled: false
+                headers:
+                  - name: Content-Type
+                    value: multipart/form-data
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: "{{_['ai-toolkit-domain']}}/files/input/1"
+                name: retrieve
+                meta:
+                  id: req_b8722bfe385a4558a745e84db92597d9
+                  created: 1764569715696
+                  modified: 1764569715696
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1764569712758
+                method: GET
+                body:
+                  mimeType: multipart/form-data
+                  params:
+                    - name: type
+                      value: generate_model
+                      disabled: false
+                      type: text
+                    - name: files
+                      disabled: false
+                      fileName: /home/pavlo/Downloads/12193ed4f6e7ec9333b54ce498bda14a6a9b91d69f18e514ade6e4f396917df5.png
+                      type: file
+                    - name: container
+                      value: '{ "type": "new", "name": "PLO_TEST" }'
+                      disabled: false
+                      type: text
+                    - name: organizationId
+                      value: 66698c6de1e07718b4904775
+                      disabled: false
+                      type: text
+                headers:
+                  - name: Content-Type
+                    value: multipart/form-data
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+          - name: output
+            meta:
+              id: fld_ef97976fb5dd42b992ccf3699a668311
+              created: 1764569715696
+              modified: 1764569715696
+              sortKey: -1764569712757
+              description: ""
+            children:
+              - url: "{{_['ai-toolkit-domain']}}/files/output/2"
+                name: retrieve
+                meta:
+                  id: req_80dd2f51e08d42869a79a28c5b767fae
+                  created: 1764569715697
+                  modified: 1764569715697
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1764569712755
+                method: GET
+                body:
+                  mimeType: multipart/form-data
+                  params:
+                    - name: type
+                      value: generate_model
+                      disabled: false
+                      type: text
+                    - name: files
+                      disabled: false
+                      fileName: /home/pavlo/Downloads/12193ed4f6e7ec9333b54ce498bda14a6a9b91d69f18e514ade6e4f396917df5.png
+                      type: file
+                    - name: container
+                      value: '{ "type": "new", "name": "PLO_TEST" }'
+                      disabled: false
+                      type: text
+                    - name: organizationId
+                      value: 66698c6de1e07718b4904775
+                      disabled: false
+                      type: text
+                headers:
+                  - name: Content-Type
+                    value: multipart/form-data
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: "{{_['ai-toolkit-domain']}}/files/input"
+                name: list
+                meta:
+                  id: req_ec17ee548a094c7888d7159e345c0edb
+                  created: 1764569715697
+                  modified: 1764569715697
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1764569712756
+                method: GET
+                body:
+                  mimeType: multipart/form-data
+                  params:
+                    - name: type
+                      value: generate_model
+                      disabled: false
+                      type: text
+                    - name: files
+                      disabled: false
+                      fileName: /home/pavlo/Downloads/12193ed4f6e7ec9333b54ce498bda14a6a9b91d69f18e514ade6e4f396917df5.png
+                      type: file
+                    - name: container
+                      value: '{ "type": "new", "name": "PLO_TEST" }'
+                      disabled: false
+                      type: text
+                    - name: organizationId
+                      value: 66698c6de1e07718b4904775
+                      disabled: false
+                      type: text
+                headers:
+                  - name: Content-Type
+                    value: multipart/form-data
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_014cd0509dd47f7307b3fee7fde8a3fa500d07e2
+    created: 1764569752730
+    modified: 1764569752730
+environments:
+  name: Base Environment
+  meta:
+    id: env_014cd0509dd47f7307b3fee7fde8a3fa500d07e2
+    created: 1764569715698
+    modified: 1764569715698
+    isPrivate: false
