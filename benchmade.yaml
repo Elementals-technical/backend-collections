@@ -1,0 +1,1280 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Benchmade
+meta:
+  id: wrk_32b426c17c0b44b5a83debdb012d8b4c
+  created: 1764700627451
+  modified: 1764700650269
+  description: ""
+collection:
+  - name: benchmade
+    meta:
+      id: fld_c9a2fe5a3a3744bb8d6220076c1058c5
+      created: 1764700627454
+      modified: 1764700627454
+      sortKey: -1764700625655
+      description: ""
+    children:
+      - url: localhost:3000/api/config/create
+        name: config/create [ Griptilian 550/551 ] Copy
+        meta:
+          id: req_14181cc866e846b2aaa11076e3f224a5
+          created: 1764700627459
+          modified: 1764700627459
+          isPrivate: false
+          description: ""
+          sortKey: -1764700625646
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "price": "299.99",
+                "custom_knife": "300323",
+                "cart_item": 1,
+                
+                "sku": "Griptilian SKU test",
+                "quantity": 1,
+
+                "short_id": "l_TZZCldP",
+                "asset_id": "8656c4f3-7347-4a2e-b438-7fdd1238cfd1"
+            }
+        parameters:
+          - name: env
+            value: preview
+            disabled: false
+        headers:
+          - name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTcyNDg2MzM2NSwiZXhwIjoxNzI0ODYzNjY1fQ.01kb-evq-nPoEH2APlKLSfvbkP3RCHhaNSZEy6FTZ1s
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          disabled: false
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTcyNDg2MzM2NSwiZXhwIjoxNzI0ODYzNjY1fQ.01kb-evq-nPoEH2APlKLSfvbkP3RCHhaNSZEy6FTZ1s
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://benchmade-api-staging.3kit.com/api/config/create
+        name: config/create [ Bugout ]
+        meta:
+          id: req_2bc27b7f847b4b0e94fee003f0a18223
+          created: 1764700627459
+          modified: 1764700627459
+          isPrivate: false
+          description: ""
+          sortKey: -1764700625647
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "price": 320,
+                "custom_knife": "WAOcrAeT4",
+                "cart_item": 1,
+                "sku": "535-cstm",
+                "quantity": 1,
+                "asset_id": "0d976533-a811-42aa-90c3-4bda417fee2d",
+                "short_id": "WAOcrAeT4"
+            }
+        parameters:
+          - name: env
+            value: preview
+            disabled: false
+        headers:
+          - name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTc2NDY1Njc4MiwiZXhwIjoxNzY0NjU3MDgyfQ.CXST-sqxAoSyhoTdrxCBRsQJFVIA9QZeKhcAKj7fNB4
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          disabled: false
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTc2NDY1Njc4MiwiZXhwIjoxNzY0NjU3MDgyfQ.CXST-sqxAoSyhoTdrxCBRsQJFVIA9QZeKhcAKj7fNB4
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: localhost:3000/api/config/create
+        name: config/create [ Barrage 585 ]
+        meta:
+          id: req_3435fd20b47b43eaa5389f63e963a754
+          created: 1764700627460
+          modified: 1764700627460
+          isPrivate: false
+          description: ""
+          sortKey: -1764700625644
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "price": "299.99",
+                "custom_knife": "300323",
+                "cart_item": 1,
+                
+                "sku": "Barrage SKU test",
+                "quantity": 1,
+
+                "short_id": "9ZEQ5pgLi",
+                "asset_id": "d06a73fe-5861-449f-8a67-49e89df653f0"
+            }
+        parameters:
+          - name: env
+            value: preview
+            disabled: false
+        headers:
+          - name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTc0NDk2MDYxOCwiZXhwIjoxNzQ0OTYwOTE4fQ.ELElWuUfCixEDACCEFMSg3gPxmHOc0GjtvuwiLXsBwc
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          disabled: false
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTc0NDk2MDYxOCwiZXhwIjoxNzQ0OTYwOTE4fQ.ELElWuUfCixEDACCEFMSg3gPxmHOc0GjtvuwiLXsBwc
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://127.0.0.1:3000/api/config/create
+        name: config/create [ Barrage 580/581 ]
+        meta:
+          id: req_d95a2ad463e84b3da39f49887f964193
+          created: 1764700627460
+          modified: 1764700627460
+          isPrivate: false
+          description: ""
+          sortKey: -1764700625645
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "price": "299.99",
+                "custom_knife": "300323",
+                "cart_item": 1,
+                
+                "sku": "Barrage SKU test",
+                "quantity": 1,
+
+                "short_id": "wUwIL9g58",
+                "asset_id": "2eccbd61-5c27-4578-8111-5d0d3b6f23f9"
+            }
+        parameters:
+          - name: env
+            value: preview
+            disabled: false
+        headers:
+          - name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTc0NjAwMDM4OCwiZXhwIjoxNzQ2MDAwNjg4fQ.-JqTVpsVEV3HB3IV8lumaII-GueIAN1RSQXL_l4X22U
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          disabled: false
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTc0NjAwMDM4OCwiZXhwIjoxNzQ2MDAwNjg4fQ.-JqTVpsVEV3HB3IV8lumaII-GueIAN1RSQXL_l4X22U
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://benchmade-api.3kit.com/api/config/create
+        name: config/create [ Bailout ]
+        meta:
+          id: req_665f9d19d142484daf553eb1b7ce8da0
+          created: 1764700627461
+          modified: 1764700627461
+          isPrivate: false
+          description: ""
+          sortKey: -1764700625642
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "price": 320,
+                "custom_knife": "Rn9mI1pFB",
+                "cart_item": 1,
+                "sku": "537-cstm",
+                "quantity": 1,
+                "asset_id": "53f8cb47-4bae-4eb8-a3e7-16f369a030ba",
+                "short_id": "2S1PhGux1"
+            }
+        parameters:
+          - name: env
+            value: preview
+            disabled: false
+        headers:
+          - name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTc1NjQ1NjkwMCwiZXhwIjoxNzU2NDU3MjAwfQ.mix5Et_NS1rY2AYms8vTayrDVaHcEc3DI7wnslWzmYU
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          disabled: false
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTc1NjQ1NjkwMCwiZXhwIjoxNzU2NDU3MjAwfQ.mix5Et_NS1rY2AYms8vTayrDVaHcEc3DI7wnslWzmYU
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1:3000/api/config/create
+        name: config/create [ Table Knife Set ]
+        meta:
+          id: req_b8bea0a9d67a4a7f9c126bee2606cc79
+          created: 1764700627461
+          modified: 1764700627461
+          isPrivate: false
+          description: ""
+          sortKey: -1764700625643
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "price": "299.99",
+                "custom_knife": "300323",
+                "cart_item": "300323",
+                
+                "sku": "TblKnSetSKU300323",
+                "quantity": 1,
+                
+                "asset_id": "d3a2dcac-5845-4d5b-8ba4-68610aa30098",
+                "short_id": "ksF3SgOVz"
+            }
+        parameters:
+          - name: env
+            value: preview
+            disabled: false
+        headers:
+          - name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTY5MjYxMzUwMSwiZXhwIjoxNzIyNjEzNTAxfQ.Cb8F6oNpDZX_kEQJiLys8Yr2CwBWKy3c902G-g4BBdQ
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          disabled: false
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTY5MjYxMzUwMSwiZXhwIjoxNzIyNjEzNTAxfQ.Cb8F6oNpDZX_kEQJiLys8Yr2CwBWKy3c902G-g4BBdQ
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://benchmade-api.3kit.com/api/config/create
+        name: config/update [ Bugout ]
+        meta:
+          id: req_7045fa759b244371bf41246df2a9c755
+          created: 1764700627462
+          modified: 1764700627462
+          isPrivate: false
+          description: ""
+          sortKey: -1764700625641
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "price": 320,
+                "custom_knife": "1t9_Ldibo",
+                "cart_item": 1,
+                "sku": "535-cstm",
+                "quantity": 1,
+                "asset_id": "0d976533-a811-42aa-90c3-4bda417fee2d",
+                "short_id": "1t9_Ldibo"
+            }
+        parameters:
+          - name: env
+            value: preview
+            disabled: false
+        headers:
+          - name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTc2NDE5NjgyOCwiZXhwIjoxNzY0MTk3MTI4fQ.IyWmz_ddmcBTB_DS6vx4C8QrhPF25Gfv9fcvPDDY7g4
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          disabled: false
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTc2NDE5NjgyOCwiZXhwIjoxNzY0MTk3MTI4fQ.IyWmz_ddmcBTB_DS6vx4C8QrhPF25Gfv9fcvPDDY7g4
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://benchmade-api-staging.3kit.com/api/img/process
+        name: img/process
+        meta:
+          id: req_797b85736d8949358b26b51ab2a24a42
+          created: 1764700627462
+          modified: 1764700627462
+          isPrivate: false
+          description: ""
+          sortKey: -1764700625640
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: img
+              disabled: false
+              fileName: /home/pavlo/Desktop/imagemagick/eng_1_processed.png
+              type: file
+            - name: threshold_value
+              value: "0.6"
+              disabled: false
+              type: text
+            - name: invert
+              value: "false"
+              disabled: false
+              type: text
+            - name: ""
+              value: ""
+              disabled: true
+              type: text
+        parameters:
+          - name: env
+            value: preview
+            disabled: false
+        headers:
+          - name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTcxMTQ2NzM2MSwiZXhwIjoxNzExNDY3NjYxfQ.g831XJQYlg2oOblQTwbcpWsdyj-87YCWCyfghEjG8dQ
+          - name: Content-Type
+            value: multipart/form-data
+        authentication:
+          type: bearer
+          disabled: false
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTcxMTQ2NzM2MSwiZXhwIjoxNzExNDY3NjYxfQ.g831XJQYlg2oOblQTwbcpWsdyj-87YCWCyfghEjG8dQ
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1:3000/api/config/create
+        name: config/create [ MINI BUGOUT ]
+        meta:
+          id: req_032c49d512844f6c805700d6100d20dd
+          created: 1764700627463
+          modified: 1764700627463
+          isPrivate: false
+          description: ""
+          sortKey: -1764700625639
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "price": "299.99",
+                "custom_knife": "300323",
+                "cart_item": "300323",
+                
+                "sku": "BugoutMINISKU300323",
+                "quantity": 1,
+
+                "short_id": "CMHoVGFyM",
+                "asset_id": "4e3935c9-ae15-4cad-85d0-ee08a6700fe0"
+            }
+        parameters:
+          - name: env
+            value: preview
+            disabled: false
+        headers:
+          - name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTcyMzYzODU5MywiZXhwIjoxNzIzNjM4ODkzfQ.7G1fgQoGaV9Gkyc5BDdDf3wo0a6qBujEieFq7b8dpX4
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          disabled: false
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTcyMzYzODU5MywiZXhwIjoxNzIzNjM4ODkzfQ.7G1fgQoGaV9Gkyc5BDdDf3wo0a6qBujEieFq7b8dpX4
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1:3000/api/config/create
+        name: config/create [ MEATCRAFTER ]
+        meta:
+          id: req_90b31da26b0c4918ae837270c0b6dd4f
+          created: 1764700627463
+          modified: 1764700627463
+          isPrivate: false
+          description: ""
+          sortKey: -1764700625638
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "price": 375,
+                "custom_knife": "UFve6FmQS",
+                "cart_item": 1,
+                
+                "sku": "4050-cstm",
+                "quantity": 1,
+
+                "short_id": "UFve6FmQS",
+                "asset_id": "9685809e-7ef8-47b6-9ade-f8c7aa4aaf44"
+            }
+        parameters:
+          - name: env
+            value: preview
+            disabled: false
+        headers:
+          - name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTczMjI2MzE5OCwiZXhwIjoxNzMyMjYzNDk4fQ.f3dh-IUTkm517CoOFErRBl62bG_ClrzGTT7Vc9U9rNk
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          disabled: false
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTczMjI2MzE5OCwiZXhwIjoxNzMyMjYzNDk4fQ.f3dh-IUTkm517CoOFErRBl62bG_ClrzGTT7Vc9U9rNk
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1:3000/api/config/create
+        name: config/create [ MEATCRAFTER MINI ]
+        meta:
+          id: req_0dc1bc6436bf4f198ca70771a8e6c751
+          created: 1764700627464
+          modified: 1764700627464
+          isPrivate: false
+          description: ""
+          sortKey: -1764700625637
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "price": 375,
+                "custom_knife": "3r5xATCGI",
+                "cart_item": 1,
+                
+                "sku": "4050-cstm",
+                "quantity": 1,
+
+                "short_id": "3r5xATCGI",
+                "asset_id": "188a03b4-0cef-429e-a9d4-f16831ee3303"
+            }
+        parameters:
+          - name: env
+            value: preview
+            disabled: false
+        headers:
+          - name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTczMTkzMTYwOSwiZXhwIjoxNzMxOTMxOTA5fQ.7wUyPoDSVA8c9oO_FqQLWWLIofBU1AGRRtSaYkTdMnE
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          disabled: false
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTczMTkzMTYwOSwiZXhwIjoxNzMxOTMxOTA5fQ.7wUyPoDSVA8c9oO_FqQLWWLIofBU1AGRRtSaYkTdMnE
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1:3000/api/config/create
+        name: config/create [ STATION KNIFE ]
+        meta:
+          id: req_6eb11010e15c44be9db2a49affe24020
+          created: 1764700627464
+          modified: 1764700627464
+          isPrivate: false
+          description: ""
+          sortKey: -1764700625636
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "price": 555,
+                "custom_knife": "692DWLU7v",
+                "cart_item": 1,
+                
+                "sku": "4010-cstm",
+                "quantity": 1,
+
+                "short_id": "692DWLU7v",
+                "asset_id": "536d059f-d001-44c5-84b4-6014c7d0c886"
+            }
+        parameters:
+          - name: env
+            value: preview
+            disabled: false
+        headers:
+          - name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTcxNTk0MDcyMywiZXhwIjoxNzE1OTQxMDIzfQ.7O0ddicmCvOLuwOraDv-GzKI9eYk3aIJvJz4OG7qUtU
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          disabled: false
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTcxNTk0MDcyMywiZXhwIjoxNzE1OTQxMDIzfQ.7O0ddicmCvOLuwOraDv-GzKI9eYk3aIJvJz4OG7qUtU
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://benchmade.3dconfiguration.com/api/config/create
+        name: config/create [ MINI Crooked River ]
+        meta:
+          id: req_914044db2847474688a448e932ec1a4b
+          created: 1764700627465
+          modified: 1764700627465
+          isPrivate: false
+          description: ""
+          sortKey: -1764700625633
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "price": 340,
+                "custom_knife": "PajA7Rh3H",
+                "cart_item": 1,
+                
+                "sku": "15085-cstm",
+                "quantity": 1,
+
+                "short_id": "PajA7Rh3H",
+                "asset_id": "a54d0ba2-2bb4-4f01-a48d-422b5686ba9b"
+            }
+        headers:
+          - name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTk2MTQ3OTgsImlhdCI6MTY5OTYxNDQ5OCwic3ViIjoiYmVuY2htYWRlIn0.d8hI4U6sDINSNsgB0ar-uzHnNMLM2xb6fjOWWNuzJok
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          disabled: false
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTk2MTQ3OTgsImlhdCI6MTY5OTYxNDQ5OCwic3ViIjoiYmVuY2htYWRlIn0.d8hI4U6sDINSNsgB0ar-uzHnNMLM2xb6fjOWWNuzJok
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://benchmade-api-staging.3kit.com/api/config/create
+        name: config/create [ 3pcSet ]
+        meta:
+          id: req_f4688422c54542db8b9df450804306dd
+          created: 1764700627465
+          modified: 1764700627465
+          isPrivate: false
+          description: ""
+          sortKey: -1764700625635
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "price": 890,
+                "custom_knife": "fu40JFEj0",
+                "cart_item": 1,
+                "sku": "4000-cstm",
+                "quantity": 1,
+                "short_id": "fu40JFEj0",
+                "asset_id": "a2e58709-967a-4c4c-93b1-cf04b872c337"
+            }
+        parameters:
+          - name: env
+            value: preview
+            disabled: false
+        headers:
+          - name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTc2NDIwMDQwNCwiZXhwIjoxNzY0MjAwNzA0fQ.URqanLPSq8tzAmLnatdFSlUGo7-Ct0_n56_9cIz1dyk
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          disabled: false
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTc2NDIwMDQwNCwiZXhwIjoxNzY0MjAwNzA0fQ.URqanLPSq8tzAmLnatdFSlUGo7-Ct0_n56_9cIz1dyk
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1:3000/api/config/create
+        name: config/create [ Crooked River ]
+        meta:
+          id: req_fcb8a7d2d7a84f1aae611f2903fe06fa
+          created: 1764700627465
+          modified: 1764700627465
+          isPrivate: false
+          description: ""
+          sortKey: -1764700625634
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "price": 370,
+                "custom_knife": "7_PpyT3JG",
+                "cart_item": 1,
+                "sku": "15080-cstm",
+                "quantity": 1,
+                "asset_id": "21c23fc9-414e-48d3-92ad-e25c7941bdd3",
+                "short_id": "7_PpyT3JG"
+            }
+        parameters:
+          - name: env
+            value: preview
+            disabled: false
+        headers:
+          - name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTcyNjEyNTk3NiwiZXhwIjoxNzI2MTI2Mjc2fQ.muNKk7ycFGxLFB3Cko6z6jvfMnwWXubIB2mhXE8BDQY
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          disabled: false
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTcyNjEyNTk3NiwiZXhwIjoxNzI2MTI2Mjc2fQ.muNKk7ycFGxLFB3Cko6z6jvfMnwWXubIB2mhXE8BDQY
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1:3000/api/config/create
+        name: confiig/create [ Single Table Knife ]
+        meta:
+          id: req_4111ebde1d394e4d8cad7c2a077be9ab
+          created: 1764700627466
+          modified: 1764700627466
+          isPrivate: false
+          description: ""
+          sortKey: -1764700625632
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "price": 155,
+                "custom_knife": "H8WGodpiO",
+                "cart_item": 1,
+                
+                "sku": "4060-cstm",
+                "quantity": 1,
+                
+                "short_id": "H8WGodpiO",
+                "asset_id": "fb23dd89-3207-4640-a5c9-50a729b378ae"
+            }
+        parameters:
+          - name: env
+            value: preview
+            disabled: false
+        headers:
+          - name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTY5MjYxMzUwMSwiZXhwIjoxNzIyNjEzNTAxfQ.Cb8F6oNpDZX_kEQJiLys8Yr2CwBWKy3c902G-g4BBdQ
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          disabled: false
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTY5MjYxMzUwMSwiZXhwIjoxNzIyNjEzNTAxfQ.Cb8F6oNpDZX_kEQJiLys8Yr2CwBWKy3c902G-g4BBdQ
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1:3000/api/config/update/7EQQ_XZhe
+        name: config/update [ Crooked River ]
+        meta:
+          id: req_ab8361d02b744f62a5fcc1bb90e7f82e
+          created: 1764700627466
+          modified: 1764700627466
+          isPrivate: false
+          description: ""
+          sortKey: -1764700625631
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "price": "299.99",
+                "custom_knife": "300323",
+                "cart_item": "300323",
+                
+                "quantity": 5,
+                
+                "short_id": "G2zC31DOZ",
+                "asset_id": "21c23fc9-414e-48d3-92ad-e25c7941bdd3"
+            }
+        headers:
+          - name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTcwNDc5NDU4NSwiZXhwIjoxNzA0Nzk0ODg1fQ.7_tm5X6-Syt3AUeVdB84U5Lva1gg6TWIALmbqDapDB8
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          disabled: false
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTcwNDc5NDU4NSwiZXhwIjoxNzA0Nzk0ODg1fQ.7_tm5X6-Syt3AUeVdB84U5Lva1gg6TWIALmbqDapDB8
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1:3000/api/config/update/x9ci16UWc
+        name: config/update [ MEATCRAFTER ]
+        meta:
+          id: req_b4df456d53f5454a93416dea6b1ff9ed
+          created: 1764700627467
+          modified: 1764700627467
+          isPrivate: false
+          description: ""
+          sortKey: -1764700625630
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {   
+                "short_id": "nO3TAfDXF",
+                "asset_id": "9685809e-7ef8-47b6-9ade-f8c7aa4aaf44"
+            }
+        parameters:
+          - name: env
+            value: preview
+            disabled: false
+        headers:
+          - name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTY5MjYxMzUwMSwiZXhwIjoxNzIyNjEzNTAxfQ.Cb8F6oNpDZX_kEQJiLys8Yr2CwBWKy3c902G-g4BBdQ
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          disabled: false
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTY5MjYxMzUwMSwiZXhwIjoxNzIyNjEzNTAxfQ.Cb8F6oNpDZX_kEQJiLys8Yr2CwBWKy3c902G-g4BBdQ
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://benchmade-api-dev-0dde7bc8ab19fc6a.onporter.run/api/config/update/x9ci16UWc
+        name: config/update [ MEATCRAFTER MINI ]
+        meta:
+          id: req_b7dfdc3e9a324abca78223d8e8787946
+          created: 1764700627467
+          modified: 1764700627467
+          isPrivate: false
+          description: ""
+          sortKey: -1764700625629
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {   
+                "short_id": "83ZpJ50oW",
+                "asset_id": "188a03b4-0cef-429e-a9d4-f16831ee3303"
+            }
+        parameters:
+          - name: env
+            value: preview
+            disabled: false
+        headers:
+          - name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTY5MjYxMzUwMSwiZXhwIjoxNzIyNjEzNTAxfQ.Cb8F6oNpDZX_kEQJiLys8Yr2CwBWKy3c902G-g4BBdQ
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          disabled: false
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTY5MjYxMzUwMSwiZXhwIjoxNzIyNjEzNTAxfQ.Cb8F6oNpDZX_kEQJiLys8Yr2CwBWKy3c902G-g4BBdQ
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1:3000/api/config/update/n-BfxDJbS
+        name: config/update [ 3pcSet ]
+        meta:
+          id: req_3fcc173fbc684a3dafda85bf528fd27a
+          created: 1764700627468
+          modified: 1764700627468
+          isPrivate: false
+          description: ""
+          sortKey: -1764700625628
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "price": "299.99",
+                "custom_knife": "300323",
+                "cart_item": "300323",
+                
+                "short_id": "auq5ilMdh",
+                "asset_id": "a2e58709-967a-4c4c-93b1-cf04b872c337"
+            }
+        headers:
+          - name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTc2NDE4NjAxOCwiZXhwIjoxNzY0MTg2MzE4fQ.I9MVXicJrRScTp-B59JZ550fNGHkXpuwb7c3Cb3qgk8
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          disabled: false
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTc2NDE4NjAxOCwiZXhwIjoxNzY0MTg2MzE4fQ.I9MVXicJrRScTp-B59JZ550fNGHkXpuwb7c3Cb3qgk8
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1:3000/api/config/create
+        name: config/create [ 940 Osborne ]
+        meta:
+          id: req_df45d2c14655442c94f6cca08f57526e
+          created: 1764700627468
+          modified: 1764700627468
+          isPrivate: false
+          description: ""
+          sortKey: -1764700625627
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "price": 340,
+                "custom_knife": "S52mn0U2v",
+                "cart_item": 1,
+                "sku": "940-osbn",
+                "quantity": 1,
+                "asset_id": "bbdae353-f1b1-4950-a603-1849d370b543",
+                "short_id": "S52mn0U2v"
+            }
+        parameters:
+          - name: env
+            value: preview
+            disabled: false
+        headers:
+          - name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTcxMzM0MzE1MywiZXhwIjoxNzEzMzQzNDUzfQ.Y5C_uIGcSLESRYYQUf7nWzUFA_QaKUXBx31tWEqT5SY
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          disabled: false
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTcxMzM0MzE1MywiZXhwIjoxNzEzMzQzNDUzfQ.Y5C_uIGcSLESRYYQUf7nWzUFA_QaKUXBx31tWEqT5SY
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1:8000/api/config/create
+        name: config/create [ 945 Mini Osborne ]
+        meta:
+          id: req_32b4d4e878e54c6a9e5d9a027abed5a7
+          created: 1764700627469
+          modified: 1764700627469
+          isPrivate: false
+          description: ""
+          sortKey: -1764700625625
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "price": 340,
+                "custom_knife": "R_0kxRFyx",
+                "cart_item": 1,
+                "sku": "945-osbn",
+                "quantity": 1,
+                "asset_id": "c5480f1e-061c-4b83-ad78-bf15c1334ae5",
+                "short_id": "R_0kxRFyx"
+            }
+        parameters:
+          - name: env
+            value: preview
+            disabled: false
+        headers:
+          - name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTkwMDc4NjYsImlhdCI6MTY5OTAwNzU2Niwic3ViIjoiYmVuY2htYWRlIn0.ZWBcbG0BXsrM-Ljb-2BqYWJKMrh8nAsC624vsRHjU1w
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          disabled: false
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTkwMDc4NjYsImlhdCI6MTY5OTAwNzU2Niwic3ViIjoiYmVuY2htYWRlIn0.ZWBcbG0BXsrM-Ljb-2BqYWJKMrh8nAsC624vsRHjU1w
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: ""
+        name: config/getId
+        meta:
+          id: req_ae959dfc96114f3f9ab54b4b3cde31aa
+          created: 1764700627469
+          modified: 1764700627469
+          isPrivate: false
+          description: ""
+          sortKey: -1764700625624
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1:8000/api/config/create
+        name: config/update [ 940 Osborne ]
+        meta:
+          id: req_ca26fe9cf95942019687ee590db60fa4
+          created: 1764700627469
+          modified: 1764700627469
+          isPrivate: false
+          description: ""
+          sortKey: -1764700625626
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "price": 340,
+                "custom_knife": "LltzhKt7O",
+                "cart_item": 1,
+                "sku": "940-osbn",
+                "quantity": 1,
+                "asset_id": "bbdae353-f1b1-4950-a603-1849d370b543",
+                "short_id": "LltzhKt7O"
+            }
+        parameters:
+          - name: env
+            value: preview
+            disabled: false
+        headers:
+          - name: Authorization
+            value: Bearer Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTY5MjYxMzUwMSwiZXhwIjoxNzIyNjEzNTAxfQ.Cb8F6oNpDZX_kEQJiLys8Yr2CwBWKy3c902G-g4BBdQ
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          disabled: false
+          token: Bearer
+            eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTY5MjYxMzUwMSwiZXhwIjoxNzIyNjEzNTAxfQ.Cb8F6oNpDZX_kEQJiLys8Yr2CwBWKy3c902G-g4BBdQ
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1:3000/api/config/create
+        name: config/create [ Griptilian 555/556 ]
+        meta:
+          id: req_4f8fd95ef6d04705be9790a00fac3339
+          created: 1764700627470
+          modified: 1764700627470
+          isPrivate: false
+          description: ""
+          sortKey: -1764700625622
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "price": "299.99",
+                "custom_knife": "300323",
+                "cart_item": "0HLcfsd_Y",
+                
+                "sku": "Griptilian SKU test",
+                "quantity": 1,
+
+                "short_id": "0HLcfsd_Y",
+                "asset_id": "6596c19a-8d63-4558-82a2-ed18d1bf35b4"
+            }
+        parameters:
+          - name: env
+            value: preview
+            disabled: false
+        headers:
+          - name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTcyMjMzMzQwMSwiZXhwIjoxNzIyMzMzNzAxfQ._F6Jh0SRZawJsuBG_4rxy6HpvD9yLCksJVY_8xZVTdU
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          disabled: false
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTcyMjMzMzQwMSwiZXhwIjoxNzIyMzMzNzAxfQ._F6Jh0SRZawJsuBG_4rxy6HpvD9yLCksJVY_8xZVTdU
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: ""
+        name: retrieve preview img
+        meta:
+          id: req_d712be48937045578f0be780b7cf2965
+          created: 1764700627470
+          modified: 1764700627470
+          isPrivate: false
+          description: ""
+          sortKey: -1764700625623
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - name: users
+        meta:
+          id: fld_90e2883163d3484bb6817ad3a9ef687f
+          created: 1764700627454
+          modified: 1764700627454
+          sortKey: -1764700625654
+          description: ""
+        children:
+          - url: https://benchmade-api-staging.3kit.com/api/jwt/create
+            name: users/login
+            meta:
+              id: req_7dd895bbd3d14a5e82eed5cae21f69a5
+              created: 1764700627455
+              modified: 1764700627455
+              isPrivate: false
+              description: ""
+              sortKey: -1764700625653
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                    "username": "benchmade",
+                    "password": "j63dgbrJ6q7YkUJg"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: url-shortener
+        meta:
+          id: fld_2a0eb8db360c4b4fa601c50acf003604
+          created: 1764700627456
+          modified: 1764700627456
+          sortKey: -1764700625652
+          description: ""
+        children:
+          - url: https://benchmade-api-dev-0dde7bc8ab19fc6a.onporter.run/api/url-shortener/TB9GaVC9m
+            name: retrieveUrl
+            meta:
+              id: req_83641b31eb024864a28ae47c52e7fd9f
+              created: 1764700627457
+              modified: 1764700627457
+              isPrivate: false
+              description: ""
+              sortKey: -1764700625650
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://benchmade-api.3kit.com/api/url-shortener/
+            name: shortenUrl
+            meta:
+              id: req_b3e2c6edffb148c29bcafb6077aa9d3c
+              created: 1764700627457
+              modified: 1764700627457
+              isPrivate: false
+              description: ""
+              sortKey: -1764700625651
+            method: POST
+            body:
+              mimeType: application/json
+              text: >-
+                {
+                    "originalUrl": "https://admin-fts.threekit.com/api/files/hash/sha256-598c199f2bd458cbadbb228a9eb05f6604c0df4b563bcd261e7841f78cc731ea"
+                }
+            headers:
+              - name: Authorization
+                value: Static bq3mP8XFvgHSsp25dtc7RUBWQJaf9uYMZLwAKyCTzNVE4rGhD6
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: healthcheck
+        meta:
+          id: fld_607c064fda664dd79ae3513eaa052a24
+          created: 1764700627458
+          modified: 1764700627458
+          sortKey: -1764700625649
+          description: ""
+        children:
+          - url: https://benchmade-api-staging.3kit.com/api/healthcheck
+            name: healthcheck
+            meta:
+              id: req_b4c256351ad8429492cbd358d18ffe94
+              created: 1764700627458
+              modified: 1764700627458
+              isPrivate: false
+              description: ""
+              sortKey: -1764700625648
+            method: GET
+            headers:
+              - name: Authorization
+                value: Bearer
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTcxMjkyMTY4NiwiZXhwIjoxNzEyOTIxOTg2fQ.VuaWnvSwBAUJQjxXQx9i7VhMZlG9D6BlkMio039_vkU
+            authentication:
+              type: bearer
+              disabled: false
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlbmNobWFkZSIsImlhdCI6MTcxMjkyMTY4NiwiZXhwIjoxNzEyOTIxOTg2fQ.VuaWnvSwBAUJQjxXQx9i7VhMZlG9D6BlkMio039_vkU
+              prefix: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_0557d19c0aa332362118b4ebe5b9bf82189ade42
+    created: 1764700638683
+    modified: 1764700638683
+environments:
+  name: Base Environment
+  meta:
+    id: env_0557d19c0aa332362118b4ebe5b9bf82189ade42
+    created: 1764700627506
+    modified: 1764700627506
+    isPrivate: false
