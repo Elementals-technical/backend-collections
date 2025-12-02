@@ -1,0 +1,72 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Remesh API Interface
+meta:
+  id: wrk_37c854c6e1274bc08a7a70d74ae75560
+  created: 1764673222107
+  modified: 1764673253786
+  description: ""
+collection:
+  - name: remesh-api
+    meta:
+      id: fld_33c01cf0ae61499f92664180793e075c
+      created: 1764673222111
+      modified: 1764673222111
+      sortKey: -1764673216839
+      description: ""
+    children:
+      - url: https://remesh-api.eu.ngrok.io/jobs
+        name: create
+        meta:
+          id: req_325145b462b94a6d8702dc36aea6af21
+          created: 1764673222112
+          modified: 1764673222112
+          isPrivate: false
+          description: ""
+          sortKey: -1764673216838
+        method: POST
+        body:
+          mimeType: application/json
+          text: >-
+            {
+                "container_id": 1,
+                "input": [
+                    "https://ai-toolkit-storage.sfo3.digitaloceanspaces.com/containers/1/outputs/trellis/1761656467.glb"
+                ]
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://remesh-api.eu.ngrok.io/jobs/20
+        name: retrieve
+        meta:
+          id: req_e0c8e49cd86f4fc1bf46c0010eb478a0
+          created: 1764673222113
+          modified: 1764673222113
+          isPrivate: false
+          description: ""
+          sortKey: -1764673216837
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+environments:
+  name: Base Environment
+  meta:
+    id: env_48950132e054d58c52dfbcefe5ac2b894e682239
+    created: 1764673222114
+    modified: 1764673222114
+    isPrivate: false

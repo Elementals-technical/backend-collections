@@ -97,7 +97,7 @@ collection:
             meta:
               id: req_61d06b5461494061aed66c2ac92a4920
               created: 1764569715593
-              modified: 1764569715593
+              modified: 1764575580051
               isPrivate: false
               description: ""
               sortKey: -1764569712768
@@ -510,5 +510,13 @@ environments:
   meta:
     id: env_014cd0509dd47f7307b3fee7fde8a3fa500d07e2
     created: 1764569715698
-    modified: 1764569715698
+    modified: 1764575557171
     isPrivate: false
+  subEnvironments:
+    - name: local
+      meta:
+        id: env_65246b01af19437487d53490be87365c
+        created: 1764575563182
+        modified: 1764575567615
+        isPrivate: false
+        sortKey: 1764575563182
