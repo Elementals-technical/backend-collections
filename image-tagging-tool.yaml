@@ -534,6 +534,100 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
+      - name: bulk-converter
+        meta:
+          id: fld_522a4fa34cb4453faa27a3ac673dd57b
+          created: 1764859495939
+          modified: 1764859523251
+          sortKey: -1764497025355
+          description: ""
+        children:
+          - url: http://localhost:3000/archive/bulk-upload
+            name: bulk upload + converted + archive
+            meta:
+              id: req_34deb40a7ac94e2195ef2a7885ba45e3
+              created: 1764859525386
+              modified: 1764859775537
+              isPrivate: false
+              description: ""
+              sortKey: -1764859525386
+            method: POST
+            body:
+              mimeType: multipart/form-data
+              params:
+                - name: files
+                  value: ""
+                  description: ""
+                  disabled: false
+                  fileName: F:\ElementalsWeb\фото для тесту\2019_azzurra_c12_p07.tif
+                  type: file
+                - name: files
+                  value: ""
+                  description: ""
+                  disabled: false
+                  fileName: F:\ElementalsWeb\фото для тесту\2019_azzurra_c12_p04.tif
+                  type: file
+            headers:
+              - name: Content-Type
+                value: multipart/form-data
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/archive/jobs
+            name: get archive jobs list
+            meta:
+              id: req_6686d7a27561427dae90d9f29eb7de51
+              created: 1764859791759
+              modified: 1764859806974
+              isPrivate: false
+              description: ""
+              sortKey: -1764827307604.5
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/archive/jobs/11
+            name: get archive job by id
+            meta:
+              id: req_de8422826bf745a8adb0567765726d90
+              created: 1764859815964
+              modified: 1764859821477
+              isPrivate: false
+              description: ""
+              sortKey: -1764811198713.75
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
 cookieJar:
   name: Default Jar
   meta:
