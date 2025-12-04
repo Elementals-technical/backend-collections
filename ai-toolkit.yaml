@@ -92,12 +92,12 @@ collection:
           sortKey: -1764569712769
           description: ""
         children:
-          - url: "{{_['ai-toolkit-domain']}}/jobs"
+          - url: http://localhost:3000/jobs
             name: list
             meta:
               id: req_61d06b5461494061aed66c2ac92a4920
               created: 1764569715593
-              modified: 1764575580051
+              modified: 1764688666257
               isPrivate: false
               description: ""
               sortKey: -1764569712768
@@ -105,10 +105,10 @@ collection:
             parameters:
               - name: containerId
                 value: "1"
-                disabled: false
+                disabled: true
               - name: serialize
                 value: "true"
-                disabled: false
+                disabled: true
             settings:
               renderRequestBody: true
               encodeUrl: true
@@ -139,12 +139,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['ai-toolkit-domain']}}/jobs/2"
+          - url: http://localhost:3000/jobs/96
             name: delete
             meta:
               id: req_efd92341a12c472880af168b39c60fcb
               created: 1764569715678
-              modified: 1764569715678
+              modified: 1764689683422
               isPrivate: false
               description: ""
               sortKey: -1764569712766
@@ -272,12 +272,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['ai-toolkit-domain']}}/jobs"
+          - url: http://localhost:3000/jobs
             name: remesh [ REMESH EXISTING OUTPUT ]
             meta:
               id: req_e36ffb9300224f9a93e76bd06ff0691f
               created: 1764569715693
-              modified: 1764569715693
+              modified: 1764857919715
               isPrivate: false
               description: ""
               sortKey: -1764569712762
@@ -290,9 +290,12 @@ collection:
                     "organizationId": "66698c6de1e07718b4904775",
                     "container": {
                         "type": "existing",
-                        "id": 1
+                        "id": 63
                     },
-                    "sourceJobId": 1
+                    "sourceJobId": 89,
+                		"parameters": {
+                			"targetPolycount": 30000
+                		}
                 }
             headers:
               - name: Content-Type
