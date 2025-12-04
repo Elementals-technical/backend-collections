@@ -11,7 +11,7 @@ collection:
     meta:
       id: fld_28943f57796445899fa604513d7a262d
       created: 1764496106015
-      modified: 1764581178292
+      modified: 1764874887418
       sortKey: -1764496102719
       description: ""
     children:
@@ -12030,7 +12030,7 @@ collection:
         meta:
           id: fld_01de6ee4db55489a9879f1ebe98c4d5d
           created: 1764496106302
-          modified: 1764581178292
+          modified: 1764874887418
           sortKey: -1764496102404
           description: ""
         children:
@@ -12038,7 +12038,7 @@ collection:
             meta:
               id: fld_ebaa0b5371f14fe4a47ba743874c858e
               created: 1764496106303
-              modified: 1764581178292
+              modified: 1764855116414
               sortKey: -1764496102403
               description: ""
             children:
@@ -12046,16 +12046,16 @@ collection:
                 meta:
                   id: fld_c98499e4a278476c9c718a83c681beea
                   created: 1764496106303
-                  modified: 1764496106303
+                  modified: 1764843636055
                   sortKey: -1764496102402
                   description: ""
                 children:
-                  - url: "{{_['render-admin-domain']}}/organizations/2/projectBundles"
+                  - url: "{{_['render-admin-domain']}}/projectBundles/7/organizations"
                     name: connect bundles to organization
                     meta:
                       id: req_f043b6a512334e1aadda6e599c38e874
                       created: 1764496106304
-                      modified: 1764510917258
+                      modified: 1764837478537
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102401
@@ -12064,7 +12064,7 @@ collection:
                       mimeType: application/json
                       text: |-
                         {
-                            "projectBundleIds": [1]
+                            "organizationIds": [1]
                         }
                     headers:
                       - name: Authorization
@@ -12132,12 +12132,12 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render-admin-domain']}}/organizations/1/projectBundles/1"
+                  - url: "{{_['render-admin-domain']}}/projectBundles/7/organizations/1"
                     name: update association
                     meta:
                       id: req_2d81a533bf5e44b7aed794a8446be043
                       created: 1764496106306
-                      modified: 1764510921126
+                      modified: 1764843634126
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102400
@@ -12146,7 +12146,8 @@ collection:
                       mimeType: application/json
                       text: |-
                         {
-                            "enabled": true
+                        	"studio": true,
+                        	"simulation": false
                         }
                     headers:
                       - name: Authorization
@@ -12214,12 +12215,12 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render-admin-domain']}}/organizations/1/projectBundles"
-                    name: disconnect bundles from organization
+                  - url: "{{_['render-admin-domain']}}/projectBundles/7/organizations"
+                    name: disconnect organizations from bundle
                     meta:
                       id: req_eb7df2d31e4243cdb3a5bd6742e75ea3
                       created: 1764496106308
-                      modified: 1764510927105
+                      modified: 1764837445564
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102399
@@ -12228,7 +12229,7 @@ collection:
                       mimeType: application/json
                       text: |-
                         {
-                            "projectBundleIds": [1]
+                            "organizationIds": [1]
                         }
                     headers:
                       - name: Authorization
@@ -12300,16 +12301,16 @@ collection:
                 meta:
                   id: fld_7dbf9fdf6c6a43d69d9566aa0802c5b9
                   created: 1764496106310
-                  modified: 1764496106310
+                  modified: 1764855116414
                   sortKey: -1764496102398
                   description: ""
                 children:
-                  - url: "{{_['render-admin-domain']}}/bundles/projectBundles/1/projects"
+                  - url: "{{_['render-admin-domain']}}/bundles/projectBundles/7/projects"
                     name: add projects to bundle
                     meta:
                       id: req_01c4e3af6bd54d8fad9c1d474979cd78
                       created: 1764496106311
-                      modified: 1764510930560
+                      modified: 1764767439583
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102397
@@ -12386,12 +12387,12 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render-admin-domain']}}/bundles/projectBundles/1/projects"
+                  - url: "{{_['render-admin-domain']}}/bundles/projectBundles/7/projects"
                     name: delete projects from bundle
                     meta:
                       id: req_44f2dcb310a348bfa2d9b89bf1045674
                       created: 1764496106312
-                      modified: 1764510933477
+                      modified: 1764837034754
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102396
@@ -12400,7 +12401,7 @@ collection:
                       mimeType: application/json
                       text: |-
                         {
-                            "projectIds": [2,4]
+                            "projectIds": [2]
                         }
                     headers:
                       - name: Authorization
@@ -12472,7 +12473,7 @@ collection:
                 meta:
                   id: fld_972d3e10bdc34d3894b1876bc885621f
                   created: 1764496106314
-                  modified: 1764581178292
+                  modified: 1764855111210
                   sortKey: -1764496102395
                   description: ""
                 children:
@@ -12572,7 +12573,7 @@ collection:
                     meta:
                       id: req_3ac5385ab1dc45058f7228cae978896f
                       created: 1764496106316
-                      modified: 1764510942794
+                      modified: 1764843779395
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102393
@@ -12580,7 +12581,7 @@ collection:
                     parameters:
                       - name: parentId
                         value: "null"
-                        disabled: true
+                        disabled: false
                       - name: organizationId
                         value: "1"
                         disabled: false
@@ -12589,6 +12590,10 @@ collection:
                         disabled: true
                       - name: pageSize
                         value: "2"
+                        disabled: false
+                      - name: connectionType
+                        value: studio
+                        description: ""
                         disabled: false
                     headers:
                       - name: Authorization
@@ -12732,12 +12737,12 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render-admin-domain']}}/bundles/projectBundles/1"
+                  - url: "{{_['render-admin-domain']}}/bundles/projectBundles/7"
                     name: update projectBundle
                     meta:
                       id: req_f18976bafc584c22a12e586c76792395
                       created: 1764496106319
-                      modified: 1764510948933
+                      modified: 1764837001474
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102391
@@ -12746,7 +12751,7 @@ collection:
                       mimeType: multipart/form-data
                       params:
                         - name: name
-                          value: PB_1
+                          value: PB_7
                           disabled: false
                           type: text
                         - name: image
@@ -12757,6 +12762,14 @@ collection:
                           value: "1"
                           disabled: true
                           type: text
+                        - name: studio
+                          value: "true"
+                          description: ""
+                          disabled: false
+                        - name: simulation
+                          value: "true"
+                          description: ""
+                          disabled: false
                     headers:
                       - name: Authorization
                         value: Bearer {{_['render-admin-token']}}
@@ -12823,12 +12836,12 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render-admin-domain']}}/bundles/projectBundles/5"
+                  - url: "{{_['render-admin-domain']}}/bundles/projectBundles/4"
                     name: delete projectBundle
                     meta:
                       id: req_ab1359f890064c28be7fbdc4ef26fb87
                       created: 1764496106321
-                      modified: 1764510951973
+                      modified: 1764762064525
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102390
@@ -12901,7 +12914,7 @@ collection:
                 meta:
                   id: fld_f4d09a8ebe4c4f09bae6831208f80479
                   created: 1764580963761
-                  modified: 1764581166925
+                  modified: 1764843320226
                   sortKey: -1764496102502
                   description: ""
                 children:
@@ -12928,12 +12941,12 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render-admin-domain']}}/organizations/1/projectBundles/1/projects/2"
+                  - url: "{{_['render-admin-domain']}}/organizations/1/projectBundles/7/projects/2"
                     name: update association
                     meta:
                       id: req_d7f76bb1eaa44d3386bb3a0c1fb43cb8
                       created: 1764581035886
-                      modified: 1764581166445
+                      modified: 1764843318191
                       isPrivate: false
                       description: ""
                       sortKey: -1764580968040
@@ -12942,7 +12955,8 @@ collection:
                       mimeType: application/json
                       text: |-
                         {
-                            "enabled": true
+                          "studio": true,  
+                        	"simulation": false
                         }
                     headers:
                       - name: Authorization
@@ -13014,7 +13028,7 @@ collection:
             meta:
               id: fld_2344b631a9a44ef284e5ddb1018ae730
               created: 1764496106321
-              modified: 1764496106321
+              modified: 1764874887418
               sortKey: -1764496102389
               description: ""
             children:
@@ -13022,16 +13036,16 @@ collection:
                 meta:
                   id: fld_156c3339741d4a66b841df6535bcee09
                   created: 1764496106323
-                  modified: 1764496106323
+                  modified: 1764853867404
                   sortKey: -1764496102388
                   description: ""
                 children:
-                  - url: "{{_['render-admin-domain']}}/organizations/2/stageBundles"
+                  - url: "{{_['render-admin-domain']}}/stageBundles/1/organizations"
                     name: connect bundles to organization
                     meta:
                       id: req_5c31fad015d7475a81b0793b3b386cf2
                       created: 1764496106324
-                      modified: 1764510956229
+                      modified: 1764853780414
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102387
@@ -13040,7 +13054,7 @@ collection:
                       mimeType: application/json
                       text: |-
                         {
-                            "stageBundleIds": [1]
+                            "organizationIds": [1]
                         }
                     headers:
                       - name: Authorization
@@ -13191,11 +13205,11 @@ collection:
                         store: true
                       rebuildPath: true
                   - url: "{{_['render-admin-domain']}}/organizations/1/stageBundles"
-                    name: disconnect bundles from organization
+                    name: disconnect organizations from bundle
                     meta:
                       id: req_1bc8d556b07541cc992d775747340c4b
                       created: 1764496106327
-                      modified: 1764510962869
+                      modified: 1764690258769
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102385
@@ -13276,7 +13290,7 @@ collection:
                 meta:
                   id: fld_681c6baa1afd4ff68d6f58024743f054
                   created: 1764496106328
-                  modified: 1764496106328
+                  modified: 1764857367978
                   sortKey: -1764496102384
                   description: ""
                 children:
@@ -13367,7 +13381,7 @@ collection:
                     meta:
                       id: req_7e79c43c391e437dbfd460f6af5da653
                       created: 1764496106330
-                      modified: 1764510970067
+                      modified: 1764854455315
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102382
@@ -13376,7 +13390,7 @@ collection:
                       mimeType: application/json
                       text: |-
                         {
-                            "projectIds": [2,4]
+                            "stageIds": [1]
                         }
                     headers:
                       - name: Authorization
@@ -13448,7 +13462,7 @@ collection:
                 meta:
                   id: fld_cdaf37033f19427cb5bcc81ef357f490
                   created: 1764496106331
-                  modified: 1764496106331
+                  modified: 1764874887418
                   sortKey: -1764496102381
                   description: ""
                 children:
@@ -13457,7 +13471,7 @@ collection:
                     meta:
                       id: req_6a338a44c0d84a47a5209506c5c0aefd
                       created: 1764496106333
-                      modified: 1764510975550
+                      modified: 1764853565472
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102380
@@ -13466,7 +13480,7 @@ collection:
                       mimeType: multipart/form-data
                       params:
                         - name: name
-                          value: CSB_2
+                          value: CSB_3
                           disabled: false
                           type: text
                         - name: parentId
@@ -13548,7 +13562,7 @@ collection:
                     meta:
                       id: req_fa5e702863f640778cfeb774345fd388
                       created: 1764496106334
-                      modified: 1764510979568
+                      modified: 1764874425791
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102379
@@ -13558,7 +13572,7 @@ collection:
                         value: "null"
                         disabled: false
                       - name: organizationId
-                        value: "2"
+                        value: "1"
                         disabled: true
                       - name: enabled
                         value: "false"
@@ -13568,7 +13582,11 @@ collection:
                         disabled: false
                       - name: pageSize
                         value: "1"
-                        disabled: false
+                        disabled: true
+                      - name: connectionType
+                        value: studio
+                        description: ""
+                        disabled: true
                     headers:
                       - name: Authorization
                         value: Bearer {{_['render-admin-token']}}
@@ -13633,12 +13651,12 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render-admin-domain']}}/bundles/stageBundles/1"
+                  - url: "{{_['render-admin-domain']}}/bundles/stageBundles/3"
                     name: retieve stageBundle
                     meta:
                       id: req_26699fe071184fcfa70b56ed391eb289
                       created: 1764496106336
-                      modified: 1764510989250
+                      modified: 1764874885726
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102378
@@ -13711,12 +13729,12 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render-admin-domain']}}/bundles/stageBundles/2"
+                  - url: "{{_['render-admin-domain']}}/bundles/stageBundles/1"
                     name: update stageBundle
                     meta:
                       id: req_11bd9291c3cf47e6afa92ab99410a431
                       created: 1764496106337
-                      modified: 1764510986472
+                      modified: 1764874494588
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102377
@@ -13725,13 +13743,21 @@ collection:
                       mimeType: multipart/form-data
                       params:
                         - name: name
-                          value: CSB_2
+                          value: SB_1
                           disabled: false
                           type: text
                         - name: image
-                          disabled: false
+                          disabled: true
                           fileName: /home/pavlo/Downloads/34_20251117184358448287_20251117155246744726_e85d35a0d262ea383bf9f879f7086629188509907832a9da0fc398da61792280.png
                           type: file
+                        - name: studio
+                          value: "true"
+                          description: ""
+                          disabled: false
+                        - name: simulation
+                          value: "true"
+                          description: ""
+                          disabled: false
                     headers:
                       - name: Authorization
                         value: Bearer {{_['render-admin-token']}}
@@ -13798,12 +13824,12 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render-admin-domain']}}/bundles/stageBundles/1"
+                  - url: "{{_['render-admin-domain']}}/bundles/stageBundles/2"
                     name: delete stageBundle
                     meta:
                       id: req_930aec7316f7424cb2fb7d7a25bd4e10
                       created: 1764496106338
-                      modified: 1764510993871
+                      modified: 1764853503700
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102376
@@ -13876,7 +13902,7 @@ collection:
                 meta:
                   id: fld_267e7e750f8c41df9558ac01199044d9
                   created: 1764581193348
-                  modified: 1764581234307
+                  modified: 1764857826752
                   sortKey: -1764496102488
                   description: ""
                 children:
@@ -13903,12 +13929,12 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render-admin-domain']}}/organizations/1/stageBundles/1/stages/2"
+                  - url: "{{_['render-admin-domain']}}/organizations/1/stageBundles/1/stages/1"
                     name: update association
                     meta:
                       id: req_b71c6692c822410e9e184de92e057203
                       created: 1764581193363
-                      modified: 1764581222143
+                      modified: 1764857391515
                       isPrivate: false
                       description: ""
                       sortKey: -1764580968040
@@ -13917,7 +13943,8 @@ collection:
                       mimeType: application/json
                       text: |-
                         {
-                            "enabled": true
+                        	"studio": true,
+                        	"simulation": false
                         }
                     headers:
                       - name: Authorization
@@ -14327,20 +14354,20 @@ cookieJar:
   meta:
     id: jar_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496108720
-    modified: 1764581178265
+    modified: 1764874887413
 environments:
   name: Base Environment
   meta:
     id: env_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496106422
-    modified: 1764581178286
+    modified: 1764874887418
     isPrivate: false
   subEnvironments:
     - name: local
       meta:
         id: env_b8191c95ca5148239e99bdd5400c1ad6
         created: 1764509217083
-        modified: 1764581178276
+        modified: 1764874887417
         isPrivate: false
         sortKey: 1764509217083
       data:
