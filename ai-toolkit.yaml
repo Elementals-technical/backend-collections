@@ -117,12 +117,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['ai-toolkit-domain']}}/jobs/1"
+          - url: http://localhost:3000/jobs/118
             name: retrieve
             meta:
               id: req_44d34a98dfa243928a150fb8edd9d8c6
               created: 1764569715676
-              modified: 1764569715676
+              modified: 1765206399392
               isPrivate: false
               description: ""
               sortKey: -1764569712767
@@ -277,7 +277,7 @@ collection:
             meta:
               id: req_e36ffb9300224f9a93e76bd06ff0691f
               created: 1764569715693
-              modified: 1764857919715
+              modified: 1765207097636
               isPrivate: false
               description: ""
               sortKey: -1764569712762
@@ -294,7 +294,8 @@ collection:
                     },
                     "sourceJobId": 89,
                 		"parameters": {
-                			"targetPolycount": 30000
+                			"targetPolycount": 10000,
+                			"topology": "quad"
                 		}
                 }
             headers:
