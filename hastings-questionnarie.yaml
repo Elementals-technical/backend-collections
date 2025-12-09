@@ -20,7 +20,7 @@ collection:
         meta:
           id: req_c36bbc2bd876411b9d193df8cebffb96
           created: 1765294886230
-          modified: 1765294960163
+          modified: 1765298508261
           isPrivate: false
           description: ""
           sortKey: -1765294886230
@@ -37,6 +37,10 @@ collection:
             value: application/json
           - name: User-Agent
             value: insomnia/12.1.0
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: zCxGZgV3iVUR93C2Cua2lTgZZZppRL1z32VifmzwdPgcP
             description: ""
             disabled: false
         settings:
