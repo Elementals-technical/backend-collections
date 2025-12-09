@@ -14033,18 +14033,19 @@ collection:
                 meta:
                   id: req_18385270ba9e45f19cdab615a079fcaf
                   created: 1764496106343
-                  modified: 1764511003174
+                  modified: 1765295502517
                   isPrivate: false
                   description: ""
                   sortKey: -1764496102373
                 method: POST
                 body:
                   mimeType: application/json
-                  text: |-
+                  text: >-
                     {
-                        "organizationId": 1,
-                        "modelType": "MaskRCNN",
-                        "products": [1,2]
+                      "products": [1, 2, 3],
+                      "organizationId": 1,
+                      "modelType": "MaskRCNN",
+                      "parameters": "batch_size=8,epochs=100,learning_rate=0.001"
                     }
                 parameters:
                   - name: overwrite
@@ -14208,6 +14209,86 @@ collection:
                   description: ""
                   sortKey: -1764496102371
                 method: DELETE
+                scripts:
+                  preRequest: >
+                    const loginEndpoint =
+                    insomnia.variables.get("render-admin-domain") + "/login";
+
+                    const username =
+                    insomnia.variables.get("render-admin-username");
+
+                    const password =
+                    insomnia.variables.get("render-admin-password");
+
+
+                    const loginRequest = {
+                      method: "POST",
+                      url: loginEndpoint,
+                      headers: {
+                        "Content-Type": "application/json"
+                      },
+                      body: JSON.stringify({
+                        username,
+                        password
+                      })
+                    };
+
+
+                    insomnia.sendRequest(loginRequest, function (err, response)
+                    {
+                      if (err) {
+                        console.log("Error while logging in:", err);
+                        return;
+                      }
+
+                      try {
+                        const json = JSON.parse(response.body);
+                        const token = json.token;
+
+                        if (!token) {
+                          console.log("No token found in login response");
+                          return;
+                        }
+
+                        insomnia.environment.set("render-admin-token", token);
+                        console.log("Login successful, token saved");
+                      } catch (e) {
+                        console.log("Failed to parse login response:", e);
+                      }
+                    });
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: "{{_['render-admin-domain']}}/train/jobs/1"
+                name: retrieve train job
+                meta:
+                  id: req_1f1a18a39f104e3d925b8ca3f1c4ef8f
+                  created: 1765295520292
+                  modified: 1765295522593
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1764496102371.5
+                method: GET
+                parameters:
+                  - name: productId
+                    value: "334"
+                    disabled: true
+                  - name: pageSize
+                    value: "100"
+                    disabled: false
+                headers:
+                  - name: Authorization
+                    value: Bearer {{_['render-admin-token']}}
+                authentication:
+                  type: bearer
+                  disabled: false
+                  token: "{{_['render-admin-token']}}"
+                  prefix: ""
                 scripts:
                   preRequest: >
                     const loginEndpoint =
