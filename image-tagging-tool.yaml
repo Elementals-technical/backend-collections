@@ -23,12 +23,12 @@ collection:
           sortKey: -1764497025255
           description: ""
         children:
-          - url: "{{_['tagging-tool-domain']}}/products/"
+          - url: http://localhost:3000/products/
             name: list
             meta:
               id: req_ad3b6dd8659b449294121669e9c49c00
               created: 1764497027845
-              modified: 1764497027845
+              modified: 1765379698883
               isPrivate: false
               description: ""
               sortKey: -1764497025254
@@ -50,6 +50,10 @@ collection:
                 disabled: true
               - name: searchByName
                 value: ""
+                disabled: true
+              - name: sortBy
+                value: newest
+                description: ""
                 disabled: false
             headers:
               - name: Content-Type
