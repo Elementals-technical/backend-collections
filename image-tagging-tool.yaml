@@ -23,12 +23,12 @@ collection:
           sortKey: -1764497025255
           description: ""
         children:
-          - url: http://localhost:3000/products/
+          - url: "{{_['tagging-tool-domain']}}/products/"
             name: list
             meta:
               id: req_ad3b6dd8659b449294121669e9c49c00
               created: 1764497027845
-              modified: 1765379698883
+              modified: 1764497027845
               isPrivate: false
               description: ""
               sortKey: -1764497025254

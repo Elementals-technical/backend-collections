@@ -1,0 +1,66 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Hastings Questionnarie
+meta:
+  id: wrk_3b8d5170944a46d6b3b3121bd43fe524
+  created: 1765294870412
+  modified: 1765294870412
+  description: ""
+collection:
+  - name: email
+    meta:
+      id: fld_dcec285d67524d709ab183bc3dfff3b2
+      created: 1765294882542
+      modified: 1765294882542
+      sortKey: -1765294882542
+      description: ""
+    children:
+      - url: http://127.0.0.1:3000/email/send
+        name: send
+        meta:
+          id: req_c36bbc2bd876411b9d193df8cebffb96
+          created: 1765294886230
+          modified: 1765298508261
+          isPrivate: false
+          description: ""
+          sortKey: -1765294886230
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"name": "Pavlo",
+            	"email": "feryleeton@gmail.com"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.1.0
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: zCxGZgV3iVUR93C2Cua2lTgZZZppRL1z32VifmzwdPgcP
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_b262d90aed319f363ab6d35cd420ae9ef43b538f
+    created: 1765294870451
+    modified: 1765294870451
+environments:
+  name: Base Environment
+  meta:
+    id: env_b262d90aed319f363ab6d35cd420ae9ef43b538f
+    created: 1765294870450
+    modified: 1765294870450
+    isPrivate: false
