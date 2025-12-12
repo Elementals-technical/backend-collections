@@ -11,7 +11,7 @@ collection:
     meta:
       id: fld_28943f57796445899fa604513d7a262d
       created: 1764496106015
-      modified: 1764874887418
+      modified: 1765537558807
       sortKey: -1764496102719
       description: ""
     children:
@@ -251,16 +251,16 @@ collection:
         meta:
           id: fld_880c04d737a649e1a34a4e230a448c85
           created: 1764496106030
-          modified: 1764496106030
+          modified: 1765450957679
           sortKey: -1764496102607
           description: ""
         children:
-          - url: "{{_['render-admin-domain']}}/login"
+          - url: http://localhost:3000/login
             name: jwt create
             meta:
               id: req_d79048f09baf4b189499c3087e3971fb
               created: 1764496106031
-              modified: 1764496106031
+              modified: 1765384035914
               isPrivate: false
               description: ""
               sortKey: -1764496102606
@@ -942,7 +942,7 @@ collection:
         meta:
           id: fld_245392516b2c4cb081e82a819bb04587
           created: 1764496106046
-          modified: 1764496106046
+          modified: 1765384416713
           sortKey: -1764496102594
           description: ""
         children:
@@ -1035,12 +1035,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render-admin-domain']}}/projects"
+          - url: http://localhost:3000/projects
             name: list projects
             meta:
               id: req_9463d4c43ba84648a0f06de764349ebe
               created: 1764496106049
-              modified: 1764510157920
+              modified: 1765384374087
               isPrivate: false
               description: ""
               sortKey: -1764496102592
@@ -1048,27 +1048,31 @@ collection:
             parameters:
               - name: pageSize
                 value: "1000"
-                disabled: false
+                disabled: true
               - name: studioCategoryId
                 value: "null"
-                disabled: false
+                disabled: true
               - name: searchByName
                 value: test
-                disabled: false
+                disabled: true
               - name: sortByName
                 value: desc
-                disabled: false
+                disabled: true
               - name: sortById
                 value: asc
-                disabled: false
+                disabled: true
+              - name: studio
+                value: "true"
+                description: ""
+                disabled: true
             headers:
               - name: Authorization
                 value: Bearer {{_['render-admin-token']}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render-admin-token']}}"
-              prefix: ""
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NTM4NDAzOCwiZXhwIjoxNzY1Mzg0MzM4fQ.GY9dgm4LAfbE8o_kNUnlqXvbkKVCGzUGTUby69P2Yyw
+              prefix: bearer
             scripts:
               preRequest: >
                 const loginEndpoint =
@@ -1195,12 +1199,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render-admin-domain']}}/projects/23"
+          - url: http://localhost:3000/projects/3
             name: update project
             meta:
               id: req_f61a348684fc4ab4b7619e66ab68e414
               created: 1764496106052
-              modified: 1764510163749
+              modified: 1765384396797
               isPrivate: false
               description: ""
               sortKey: -1764496102590
@@ -1213,9 +1217,21 @@ collection:
                   disabled: false
                   type: text
                 - name: image
-                  disabled: false
+                  disabled: true
                   fileName: /home/pavlo/Downloads/Pack and Play _ Gear Bag - Ripstop.png
                   type: file
+                - name: studio
+                  value: "true"
+                  description: ""
+                  disabled: false
+                - name: organizationId
+                  value: "1"
+                  description: ""
+                  disabled: false
+                - name: studioCategoryId
+                  value: "1"
+                  description: ""
+                  disabled: false
             headers:
               - name: Authorization
                 value: Bearer {{_['render-admin-token']}}
@@ -1224,8 +1240,8 @@ collection:
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render-admin-token']}}"
-              prefix: ""
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NTM4NDAzOCwiZXhwIjoxNzY1Mzg0MzM4fQ.GY9dgm4LAfbE8o_kNUnlqXvbkKVCGzUGTUby69P2Yyw
+              prefix: bearer
             scripts:
               preRequest: >
                 const loginEndpoint =
@@ -2024,16 +2040,16 @@ collection:
         meta:
           id: fld_b2eeba39f96a4791a703f6c8afb2357f
           created: 1764496106065
-          modified: 1764496106065
+          modified: 1765451082598
           sortKey: -1764496102580
           description: ""
         children:
-          - url: "{{_['render-admin-domain']}}/stages"
+          - url: http://localhost:3000/stages
             name: create stage
             meta:
               id: req_a5e2b1953c49459db9b4582c45f3ad6b
               created: 1764496106083
-              modified: 1764510312145
+              modified: 1765451072717
               isPrivate: false
               description: ""
               sortKey: -1764496102565
@@ -2054,11 +2070,11 @@ collection:
                   disabled: false
                   type: text
                 - name: resource
-                  disabled: false
+                  disabled: true
                   fileName: /home/pavlo/Desktop/Paks/pakchunk2001-Windows.pak
                   type: file
                 - name: image
-                  disabled: false
+                  disabled: true
                   fileName: /home/pavlo/Desktop/Paks/2003.png
                   type: file
             headers:
@@ -2069,8 +2085,8 @@ collection:
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render-admin-token']}}"
-              prefix: ""
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NTQ1MDk4NywiZXhwIjoxNzY1NDUxMjg3fQ.gSroGjb0eVkU3o6Frb0FfmPekUW1R_XCLkLtxR4hstM
+              prefix: bearer
             scripts:
               preRequest: >
                 const loginEndpoint =
@@ -3294,16 +3310,16 @@ collection:
         meta:
           id: fld_6c532450140d48d5a28af28b269277ce
           created: 1764496106095
-          modified: 1764496106095
+          modified: 1765451106469
           sortKey: -1764496102558
           description: ""
         children:
-          - url: "{{_['render-admin-domain']}}/cameras"
+          - url: http://localhost:3000/cameras
             name: create camera
             meta:
               id: req_1b52b04928184ed08f1f6f30ecd5447a
               created: 1764496106096
-              modified: 1764510347805
+              modified: 1765451012541
               isPrivate: false
               description: ""
               sortKey: -1764496102557
@@ -3365,8 +3381,8 @@ collection:
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render-admin-token']}}"
-              prefix: ""
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NTQ1MDk4NywiZXhwIjoxNzY1NDUxMjg3fQ.gSroGjb0eVkU3o6Frb0FfmPekUW1R_XCLkLtxR4hstM
+              prefix: bearer
             scripts:
               preRequest: >
                 const loginEndpoint =
@@ -3828,16 +3844,16 @@ collection:
         meta:
           id: fld_55cc98209eb540f8b3fe3e41e7d6f5d2
           created: 1764496106103
-          modified: 1764496106103
+          modified: 1765451305409
           sortKey: -1764496102551
           description: ""
         children:
-          - url: "{{_['render-admin-domain']}}/options"
+          - url: http://localhost:3000/options
             name: create option
             meta:
               id: req_c3ac724d921a41a8945be33850fc22ab
               created: 1764496106104
-              modified: 1764510375008
+              modified: 1765451296704
               isPrivate: false
               description: ""
               sortKey: -1764496102550
@@ -3858,7 +3874,7 @@ collection:
                   disabled: true
                   type: text
                 - name: resource
-                  disabled: false
+                  disabled: true
                   fileName: /home/pavlo/test.pak
                   type: file
                 - name: mountPoint
@@ -3881,8 +3897,8 @@ collection:
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render-admin-token']}}"
-              prefix: ""
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NTQ1MDk4NywiZXhwIjoxNzY1NDUxMjg3fQ.gSroGjb0eVkU3o6Frb0FfmPekUW1R_XCLkLtxR4hstM
+              prefix: bearer
             scripts:
               preRequest: >
                 const loginEndpoint =
@@ -4333,16 +4349,16 @@ collection:
         meta:
           id: fld_08a3fd395fdf497e94fce863e68fd478
           created: 1764496106114
-          modified: 1764496106114
+          modified: 1765451361747
           sortKey: -1764496102544
           description: ""
         children:
-          - url: "{{_['render-admin-domain']}}/variants"
+          - url: http://localhost:3000/variants
             name: create variant
             meta:
               id: req_3b601a8558d84994b39a57d729a17ae6
               created: 1764496106115
-              modified: 1764510402914
+              modified: 1765451345527
               isPrivate: false
               description: ""
               sortKey: -1764496102543
@@ -4359,7 +4375,7 @@ collection:
                   fileName: /home/pavlo/Downloads/image.png
                   type: file
                 - name: optionId
-                  value: "4"
+                  value: "1"
                   disabled: false
                   type: text
                 - name: materialJSON
@@ -4374,8 +4390,8 @@ collection:
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render-admin-token']}}"
-              prefix: ""
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NTQ1MDk4NywiZXhwIjoxNzY1NDUxMjg3fQ.gSroGjb0eVkU3o6Frb0FfmPekUW1R_XCLkLtxR4hstM
+              prefix: bearer
             scripts:
               preRequest: >
                 const loginEndpoint =
@@ -4811,16 +4827,16 @@ collection:
         meta:
           id: fld_051b4155be044432b40296a3838ca8c7
           created: 1764496106123
-          modified: 1764496106123
+          modified: 1765451232511
           sortKey: -1764496102537
           description: ""
         children:
-          - url: "{{_['render-admin-domain']}}/products/1/stages"
+          - url: http://localhost:3000/products/1/stages/1/cameras
             name: add product stages
             meta:
               id: req_f2f3372e0a0c4390a4c851b5e692b895
               created: 1764496106124
-              modified: 1764510432676
+              modified: 1765451224864
               isPrivate: false
               description: ""
               sortKey: -1764496102536
@@ -4841,8 +4857,8 @@ collection:
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render-admin-token']}}"
-              prefix: ""
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NTQ1MDk4NywiZXhwIjoxNzY1NDUxMjg3fQ.gSroGjb0eVkU3o6Frb0FfmPekUW1R_XCLkLtxR4hstM
+              prefix: bearer
             scripts:
               preRequest: >
                 const loginEndpoint =
@@ -10138,7 +10154,7 @@ collection:
         meta:
           id: fld_3c26558d58f14e80aa0f427e6ac43eef
           created: 1764496106260
-          modified: 1764496106260
+          modified: 1765384356105
           sortKey: -1764496102437
           description: ""
         children:
@@ -10218,16 +10234,16 @@ collection:
             meta:
               id: fld_ff833b7849e5490eb60ee919832248f5
               created: 1764496106261
-              modified: 1764496106261
+              modified: 1765384356105
               sortKey: -1764496102436
               description: ""
             children:
-              - url: "{{_['render-admin-domain']}}/studioCategories"
+              - url: http://localhost:3000/studioCategories
                 name: create studioCategory
                 meta:
                   id: req_8a66790ae72f475fb030bf95e0000382
                   created: 1764496106266
-                  modified: 1764510817883
+                  modified: 1765384347745
                   isPrivate: false
                   description: ""
                   sortKey: -1764496102432
@@ -10240,7 +10256,7 @@ collection:
                       disabled: false
                       type: text
                     - name: organizationId
-                      value: "2"
+                      value: "1"
                       disabled: false
                       type: text
                     - name: parentId
@@ -10259,8 +10275,8 @@ collection:
                 authentication:
                   type: bearer
                   disabled: false
-                  token: "{{_['render-admin-token']}}"
-                  prefix: ""
+                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NTM4NDAzOCwiZXhwIjoxNzY1Mzg0MzM4fQ.GY9dgm4LAfbE8o_kNUnlqXvbkKVCGzUGTUby69P2Yyw
+                  prefix: bearer
                 scripts:
                   preRequest: >
                     const loginEndpoint =
@@ -10636,12 +10652,12 @@ collection:
                   sortKey: -1764496102435
                   description: ""
                 children:
-                  - url: "{{_['render-admin-domain']}}/studioCategories/1/projects"
+                  - url: http://localhost:3000/studioCategories/3/projects
                     name: add projects to studioCategory
                     meta:
                       id: req_d924991958434d39b1594bc820ab4541
                       created: 1764496106263
-                      modified: 1764510809413
+                      modified: 1765384312219
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102434
@@ -14016,7 +14032,7 @@ collection:
         meta:
           id: fld_b5da3c83e7624e119ec9b51c9dce7029
           created: 1764496106339
-          modified: 1764496106339
+          modified: 1765537558807
           sortKey: -1764496102375
           description: ""
         children:
@@ -14024,16 +14040,16 @@ collection:
             meta:
               id: fld_a5c071b1098a4ab18e3c5b14a9c14741
               created: 1764496106341
-              modified: 1764496106341
+              modified: 1765537558807
               sortKey: -1764496102374
               description: ""
             children:
-              - url: "{{_['render-admin-domain']}}/train/jobs"
+              - url: http://localhost:3000/train/jobs
                 name: create train job
                 meta:
                   id: req_18385270ba9e45f19cdab615a079fcaf
                   created: 1764496106343
-                  modified: 1765295502517
+                  modified: 1765528587015
                   isPrivate: false
                   description: ""
                   sortKey: -1764496102373
@@ -14042,10 +14058,11 @@ collection:
                   mimeType: application/json
                   text: >-
                     {
-                      "products": [1, 2, 3],
+                    	"name": "Train jobs #1",
+                      "products": [1, 2, 3, 4],
                       "organizationId": 1,
                       "modelType": "MaskRCNN",
-                      "parameters": "batch_size=8,epochs=100,learning_rate=0.001"
+                      "parameters": "batch_size=12,epochs=100,learning_rate=0.001"
                     }
                 parameters:
                   - name: overwrite
@@ -14062,8 +14079,8 @@ collection:
                 authentication:
                   type: bearer
                   disabled: false
-                  token: "{{_['render-admin-token']}}"
-                  prefix: ""
+                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NTUyODQ1NywiZXhwIjoxNzY1NTI4NzU3fQ.JNh3MWQu845l7ppb8se291hSf1c_aetCmvUOlAmHqV4
+                  prefix: bearer
                 scripts:
                   preRequest: >
                     const loginEndpoint =
@@ -14119,31 +14136,52 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: "{{_['render-admin-domain']}}/train/jobs"
+              - url: http://localhost:3000/train/jobs
                 name: list train jobs
                 meta:
                   id: req_c76237de06e94ad9bda5b31289cd3e86
                   created: 1764496106345
-                  modified: 1764511010479
+                  modified: 1765537561417
                   isPrivate: false
                   description: ""
                   sortKey: -1764496102372
                 method: GET
                 parameters:
-                  - name: productId
-                    value: "334"
-                    disabled: true
                   - name: pageSize
-                    value: "100"
+                    value: "5"
                     disabled: false
+                  - name: page
+                    value: "1"
+                    description: ""
+                    disabled: false
+                  - name: productId
+                    value: "4"
+                    description: ""
+                    disabled: true
+                  - name: sortByName
+                    value: asc
+                    description: ""
+                    disabled: true
+                  - name: sortById
+                    value: desc
+                    description: ""
+                    disabled: true
+                  - name: sortByCreatedAt
+                    value: desc
+                    description: ""
+                    disabled: true
+                  - name: search
+                    value: jobs
+                    description: ""
+                    disabled: true
                 headers:
                   - name: Authorization
                     value: Bearer {{_['render-admin-token']}}
                 authentication:
                   type: bearer
                   disabled: false
-                  token: "{{_['render-admin-token']}}"
-                  prefix: ""
+                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NTUyODQ1NywiZXhwIjoxNzY1NTI4NzU3fQ.JNh3MWQu845l7ppb8se291hSf1c_aetCmvUOlAmHqV4
+                  prefix: bearer
                 scripts:
                   preRequest: >
                     const loginEndpoint =
@@ -14264,12 +14302,12 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: "{{_['render-admin-domain']}}/train/jobs/1"
+              - url: http://localhost:3000/train/jobs/1
                 name: retrieve train job
                 meta:
                   id: req_1f1a18a39f104e3d925b8ca3f1c4ef8f
                   created: 1765295520292
-                  modified: 1765295522593
+                  modified: 1765537423383
                   isPrivate: false
                   description: ""
                   sortKey: -1764496102371.5
@@ -14287,8 +14325,8 @@ collection:
                 authentication:
                   type: bearer
                   disabled: false
-                  token: "{{_['render-admin-token']}}"
-                  prefix: ""
+                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NTUyODQ1NywiZXhwIjoxNzY1NTI4NzU3fQ.JNh3MWQu845l7ppb8se291hSf1c_aetCmvUOlAmHqV4
+                  prefix: bearer
                 scripts:
                   preRequest: >
                     const loginEndpoint =
@@ -14435,13 +14473,13 @@ cookieJar:
   meta:
     id: jar_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496108720
-    modified: 1764874887413
+    modified: 1765537558803
 environments:
   name: Base Environment
   meta:
     id: env_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496106422
-    modified: 1764874887418
+    modified: 1765537558806
     isPrivate: false
   subEnvironments:
     - name: local
