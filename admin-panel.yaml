@@ -11,7 +11,7 @@ collection:
     meta:
       id: fld_28943f57796445899fa604513d7a262d
       created: 1764496106015
-      modified: 1765537558807
+      modified: 1765811334869
       sortKey: -1764496102719
       description: ""
     children:
@@ -1372,7 +1372,7 @@ collection:
         meta:
           id: fld_a6a1513b5d204d29a79a6f171de34655
           created: 1764496106054
-          modified: 1764509950767
+          modified: 1765786656308
           sortKey: -1764496102588
           description: ""
         children:
@@ -1501,12 +1501,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render-admin-domain']}}/products"
+          - url: http://localhost:3000/products
             name: list products
             meta:
               id: req_a3b075dced984740b8e5563c29e619a1
               created: 1764496106057
-              modified: 1764510175456
+              modified: 1765786651924
               isPrivate: false
               description: ""
               sortKey: -1764496102586
@@ -1532,7 +1532,7 @@ collection:
                 disabled: true
               - name: projectId
                 value: "144"
-                disabled: false
+                disabled: true
               - name: productIds
                 value: "45"
                 disabled: true
@@ -1552,8 +1552,8 @@ collection:
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render-admin-token']}}"
-              prefix: ""
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NTc4NjYxMywiZXhwIjoxNzY1Nzg2OTEzfQ.LFS4MGCr21r5NBXKwcISxCZWtu16D1vpfEXPv0o-rcE
+              prefix: "bearer "
             scripts:
               preRequest: >
                 const loginEndpoint =
@@ -2040,7 +2040,7 @@ collection:
         meta:
           id: fld_b2eeba39f96a4791a703f6c8afb2357f
           created: 1764496106065
-          modified: 1765451082598
+          modified: 1765788238764
           sortKey: -1764496102580
           description: ""
         children:
@@ -2049,7 +2049,7 @@ collection:
             meta:
               id: req_a5e2b1953c49459db9b4582c45f3ad6b
               created: 1764496106083
-              modified: 1765451072717
+              modified: 1765787306992
               isPrivate: false
               description: ""
               sortKey: -1764496102565
@@ -2058,7 +2058,7 @@ collection:
               mimeType: multipart/form-data
               params:
                 - name: name
-                  value: Test Stage PLO
+                  value: Test Stage PRO
                   disabled: false
                   type: text
                 - name: organizationId
@@ -2085,7 +2085,7 @@ collection:
             authentication:
               type: bearer
               disabled: false
-              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NTQ1MDk4NywiZXhwIjoxNzY1NDUxMjg3fQ.gSroGjb0eVkU3o6Frb0FfmPekUW1R_XCLkLtxR4hstM
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NTc4NjYxMywiZXhwIjoxNzY1Nzg2OTEzfQ.LFS4MGCr21r5NBXKwcISxCZWtu16D1vpfEXPv0o-rcE
               prefix: bearer
             scripts:
               preRequest: >
@@ -2141,12 +2141,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render-admin-domain']}}/stages"
+          - url: http://localhost:3000/stages
             name: list stages
             meta:
               id: req_a62304dc1d0b451ab7fec37c2fef85a6
               created: 1764496106084
-              modified: 1764510315780
+              modified: 1765787266874
               isPrivate: false
               description: ""
               sortKey: -1764496102564
@@ -2170,8 +2170,8 @@ collection:
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render-admin-token']}}"
-              prefix: ""
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NTc4NjYxMywiZXhwIjoxNzY1Nzg2OTEzfQ.LFS4MGCr21r5NBXKwcISxCZWtu16D1vpfEXPv0o-rcE
+              prefix: bearer
             scripts:
               preRequest: >
                 const loginEndpoint =
@@ -2961,7 +2961,7 @@ collection:
             meta:
               id: fld_ece04fb4b36548b09260cff452fd5493
               created: 1764496106075
-              modified: 1764496106075
+              modified: 1765788238764
               sortKey: -1764496102572
               description: ""
             children:
@@ -2969,16 +2969,16 @@ collection:
                 meta:
                   id: fld_793843fc3f614f948e750b91e89e7beb
                   created: 1764496106076
-                  modified: 1764496106076
+                  modified: 1765788238764
                   sortKey: -1764496102571
                   description: ""
                 children:
-                  - url: "{{_['render-admin-domain']}}/stages/1/geometryOptions"
+                  - url: http:localhost:3000/stages/1/geometryOptions
                     name: add geometryOptions
                     meta:
                       id: req_4a5eeff0d27d4d5ea018913968575138
                       created: 1764496106077
-                      modified: 1764510297105
+                      modified: 1765788228189
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102570
@@ -3002,8 +3002,8 @@ collection:
                     authentication:
                       type: bearer
                       disabled: false
-                      token: "{{_['render-admin-token']}}"
-                      prefix: ""
+                      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NTc4NjYxMywiZXhwIjoxNzY1Nzg2OTEzfQ.LFS4MGCr21r5NBXKwcISxCZWtu16D1vpfEXPv0o-rcE
+                      prefix: bearer
                     scripts:
                       preRequest: >
                         const loginEndpoint =
@@ -3310,7 +3310,7 @@ collection:
         meta:
           id: fld_6c532450140d48d5a28af28b269277ce
           created: 1764496106095
-          modified: 1765451106469
+          modified: 1765787403409
           sortKey: -1764496102558
           description: ""
         children:
@@ -3509,12 +3509,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render-admin-domain']}}/cameras"
+          - url: http://localhost:3000/cameras
             name: list cameras
             meta:
               id: req_50f6c5e429b34595a6cc33e4064effec
               created: 1764496106098
-              modified: 1764510354444
+              modified: 1765787396293
               isPrivate: false
               description: ""
               sortKey: -1764496102555
@@ -3525,8 +3525,8 @@ collection:
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render-admin-token']}}"
-              prefix: ""
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NTc4NjYxMywiZXhwIjoxNzY1Nzg2OTEzfQ.LFS4MGCr21r5NBXKwcISxCZWtu16D1vpfEXPv0o-rcE
+              prefix: bearer
             scripts:
               preRequest: >
                 const loginEndpoint =
@@ -3844,7 +3844,7 @@ collection:
         meta:
           id: fld_55cc98209eb540f8b3fe3e41e7d6f5d2
           created: 1764496106103
-          modified: 1765451305409
+          modified: 1765787509144
           sortKey: -1764496102551
           description: ""
         children:
@@ -3853,7 +3853,7 @@ collection:
             meta:
               id: req_c3ac724d921a41a8945be33850fc22ab
               created: 1764496106104
-              modified: 1765451296704
+              modified: 1765787479054
               isPrivate: false
               description: ""
               sortKey: -1764496102550
@@ -3862,7 +3862,7 @@ collection:
               mimeType: multipart/form-data
               params:
                 - name: name
-                  value: Blade S60
+                  value: Blade S602
                   disabled: false
                   type: text
                 - name: enabled
@@ -3953,12 +3953,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render-admin-domain']}}/options"
+          - url: http://localhost:3000/options
             name: list options
             meta:
               id: req_7270e4e3de3a4adaae609dc79220bc2d
               created: 1764496106106
-              modified: 1764510378166
+              modified: 1765787501700
               isPrivate: false
               description: ""
               sortKey: -1764496102549
@@ -3975,21 +3975,21 @@ collection:
                 disabled: true
               - name: organizationId
                 value: "1"
-                disabled: false
+                disabled: true
               - name: optionIds
                 value: "24"
-                disabled: false
+                disabled: true
               - name: optionIds
                 value: "23"
-                disabled: false
+                disabled: true
             headers:
               - name: Authorization
                 value: Bearer {{_['render-admin-token']}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render-admin-token']}}"
-              prefix: ""
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NTc4NjYxMywiZXhwIjoxNzY1Nzg2OTEzfQ.LFS4MGCr21r5NBXKwcISxCZWtu16D1vpfEXPv0o-rcE
+              prefix: bearer
             scripts:
               preRequest: >
                 const loginEndpoint =
@@ -5072,16 +5072,16 @@ collection:
         meta:
           id: fld_63f415fc4e5a481e957ca75f92986f16
           created: 1764496106128
-          modified: 1764510455850
+          modified: 1765787703407
           sortKey: -1764496102533
           description: ""
         children:
-          - url: "{{_['render-admin-domain']}}/products/1/options"
+          - url: http://localhost:3000/products/1/options
             name: add product options
             meta:
               id: req_af62c276ceea4dc7aef60a71f1b3dfcd
               created: 1764496106130
-              modified: 1764510449721
+              modified: 1765787696096
               isPrivate: false
               description: ""
               sortKey: -1764496102532
@@ -5092,7 +5092,7 @@ collection:
                 {
                     "options": [
                         {
-                            "optionIds": [3, 4],
+                            "optionIds": [1],
                             "proxyName": "Blade"
                         }
                     ]
@@ -5105,8 +5105,8 @@ collection:
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render-admin-token']}}"
-              prefix: ""
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NTc4NjYxMywiZXhwIjoxNzY1Nzg2OTEzfQ.LFS4MGCr21r5NBXKwcISxCZWtu16D1vpfEXPv0o-rcE
+              prefix: bearer
             scripts:
               preRequest: >
                 const loginEndpoint =
@@ -5322,16 +5322,16 @@ collection:
         meta:
           id: fld_d4bde3986f2441d28f5221b001afea01
           created: 1764496106133
-          modified: 1764496106133
+          modified: 1765787783243
           sortKey: -1764496102529
           description: ""
         children:
-          - url: "{{_['render-admin-domain']}}/products/1/geometryOptions"
+          - url: http://localhost:3000/products/1/geometryOptions
             name: add product geometry options
             meta:
               id: req_b92f061730944d188661d81c75adb7dd
               created: 1764496106134
-              modified: 1764510474940
+              modified: 1765787776668
               isPrivate: false
               description: ""
               sortKey: -1764496102528
@@ -5355,8 +5355,8 @@ collection:
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render-admin-token']}}"
-              prefix: ""
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NTc4NjYxMywiZXhwIjoxNzY1Nzg2OTEzfQ.LFS4MGCr21r5NBXKwcISxCZWtu16D1vpfEXPv0o-rcE
+              prefix: bearer
             scripts:
               preRequest: >
                 const loginEndpoint =
@@ -6764,16 +6764,16 @@ collection:
         meta:
           id: fld_a19fb513562d4b12a463f5b5ecb6eb89
           created: 1764496106170
-          modified: 1764496106169
+          modified: 1765787576532
           sortKey: -1764496102500
           description: ""
         children:
-          - url: "{{_['render-admin-domain']}}/geometryOptions"
+          - url: http://localhost:3000/geometryOptions
             name: create geometry option
             meta:
               id: req_6a2ba93908134ba8a1a6c04e54399895
               created: 1764496106171
-              modified: 1764510591923
+              modified: 1765787569188
               isPrivate: false
               description: ""
               sortKey: -1764496102499
@@ -6794,8 +6794,8 @@ collection:
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render-admin-token']}}"
-              prefix: ""
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NTQ1MDk4NywiZXhwIjoxNzY1NDUxMjg3fQ.gSroGjb0eVkU3o6Frb0FfmPekUW1R_XCLkLtxR4hstM
+              prefix: bearer
             scripts:
               preRequest: >
                 const loginEndpoint =
@@ -8169,16 +8169,16 @@ collection:
         meta:
           id: fld_5794dd65ebce4d5da02c0efde2d1f6fe
           created: 1764496106200
-          modified: 1764496106200
+          modified: 1765788150146
           sortKey: -1764496102479
           description: ""
         children:
-          - url: "{{_['render-admin-domain']}}/geometryVariants"
+          - url: http://localhost:3000/geometryVariants
             name: create geometry variant
             meta:
               id: req_3cc344392d294358949b642d9642115a
               created: 1764496106201
-              modified: 1764510674848
+              modified: 1765788142655
               isPrivate: false
               description: ""
               sortKey: -1764496102478
@@ -8214,8 +8214,8 @@ collection:
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render-admin-token']}}"
-              prefix: ""
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NTc4NjYxMywiZXhwIjoxNzY1Nzg2OTEzfQ.LFS4MGCr21r5NBXKwcISxCZWtu16D1vpfEXPv0o-rcE
+              prefix: bearer
             scripts:
               preRequest: >
                 const loginEndpoint =
@@ -8655,7 +8655,7 @@ collection:
         meta:
           id: fld_3b90d584921d4367bc6b3f0d3c17e814
           created: 1764496106211
-          modified: 1764496106211
+          modified: 1765811334869
           sortKey: -1764496102472
           description: ""
         children:
@@ -8663,16 +8663,16 @@ collection:
             meta:
               id: fld_5d8975ec169f4d1fb510be91fa36765e
               created: 1764496106212
-              modified: 1764496106212
+              modified: 1765811334869
               sortKey: -1764496102471
               description: ""
             children:
-              - url: "{{_['render-admin-domain']}}/massrender/2d/jobs"
+              - url: http://localhost:3000/massrender/2d/jobs
                 name: create massrender job
                 meta:
                   id: req_040e971823054415b13c3c91f747b093
                   created: 1764496106213
-                  modified: 1764510701947
+                  modified: 1765810797707
                   isPrivate: false
                   description: ""
                   sortKey: -1764496102470
@@ -8681,90 +8681,49 @@ collection:
                   mimeType: application/json
                   text: |-
                     {
-                        "product": {
-                            "id": 1,
-                            "stages": [
-                                {
-                                    "id": 1,
-                                    "cameras": [
-                                        {
-                                            "id": 1
-                                        }
-                                    ]
-                                }
-                            ],
-                            "proxyMaterials": [
-                                {
-                                    "id": 1,
-                                    "options": [
-                                        {
-                                            "id": 1,
-                                            "variants": [
-                                                {
-                                                    "id": 1
-                                                },
-                                                {
-                                                    "id": 2
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": 2,
-                                            "variants": [
-                                                {
-                                                    "id": 3
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": 2,
-                                    "options": [
-                                        {
-                                            "id": 3,
-                                            "variants": [
-                                                {
-                                                    "id": 4
-                                                },
-                                                {
-                                                    "id": 5
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": 4,
-                                            "variants": [
-                                                {
-                                                    "id": 6
-                                                },
-                                                {
-                                                    "id": 7
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ],
-                            "proxyGeometries": [
-                                {
-                                    "id": 1,
-                                    "options": [
-                                        {
-                                            "id": 1,
-                                            "variants": [
-                                                {
-                                                    "id": 1
-                                                },
-                                                {
-                                                    "id": 2
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
+                      "product": {
+                        "id": 1,
+                        "stages": [
+                          {
+                            "id": 2,
+                            "cameras": [
+                              {
+                                "id": 1
+                              }
                             ]
-                        }
+                          }
+                        ],
+                        "proxyMaterials": [
+                          {
+                            "id": 1,
+                            "options": [
+                              {
+                                "id": 1,
+                                "variants": [
+                                  {
+                                    "id": 1
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "proxyGeometries": [
+                          {
+                            "id": 1,
+                            "options": [
+                              {
+                                "id": 1,
+                                "variants": [
+                                  {
+                                    "id": 1
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
                     }
                 parameters:
                   - name: overwrite
@@ -8793,8 +8752,8 @@ collection:
                 authentication:
                   type: bearer
                   disabled: false
-                  token: "{{_['render-admin-token']}}"
-                  prefix: ""
+                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NTc4NjYxMywiZXhwIjoxNzY1Nzg2OTEzfQ.LFS4MGCr21r5NBXKwcISxCZWtu16D1vpfEXPv0o-rcE
+                  prefix: bearer
                 scripts:
                   preRequest: >
                     const loginEndpoint =
@@ -8850,16 +8809,41 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: "{{_['render-admin-domain']}}/massrender/2d/jobs/10/start"
+              - url: http://localhost:3000/massrender/2d/jobs/1/start
                 name: start massrender job
                 meta:
                   id: req_0955c742b5cb4da084cc28b7bdabfe00
                   created: 1764496106215
-                  modified: 1764510704991
+                  modified: 1765786513516
                   isPrivate: false
                   description: ""
                   sortKey: -1764496102469
                 method: POST
+                parameters:
+                  - name: mode
+                    value: random
+                    description: ""
+                    disabled: false
+                  - name: count
+                    value: "50"
+                    description: ""
+                    disabled: false
+                  - name: seed
+                    value: "123"
+                    description: ""
+                    disabled: false
+                  - name: startFrom
+                    value: "0"
+                    description: ""
+                    disabled: false
+                  - name: overwrite
+                    value: "false"
+                    description: ""
+                    disabled: false
+                  - name: annotation
+                    value: "false"
+                    description: ""
+                    disabled: false
                 scripts:
                   preRequest: >
                     const loginEndpoint =
@@ -8915,12 +8899,12 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: "{{_['render-admin-domain']}}/massrender/2d/jobs"
+              - url: http://localhost:3000/massrender/2d/jobs
                 name: list jobs
                 meta:
                   id: req_4662b27ddc054f969d2da32d65a3d7aa
                   created: 1764496106217
-                  modified: 1764510708190
+                  modified: 1765787064260
                   isPrivate: false
                   description: ""
                   sortKey: -1764496102468
@@ -8938,8 +8922,8 @@ collection:
                 authentication:
                   type: bearer
                   disabled: false
-                  token: "{{_['render-admin-token']}}"
-                  prefix: ""
+                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NTc4NjYxMywiZXhwIjoxNzY1Nzg2OTEzfQ.LFS4MGCr21r5NBXKwcISxCZWtu16D1vpfEXPv0o-rcE
+                  prefix: "bearer "
                 scripts:
                   preRequest: >
                     const loginEndpoint =
@@ -14473,13 +14457,13 @@ cookieJar:
   meta:
     id: jar_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496108720
-    modified: 1765537558803
+    modified: 1765811334868
 environments:
   name: Base Environment
   meta:
     id: env_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496106422
-    modified: 1765537558806
+    modified: 1765811334869
     isPrivate: false
   subEnvironments:
     - name: local
