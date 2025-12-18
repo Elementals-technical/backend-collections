@@ -52,13 +52,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -89,7 +89,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -124,13 +124,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -161,7 +161,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -196,13 +196,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -233,7 +233,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -347,13 +347,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -384,7 +384,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -419,13 +419,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -456,7 +456,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -491,13 +491,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -528,7 +528,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -563,13 +563,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -600,7 +600,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -643,13 +643,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -680,7 +680,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -715,13 +715,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -752,7 +752,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -805,13 +805,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -842,7 +842,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -887,13 +887,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -924,7 +924,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -984,13 +984,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -1021,7 +1021,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -1076,13 +1076,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -1113,7 +1113,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -1148,13 +1148,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -1185,7 +1185,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -1245,13 +1245,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -1282,7 +1282,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -1317,13 +1317,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -1354,7 +1354,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -1450,13 +1450,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -1487,7 +1487,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -1557,13 +1557,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -1594,7 +1594,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -1629,13 +1629,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -1666,7 +1666,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -1724,13 +1724,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -1761,7 +1761,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -1849,13 +1849,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -1886,7 +1886,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -1921,13 +1921,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -1958,7 +1958,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -1985,13 +1985,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -2022,7 +2022,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -2090,13 +2090,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -2127,7 +2127,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -2175,13 +2175,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -2212,7 +2212,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -2247,13 +2247,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -2284,7 +2284,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -2344,13 +2344,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -2381,7 +2381,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -2424,13 +2424,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -2461,7 +2461,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -2496,13 +2496,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -2533,7 +2533,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -2560,13 +2560,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -2597,7 +2597,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -2661,14 +2661,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -2700,7 +2700,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -2745,14 +2745,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -2784,7 +2784,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -2821,14 +2821,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -2860,7 +2860,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -2904,14 +2904,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -2943,7 +2943,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -3007,14 +3007,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -3046,7 +3046,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -3091,14 +3091,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -3130,7 +3130,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -3170,14 +3170,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -3209,7 +3209,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -3253,14 +3253,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -3292,7 +3292,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -3386,13 +3386,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -3423,7 +3423,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -3458,13 +3458,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -3495,7 +3495,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -3530,13 +3530,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -3567,7 +3567,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -3602,13 +3602,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -3639,7 +3639,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -3725,13 +3725,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -3762,7 +3762,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -3789,13 +3789,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -3826,7 +3826,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -3902,13 +3902,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -3939,7 +3939,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -3993,13 +3993,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -4030,7 +4030,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -4065,13 +4065,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -4102,7 +4102,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -4158,13 +4158,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -4195,7 +4195,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -4230,13 +4230,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -4267,7 +4267,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -4294,13 +4294,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -4331,7 +4331,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -4395,13 +4395,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -4432,7 +4432,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -4471,13 +4471,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -4508,7 +4508,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -4543,13 +4543,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -4580,7 +4580,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -4615,13 +4615,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -4652,7 +4652,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -4708,13 +4708,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -4745,7 +4745,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -4772,13 +4772,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -4809,7 +4809,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -4862,13 +4862,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -4899,7 +4899,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -4944,13 +4944,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -4981,7 +4981,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -5017,13 +5017,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -5054,7 +5054,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -5110,13 +5110,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -5147,7 +5147,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -5192,13 +5192,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -5229,7 +5229,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -5267,13 +5267,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -5304,7 +5304,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -5360,13 +5360,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -5397,7 +5397,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -5442,13 +5442,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -5479,7 +5479,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -5517,13 +5517,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -5554,7 +5554,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -5598,13 +5598,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -5635,7 +5635,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -5680,13 +5680,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -5717,7 +5717,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -5761,13 +5761,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -5798,7 +5798,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -5842,13 +5842,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -5879,7 +5879,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -5923,13 +5923,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -5960,7 +5960,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -6004,13 +6004,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -6041,7 +6041,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -6086,13 +6086,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -6123,7 +6123,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -6176,13 +6176,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -6213,7 +6213,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -6247,13 +6247,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -6284,7 +6284,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -6311,13 +6311,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -6348,7 +6348,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -6389,13 +6389,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -6426,7 +6426,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -6453,13 +6453,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -6490,7 +6490,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -6543,13 +6543,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -6580,7 +6580,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -6625,13 +6625,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -6662,7 +6662,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -6709,13 +6709,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -6746,7 +6746,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -6799,13 +6799,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -6836,7 +6836,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -6884,13 +6884,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -6921,7 +6921,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -6956,13 +6956,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -6993,7 +6993,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -7038,13 +7038,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -7075,7 +7075,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -7110,13 +7110,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -7147,7 +7147,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -7174,13 +7174,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -7211,7 +7211,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -7267,13 +7267,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -7304,7 +7304,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -7352,13 +7352,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -7389,7 +7389,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -7424,13 +7424,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -7461,7 +7461,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -7508,13 +7508,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -7545,7 +7545,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -7580,13 +7580,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -7617,7 +7617,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -7644,13 +7644,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -7681,7 +7681,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -7737,13 +7737,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -7774,7 +7774,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -7822,13 +7822,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -7859,7 +7859,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -7894,13 +7894,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -7931,7 +7931,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -7978,13 +7978,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -8015,7 +8015,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -8050,13 +8050,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -8087,7 +8087,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -8114,13 +8114,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -8151,7 +8151,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -8219,13 +8219,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -8256,7 +8256,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -8295,13 +8295,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -8332,7 +8332,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -8367,13 +8367,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -8404,7 +8404,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -8464,13 +8464,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -8501,7 +8501,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -8536,13 +8536,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -8573,7 +8573,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -8600,13 +8600,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -8637,7 +8637,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -8798,13 +8798,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -8836,7 +8836,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -8863,13 +8863,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -8901,7 +8901,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -8943,13 +8943,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -8981,7 +8981,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -9008,13 +9008,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -9046,7 +9046,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -9201,13 +9201,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -9239,7 +9239,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -9266,13 +9266,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -9304,7 +9304,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -9346,13 +9346,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -9384,7 +9384,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -9411,13 +9411,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -9449,7 +9449,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -9505,13 +9505,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -9543,7 +9543,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -9623,13 +9623,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -9660,7 +9660,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -9703,13 +9703,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -9741,7 +9741,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -9797,13 +9797,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -9835,7 +9835,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -9870,13 +9870,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -9908,7 +9908,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -9943,13 +9943,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -9981,7 +9981,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -10016,13 +10016,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -10054,7 +10054,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -10098,13 +10098,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -10136,7 +10136,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -10179,13 +10179,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -10216,7 +10216,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -10280,13 +10280,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -10318,7 +10318,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -10360,13 +10360,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -10398,7 +10398,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -10433,13 +10433,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -10471,7 +10471,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -10519,13 +10519,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -10557,7 +10557,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -10592,13 +10592,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -10630,7 +10630,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -10676,14 +10676,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -10715,7 +10715,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -10753,14 +10753,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -10792,7 +10792,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -10845,13 +10845,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -10883,7 +10883,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -10928,13 +10928,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -10966,7 +10966,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -11002,13 +11002,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -11040,7 +11040,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -11083,13 +11083,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -11121,7 +11121,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -11157,13 +11157,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -11195,7 +11195,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -11239,13 +11239,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -11277,7 +11277,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -11322,13 +11322,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -11360,7 +11360,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -11404,13 +11404,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -11442,7 +11442,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -11487,13 +11487,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -11525,7 +11525,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -11568,13 +11568,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -11605,7 +11605,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -11661,13 +11661,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -11698,7 +11698,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -11743,13 +11743,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -11780,7 +11780,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -11828,13 +11828,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -11865,7 +11865,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -11919,13 +11919,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -11956,7 +11956,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -11991,13 +11991,13 @@ collection:
             scripts:
               preRequest: >
                 const loginEndpoint =
-                insomnia.variables.get("render-admin-domain") + "/login";
+                insomnia.variables.get("render_admin_domain") + "/login";
 
                 const username =
-                insomnia.variables.get("render-admin-username");
+                insomnia.variables.get("render_admin_username");
 
                 const password =
-                insomnia.variables.get("render-admin-password");
+                insomnia.variables.get("render_admin_password");
 
 
                 const loginRequest = {
@@ -12028,7 +12028,7 @@ collection:
                       return;
                     }
 
-                    insomnia.environment.set("render-admin-token", token);
+                    insomnia.environment.set("render_admin_token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -12095,14 +12095,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -12134,7 +12134,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -12178,14 +12178,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -12217,7 +12217,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -12260,14 +12260,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -12299,7 +12299,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -12350,14 +12350,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -12389,7 +12389,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -12432,14 +12432,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -12471,7 +12471,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -12531,14 +12531,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -12570,7 +12570,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -12622,14 +12622,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -12661,7 +12661,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -12700,14 +12700,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -12739,7 +12739,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -12799,14 +12799,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -12838,7 +12838,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -12873,14 +12873,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -12912,7 +12912,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -12987,14 +12987,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -13026,7 +13026,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -13085,14 +13085,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -13124,7 +13124,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -13167,14 +13167,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -13206,7 +13206,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -13249,14 +13249,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -13288,7 +13288,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -13339,14 +13339,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -13378,7 +13378,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -13421,14 +13421,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -13460,7 +13460,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -13520,14 +13520,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -13559,7 +13559,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -13614,14 +13614,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -13653,7 +13653,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -13692,14 +13692,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -13731,7 +13731,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -13787,14 +13787,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -13826,7 +13826,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -13861,14 +13861,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -13900,7 +13900,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -13975,14 +13975,14 @@ collection:
                     scripts:
                       preRequest: >
                         const loginEndpoint =
-                        insomnia.variables.get("render-admin-domain") +
+                        insomnia.variables.get("render_admin_domain") +
                         "/login";
 
                         const username =
-                        insomnia.variables.get("render-admin-username");
+                        insomnia.variables.get("render_admin_username");
 
                         const password =
-                        insomnia.variables.get("render-admin-password");
+                        insomnia.variables.get("render_admin_password");
 
 
                         const loginRequest = {
@@ -14014,7 +14014,7 @@ collection:
                               return;
                             }
 
-                            insomnia.environment.set("render-admin-token", token);
+                            insomnia.environment.set("render_admin_token", token);
                             console.log("Login successful, token saved");
                           } catch (e) {
                             console.log("Failed to parse login response:", e);
@@ -14084,13 +14084,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -14122,7 +14122,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -14185,13 +14185,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -14223,7 +14223,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -14250,13 +14250,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -14288,7 +14288,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -14330,13 +14330,13 @@ collection:
                 scripts:
                   preRequest: >
                     const loginEndpoint =
-                    insomnia.variables.get("render-admin-domain") + "/login";
+                    insomnia.variables.get("render_admin_domain") + "/login";
 
                     const username =
-                    insomnia.variables.get("render-admin-username");
+                    insomnia.variables.get("render_admin_username");
 
                     const password =
-                    insomnia.variables.get("render-admin-password");
+                    insomnia.variables.get("render_admin_password");
 
 
                     const loginRequest = {
@@ -14368,7 +14368,7 @@ collection:
                           return;
                         }
 
-                        insomnia.environment.set("render-admin-token", token);
+                        insomnia.environment.set("render_admin_token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -14572,7 +14572,7 @@ environments:
     modified: 1766078238951
     isPrivate: false
   data:
-    render-admin-domain: https://renderadmin-dev.vivid3d.tech
-    render-admin-token: ""
-    render-admin-username: admin
-    render-admin-password: RmxJ8UjtE3aY4czn
+    render_admin_domain: https://renderadmin-dev.vivid3d.tech
+    render_admin_token: ""
+    render_admin_username: admin
+    render_admin_password: RmxJ8UjtE3aY4czn
