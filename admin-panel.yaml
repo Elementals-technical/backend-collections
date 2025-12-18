@@ -23,7 +23,7 @@ collection:
           sortKey: -1764496102611
           description: ""
         children:
-          - url: "{{_['render_admin_domain']}}/static-auth-tokens"
+          - url: "{{render_admin_password}}/static-auth-tokens"
             name: create token
             meta:
               id: req_760cd4b7b8734fe0821cc70b74851c76
@@ -41,13 +41,13 @@ collection:
                 }
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: application/json
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -103,7 +103,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/static-auth-tokens"
+          - url: "{{render_admin_password}}/static-auth-tokens"
             name: list tokens
             meta:
               id: req_33a829fbe35b48a5ae3eeb47a5e21a45
@@ -115,11 +115,11 @@ collection:
             method: GET
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -175,7 +175,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/static-auth-tokens/1"
+          - url: "{{render_admin_password}}/static-auth-tokens/1"
             name: delete token
             meta:
               id: req_9727560fc4fd48289c6835a5825ec797
@@ -187,11 +187,11 @@ collection:
             method: DELETE
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -283,7 +283,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/refresh"
+          - url: "{{render_admin_password}}/refresh"
             name: jwt refresh
             meta:
               id: req_a9a1e7cf0ef04c1e982fd9fee6ba8d10
@@ -318,7 +318,7 @@ collection:
           sortKey: -1764496102604
           description: ""
         children:
-          - url: "{{_['render_admin_domain']}}/organizations"
+          - url: "{{render_admin_password}}/organizations"
             name: create organization
             meta:
               id: req_13d16746fd0c4ed1a1d3386c4e604e7a
@@ -336,13 +336,13 @@ collection:
                 }
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: application/json
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -398,7 +398,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/organizations"
+          - url: "{{render_admin_password}}/organizations"
             name: list organizations
             meta:
               id: req_002af0d3d2e14636bd2f1651584ae2d0
@@ -410,11 +410,11 @@ collection:
             method: GET
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -470,7 +470,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/organizations/all"
+          - url: "{{render_admin_password}}/organizations/all"
             name: list organizations list all
             meta:
               id: req_197df4531d9a4b17aee3c280509defb5
@@ -482,11 +482,11 @@ collection:
             method: GET
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -542,7 +542,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/organizations/1"
+          - url: "{{render_admin_password}}/organizations/1"
             name: retrieve organization
             meta:
               id: req_23cff34f251040b1b8168b69a893046e
@@ -554,11 +554,11 @@ collection:
             method: GET
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -614,7 +614,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/organizations/10"
+          - url: "{{render_admin_password}}/organizations/10"
             name: update organization
             meta:
               id: req_38e5b3f04d1846d5a4f1d9b91efe1393
@@ -632,13 +632,13 @@ collection:
                 }
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: application/json
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -694,7 +694,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/organizations/1"
+          - url: "{{render_admin_password}}/organizations/1"
             name: delete organization
             meta:
               id: req_1dbc2cae52924b7e8711447485c98e5d
@@ -706,11 +706,11 @@ collection:
             method: DELETE
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -774,7 +774,7 @@ collection:
           sortKey: -1764496102597
           description: ""
         children:
-          - url: "{{_['render_admin_domain']}}/organizations/13/users"
+          - url: "{{render_admin_password}}/organizations/13/users"
             name: add organization users
             meta:
               id: req_f4a50fe036064d4aa3f8ca63edf6fd09
@@ -794,13 +794,13 @@ collection:
                 }
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: application/json
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -856,7 +856,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/organizations/4/users"
+          - url: "{{render_admin_password}}/organizations/4/users"
             name: delete organization users
             meta:
               id: req_365f0d76a3054a4888a0951c99443630
@@ -876,13 +876,13 @@ collection:
                 }
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: application/json
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -946,7 +946,7 @@ collection:
           sortKey: -1764496102594
           description: ""
         children:
-          - url: "{{_['render_admin_domain']}}/projects"
+          - url: "{{render_admin_password}}/projects"
             name: create project
             meta:
               id: req_66e9aac9afb7417992d069fbef80e18b
@@ -973,13 +973,13 @@ collection:
                   type: text
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: multipart/form-data
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -1067,7 +1067,7 @@ collection:
                 disabled: true
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
@@ -1127,7 +1127,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/projects/144"
+          - url: "{{render_admin_password}}/projects/144"
             name: retrieve project
             meta:
               id: req_94efec7b5e03406793441209f0460013
@@ -1139,11 +1139,11 @@ collection:
             method: GET
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -1234,7 +1234,7 @@ collection:
                   disabled: false
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: multipart/form-data
             authentication:
@@ -1296,7 +1296,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/projects/1"
+          - url: "{{render_admin_password}}/projects/1"
             name: delete project
             meta:
               id: req_8179e9d301d1467686796168150b167e
@@ -1308,11 +1308,11 @@ collection:
             method: DELETE
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -1376,7 +1376,7 @@ collection:
           sortKey: -1764496102588
           description: ""
         children:
-          - url: "{{_['render_admin_domain']}}/products"
+          - url: "{{render_admin_password}}/products"
             name: create product
             meta:
               id: req_cdca2a252e0e4a858139cc5bbf93817f
@@ -1439,13 +1439,13 @@ collection:
                   type: text
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: multipart/form-data
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -1501,7 +1501,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/products"
+          - url: "{{render_admin_password}}/products"
             name: list products
             meta:
               id: req_a3b075dced984740b8e5563c29e619a1
@@ -1547,12 +1547,12 @@ collection:
                 disabled: false
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
                 disabled: true
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -1608,7 +1608,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/products/971"
+          - url: "{{render_admin_password}}/products/971"
             name: retrieve product
             meta:
               id: req_a414b145c8914db9bb43222c9728d88a
@@ -1620,11 +1620,11 @@ collection:
             method: GET
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -1680,7 +1680,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/products/generateCombinations"
+          - url: "{{render_admin_password}}/products/generateCombinations"
             name: generateCombinations
             meta:
               id: req_5bd56bf3b2a94806b00b1cec9f7dce39
@@ -1715,11 +1715,11 @@ collection:
                 disabled: true
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -1775,7 +1775,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/products/65"
+          - url: "{{render_admin_password}}/products/65"
             name: update product
             meta:
               id: req_5e1d3d71ce4944bc8b95a4c60a60a928
@@ -1838,13 +1838,13 @@ collection:
                   type: text
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: multipart/form-data
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -1900,7 +1900,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/products/2"
+          - url: "{{render_admin_password}}/products/2"
             name: delete product
             meta:
               id: req_f097f9cf84964faea6541f5aac45ed9d
@@ -1912,11 +1912,11 @@ collection:
             method: DELETE
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -1972,7 +1972,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/products/duplicate/1"
+          - url: "{{render_admin_password}}/products/duplicate/1"
             name: duplicate
             meta:
               id: req_71c40dd7ad7a4595a2f0de5e27375b09
@@ -2079,7 +2079,7 @@ collection:
                   type: file
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: multipart/form-data
             authentication:
@@ -2141,7 +2141,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/stages"
+          - url: "{{render_admin_password}}/stages"
             name: list stages
             meta:
               id: req_a62304dc1d0b451ab7fec37c2fef85a6
@@ -2166,11 +2166,11 @@ collection:
                 disabled: false
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -2226,7 +2226,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/stages/1"
+          - url: "{{render_admin_password}}/stages/1"
             name: retieve stage
             meta:
               id: req_e7df2680212e4888932f49f769cfa111
@@ -2238,11 +2238,11 @@ collection:
             method: GET
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -2298,7 +2298,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/stages/1"
+          - url: "{{render_admin_password}}/stages/1"
             name: update stage
             meta:
               id: req_c97c2f34db174e46ad4b01afc9df9cd5
@@ -2333,13 +2333,13 @@ collection:
                   type: text
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: multipart/form-data
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -2395,7 +2395,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/stages/updateResource/19"
+          - url: "{{render_admin_password}}/stages/updateResource/19"
             name: update stage resource
             meta:
               id: req_a95692917e6a4daf94f4a99a80d3fd4c
@@ -2413,13 +2413,13 @@ collection:
                 }
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: application/json
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -2475,7 +2475,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/stages/2"
+          - url: "{{render_admin_password}}/stages/2"
             name: delete stage
             meta:
               id: req_fb50607a641b4868b5784be5f07fd4f1
@@ -2487,11 +2487,11 @@ collection:
             method: DELETE
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -2547,7 +2547,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/stages/duplicate/1"
+          - url: "{{render_admin_password}}/stages/duplicate/1"
             name: duplicate
             meta:
               id: req_4bf7e40a7a49455db4046898fde7c8c5
@@ -2627,7 +2627,7 @@ collection:
                   sortKey: -1764496102578
                   description: ""
                 children:
-                  - url: "{{_['render_admin_domain']}}/stages/1/options"
+                  - url: "{{render_admin_password}}/stages/1/options"
                     name: add options
                     meta:
                       id: req_a1054db43db144d0929fc2e96e0f6fc0
@@ -2650,13 +2650,13 @@ collection:
                         }
                     headers:
                       - name: Authorization
-                        value: Bearer {{_['render_admin_token']}}
+                        value: Bearer {{render_admin_token}}
                       - name: Content-Type
                         value: application/json
                     authentication:
                       type: bearer
                       disabled: false
-                      token: "{{_['render_admin_token']}}"
+                      token: "{{render_admin_token}}"
                       prefix: ""
                     scripts:
                       preRequest: >
@@ -2714,7 +2714,7 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render_admin_domain']}}/stages/1/options"
+                  - url: "{{render_admin_password}}/stages/1/options"
                     name: delete options
                     meta:
                       id: req_a63c8b2bbf964313a0281f09550f6613
@@ -2734,13 +2734,13 @@ collection:
                         }
                     headers:
                       - name: Authorization
-                        value: Bearer {{_['render_admin_token']}}
+                        value: Bearer {{render_admin_token}}
                       - name: Content-Type
                         value: application/json
                     authentication:
                       type: bearer
                       disabled: false
-                      token: "{{_['render_admin_token']}}"
+                      token: "{{render_admin_token}}"
                       prefix: ""
                     scripts:
                       preRequest: >
@@ -2798,7 +2798,7 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render_admin_domain']}}/stages/26/options/31"
+                  - url: "{{render_admin_password}}/stages/26/options/31"
                     name: update options
                     meta:
                       id: req_f1ef796b647641fa921abb50be0fcc88
@@ -2882,7 +2882,7 @@ collection:
                   sortKey: -1764496102574
                   description: ""
                 children:
-                  - url: "{{_['render_admin_domain']}}/stages/2/options/3/variants/1"
+                  - url: "{{render_admin_password}}/stages/2/options/3/variants/1"
                     name: update stage option variant
                     meta:
                       id: req_a16c9ac11b69443f99608ee08f129dae
@@ -2973,7 +2973,7 @@ collection:
                   sortKey: -1764496102571
                   description: ""
                 children:
-                  - url: "{{_['render_admin_domain']}}/stages/1/geometryOptions"
+                  - url: "{{render_admin_password}}/stages/1/geometryOptions"
                     name: add geometryOptions
                     meta:
                       id: req_4a5eeff0d27d4d5ea018913968575138
@@ -2996,13 +2996,13 @@ collection:
                         }
                     headers:
                       - name: Authorization
-                        value: Bearer {{_['render_admin_token']}}
+                        value: Bearer {{render_admin_token}}
                       - name: Content-Type
                         value: application/json
                     authentication:
                       type: bearer
                       disabled: false
-                      token: "{{_['render_admin_token']}}"
+                      token: "{{render_admin_token}}"
                       prefix: ""
                     scripts:
                       preRequest: >
@@ -3060,7 +3060,7 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render_admin_domain']}}/stages/1/geometryOptions"
+                  - url: "{{render_admin_password}}/stages/1/geometryOptions"
                     name: delete geometryOptions
                     meta:
                       id: req_f0a2eedcb45b4630a578d82e5140df67
@@ -3080,13 +3080,13 @@ collection:
                         }
                     headers:
                       - name: Authorization
-                        value: Bearer {{_['render_admin_token']}}
+                        value: Bearer {{render_admin_token}}
                       - name: Content-Type
                         value: application/json
                     authentication:
                       type: bearer
                       disabled: false
-                      token: "{{_['render_admin_token']}}"
+                      token: "{{render_admin_token}}"
                       prefix: ""
                     scripts:
                       preRequest: >
@@ -3144,7 +3144,7 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render_admin_domain']}}/stages/2/geometryOptions/1"
+                  - url: "{{render_admin_password}}/stages/2/geometryOptions/1"
                     name: update geometryOptions
                     meta:
                       id: req_af965fa31dd74efeaef4fed0a250fca6
@@ -3231,7 +3231,7 @@ collection:
                   sortKey: -1764496102567
                   description: ""
                 children:
-                  - url: "{{_['render_admin_domain']}}/stages/2/geometryOptions/3/variants/1"
+                  - url: "{{render_admin_password}}/stages/2/geometryOptions/3/variants/1"
                     name: update stage geometryOption variant
                     meta:
                       id: req_d0ff906542fe4cf5ac8291418dd5aedb
@@ -3375,7 +3375,7 @@ collection:
                 }
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: application/json
             authentication:
@@ -3437,7 +3437,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/cameras/5"
+          - url: "{{render_admin_password}}/cameras/5"
             name: delete camera
             meta:
               id: req_b432c9a6a3324dcaa23b2f0f949cfe39
@@ -3449,11 +3449,11 @@ collection:
             method: DELETE
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -3509,7 +3509,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/cameras"
+          - url: "{{render_admin_password}}/cameras"
             name: list cameras
             meta:
               id: req_50f6c5e429b34595a6cc33e4064effec
@@ -3521,11 +3521,11 @@ collection:
             method: GET
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -3581,7 +3581,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/cameras/108"
+          - url: "{{render_admin_password}}/cameras/108"
             name: retrieve camera
             meta:
               id: req_102b2a25497947ceb7bf52f9f4e5bab2
@@ -3593,11 +3593,11 @@ collection:
             method: GET
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -3653,7 +3653,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/cameras/1"
+          - url: "{{render_admin_password}}/cameras/1"
             name: update camera
             meta:
               id: req_f85b9459ad3f4f7480d62e076cb3d663
@@ -3714,13 +3714,13 @@ collection:
                 }
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: application/json
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -3776,7 +3776,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/cameras/duplicate/7"
+          - url: "{{render_admin_password}}/cameras/duplicate/7"
             name: duplicate
             meta:
               id: req_92287ee8fd2f4fe0af6ffff57db20caa
@@ -3891,7 +3891,7 @@ collection:
                   type: text
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: multipart/form-data
             authentication:
@@ -3953,7 +3953,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/options"
+          - url: "{{render_admin_password}}/options"
             name: list options
             meta:
               id: req_7270e4e3de3a4adaae609dc79220bc2d
@@ -3984,11 +3984,11 @@ collection:
                 disabled: false
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -4044,7 +4044,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/options/30"
+          - url: "{{render_admin_password}}/options/30"
             name: retrieve option
             meta:
               id: req_b7d568bb1c3141a0b3ff0caae32a97ca
@@ -4056,11 +4056,11 @@ collection:
             method: GET
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -4116,7 +4116,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/options/1"
+          - url: "{{render_admin_password}}/options/1"
             name: update option
             meta:
               id: req_a529b71df6f64a1eac5af7ae56f1738a
@@ -4147,13 +4147,13 @@ collection:
                   type: text
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: multipart/form-data
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -4209,7 +4209,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/options/1"
+          - url: "{{render_admin_password}}/options/1"
             name: delete option
             meta:
               id: req_8d3b0f1b90e147c4b2859552883dd7e1
@@ -4221,11 +4221,11 @@ collection:
             method: DELETE
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -4281,7 +4281,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/options/duplicate/1"
+          - url: "{{render_admin_password}}/options/duplicate/1"
             name: duplicate
             meta:
               id: req_ce0a3cee021a4de888c52f250686e4d4
@@ -4384,7 +4384,7 @@ collection:
                   type: file
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: multipart/form-data
             authentication:
@@ -4446,7 +4446,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/variants"
+          - url: "{{render_admin_password}}/variants"
             name: list variants
             meta:
               id: req_d7e496fc076941388d6e7d145e3bee24
@@ -4462,11 +4462,11 @@ collection:
                 disabled: false
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -4522,7 +4522,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/variants/1"
+          - url: "{{render_admin_password}}/variants/1"
             name: retrieve variant
             meta:
               id: req_6f3e16104e294e9d863b7bbb014bd8e7
@@ -4534,11 +4534,11 @@ collection:
             method: GET
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -4594,7 +4594,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/variants/121"
+          - url: "{{render_admin_password}}/variants/121"
             name: delete variant
             meta:
               id: req_9177d2cdce654a2c90cff09d9f70d1de
@@ -4606,11 +4606,11 @@ collection:
             method: DELETE
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -4666,7 +4666,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/variants/4"
+          - url: "{{render_admin_password}}/variants/4"
             name: update variant
             meta:
               id: req_30e672d24f1f4661a34c888eb31c236b
@@ -4697,13 +4697,13 @@ collection:
                   type: text
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: multipart/form-data
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -4759,7 +4759,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/variants/duplicate/9"
+          - url: "{{render_admin_password}}/variants/duplicate/9"
             name: duplicate
             meta:
               id: req_ab28d8d3744d4ae4a83db89b19c6a5c2
@@ -4851,7 +4851,7 @@ collection:
                 }
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: application/json
             authentication:
@@ -4913,7 +4913,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/products/1/stages"
+          - url: "{{render_admin_password}}/products/1/stages"
             name: delete product stage
             meta:
               id: req_878c6d534df543708b33a7033c8dbeec
@@ -4933,13 +4933,13 @@ collection:
                 }
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: application/json
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -4995,7 +4995,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/products/1/stages/1"
+          - url: "{{render_admin_password}}/products/1/stages/1"
             name: update product stage
             meta:
               id: req_95440f623e104181bfd87df0f304fc41
@@ -5076,7 +5076,7 @@ collection:
           sortKey: -1764496102533
           description: ""
         children:
-          - url: "{{_['render_admin_domain']}}/products/1/options"
+          - url: "{{render_admin_password}}/products/1/options"
             name: add product options
             meta:
               id: req_af62c276ceea4dc7aef60a71f1b3dfcd
@@ -5099,13 +5099,13 @@ collection:
                 }
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: application/json
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -5161,7 +5161,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/products/1/options"
+          - url: "{{render_admin_password}}/products/1/options"
             name: delete product options
             meta:
               id: req_3eb9460894284f41bcbfb2938c7a8ffa
@@ -5181,13 +5181,13 @@ collection:
                 }
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: application/json
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -5243,7 +5243,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/products/1/options/1"
+          - url: "{{render_admin_password}}/products/1/options/1"
             name: update product option
             meta:
               id: req_1997d26ca00a441396607cb0175db65c
@@ -5326,7 +5326,7 @@ collection:
           sortKey: -1764496102529
           description: ""
         children:
-          - url: "{{_['render_admin_domain']}}/products/1/geometryOptions"
+          - url: "{{render_admin_password}}/products/1/geometryOptions"
             name: add product geometry options
             meta:
               id: req_b92f061730944d188661d81c75adb7dd
@@ -5349,13 +5349,13 @@ collection:
                 }
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: application/json
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -5411,7 +5411,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/products/1/geometryOptions"
+          - url: "{{render_admin_password}}/products/1/geometryOptions"
             name: delete product geometry options
             meta:
               id: req_be37a9eecf4b4c2b8f93cb444a11a640
@@ -5431,13 +5431,13 @@ collection:
                 }
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: application/json
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -5493,7 +5493,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/products/2/geometryOptions/3"
+          - url: "{{render_admin_password}}/products/2/geometryOptions/3"
             name: update product geometry option
             meta:
               id: req_b56ec3c002ca424295c7edb9492f139b
@@ -5576,7 +5576,7 @@ collection:
           sortKey: -1764496102525
           description: ""
         children:
-          - url: "{{_['render_admin_domain']}}/products/2/options/3/variants/1"
+          - url: "{{render_admin_password}}/products/2/options/3/variants/1"
             name: update product option variant
             meta:
               id: req_9c6cacec5fb64df582d9f2b181c36345
@@ -5657,7 +5657,7 @@ collection:
           sortKey: -1764496102523
           description: ""
         children:
-          - url: "{{_['render_admin_domain']}}/products/1/geometryOptions/3/geometryVariant\
+          - url: "{{render_admin_password}}/products/1/geometryOptions/3/geometryVariant\
               s/5"
             name: update product geometryOption variant
             meta:
@@ -5739,7 +5739,7 @@ collection:
           sortKey: -1764496102521
           description: ""
         children:
-          - url: "{{_['render_admin_domain']}}/products/1/stages/1/cameras/1"
+          - url: "{{render_admin_password}}/products/1/stages/1/cameras/1"
             name: update product stage camera
             meta:
               id: req_02fe5ef7aaf54bc5b622c045e55ded8a
@@ -5820,7 +5820,7 @@ collection:
           sortKey: -1764496102519
           description: ""
         children:
-          - url: "{{_['render_admin_domain']}}/products/1/stages/1/options/1"
+          - url: "{{render_admin_password}}/products/1/stages/1/options/1"
             name: update product stage option
             meta:
               id: req_272c9cc0cc8c4d71ac6cb6c51ddfbeec
@@ -5901,7 +5901,7 @@ collection:
           sortKey: -1764496102517
           description: ""
         children:
-          - url: "{{_['render_admin_domain']}}/products/1/stages/1/options/1/variants/1"
+          - url: "{{render_admin_password}}/products/1/stages/1/options/1/variants/1"
             name: update product stage option variants
             meta:
               id: req_be5416535db74730ba8000e0f918afdb
@@ -5982,7 +5982,7 @@ collection:
           sortKey: -1764496102515
           description: ""
         children:
-          - url: "{{_['render_admin_domain']}}/products/1/stages/1/geometryOptions/1"
+          - url: "{{render_admin_password}}/products/1/stages/1/geometryOptions/1"
             name: update product stage geometryOption
             meta:
               id: req_0c0a5975cf44484f9784f17afbe46b25
@@ -6063,7 +6063,7 @@ collection:
           sortKey: -1764496102513
           description: ""
         children:
-          - url: "{{_['render_admin_domain']}}/products/1/stages/1/geometryOptions/1/geomet\
+          - url: "{{render_admin_password}}/products/1/stages/1/geometryOptions/1/geomet\
               ryVariants/1"
             name: update product stage geometryOption geometryVariant
             meta:
@@ -6145,7 +6145,7 @@ collection:
           sortKey: -1764496102511
           description: ""
         children:
-          - url: "{{_['render_admin_domain']}}/categories"
+          - url: "{{render_admin_password}}/categories"
             name: create category
             meta:
               id: req_f8a35bc5de0e415db27d1c5a3155ed24
@@ -6227,7 +6227,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/categories"
+          - url: "{{render_admin_password}}/categories"
             name: list categories
             meta:
               id: req_f4bb8e17d1f6430683302274d1d616fe
@@ -6298,7 +6298,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/categories/1"
+          - url: "{{render_admin_password}}/categories/1"
             name: retrieve category
             meta:
               id: req_6486221e735b44e890f4d869fd816ad4
@@ -6362,7 +6362,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/categories/3"
+          - url: "{{render_admin_password}}/categories/3"
             name: update category
             meta:
               id: req_bb015616fd9f4eb790be4ad503e133a7
@@ -6440,7 +6440,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/categories/1"
+          - url: "{{render_admin_password}}/categories/1"
             name: delete category
             meta:
               id: req_d0caf1bea9ae4e6d865bb2ecef0c8275
@@ -6512,7 +6512,7 @@ collection:
           sortKey: -1764496102505
           description: ""
         children:
-          - url: "{{_['render_admin_domain']}}/products/1/categories"
+          - url: "{{render_admin_password}}/products/1/categories"
             name: add product categories
             meta:
               id: req_ac08b89540c64d668300edfdcee9eb6a
@@ -6532,13 +6532,13 @@ collection:
                 }
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: application/json
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -6594,7 +6594,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/products/1/categories"
+          - url: "{{render_admin_password}}/products/1/categories"
             name: delete product categories
             meta:
               id: req_7c1d668c58944e65a15bb773a26d9999
@@ -6614,13 +6614,13 @@ collection:
                 }
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: application/json
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -6684,7 +6684,7 @@ collection:
           sortKey: -1764496102502
           description: ""
         children:
-          - url: "{{_['render_admin_domain']}}/mountPoints"
+          - url: "{{render_admin_password}}/mountPoints"
             name: list mountpoints
             meta:
               id: req_e8ee6dc631b44abd98424bd0ba429d53
@@ -6700,11 +6700,11 @@ collection:
                 disabled: false
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -6768,7 +6768,7 @@ collection:
           sortKey: -1764496102500
           description: ""
         children:
-          - url: "{{_['render_admin_domain']}}/geometryOptions"
+          - url: "{{render_admin_password}}/geometryOptions"
             name: create geometry option
             meta:
               id: req_6a2ba93908134ba8a1a6c04e54399895
@@ -6788,13 +6788,13 @@ collection:
                 }
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: application/json
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -6850,7 +6850,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/geometryOptions"
+          - url: "{{render_admin_password}}/geometryOptions"
             name: list geometry options
             meta:
               id: req_f91d4928690f4fc9ba50139eba7618e9
@@ -6875,11 +6875,11 @@ collection:
                 disabled: true
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -6935,7 +6935,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/geometryOptions/25"
+          - url: "{{render_admin_password}}/geometryOptions/25"
             name: retrieve geometry option
             meta:
               id: req_06a54b69e6ad43dca6bb1600334c122b
@@ -6947,11 +6947,11 @@ collection:
             method: GET
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -7007,7 +7007,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/geometryOptions/1"
+          - url: "{{render_admin_password}}/geometryOptions/1"
             name: update geometry option
             meta:
               id: req_1a40fca620d74c719ad0526f95e77ace
@@ -7027,13 +7027,13 @@ collection:
                 }
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: application/json
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -7089,7 +7089,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/geometryOptions/2"
+          - url: "{{render_admin_password}}/geometryOptions/2"
             name: delete geometry option
             meta:
               id: req_da6af8ee7ca040ec96fd7dec9e5385d4
@@ -7101,11 +7101,11 @@ collection:
             method: DELETE
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -7161,7 +7161,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/geometryOptions/duplicate/1"
+          - url: "{{render_admin_password}}/geometryOptions/duplicate/1"
             name: duplicate
             meta:
               id: req_3effc7724e0c4a3abc18f9e85af2ce01
@@ -7233,7 +7233,7 @@ collection:
           sortKey: -1764496102493
           description: ""
         children:
-          - url: "{{_['render_admin_domain']}}/rangeOptions"
+          - url: "{{render_admin_password}}/rangeOptions"
             name: create range option
             meta:
               id: req_2d33edf61aa2495aa9b36e94c45188a0
@@ -7256,13 +7256,13 @@ collection:
                 }
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: application/json
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -7318,7 +7318,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/rangeOptions"
+          - url: "{{render_admin_password}}/rangeOptions"
             name: list range options
             meta:
               id: req_afc466c882a3485b97b2a40190ddc732
@@ -7343,11 +7343,11 @@ collection:
                 disabled: true
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -7403,7 +7403,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/rangeOptions/25"
+          - url: "{{render_admin_password}}/rangeOptions/25"
             name: retrieve range option
             meta:
               id: req_0e927e1167e94b6ebbc5f9a5031e302e
@@ -7415,11 +7415,11 @@ collection:
             method: GET
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -7475,7 +7475,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/rangeOptions/1"
+          - url: "{{render_admin_password}}/rangeOptions/1"
             name: update range option
             meta:
               id: req_391f78eeafc54888baf0df4bb52f076d
@@ -7497,13 +7497,13 @@ collection:
                 }
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: application/json
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -7559,7 +7559,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/rangeOptions/2"
+          - url: "{{render_admin_password}}/rangeOptions/2"
             name: delete range option
             meta:
               id: req_4de6b1710ddb4208bb4a50dea7ac2309
@@ -7571,11 +7571,11 @@ collection:
             method: DELETE
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -7631,7 +7631,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/rangeOptions/duplicate/1"
+          - url: "{{render_admin_password}}/rangeOptions/duplicate/1"
             name: duplicate
             meta:
               id: req_901fa9b303864b57aa916f1eb64b6e25
@@ -7703,7 +7703,7 @@ collection:
           sortKey: -1764496102486
           description: ""
         children:
-          - url: "{{_['render_admin_domain']}}/timeRangeOptions"
+          - url: "{{render_admin_password}}/timeRangeOptions"
             name: create time range option
             meta:
               id: req_9a3f174d4e55441a80c6daad1b50d9ff
@@ -7726,13 +7726,13 @@ collection:
                 }
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: application/json
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -7788,7 +7788,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/timeRangeOptions"
+          - url: "{{render_admin_password}}/timeRangeOptions"
             name: list time range options
             meta:
               id: req_ea51cab8e1d24c409909fee6e5e7f4f2
@@ -7813,11 +7813,11 @@ collection:
                 disabled: true
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -7873,7 +7873,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/timeRangeOptions/25"
+          - url: "{{render_admin_password}}/timeRangeOptions/25"
             name: retrieve time range option
             meta:
               id: req_469b54817e334467af2fca575265d313
@@ -7885,11 +7885,11 @@ collection:
             method: GET
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -7945,7 +7945,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/timeRangeOptions/1"
+          - url: "{{render_admin_password}}/timeRangeOptions/1"
             name: update time range option
             meta:
               id: req_cd7fecba9037484f88b3acfe0ffd5c22
@@ -7967,13 +7967,13 @@ collection:
                 }
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: application/json
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -8029,7 +8029,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/timeRangeOptions/2"
+          - url: "{{render_admin_password}}/timeRangeOptions/2"
             name: delete time range option
             meta:
               id: req_8ac6431447c245bfbc189db2f5e11002
@@ -8041,11 +8041,11 @@ collection:
             method: DELETE
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -8101,7 +8101,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/timeRangeOptions/duplicate/1"
+          - url: "{{render_admin_password}}/timeRangeOptions/duplicate/1"
             name: duplicate
             meta:
               id: req_c5856ba5b55b42feb7911aab81acb505
@@ -8173,7 +8173,7 @@ collection:
           sortKey: -1764496102479
           description: ""
         children:
-          - url: "{{_['render_admin_domain']}}/geometryVariants"
+          - url: "{{render_admin_password}}/geometryVariants"
             name: create geometry variant
             meta:
               id: req_3cc344392d294358949b642d9642115a
@@ -8208,13 +8208,13 @@ collection:
                   type: file
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: multipart/form-data
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -8270,7 +8270,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/geometryVariants"
+          - url: "{{render_admin_password}}/geometryVariants"
             name: list geometry variants
             meta:
               id: req_c75cb6b756674168ae2d8c6ca8f12ab2
@@ -8286,11 +8286,11 @@ collection:
                 disabled: false
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -8346,7 +8346,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/geometryVariants/1"
+          - url: "{{render_admin_password}}/geometryVariants/1"
             name: retrieve geometry variant
             meta:
               id: req_75034fb603d24934a6a52ff3b0fe358f
@@ -8358,11 +8358,11 @@ collection:
             method: GET
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -8418,7 +8418,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/geometryVariants/2"
+          - url: "{{render_admin_password}}/geometryVariants/2"
             name: update geometry variant
             meta:
               id: req_6925f442511a43eb8c4ea3e69aa298ea
@@ -8453,13 +8453,13 @@ collection:
                   type: file
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: multipart/form-data
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -8515,7 +8515,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/geometryVariants/5"
+          - url: "{{render_admin_password}}/geometryVariants/5"
             name: delete geometry variant
             meta:
               id: req_f6eb49cd73064badacc0462151962cfd
@@ -8527,11 +8527,11 @@ collection:
             method: DELETE
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -8587,7 +8587,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/geometryVariants/duplicate/5"
+          - url: "{{render_admin_password}}/geometryVariants/duplicate/5"
             name: duplicate
             meta:
               id: req_39c5529f9ce04123a45ebc4c2c4badc0
@@ -8667,7 +8667,7 @@ collection:
               sortKey: -1764496102471
               description: ""
             children:
-              - url: "{{_['render_admin_domain']}}/massrender/2d/jobs"
+              - url: "{{render_admin_password}}/massrender/2d/jobs"
                 name: create massrender job
                 meta:
                   id: req_040e971823054415b13c3c91f747b093
@@ -8787,13 +8787,13 @@ collection:
                     disabled: false
                 headers:
                   - name: Authorization
-                    value: Bearer {{_['render_admin_token']}}
+                    value: Bearer {{render_admin_token}}
                   - name: Content-Type
                     value: application/json
                 authentication:
                   type: bearer
                   disabled: false
-                  token: "{{_['render_admin_token']}}"
+                  token: "{{render_admin_token}}"
                   prefix: ""
                 scripts:
                   preRequest: >
@@ -8850,7 +8850,7 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: "{{_['render_admin_domain']}}/massrender/2d/jobs/10/start"
+              - url: "{{render_admin_password}}/massrender/2d/jobs/10/start"
                 name: start massrender job
                 meta:
                   id: req_0955c742b5cb4da084cc28b7bdabfe00
@@ -8915,7 +8915,7 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: "{{_['render_admin_domain']}}/massrender/2d/jobs"
+              - url: "{{render_admin_password}}/massrender/2d/jobs"
                 name: list jobs
                 meta:
                   id: req_4662b27ddc054f969d2da32d65a3d7aa
@@ -8934,11 +8934,11 @@ collection:
                     disabled: false
                 headers:
                   - name: Authorization
-                    value: Bearer {{_['render_admin_token']}}
+                    value: Bearer {{render_admin_token}}
                 authentication:
                   type: bearer
                   disabled: false
-                  token: "{{_['render_admin_token']}}"
+                  token: "{{render_admin_token}}"
                   prefix: ""
                 scripts:
                   preRequest: >
@@ -8995,7 +8995,7 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: "{{_['render_admin_domain']}}/massrender/2d/jobs/234"
+              - url: "{{render_admin_password}}/massrender/2d/jobs/234"
                 name: delete massrender job
                 meta:
                   id: req_01f4372bae9540979f20711cb27ffbb9
@@ -9068,7 +9068,7 @@ collection:
               sortKey: -1764496102466
               description: ""
             children:
-              - url: "{{_['render_admin_domain']}}/massrender/studio/jobs"
+              - url: "{{render_admin_password}}/massrender/studio/jobs"
                 name: create massrender job
                 meta:
                   id: req_dcb0bdd92c0c48519ae5289f358ccc2a
@@ -9190,13 +9190,13 @@ collection:
                     disabled: false
                 headers:
                   - name: Authorization
-                    value: Bearer {{_['render_admin_token']}}
+                    value: Bearer {{render_admin_token}}
                   - name: Content-Type
                     value: application/json
                 authentication:
                   type: bearer
                   disabled: false
-                  token: "{{_['render_admin_token']}}"
+                  token: "{{render_admin_token}}"
                   prefix: ""
                 scripts:
                   preRequest: >
@@ -9253,7 +9253,7 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: "{{_['render_admin_domain']}}/massrender/studio/jobs/114/start"
+              - url: "{{render_admin_password}}/massrender/studio/jobs/114/start"
                 name: start massrender job
                 meta:
                   id: req_aaf215c16ed14f779b5d1db36c3aeba1
@@ -9318,7 +9318,7 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: "{{_['render_admin_domain']}}/massrender/studio/jobs"
+              - url: "{{render_admin_password}}/massrender/studio/jobs"
                 name: list jobs
                 meta:
                   id: req_14a178782dbb4ecf924b1a25168064d6
@@ -9337,11 +9337,11 @@ collection:
                     disabled: true
                 headers:
                   - name: Authorization
-                    value: Bearer {{_['render_admin_token']}}
+                    value: Bearer {{render_admin_token}}
                 authentication:
                   type: bearer
                   disabled: false
-                  token: "{{_['render_admin_token']}}"
+                  token: "{{render_admin_token}}"
                   prefix: ""
                 scripts:
                   preRequest: >
@@ -9398,7 +9398,7 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: "{{_['render_admin_domain']}}/massrender/studio/jobs/234"
+              - url: "{{render_admin_password}}/massrender/studio/jobs/234"
                 name: delete massrender job Copy
                 meta:
                   id: req_301747a8c6b347138589fbbd3b07e654
@@ -9471,7 +9471,7 @@ collection:
               sortKey: -1764496102461
               description: ""
             children:
-              - url: "{{_['render_admin_domain']}}/massrender/common/jobs"
+              - url: "{{render_admin_password}}/massrender/common/jobs"
                 name: list jobs
                 meta:
                   id: req_fa86c54eee6246e390792d4dfb5f964d
@@ -9496,11 +9496,11 @@ collection:
                     disabled: true
                 headers:
                   - name: Authorization
-                    value: Bearer {{_['render_admin_token']}}
+                    value: Bearer {{render_admin_token}}
                 authentication:
                   type: bearer
                   disabled: false
-                  token: "{{_['render_admin_token']}}"
+                  token: "{{render_admin_token}}"
                   prefix: ""
                 scripts:
                   preRequest: >
@@ -9565,7 +9565,7 @@ collection:
           sortKey: -1764496102449
           description: ""
         children:
-          - url: "{{_['render_admin_domain']}}/products/1/options/combining"
+          - url: "{{render_admin_password}}/products/1/options/combining"
             name: update combining
             meta:
               id: req_68979b891a954851b0cd911ee8eae0ca
@@ -9690,7 +9690,7 @@ collection:
               sortKey: -1764496102446
               description: ""
             children:
-              - url: "{{_['render_admin_domain']}}/projectSettings/2/2d"
+              - url: "{{render_admin_password}}/projectSettings/2/2d"
                 name: list project settings
                 meta:
                   id: req_0553c15fa9864b39af21847c7c35f7de
@@ -9755,7 +9755,7 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: "{{_['render_admin_domain']}}/projectSettings/2/2d"
+              - url: "{{render_admin_password}}/projectSettings/2/2d"
                 name: update project settings
                 meta:
                   id: req_860a5dd206104fb1864561b3cf57245f
@@ -9786,13 +9786,13 @@ collection:
                       type: text
                 headers:
                   - name: Authorization
-                    value: Bearer {{_['render_admin_token']}}
+                    value: Bearer {{render_admin_token}}
                   - name: Content-Type
                     value: multipart/form-data
                 authentication:
                   type: bearer
                   disabled: false
-                  token: "{{_['render_admin_token']}}"
+                  token: "{{render_admin_token}}"
                   prefix: ""
                 scripts:
                   preRequest: >
@@ -9857,7 +9857,7 @@ collection:
               sortKey: -1764496102443
               description: ""
             children:
-              - url: "{{_['render_admin_domain']}}/projectSettings/3/3d"
+              - url: "{{render_admin_password}}/projectSettings/3/3d"
                 name: list project settings
                 meta:
                   id: req_1883c83d56904d23a9225becf72b70c0
@@ -9922,7 +9922,7 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: "{{_['render_admin_domain']}}/projectSettings/3/3d"
+              - url: "{{render_admin_password}}/projectSettings/3/3d"
                 name: update project settings
                 meta:
                   id: req_68e8c41c0c65402ca934f0264a349ab5
@@ -9934,11 +9934,11 @@ collection:
                 method: PUT
                 headers:
                   - name: Authorization
-                    value: Bearer {{_['render_admin_token']}}
+                    value: Bearer {{render_admin_token}}
                 authentication:
                   type: bearer
                   disabled: false
-                  token: "{{_['render_admin_token']}}"
+                  token: "{{render_admin_token}}"
                   prefix: ""
                 scripts:
                   preRequest: >
@@ -10003,7 +10003,7 @@ collection:
               sortKey: -1764496102440
               description: ""
             children:
-              - url: "{{_['render_admin_domain']}}/projectSettings/2/stream"
+              - url: "{{render_admin_password}}/projectSettings/2/stream"
                 name: list project settings
                 meta:
                   id: req_8e15324da33e4409bbc6b6d6605cd3d1
@@ -10068,7 +10068,7 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: "{{_['render_admin_domain']}}/projectSettings/2/stream"
+              - url: "{{render_admin_password}}/projectSettings/2/stream"
                 name: update project settings
                 meta:
                   id: req_cdfac40a661a4979a898029e857c7179
@@ -10087,13 +10087,13 @@ collection:
                       type: text
                 headers:
                   - name: Authorization
-                    value: Bearer {{_['render_admin_token']}}
+                    value: Bearer {{render_admin_token}}
                   - name: Content-Type
                     value: multipart/form-data
                 authentication:
                   type: bearer
                   disabled: false
-                  token: "{{_['render_admin_token']}}"
+                  token: "{{render_admin_token}}"
                   prefix: ""
                 scripts:
                   preRequest: >
@@ -10158,7 +10158,7 @@ collection:
           sortKey: -1764496102437
           description: ""
         children:
-          - url: "{{_['render_admin_domain']}}/studio/5"
+          - url: "{{render_admin_password}}/studio/5"
             name: retrieve studio
             meta:
               id: req_4e4c05be4dfe487797eca4cb466f830b
@@ -10170,11 +10170,11 @@ collection:
             method: GET
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -10269,7 +10269,7 @@ collection:
                       type: file
                 headers:
                   - name: Authorization
-                    value: Bearer {{_['render_admin_token']}}
+                    value: Bearer {{render_admin_token}}
                   - name: Content-Type
                     value: multipart/form-data
                 authentication:
@@ -10332,7 +10332,7 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: "{{_['render_admin_domain']}}/studioCategories"
+              - url: "{{render_admin_password}}/studioCategories"
                 name: list studioCategories
                 meta:
                   id: req_d949a81f31784a4080d5b2668087a083
@@ -10351,11 +10351,11 @@ collection:
                     disabled: false
                 headers:
                   - name: Authorization
-                    value: Bearer {{_['render_admin_token']}}
+                    value: Bearer {{render_admin_token}}
                 authentication:
                   type: bearer
                   disabled: false
-                  token: "{{_['render_admin_token']}}"
+                  token: "{{render_admin_token}}"
                   prefix: ""
                 scripts:
                   preRequest: >
@@ -10412,7 +10412,7 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: "{{_['render_admin_domain']}}/studioCategories/3"
+              - url: "{{render_admin_password}}/studioCategories/3"
                 name: retieve studioCategory
                 meta:
                   id: req_47998c188ff247018d6ce4680a7610df
@@ -10424,11 +10424,11 @@ collection:
                 method: GET
                 headers:
                   - name: Authorization
-                    value: Bearer {{_['render_admin_token']}}
+                    value: Bearer {{render_admin_token}}
                 authentication:
                   type: bearer
                   disabled: false
-                  token: "{{_['render_admin_token']}}"
+                  token: "{{render_admin_token}}"
                   prefix: ""
                 scripts:
                   preRequest: >
@@ -10485,7 +10485,7 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: "{{_['render_admin_domain']}}/studioCategories/4"
+              - url: "{{render_admin_password}}/studioCategories/4"
                 name: update studioCategory
                 meta:
                   id: req_25ed43710c2b456ab88ea46fbcb8e06d
@@ -10508,13 +10508,13 @@ collection:
                       type: file
                 headers:
                   - name: Authorization
-                    value: Bearer {{_['render_admin_token']}}
+                    value: Bearer {{render_admin_token}}
                   - name: Content-Type
                     value: multipart/form-data
                 authentication:
                   type: bearer
                   disabled: false
-                  token: "{{_['render_admin_token']}}"
+                  token: "{{render_admin_token}}"
                   prefix: ""
                 scripts:
                   preRequest: >
@@ -10571,7 +10571,7 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: "{{_['render_admin_domain']}}/studioCategories/2"
+              - url: "{{render_admin_password}}/studioCategories/2"
                 name: delete studioCategory
                 meta:
                   id: req_66a28722c5324f9a9937922c0ffe0979
@@ -10583,11 +10583,11 @@ collection:
                 method: DELETE
                 headers:
                   - name: Authorization
-                    value: Bearer {{_['render_admin_token']}}
+                    value: Bearer {{render_admin_token}}
                 authentication:
                   type: bearer
                   disabled: false
-                  token: "{{_['render_admin_token']}}"
+                  token: "{{render_admin_token}}"
                   prefix: ""
                 scripts:
                   preRequest: >
@@ -10729,7 +10729,7 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render_admin_domain']}}/studioCategories/1/projects"
+                  - url: "{{render_admin_password}}/studioCategories/1/projects"
                     name: delete projects from studioCategory
                     meta:
                       id: req_7443db3ddd29439dae37b7d36c3e1406
@@ -10814,7 +10814,7 @@ collection:
               sortKey: -1764496102427
               description: ""
             children:
-              - url: "{{_['render_admin_domain']}}/organizations/1/stages"
+              - url: "{{render_admin_password}}/organizations/1/stages"
                 name: add stages to studio
                 meta:
                   id: req_eb5111dfdcdc45ef8f621b21b4363761
@@ -10834,13 +10834,13 @@ collection:
                     }
                 headers:
                   - name: Authorization
-                    value: Bearer {{_['render_admin_token']}}
+                    value: Bearer {{render_admin_token}}
                   - name: Content-Type
                     value: application/json
                 authentication:
                   type: bearer
                   disabled: false
-                  token: "{{_['render_admin_token']}}"
+                  token: "{{render_admin_token}}"
                   prefix: ""
                 scripts:
                   preRequest: >
@@ -10897,7 +10897,7 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: "{{_['render_admin_domain']}}/organizations/2/stages"
+              - url: "{{render_admin_password}}/organizations/2/stages"
                 name: delete stages from studio
                 meta:
                   id: req_96f8624df52e4b44beb0fff6c282abcd
@@ -10917,13 +10917,13 @@ collection:
                     }
                 headers:
                   - name: Authorization
-                    value: Bearer {{_['render_admin_token']}}
+                    value: Bearer {{render_admin_token}}
                   - name: Content-Type
                     value: application/json
                 authentication:
                   type: bearer
                   disabled: false
-                  token: "{{_['render_admin_token']}}"
+                  token: "{{render_admin_token}}"
                   prefix: ""
                 scripts:
                   preRequest: >
@@ -10980,7 +10980,7 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: "{{_['render_admin_domain']}}/organizations/2/stages/26"
+              - url: "{{render_admin_password}}/organizations/2/stages/26"
                 name: update studio stage
                 meta:
                   id: req_f09f77e1f31f4113b1625c07091cda18
@@ -11054,7 +11054,7 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: "{{_['render_admin_domain']}}/organizations/2/stages"
+              - url: "{{render_admin_password}}/organizations/2/stages"
                 name: list studio stages
                 meta:
                   id: req_247d1b024ee047a1896ac40dab718555
@@ -11135,7 +11135,7 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: "{{_['render_admin_domain']}}/organizations/2/stages/26"
+              - url: "{{render_admin_password}}/organizations/2/stages/26"
                 name: retrieve studio stage
                 meta:
                   id: req_28cc1c91ad664920bc3a608e9d0f0011
@@ -11217,7 +11217,7 @@ collection:
               sortKey: -1764496102421
               description: ""
             children:
-              - url: "{{_['render_admin_domain']}}/organizations/2/stages/26/options/31"
+              - url: "{{render_admin_password}}/organizations/2/stages/26/options/31"
                 name: update studio stage option
                 meta:
                   id: req_1c5bb0e1b20045bfa9f244dcb6f1123e
@@ -11299,7 +11299,7 @@ collection:
               sortKey: -1764496102419
               description: ""
             children:
-              - url: "{{_['render_admin_domain']}}/organizations/1/stages/1/options/3/variants/\
+              - url: "{{render_admin_password}}/organizations/1/stages/1/options/3/variants/\
                   1"
                 name: update studio stage option - variant
                 meta:
@@ -11382,7 +11382,7 @@ collection:
               sortKey: -1764496102417
               description: ""
             children:
-              - url: "{{_['render_admin_domain']}}/organizations/1/stages/1/geometryOptions/4"
+              - url: "{{render_admin_password}}/organizations/1/stages/1/geometryOptions/4"
                 name: update studio stage geometry option
                 meta:
                   id: req_55f08de318c34444a913ad9fdd8c01c0
@@ -11464,7 +11464,7 @@ collection:
               sortKey: -1764496102415
               description: ""
             children:
-              - url: "{{_['render_admin_domain']}}/organizations/1/stages/1/geometryOptions/4/g\
+              - url: "{{render_admin_password}}/organizations/1/stages/1/geometryOptions/4/g\
                   eometryVariants/1"
                 name: update studio stage geometry option geometry variant
                 meta:
@@ -11547,7 +11547,7 @@ collection:
           sortKey: -1764496102412
           description: ""
         children:
-          - url: "{{_['render_admin_domain']}}/scripts/assignOrganizationId"
+          - url: "{{render_admin_password}}/scripts/assignOrganizationId"
             name: assign organizationId
             meta:
               id: req_280855630ed54bb4b437da79c3e8037d
@@ -11559,11 +11559,11 @@ collection:
             method: POST
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -11627,7 +11627,7 @@ collection:
           sortKey: -1764496102410
           description: ""
         children:
-          - url: "{{_['render_admin_domain']}}/datatables"
+          - url: "{{render_admin_password}}/datatables"
             name: create data table
             meta:
               id: req_9317b4ea0fd04e20948ca7fceb657e0c
@@ -11650,13 +11650,13 @@ collection:
                   type: text
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: multipart/form-data
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -11712,7 +11712,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/datatables/22/overwrite"
+          - url: "{{render_admin_password}}/datatables/22/overwrite"
             name: overwrite data table
             meta:
               id: req_d38b89a74b6f4fc7ab542a5d155fe671
@@ -11732,13 +11732,13 @@ collection:
                   type: file
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
               - name: Content-Type
                 value: multipart/form-data
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -11794,7 +11794,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/datatables"
+          - url: "{{render_admin_password}}/datatables"
             name: list datatables
             meta:
               id: req_ed4e0fc26c1348c4ae6562b2a10dbf6b
@@ -11819,11 +11819,11 @@ collection:
                 disabled: true
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -11879,7 +11879,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/datatables/8"
+          - url: "{{render_admin_password}}/datatables/8"
             name: retrieve datatable
             meta:
               id: req_7b7aace3c21849f398288bc6792e5e36
@@ -11910,11 +11910,11 @@ collection:
                 disabled: true
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -11970,7 +11970,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render_admin_domain']}}/datatables/10"
+          - url: "{{render_admin_password}}/datatables/10"
             name: delete datatable
             meta:
               id: req_c0cee3b38cfb4a0199c96de28000f54a
@@ -11982,11 +11982,11 @@ collection:
             method: DELETE
             headers:
               - name: Authorization
-                value: Bearer {{_['render_admin_token']}}
+                value: Bearer {{render_admin_token}}
             authentication:
               type: bearer
               disabled: false
-              token: "{{_['render_admin_token']}}"
+              token: "{{render_admin_token}}"
               prefix: ""
             scripts:
               preRequest: >
@@ -12066,7 +12066,7 @@ collection:
                   sortKey: -1764496102402
                   description: ""
                 children:
-                  - url: "{{_['render_admin_domain']}}/projectBundles/7/organizations"
+                  - url: "{{render_admin_password}}/projectBundles/7/organizations"
                     name: connect bundles to organization
                     meta:
                       id: req_f043b6a512334e1aadda6e599c38e874
@@ -12084,13 +12084,13 @@ collection:
                         }
                     headers:
                       - name: Authorization
-                        value: Bearer {{_['render_admin_token']}}
+                        value: Bearer {{render_admin_token}}
                       - name: Content-Type
                         value: application/json
                     authentication:
                       type: bearer
                       disabled: false
-                      token: "{{_['render_admin_token']}}"
+                      token: "{{render_admin_token}}"
                       prefix: ""
                     scripts:
                       preRequest: >
@@ -12148,7 +12148,7 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render_admin_domain']}}/projectBundles/7/organizations/1"
+                  - url: "{{render_admin_password}}/projectBundles/7/organizations/1"
                     name: update association
                     meta:
                       id: req_2d81a533bf5e44b7aed794a8446be043
@@ -12167,13 +12167,13 @@ collection:
                         }
                     headers:
                       - name: Authorization
-                        value: Bearer {{_['render_admin_token']}}
+                        value: Bearer {{render_admin_token}}
                       - name: Content-Type
                         value: application/json
                     authentication:
                       type: bearer
                       disabled: false
-                      token: "{{_['render_admin_token']}}"
+                      token: "{{render_admin_token}}"
                       prefix: ""
                     scripts:
                       preRequest: >
@@ -12231,7 +12231,7 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render_admin_domain']}}/projectBundles/7/organizations"
+                  - url: "{{render_admin_password}}/projectBundles/7/organizations"
                     name: disconnect organizations from bundle
                     meta:
                       id: req_eb7df2d31e4243cdb3a5bd6742e75ea3
@@ -12249,13 +12249,13 @@ collection:
                         }
                     headers:
                       - name: Authorization
-                        value: Bearer {{_['render_admin_token']}}
+                        value: Bearer {{render_admin_token}}
                       - name: Content-Type
                         value: application/json
                     authentication:
                       type: bearer
                       disabled: false
-                      token: "{{_['render_admin_token']}}"
+                      token: "{{render_admin_token}}"
                       prefix: ""
                     scripts:
                       preRequest: >
@@ -12321,7 +12321,7 @@ collection:
                   sortKey: -1764496102398
                   description: ""
                 children:
-                  - url: "{{_['render_admin_domain']}}/bundles/projectBundles/7/projects"
+                  - url: "{{render_admin_password}}/bundles/projectBundles/7/projects"
                     name: add projects to bundle
                     meta:
                       id: req_01c4e3af6bd54d8fad9c1d474979cd78
@@ -12339,13 +12339,13 @@ collection:
                         }
                     headers:
                       - name: Authorization
-                        value: Bearer {{_['render_admin_token']}}
+                        value: Bearer {{render_admin_token}}
                       - name: Content-Type
                         value: application/json
                     authentication:
                       type: bearer
                       disabled: false
-                      token: "{{_['render_admin_token']}}"
+                      token: "{{render_admin_token}}"
                       prefix: ""
                     scripts:
                       preRequest: >
@@ -12403,7 +12403,7 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render_admin_domain']}}/bundles/projectBundles/7/projects"
+                  - url: "{{render_admin_password}}/bundles/projectBundles/7/projects"
                     name: delete projects from bundle
                     meta:
                       id: req_44f2dcb310a348bfa2d9b89bf1045674
@@ -12421,13 +12421,13 @@ collection:
                         }
                     headers:
                       - name: Authorization
-                        value: Bearer {{_['render_admin_token']}}
+                        value: Bearer {{render_admin_token}}
                       - name: Content-Type
                         value: application/json
                     authentication:
                       type: bearer
                       disabled: false
-                      token: "{{_['render_admin_token']}}"
+                      token: "{{render_admin_token}}"
                       prefix: ""
                     scripts:
                       preRequest: >
@@ -12493,7 +12493,7 @@ collection:
                   sortKey: -1764496102395
                   description: ""
                 children:
-                  - url: "{{_['render_admin_domain']}}/bundles/projectBundles"
+                  - url: "{{render_admin_password}}/bundles/projectBundles"
                     name: create projectBundle
                     meta:
                       id: req_db35f79ecbb145e8a50d3c326f4b82e8
@@ -12520,13 +12520,13 @@ collection:
                           type: file
                     headers:
                       - name: Authorization
-                        value: Bearer {{_['render_admin_token']}}
+                        value: Bearer {{render_admin_token}}
                       - name: Content-Type
                         value: multipart/form-data
                     authentication:
                       type: bearer
                       disabled: false
-                      token: "{{_['render_admin_token']}}"
+                      token: "{{render_admin_token}}"
                       prefix: ""
                     scripts:
                       preRequest: >
@@ -12584,7 +12584,7 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render_admin_domain']}}/bundles/projectBundles"
+                  - url: "{{render_admin_password}}/bundles/projectBundles"
                     name: list projectBundle
                     meta:
                       id: req_3ac5385ab1dc45058f7228cae978896f
@@ -12613,11 +12613,11 @@ collection:
                         disabled: false
                     headers:
                       - name: Authorization
-                        value: Bearer {{_['render_admin_token']}}
+                        value: Bearer {{render_admin_token}}
                     authentication:
                       type: bearer
                       disabled: false
-                      token: "{{_['render_admin_token']}}"
+                      token: "{{render_admin_token}}"
                       prefix: ""
                     scripts:
                       preRequest: >
@@ -12675,7 +12675,7 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render_admin_domain']}}/bundles/projectBundles/2"
+                  - url: "{{render_admin_password}}/bundles/projectBundles/2"
                     name: retieve projectBundle
                     meta:
                       id: req_6ad44763dd1a45779c62b35277b11660
@@ -12691,11 +12691,11 @@ collection:
                         disabled: true
                     headers:
                       - name: Authorization
-                        value: Bearer {{_['render_admin_token']}}
+                        value: Bearer {{render_admin_token}}
                     authentication:
                       type: bearer
                       disabled: false
-                      token: "{{_['render_admin_token']}}"
+                      token: "{{render_admin_token}}"
                       prefix: ""
                     scripts:
                       preRequest: >
@@ -12753,7 +12753,7 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render_admin_domain']}}/bundles/projectBundles/7"
+                  - url: "{{render_admin_password}}/bundles/projectBundles/7"
                     name: update projectBundle
                     meta:
                       id: req_f18976bafc584c22a12e586c76792395
@@ -12788,13 +12788,13 @@ collection:
                           disabled: false
                     headers:
                       - name: Authorization
-                        value: Bearer {{_['render_admin_token']}}
+                        value: Bearer {{render_admin_token}}
                       - name: Content-Type
                         value: multipart/form-data
                     authentication:
                       type: bearer
                       disabled: false
-                      token: "{{_['render_admin_token']}}"
+                      token: "{{render_admin_token}}"
                       prefix: ""
                     scripts:
                       preRequest: >
@@ -12852,7 +12852,7 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render_admin_domain']}}/bundles/projectBundles/4"
+                  - url: "{{render_admin_password}}/bundles/projectBundles/4"
                     name: delete projectBundle
                     meta:
                       id: req_ab1359f890064c28be7fbdc4ef26fb87
@@ -12864,11 +12864,11 @@ collection:
                     method: DELETE
                     headers:
                       - name: Authorization
-                        value: Bearer {{_['render_admin_token']}}
+                        value: Bearer {{render_admin_token}}
                     authentication:
                       type: bearer
                       disabled: false
-                      token: "{{_['render_admin_token']}}"
+                      token: "{{render_admin_token}}"
                       prefix: ""
                     scripts:
                       preRequest: >
@@ -12957,7 +12957,7 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render_admin_domain']}}/organizations/1/projectBundles/7/projects/2"
+                  - url: "{{render_admin_password}}/organizations/1/projectBundles/7/projects/2"
                     name: update association
                     meta:
                       id: req_d7f76bb1eaa44d3386bb3a0c1fb43cb8
@@ -12976,13 +12976,13 @@ collection:
                         }
                     headers:
                       - name: Authorization
-                        value: Bearer {{_['render_admin_token']}}
+                        value: Bearer {{render_admin_token}}
                       - name: Content-Type
                         value: application/json
                     authentication:
                       type: bearer
                       disabled: false
-                      token: "{{_['render_admin_token']}}"
+                      token: "{{render_admin_token}}"
                       prefix: ""
                     scripts:
                       preRequest: >
@@ -13056,7 +13056,7 @@ collection:
                   sortKey: -1764496102388
                   description: ""
                 children:
-                  - url: "{{_['render_admin_domain']}}/stageBundles/1/organizations"
+                  - url: "{{render_admin_password}}/stageBundles/1/organizations"
                     name: connect bundles to organization
                     meta:
                       id: req_5c31fad015d7475a81b0793b3b386cf2
@@ -13074,13 +13074,13 @@ collection:
                         }
                     headers:
                       - name: Authorization
-                        value: Bearer {{_['render_admin_token']}}
+                        value: Bearer {{render_admin_token}}
                       - name: Content-Type
                         value: application/json
                     authentication:
                       type: bearer
                       disabled: false
-                      token: "{{_['render_admin_token']}}"
+                      token: "{{render_admin_token}}"
                       prefix: ""
                     scripts:
                       preRequest: >
@@ -13138,7 +13138,7 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render_admin_domain']}}/organizations/1/stageBundles/1"
+                  - url: "{{render_admin_password}}/organizations/1/stageBundles/1"
                     name: update association
                     meta:
                       id: req_e64a7db3a7ec48cfa2d6083ae96ab72f
@@ -13156,13 +13156,13 @@ collection:
                         }
                     headers:
                       - name: Authorization
-                        value: Bearer {{_['render_admin_token']}}
+                        value: Bearer {{render_admin_token}}
                       - name: Content-Type
                         value: application/json
                     authentication:
                       type: bearer
                       disabled: false
-                      token: "{{_['render_admin_token']}}"
+                      token: "{{render_admin_token}}"
                       prefix: ""
                     scripts:
                       preRequest: >
@@ -13220,7 +13220,7 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render_admin_domain']}}/organizations/1/stageBundles"
+                  - url: "{{render_admin_password}}/organizations/1/stageBundles"
                     name: disconnect organizations from bundle
                     meta:
                       id: req_1bc8d556b07541cc992d775747340c4b
@@ -13238,13 +13238,13 @@ collection:
                         }
                     headers:
                       - name: Authorization
-                        value: Bearer {{_['render_admin_token']}}
+                        value: Bearer {{render_admin_token}}
                       - name: Content-Type
                         value: application/json
                     authentication:
                       type: bearer
                       disabled: false
-                      token: "{{_['render_admin_token']}}"
+                      token: "{{render_admin_token}}"
                       prefix: ""
                     scripts:
                       preRequest: >
@@ -13310,7 +13310,7 @@ collection:
                   sortKey: -1764496102384
                   description: ""
                 children:
-                  - url: "{{_['render_admin_domain']}}/bundles/stageBundles/1/stages"
+                  - url: "{{render_admin_password}}/bundles/stageBundles/1/stages"
                     name: add stages to bundle
                     meta:
                       id: req_5277686b26be44308c823b5619146ba1
@@ -13328,13 +13328,13 @@ collection:
                         }
                     headers:
                       - name: Authorization
-                        value: Bearer {{_['render_admin_token']}}
+                        value: Bearer {{render_admin_token}}
                       - name: Content-Type
                         value: application/json
                     authentication:
                       type: bearer
                       disabled: false
-                      token: "{{_['render_admin_token']}}"
+                      token: "{{render_admin_token}}"
                       prefix: ""
                     scripts:
                       preRequest: >
@@ -13392,7 +13392,7 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render_admin_domain']}}/bundles/stageBundles/1/stages"
+                  - url: "{{render_admin_password}}/bundles/stageBundles/1/stages"
                     name: delete stage from bundle
                     meta:
                       id: req_7e79c43c391e437dbfd460f6af5da653
@@ -13410,13 +13410,13 @@ collection:
                         }
                     headers:
                       - name: Authorization
-                        value: Bearer {{_['render_admin_token']}}
+                        value: Bearer {{render_admin_token}}
                       - name: Content-Type
                         value: application/json
                     authentication:
                       type: bearer
                       disabled: false
-                      token: "{{_['render_admin_token']}}"
+                      token: "{{render_admin_token}}"
                       prefix: ""
                     scripts:
                       preRequest: >
@@ -13482,7 +13482,7 @@ collection:
                   sortKey: -1764496102381
                   description: ""
                 children:
-                  - url: "{{_['render_admin_domain']}}/bundles/stageBundles"
+                  - url: "{{render_admin_password}}/bundles/stageBundles"
                     name: create stageBundle
                     meta:
                       id: req_6a338a44c0d84a47a5209506c5c0aefd
@@ -13509,13 +13509,13 @@ collection:
                           type: file
                     headers:
                       - name: Authorization
-                        value: Bearer {{_['render_admin_token']}}
+                        value: Bearer {{render_admin_token}}
                       - name: Content-Type
                         value: multipart/form-data
                     authentication:
                       type: bearer
                       disabled: false
-                      token: "{{_['render_admin_token']}}"
+                      token: "{{render_admin_token}}"
                       prefix: ""
                     scripts:
                       preRequest: >
@@ -13573,7 +13573,7 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render_admin_domain']}}/bundles/stageBundles"
+                  - url: "{{render_admin_password}}/bundles/stageBundles"
                     name: list stageBundle
                     meta:
                       id: req_fa5e702863f640778cfeb774345fd388
@@ -13605,11 +13605,11 @@ collection:
                         disabled: true
                     headers:
                       - name: Authorization
-                        value: Bearer {{_['render_admin_token']}}
+                        value: Bearer {{render_admin_token}}
                     authentication:
                       type: bearer
                       disabled: false
-                      token: "{{_['render_admin_token']}}"
+                      token: "{{render_admin_token}}"
                       prefix: ""
                     scripts:
                       preRequest: >
@@ -13667,7 +13667,7 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render_admin_domain']}}/bundles/stageBundles/3"
+                  - url: "{{render_admin_password}}/bundles/stageBundles/3"
                     name: retieve stageBundle
                     meta:
                       id: req_26699fe071184fcfa70b56ed391eb289
@@ -13683,11 +13683,11 @@ collection:
                         disabled: false
                     headers:
                       - name: Authorization
-                        value: Bearer {{_['render_admin_token']}}
+                        value: Bearer {{render_admin_token}}
                     authentication:
                       type: bearer
                       disabled: false
-                      token: "{{_['render_admin_token']}}"
+                      token: "{{render_admin_token}}"
                       prefix: ""
                     scripts:
                       preRequest: >
@@ -13745,7 +13745,7 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render_admin_domain']}}/bundles/stageBundles/1"
+                  - url: "{{render_admin_password}}/bundles/stageBundles/1"
                     name: update stageBundle
                     meta:
                       id: req_11bd9291c3cf47e6afa92ab99410a431
@@ -13776,13 +13776,13 @@ collection:
                           disabled: false
                     headers:
                       - name: Authorization
-                        value: Bearer {{_['render_admin_token']}}
+                        value: Bearer {{render_admin_token}}
                       - name: Content-Type
                         value: multipart/form-data
                     authentication:
                       type: bearer
                       disabled: false
-                      token: "{{_['render_admin_token']}}"
+                      token: "{{render_admin_token}}"
                       prefix: ""
                     scripts:
                       preRequest: >
@@ -13840,7 +13840,7 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render_admin_domain']}}/bundles/stageBundles/2"
+                  - url: "{{render_admin_password}}/bundles/stageBundles/2"
                     name: delete stageBundle
                     meta:
                       id: req_930aec7316f7424cb2fb7d7a25bd4e10
@@ -13852,11 +13852,11 @@ collection:
                     method: DELETE
                     headers:
                       - name: Authorization
-                        value: Bearer {{_['render_admin_token']}}
+                        value: Bearer {{render_admin_token}}
                     authentication:
                       type: bearer
                       disabled: false
-                      token: "{{_['render_admin_token']}}"
+                      token: "{{render_admin_token}}"
                       prefix: ""
                     scripts:
                       preRequest: >
@@ -13945,7 +13945,7 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{_['render_admin_domain']}}/organizations/1/stageBundles/1/stages/1"
+                  - url: "{{render_admin_password}}/organizations/1/stageBundles/1/stages/1"
                     name: update association
                     meta:
                       id: req_b71c6692c822410e9e184de92e057203
@@ -13964,13 +13964,13 @@ collection:
                         }
                     headers:
                       - name: Authorization
-                        value: Bearer {{_['render_admin_token']}}
+                        value: Bearer {{render_admin_token}}
                       - name: Content-Type
                         value: application/json
                     authentication:
                       type: bearer
                       disabled: false
-                      token: "{{_['render_admin_token']}}"
+                      token: "{{render_admin_token}}"
                       prefix: ""
                     scripts:
                       preRequest: >
@@ -14044,7 +14044,7 @@ collection:
               sortKey: -1764496102374
               description: ""
             children:
-              - url: "{{_['render_admin_domain']}}/train/jobs"
+              - url: "{{render_admin_password}}/train/jobs"
                 name: create train job
                 meta:
                   id: req_18385270ba9e45f19cdab615a079fcaf
@@ -14073,7 +14073,7 @@ collection:
                     disabled: true
                 headers:
                   - name: Authorization
-                    value: Bearer {{_['render_admin_token']}}
+                    value: Bearer {{render_admin_token}}
                   - name: Content-Type
                     value: application/json
                 authentication:
@@ -14136,7 +14136,7 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: "{{_['render_admin_domain']}}/train/jobs"
+              - url: "{{render_admin_password}}/train/jobs"
                 name: list train jobs
                 meta:
                   id: req_c76237de06e94ad9bda5b31289cd3e86
@@ -14176,7 +14176,7 @@ collection:
                     disabled: true
                 headers:
                   - name: Authorization
-                    value: Bearer {{_['render_admin_token']}}
+                    value: Bearer {{render_admin_token}}
                 authentication:
                   type: bearer
                   disabled: false
@@ -14237,7 +14237,7 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: "{{_['render_admin_domain']}}/train/jobs/234"
+              - url: "{{render_admin_password}}/train/jobs/234"
                 name: delete train job
                 meta:
                   id: req_7a29c8da41ec4968a301b54dfdc1904c
@@ -14302,7 +14302,7 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: "{{_['render_admin_domain']}}/train/jobs/1"
+              - url: "{{render_admin_password}}/train/jobs/1"
                 name: retrieve train job
                 meta:
                   id: req_1f1a18a39f104e3d925b8ca3f1c4ef8f
@@ -14321,7 +14321,7 @@ collection:
                     disabled: false
                 headers:
                   - name: Authorization
-                    value: Bearer {{_['render_admin_token']}}
+                    value: Bearer {{render_admin_token}}
                 authentication:
                   type: bearer
                   disabled: false
@@ -14480,7 +14480,7 @@ collection:
           sortKey: -1764509708675
           description: ""
         children:
-          - url: "{{ _['render_admin_domain'] }}/users"
+          - url: "{{render_admin_domain}}/users"
             name: list users
             meta:
               id: req_144cff5010ee47febc8d810d7bb7110b
@@ -14503,7 +14503,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{ _['render_admin_domain'] }}/users"
+          - url: "{{render_admin_domain}}/users"
             name: retrieve user
             meta:
               id: req_6f95ff9308034930ba2fbd8fb383bbda
@@ -14526,7 +14526,7 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{ _['render_admin_domain'] }}/users"
+          - url: "{{render_admin_domain}}/users"
             name: create user
             meta:
               id: req_66fd9b991b34410484f71249798fea30
