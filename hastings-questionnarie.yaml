@@ -15,22 +15,81 @@ collection:
       sortKey: -1765294882542
       description: ""
     children:
-      - url: http://127.0.0.1:3000/email/send
+      - url: http://localhost:3000/api/email/send
         name: send
         meta:
           id: req_c36bbc2bd876411b9d193df8cebffb96
           created: 1765294886230
-          modified: 1765298508261
+          modified: 1765981299654
           isPrivate: false
           description: ""
           sortKey: -1765294886230
         method: POST
         body:
           mimeType: application/json
-          text: |-
+          text: >-
             {
-            	"name": "Pavlo",
-            	"email": "feryleeton@gmail.com"
+              "name": {
+                "name": "Wazar"
+              },
+              "email": {
+                "email": "author.hlukhaniuk@gmail.com"
+              },
+              "stage": {
+                "stage": "Planning"
+              },
+              "roomStyle": {
+                "rooms": [
+                  "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0"
+                ]
+              },
+              "bathrooms": {
+                "rooms": [
+                  { "id": "Master Bathroom", "count": 1 },
+                  { "id": "Guest Bathroom", "count": 1 }
+                ]
+              },
+              "bathroomFocus": {
+                "rooms": "Master Bathroom"
+              },
+              "aboutProject": {
+                "projectType": "Renovation",
+                "goals": ["Modern design", "Energy efficiency", "Increase space"],
+                "challenges": ["Budget constraints", "Timeline", "Material sourcing"]
+              },
+              "products": {
+                "products": [
+                  { "id": "Vanity", "count": 2 },
+                  { "id": "Sink", "count": 2 },
+                  { "id": "Mirror", "count": 2 }
+                ]
+              },
+              "productsFocus": {
+                "product": "Vanity"
+              },
+              "vanities": {
+                "width": 60,
+                "depth": "standard",
+                "mountingType": ["wall-mounted", "floor-standing"],
+                "conceptStyle": "modern",
+                "sinkType": "undermount",
+                "color": ["white", "gray"],
+                "look": ["minimalist", "sleek"]
+              },
+              "aestheticResult": {
+                "mainStyle": {
+                  "id": "modern",
+                  "title": "Modern Minimalist",
+                  "description": "Clean lines, neutral colors, and functional design"
+                },
+                "substyles": [
+                  {
+                    "id": "scandinavian",
+                    "title": "Scandinavian",
+                    "description": "Light wood tones with white palette"
+                  }
+                ]
+              }
             }
         headers:
           - name: Content-Type
@@ -43,6 +102,193 @@ collection:
             value: zCxGZgV3iVUR93C2Cua2lTgZZZppRL1z32VifmzwdPgcP
             description: ""
             disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: File uploads
+    meta:
+      id: fld_2cb10814eeb2445fad0a9db21c6a311d
+      created: 1765980189773
+      modified: 1765980189773
+      sortKey: -1765980189773
+      description: ""
+    children:
+      - url: http://localhost:3000/api/files/upload
+        name: Single upload
+        meta:
+          id: req_fcee8fca97d54994be206e9041d91294
+          created: 1765980192012
+          modified: 1765980463471
+          isPrivate: false
+          description: ""
+          sortKey: -1765980192012
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: file
+              value: ""
+              description: ""
+              disabled: false
+              fileName: F:\ElementalsWeb\фото для тесту\2019_azzurra_c12_p01.tif
+              type: file
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.1.0
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: zCxGZgV3iVUR93C2Cua2lTgZZZppRL1z32VifmzwdPgcP
+          prefix: bearer
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/files/upload/bulk
+        name: Bulk upload
+        meta:
+          id: req_53eb2263dd8c4a5db2da378ea32abab9
+          created: 1765980449649
+          modified: 1765980505513
+          isPrivate: false
+          description: ""
+          sortKey: -1765671189987.5
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: files
+              value: ""
+              description: ""
+              disabled: false
+              fileName: F:\ElementalsWeb\фото для тесту\2019_azzurra_c12_p01.tif
+              type: file
+            - name: files
+              value: ""
+              description: ""
+              disabled: false
+              fileName: F:\ElementalsWeb\photos for convert\old\2023_azzurra_lime2_c10_p07.jpg
+              type: file
+            - name: files
+              value: ""
+              description: ""
+              disabled: false
+              fileName: F:\ElementalsWeb\photos for convert\old\2019_azzurra_c1_p1.webp
+              type: file
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.1.0
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: zCxGZgV3iVUR93C2Cua2lTgZZZppRL1z32VifmzwdPgcP
+          prefix: bearer
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/files/33227c91-2929-434f-aea0-a01ad079fd7d
+        name: Get file info
+        meta:
+          id: req_4b435596d3c44214b1c1f099b8878a1b
+          created: 1765980539293
+          modified: 1765980559050
+          isPrivate: false
+          description: ""
+          sortKey: -1765516688975.25
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.1.0
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: zCxGZgV3iVUR93C2Cua2lTgZZZppRL1z32VifmzwdPgcP
+          prefix: bearer
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/files
+        name: Get list of files
+        meta:
+          id: req_8bb7643cc13f41f3be66aff0352625ff
+          created: 1765980582119
+          modified: 1765980613326
+          isPrivate: false
+          description: ""
+          sortKey: -1765439438469.125
+        method: GET
+        parameters:
+          - name: limit
+            value: "4"
+            description: ""
+            disabled: true
+        headers:
+          - name: User-Agent
+            value: insomnia/12.1.0
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: zCxGZgV3iVUR93C2Cua2lTgZZZppRL1z32VifmzwdPgcP
+          prefix: bearer
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/files/88487867-8de9-4f2a-9cd6-61349dd61e64
+        name: Delete file by id
+        meta:
+          id: req_c646ebcc00a140419c4794654ad87162
+          created: 1765980637592
+          modified: 1765980645417
+          isPrivate: false
+          description: ""
+          sortKey: -1765400813216.0625
+        method: DELETE
+        parameters:
+          - name: limit
+            value: "4"
+            description: ""
+            disabled: true
+        headers:
+          - name: User-Agent
+            value: insomnia/12.1.0
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: zCxGZgV3iVUR93C2Cua2lTgZZZppRL1z32VifmzwdPgcP
+          prefix: bearer
         settings:
           renderRequestBody: true
           encodeUrl: true
