@@ -11,7 +11,7 @@ collection:
     meta:
       id: fld_28943f57796445899fa604513d7a262d
       created: 1764496106015
-      modified: 1765537558807
+      modified: 1766078238951
       sortKey: -1764496102719
       description: ""
     children:
@@ -9570,7 +9570,7 @@ collection:
             meta:
               id: req_68979b891a954851b0cd911ee8eae0ca
               created: 1764496106247
-              modified: 1764510772049
+              modified: 1766078051647
               isPrivate: false
               description: ""
               sortKey: -1764496102448
@@ -14032,7 +14032,7 @@ collection:
         meta:
           id: fld_b5da3c83e7624e119ec9b51c9dce7029
           created: 1764496106339
-          modified: 1765537558807
+          modified: 1766078238951
           sortKey: -1764496102375
           description: ""
         children:
@@ -14040,16 +14040,16 @@ collection:
             meta:
               id: fld_a5c071b1098a4ab18e3c5b14a9c14741
               created: 1764496106341
-              modified: 1765537558807
+              modified: 1766078238951
               sortKey: -1764496102374
               description: ""
             children:
-              - url: http://localhost:3000/train/jobs
+              - url: "{{_['render-admin-domain']}}/train/jobs"
                 name: create train job
                 meta:
                   id: req_18385270ba9e45f19cdab615a079fcaf
                   created: 1764496106343
-                  modified: 1765528587015
+                  modified: 1766078090081
                   isPrivate: false
                   description: ""
                   sortKey: -1764496102373
@@ -14136,12 +14136,12 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: http://localhost:3000/train/jobs
+              - url: "{{_['render-admin-domain']}}/train/jobs"
                 name: list train jobs
                 meta:
                   id: req_c76237de06e94ad9bda5b31289cd3e86
                   created: 1764496106345
-                  modified: 1765537561417
+                  modified: 1766078100159
                   isPrivate: false
                   description: ""
                   sortKey: -1764496102372
@@ -14302,12 +14302,12 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: http://localhost:3000/train/jobs/1
+              - url: "{{_['render-admin-domain']}}/train/jobs/1"
                 name: retrieve train job
                 meta:
                   id: req_1f1a18a39f104e3d925b8ca3f1c4ef8f
                   created: 1765295520292
-                  modified: 1765537423383
+                  modified: 1766078105839
                   isPrivate: false
                   description: ""
                   sortKey: -1764496102371.5
@@ -14563,25 +14563,16 @@ cookieJar:
   meta:
     id: jar_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496108720
-    modified: 1765537558803
+    modified: 1766078238948
 environments:
   name: Base Environment
   meta:
     id: env_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496106422
-    modified: 1765537558806
+    modified: 1766078238951
     isPrivate: false
-  subEnvironments:
-    - name: local
-      meta:
-        id: env_b8191c95ca5148239e99bdd5400c1ad6
-        created: 1764509217083
-        modified: 1764874887417
-        isPrivate: false
-        sortKey: 1764509217083
-      data:
-        render-admin-domain: http://127.0.0.1:3000
-        render-admin-token: ""
-        render-admin-username: admin
-        render-admin-password: RmxJ8UjtE3aY4czn
-      color: "#ffffff"
+  data:
+    render-admin-domain: https://renderadmin-dev.vivid3d.tech
+    render-admin-token: ""
+    render-admin-username: admin
+    render-admin-password: RmxJ8UjtE3aY4czn
