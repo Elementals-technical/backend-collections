@@ -11,7 +11,7 @@ collection:
     meta:
       id: fld_28943f57796445899fa604513d7a262d
       created: 1764496106015
-      modified: 1766078238951
+      modified: 1767685359400
       sortKey: -1764496102719
       description: ""
     children:
@@ -12044,7 +12044,7 @@ collection:
         meta:
           id: fld_01de6ee4db55489a9879f1ebe98c4d5d
           created: 1764496106302
-          modified: 1764874887418
+          modified: 1767685359400
           sortKey: -1764496102404
           description: ""
         children:
@@ -12052,7 +12052,7 @@ collection:
             meta:
               id: fld_ebaa0b5371f14fe4a47ba743874c858e
               created: 1764496106303
-              modified: 1764855116414
+              modified: 1767685359400
               sortKey: -1764496102403
               description: ""
             children:
@@ -12487,7 +12487,7 @@ collection:
                 meta:
                   id: fld_972d3e10bdc34d3894b1876bc885621f
                   created: 1764496106314
-                  modified: 1764855111210
+                  modified: 1767685359400
                   sortKey: -1764496102395
                   description: ""
                 children:
@@ -12673,12 +12673,12 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{render_admin_domain}}/bundles/projectBundles/2"
+                  - url: "{{render_admin_domain}}/bundles/projectBundles/148"
                     name: retieve projectBundle
                     meta:
                       id: req_6ad44763dd1a45779c62b35277b11660
                       created: 1764496106318
-                      modified: 1764510945752
+                      modified: 1767685357737
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102392
@@ -12687,6 +12687,10 @@ collection:
                       - name: organizationId
                         value: "2"
                         disabled: true
+                      - name: includeOrganizations
+                        value: "true"
+                        description: ""
+                        disabled: false
                     headers:
                       - name: Authorization
                         value: Bearer {{render_admin_token}}
@@ -13136,12 +13140,12 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{render_admin_domain}}/organizations/1/stageBundles/1"
+                  - url: "{{render_admin_domain}}/stageBundles/1/organizations/1"
                     name: update association
                     meta:
                       id: req_e64a7db3a7ec48cfa2d6083ae96ab72f
                       created: 1764496106326
-                      modified: 1764510959758
+                      modified: 1767685427220
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102386
@@ -13670,7 +13674,7 @@ collection:
                     meta:
                       id: req_26699fe071184fcfa70b56ed391eb289
                       created: 1764496106336
-                      modified: 1764874885726
+                      modified: 1767685390165
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102378
@@ -13678,6 +13682,10 @@ collection:
                     parameters:
                       - name: organizationId
                         value: "1"
+                        disabled: false
+                      - name: includeOrganizations
+                        value: "true"
+                        description: ""
                         disabled: false
                     headers:
                       - name: Authorization
@@ -14561,13 +14569,13 @@ cookieJar:
   meta:
     id: jar_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496108720
-    modified: 1766078238948
+    modified: 1767685359389
 environments:
   name: Base Environment
   meta:
     id: env_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496106422
-    modified: 1766078238951
+    modified: 1767685359399
     isPrivate: false
   data:
     render_admin_domain: https://renderadmin-dev.vivid3d.tech
