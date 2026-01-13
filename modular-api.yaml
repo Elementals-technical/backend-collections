@@ -1,0 +1,149 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Modular API
+meta:
+  id: wrk_b54356ca28cd4fb499a410599ffb16f3
+  created: 1768310845089
+  modified: 1768310845089
+  description: ""
+collection:
+  - name: configuration-store
+    meta:
+      id: fld_7b9636a40242418b8bd7568ccf5899fa
+      created: 1768310859072
+      modified: 1768310859072
+      sortKey: -1768310859072
+      description: ""
+    children:
+      - url: "{{modular_api_domain}}/configurations/store"
+        name: save configuration
+        meta:
+          id: req_56c35bc130b84d2fa3a84e635326e787
+          created: 1768310862080
+          modified: 1768311079271
+          isPrivate: false
+          description: ""
+          sortKey: -1768310862080
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"configuration": {"key": "val"},
+            	"metadata": {"key": "val"}
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.2.0
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: zCxGZgV3iVUR93C2Cua2lTgZZZppRL1z32VifmzwdPgcP
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{modular_api_domain}}/modular/configurations/store"
+        name: list configurations
+        meta:
+          id: req_7e18ce1df1dc4b668d439b7106ddfd2f
+          created: 1768310966002
+          modified: 1768316736705
+          isPrivate: false
+          description: ""
+          sortKey: -1768140163242
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.2.0
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: zCxGZgV3iVUR93C2Cua2lTgZZZppRL1z32VifmzwdPgcP
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{modular_api_domain}}/configurations/store/1"
+        name: restore configuration
+        meta:
+          id: req_3e35b3ecd7d8432cb69b0fa5e6377470
+          created: 1768310987774
+          modified: 1768310991246
+          isPrivate: false
+          description: ""
+          sortKey: -1768054813823
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.2.0
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: zCxGZgV3iVUR93C2Cua2lTgZZZppRL1z32VifmzwdPgcP
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{modular_api_domain}}/configurations/store/1"
+        name: delete configuration
+        meta:
+          id: req_93b9de15a86b43d184d01018800bef98
+          created: 1768311276216
+          modified: 1768311278830
+          isPrivate: false
+          description: ""
+          sortKey: -1768012139113.5
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.2.0
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: zCxGZgV3iVUR93C2Cua2lTgZZZppRL1z32VifmzwdPgcP
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_37876957e38cad4c1a921ad242ebd74219203adb
+    created: 1768310845200
+    modified: 1768310845200
+environments:
+  name: Base Environment
+  meta:
+    id: env_37876957e38cad4c1a921ad242ebd74219203adb
+    created: 1768310845116
+    modified: 1768316723544
+    isPrivate: false
+  data:
+    modular_api_domain: https://renderapi-dev.vivid3d.tech
