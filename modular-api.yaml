@@ -312,7 +312,7 @@ environments:
   meta:
     id: env_37876957e38cad4c1a921ad242ebd74219203adb
     created: 1768310845116
-    modified: 1768382529515
+    modified: 1768408593424
     isPrivate: false
   data:
-    modular_api_domain: http://127.0.0.1:3000
+    modular_api_domain: https://renderapi-dev.vivid3d.tech
