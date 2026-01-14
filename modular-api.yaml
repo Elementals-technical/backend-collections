@@ -15,12 +15,12 @@ collection:
       sortKey: -1768310859072
       description: ""
     children:
-      - url: "{{modular_api_domain}}/configurations/store"
+      - url: "{{modular_api_domain}}/modular/configurations/store"
         name: save configuration
         meta:
           id: req_56c35bc130b84d2fa3a84e635326e787
           created: 1768310862080
-          modified: 1768311079271
+          modified: 1768316901614
           isPrivate: false
           description: ""
           sortKey: -1768310862080
@@ -56,7 +56,7 @@ collection:
         meta:
           id: req_7e18ce1df1dc4b668d439b7106ddfd2f
           created: 1768310966002
-          modified: 1768316736705
+          modified: 1768316873766
           isPrivate: false
           description: ""
           sortKey: -1768140163242
@@ -78,12 +78,12 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: "{{modular_api_domain}}/configurations/store/1"
+      - url: "{{modular_api_domain}}/modular/configurations/store/2"
         name: restore configuration
         meta:
           id: req_3e35b3ecd7d8432cb69b0fa5e6377470
           created: 1768310987774
-          modified: 1768310991246
+          modified: 1768316998364
           isPrivate: false
           description: ""
           sortKey: -1768054813823
@@ -105,16 +105,185 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: "{{modular_api_domain}}/configurations/store/1"
+      - url: "{{modular_api_domain}}/modular/configurations/store/1"
         name: delete configuration
         meta:
           id: req_93b9de15a86b43d184d01018800bef98
           created: 1768311276216
-          modified: 1768311278830
+          modified: 1768316926973
           isPrivate: false
           description: ""
           sortKey: -1768012139113.5
         method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.2.0
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: zCxGZgV3iVUR93C2Cua2lTgZZZppRL1z32VifmzwdPgcP
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: ar-configurations
+    meta:
+      id: fld_bef51d79ac9a4a3c8eaee83c28bf3b1e
+      created: 1768388419304
+      modified: 1768388419304
+      sortKey: -1768388419304
+      description: ""
+    children:
+      - url: "{{modular_api_domain}}/modular/ar-configurations"
+        name: create ar configuration
+        meta:
+          id: req_518cb801c79a461fb544134c6d4e5985
+          created: 1768388459955
+          modified: 1768395650554
+          isPrivate: false
+          description: ""
+          sortKey: -1768388462938
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: configuration
+              value: ' {"key": "val1"}'
+              description: ""
+              disabled: false
+            - name: glb
+              value: ""
+              description: ""
+              disabled: false
+              fileName: /home/pavlo/Downloads/1761729210.glb
+              type: file
+            - name: usdz
+              value: ""
+              description: ""
+              disabled: false
+              fileName: /home/pavlo/Downloads/1761729210.glb
+              type: file
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.2.0
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: zCxGZgV3iVUR93C2Cua2lTgZZZppRL1z32VifmzwdPgcP
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{modular_api_domain}}/modular/ar-configurations/2"
+        name: delete ar configuration
+        meta:
+          id: req_b3ab184611404dc5811281735a5d7768
+          created: 1768394290678
+          modified: 1768394640055
+          isPrivate: false
+          description: ""
+          sortKey: -1768349662509
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.2.0
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: zCxGZgV3iVUR93C2Cua2lTgZZZppRL1z32VifmzwdPgcP
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{modular_api_domain}}/modular/ar-configurations/query"
+        name: query ar configuration
+        meta:
+          id: req_00a2bcdcbaab474e85700ccd5b383e4c
+          created: 1768395261163
+          modified: 1768395718823
+          isPrivate: false
+          description: ""
+          sortKey: -1768369062723.5
+        method: GET
+        parameters:
+          - name: configuration
+            value: ' {"key": "val1"}'
+            description: ""
+            disabled: false
+        headers:
+          - name: User-Agent
+            value: insomnia/12.2.0
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: zCxGZgV3iVUR93C2Cua2lTgZZZppRL1z32VifmzwdPgcP
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{modular_api_domain}}/modular/ar-configurations"
+        name: list ar configuration
+        meta:
+          id: req_7f8822e5e0e54a1aa1cfbdfc47214902
+          created: 1768396960398
+          modified: 1768396972050
+          isPrivate: false
+          description: ""
+          sortKey: -1768359362616.25
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.2.0
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: zCxGZgV3iVUR93C2Cua2lTgZZZppRL1z32VifmzwdPgcP
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{modular_api_domain}}/modular/ar-configurations/3"
+        name: retrieve ar configuration
+        meta:
+          id: req_1ad7de622b7c404c941675f470c42915
+          created: 1768397177343
+          modified: 1768397237002
+          isPrivate: false
+          description: ""
+          sortKey: -1768354512562.625
+        method: GET
         headers:
           - name: User-Agent
             value: insomnia/12.2.0
@@ -143,7 +312,7 @@ environments:
   meta:
     id: env_37876957e38cad4c1a921ad242ebd74219203adb
     created: 1768310845116
-    modified: 1768316723544
+    modified: 1768382529515
     isPrivate: false
   data:
-    modular_api_domain: https://renderapi-dev.vivid3d.tech
+    modular_api_domain: http://127.0.0.1:3000
