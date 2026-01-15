@@ -11,7 +11,7 @@ collection:
     meta:
       id: fld_28943f57796445899fa604513d7a262d
       created: 1764496106015
-      modified: 1767774658669
+      modified: 1768487914752
       sortKey: -1764496102719
       description: ""
     children:
@@ -314,7 +314,7 @@ collection:
         meta:
           id: fld_7c339ab8605c47cdbdf97c858583629e
           created: 1764496106033
-          modified: 1764496106033
+          modified: 1767956011831
           sortKey: -1764496102604
           description: ""
         children:
@@ -323,7 +323,7 @@ collection:
             meta:
               id: req_13d16746fd0c4ed1a1d3386c4e604e7a
               created: 1764496106034
-              modified: 1764510114670
+              modified: 1767956010335
               isPrivate: false
               description: ""
               sortKey: -1764496102603
@@ -332,7 +332,7 @@ collection:
               mimeType: application/json
               text: |-
                 {
-                    "name": "Lifeform"
+                    "name": "TEST_PLO"
                 }
             headers:
               - name: Authorization
@@ -1372,7 +1372,7 @@ collection:
         meta:
           id: fld_a6a1513b5d204d29a79a6f171de34655
           created: 1764496106054
-          modified: 1764509950767
+          modified: 1768372249881
           sortKey: -1764496102588
           description: ""
         children:
@@ -1506,7 +1506,7 @@ collection:
             meta:
               id: req_a3b075dced984740b8e5563c29e619a1
               created: 1764496106057
-              modified: 1764510175456
+              modified: 1767969842662
               isPrivate: false
               description: ""
               sortKey: -1764496102586
@@ -1532,7 +1532,7 @@ collection:
                 disabled: true
               - name: projectId
                 value: "144"
-                disabled: false
+                disabled: true
               - name: productIds
                 value: "45"
                 disabled: true
@@ -1543,7 +1543,7 @@ collection:
                 value: "100"
                 disabled: false
               - name: serialize
-                value: "false"
+                value: "true"
                 disabled: false
             headers:
               - name: Authorization
@@ -1608,12 +1608,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/products/971"
+          - url: "{{render_admin_domain}}/products/1"
             name: retrieve product
             meta:
               id: req_a414b145c8914db9bb43222c9728d88a
               created: 1764496106058
-              modified: 1764510178741
+              modified: 1768372247918
               isPrivate: false
               description: ""
               sortKey: -1764496102585
@@ -1685,7 +1685,7 @@ collection:
             meta:
               id: req_5bd56bf3b2a94806b00b1cec9f7dce39
               created: 1764496106060
-              modified: 1764510181520
+              modified: 1768366761096
               isPrivate: false
               description: ""
               sortKey: -1764496102584
@@ -1697,16 +1697,16 @@ collection:
               - name: proxyMaterials
                 value: '[ { "id": 657, "variants": [ { "id": 1289 } ] }, { "id": 658,
                   "variants": [ { "id": 1289 } ] } ]'
-                disabled: false
+                disabled: true
               - name: page
-                value: "1"
+                value: "51209"
                 disabled: false
               - name: productId
-                value: "227"
+                value: "775"
                 disabled: false
               - name: productId
                 value: "226"
-                disabled: false
+                disabled: true
               - name: pageSize
                 value: "100"
                 disabled: false
@@ -2040,7 +2040,7 @@ collection:
         meta:
           id: fld_b2eeba39f96a4791a703f6c8afb2357f
           created: 1764496106065
-          modified: 1765451082598
+          modified: 1768487914752
           sortKey: -1764496102580
           description: ""
         children:
@@ -2146,7 +2146,7 @@ collection:
             meta:
               id: req_a62304dc1d0b451ab7fec37c2fef85a6
               created: 1764496106084
-              modified: 1764510315780
+              modified: 1768486368608
               isPrivate: false
               description: ""
               sortKey: -1764496102564
@@ -2163,7 +2163,7 @@ collection:
                 disabled: true
               - name: organizationId
                 value: "2"
-                disabled: false
+                disabled: true
             headers:
               - name: Authorization
                 value: Bearer {{render_admin_token}}
@@ -2615,7 +2615,7 @@ collection:
             meta:
               id: fld_1b2dd2b40a834069b0974195214a6bfe
               created: 1764496106066
-              modified: 1764496106066
+              modified: 1768487908616
               sortKey: -1764496102579
               description: ""
             children:
@@ -2623,7 +2623,7 @@ collection:
                 meta:
                   id: fld_e7769ca101ec4679bf284ff82f652a9b
                   created: 1764496106067
-                  modified: 1764496106067
+                  modified: 1768487908616
                   sortKey: -1764496102578
                   description: ""
                 children:
@@ -2632,7 +2632,7 @@ collection:
                     meta:
                       id: req_a1054db43db144d0929fc2e96e0f6fc0
                       created: 1764496106068
-                      modified: 1764510273149
+                      modified: 1768487832646
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102577
@@ -2643,8 +2643,8 @@ collection:
                         {
                             "options": [
                                 {
-                                    "optionIds": [2],
-                                    "proxyName": "Walls (proxy)"
+                                    "optionIds": [1, 2],
+                                    "proxyName": "Proxy 1 PLO"
                                 }
                             ]
                         }
@@ -2798,12 +2798,12 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{render_admin_domain}}/stages/26/options/31"
+                  - url: "{{render_admin_domain}}/stages/1/options/1"
                     name: update options
                     meta:
                       id: req_f1ef796b647641fa921abb50be0fcc88
                       created: 1764496106071
-                      modified: 1764510283535
+                      modified: 1768487905895
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102575
@@ -2813,7 +2813,8 @@ collection:
                       text: |-
                         {
                             "enabled": true,
-                            "proxyName": "Floor"
+                            "proxyName": "Proxy upd",
+                        		"optionIds": [1, 2]
                         }
                     headers:
                       - name: Content-Type
@@ -2961,7 +2962,7 @@ collection:
             meta:
               id: fld_ece04fb4b36548b09260cff452fd5493
               created: 1764496106075
-              modified: 1764496106075
+              modified: 1768486842009
               sortKey: -1764496102572
               description: ""
             children:
@@ -2969,7 +2970,7 @@ collection:
                 meta:
                   id: fld_793843fc3f614f948e750b91e89e7beb
                   created: 1764496106076
-                  modified: 1764496106076
+                  modified: 1768486842009
                   sortKey: -1764496102571
                   description: ""
                 children:
@@ -2978,7 +2979,7 @@ collection:
                     meta:
                       id: req_4a5eeff0d27d4d5ea018913968575138
                       created: 1764496106077
-                      modified: 1764510297105
+                      modified: 1768486667093
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102570
@@ -2989,8 +2990,8 @@ collection:
                         {
                             "options": [
                                 {
-                                    "optionIds": [1],
-                                    "proxyName": "Mirror (proxy)"
+                                    "optionIds": [1,2],
+                                    "proxyName": "Proxy 1 PLO"
                                 }
                             ]
                         }
@@ -3144,12 +3145,12 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{render_admin_domain}}/stages/2/geometryOptions/1"
+                  - url: "{{render_admin_domain}}/stages/1/geometryOptions/1"
                     name: update geometryOptions
                     meta:
                       id: req_af965fa31dd74efeaef4fed0a250fca6
                       created: 1764496106080
-                      modified: 1764510305239
+                      modified: 1768486840166
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102568
@@ -3159,10 +3160,10 @@ collection:
                       text: |-
                         {
                             "enabled": true,
-                            "proxyName": "test upd"
-                            //"options": [
-                            //    1, 2, 3
-                            //]
+                            "proxyName": "Proxy PLO upd",
+                            "geometryOptionIds": [
+                               1, 2
+                             ]
                         }
                     headers:
                       - name: Content-Type
@@ -3844,7 +3845,7 @@ collection:
         meta:
           id: fld_55cc98209eb540f8b3fe3e41e7d6f5d2
           created: 1764496106103
-          modified: 1765451305409
+          modified: 1768487789664
           sortKey: -1764496102551
           description: ""
         children:
@@ -3853,7 +3854,7 @@ collection:
             meta:
               id: req_c3ac724d921a41a8945be33850fc22ab
               created: 1764496106104
-              modified: 1765451296704
+              modified: 1768487724550
               isPrivate: false
               description: ""
               sortKey: -1764496102550
@@ -3862,7 +3863,7 @@ collection:
               mimeType: multipart/form-data
               params:
                 - name: name
-                  value: Blade S60
+                  value: Test Opt PLO 2
                   disabled: false
                   type: text
                 - name: enabled
@@ -3958,7 +3959,7 @@ collection:
             meta:
               id: req_7270e4e3de3a4adaae609dc79220bc2d
               created: 1764496106106
-              modified: 1764510378166
+              modified: 1768487688701
               isPrivate: false
               description: ""
               sortKey: -1764496102549
@@ -3978,10 +3979,10 @@ collection:
                 disabled: false
               - name: optionIds
                 value: "24"
-                disabled: false
+                disabled: true
               - name: optionIds
                 value: "23"
-                disabled: false
+                disabled: true
             headers:
               - name: Authorization
                 value: Bearer {{render_admin_token}}
@@ -4044,12 +4045,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/options/30"
+          - url: "{{render_admin_domain}}/options/1"
             name: retrieve option
             meta:
               id: req_b7d568bb1c3141a0b3ff0caae32a97ca
               created: 1764496106108
-              modified: 1764510381424
+              modified: 1768487788164
               isPrivate: false
               description: ""
               sortKey: -1764496102548
@@ -4349,7 +4350,7 @@ collection:
         meta:
           id: fld_08a3fd395fdf497e94fce863e68fd478
           created: 1764496106114
-          modified: 1765451361747
+          modified: 1768487778010
           sortKey: -1764496102544
           description: ""
         children:
@@ -4358,7 +4359,7 @@ collection:
             meta:
               id: req_3b601a8558d84994b39a57d729a17ae6
               created: 1764496106115
-              modified: 1765451345527
+              modified: 1768487775587
               isPrivate: false
               description: ""
               sortKey: -1764496102543
@@ -4367,7 +4368,7 @@ collection:
               mimeType: multipart/form-data
               params:
                 - name: name
-                  value: White
+                  value: Variant 2 (2)
                   disabled: false
                   type: text
                 - name: image
@@ -4375,7 +4376,7 @@ collection:
                   fileName: /home/pavlo/Downloads/image.png
                   type: file
                 - name: optionId
-                  value: "1"
+                  value: "2"
                   disabled: false
                   type: text
                 - name: materialJSON
@@ -6763,7 +6764,7 @@ collection:
         meta:
           id: fld_a19fb513562d4b12a463f5b5ecb6eb89
           created: 1764496106170
-          modified: 1764496106169
+          modified: 1768486527518
           sortKey: -1764496102500
           description: ""
         children:
@@ -6772,7 +6773,7 @@ collection:
             meta:
               id: req_6a2ba93908134ba8a1a6c04e54399895
               created: 1764496106171
-              modified: 1764510591923
+              modified: 1768486450810
               isPrivate: false
               description: ""
               sortKey: -1764496102499
@@ -6781,7 +6782,7 @@ collection:
               mimeType: application/json
               text: |-
                 {
-                    "name": "Clip",
+                    "name": "Test Opt 2 PLO",
                     "enabled": true,
                     "organizationId": 1
                 }
@@ -7169,476 +7170,6 @@ collection:
               isPrivate: false
               description: ""
               sortKey: -1764496102494
-            method: POST
-            scripts:
-              preRequest: >
-                const loginEndpoint =
-                insomnia.variables.get("render_admin_domain") + "/login";
-
-                const username =
-                insomnia.variables.get("render_admin_username");
-
-                const password =
-                insomnia.variables.get("render_admin_password");
-
-
-                const loginRequest = {
-                  method: "POST",
-                  url: loginEndpoint,
-                  headers: {
-                    "Content-Type": "application/json"
-                  },
-                  body: JSON.stringify({
-                    username,
-                    password
-                  })
-                };
-
-
-                insomnia.sendRequest(loginRequest, function (err, response) {
-                  if (err) {
-                    console.log("Error while logging in:", err);
-                    return;
-                  }
-
-                  try {
-                    const json = JSON.parse(response.body);
-                    const token = json.token;
-
-                    if (!token) {
-                      console.log("No token found in login response");
-                      return;
-                    }
-
-                    insomnia.environment.set("render_admin_token", token);
-                    console.log("Login successful, token saved");
-                  } catch (e) {
-                    console.log("Failed to parse login response:", e);
-                  }
-                });
-            settings:
-              renderRequestBody: true
-              encodeUrl: true
-              followRedirects: global
-              cookies:
-                send: true
-                store: true
-              rebuildPath: true
-      - name: rangeOptions
-        meta:
-          id: fld_23a77b9a89f240689858286d395963e3
-          created: 1764496106180
-          modified: 1764496106180
-          sortKey: -1764496102493
-          description: ""
-        children:
-          - url: "{{render_admin_domain}}/rangeOptions"
-            name: create range option
-            meta:
-              id: req_2d33edf61aa2495aa9b36e94c45188a0
-              created: 1764496106181
-              modified: 1764510622820
-              isPrivate: false
-              description: ""
-              sortKey: -1764496102492
-            method: POST
-            body:
-              mimeType: application/json
-              text: |-
-                {
-                    "name": "Range opt 1",
-                    "max": 100,
-                    "min": 0,
-                    "def": 0.5,
-                    "enabled": true,
-                    "organizationId": 1
-                }
-            headers:
-              - name: Authorization
-                value: Bearer {{render_admin_token}}
-              - name: Content-Type
-                value: application/json
-            authentication:
-              type: bearer
-              disabled: false
-              token: "{{render_admin_token}}"
-              prefix: ""
-            scripts:
-              preRequest: >
-                const loginEndpoint =
-                insomnia.variables.get("render_admin_domain") + "/login";
-
-                const username =
-                insomnia.variables.get("render_admin_username");
-
-                const password =
-                insomnia.variables.get("render_admin_password");
-
-
-                const loginRequest = {
-                  method: "POST",
-                  url: loginEndpoint,
-                  headers: {
-                    "Content-Type": "application/json"
-                  },
-                  body: JSON.stringify({
-                    username,
-                    password
-                  })
-                };
-
-
-                insomnia.sendRequest(loginRequest, function (err, response) {
-                  if (err) {
-                    console.log("Error while logging in:", err);
-                    return;
-                  }
-
-                  try {
-                    const json = JSON.parse(response.body);
-                    const token = json.token;
-
-                    if (!token) {
-                      console.log("No token found in login response");
-                      return;
-                    }
-
-                    insomnia.environment.set("render_admin_token", token);
-                    console.log("Login successful, token saved");
-                  } catch (e) {
-                    console.log("Failed to parse login response:", e);
-                  }
-                });
-            settings:
-              renderRequestBody: true
-              encodeUrl: true
-              followRedirects: global
-              cookies:
-                send: true
-                store: true
-              rebuildPath: true
-          - url: "{{render_admin_domain}}/rangeOptions"
-            name: list range options
-            meta:
-              id: req_afc466c882a3485b97b2a40190ddc732
-              created: 1764496106182
-              modified: 1764510626058
-              isPrivate: false
-              description: ""
-              sortKey: -1764496102491
-            method: GET
-            parameters:
-              - name: createdAt
-                value: asc
-                disabled: true
-              - name: name
-                value: desc
-                disabled: true
-              - name: id
-                value: desc
-                disabled: false
-              - name: organizationId
-                value: "2"
-                disabled: true
-            headers:
-              - name: Authorization
-                value: Bearer {{render_admin_token}}
-            authentication:
-              type: bearer
-              disabled: false
-              token: "{{render_admin_token}}"
-              prefix: ""
-            scripts:
-              preRequest: >
-                const loginEndpoint =
-                insomnia.variables.get("render_admin_domain") + "/login";
-
-                const username =
-                insomnia.variables.get("render_admin_username");
-
-                const password =
-                insomnia.variables.get("render_admin_password");
-
-
-                const loginRequest = {
-                  method: "POST",
-                  url: loginEndpoint,
-                  headers: {
-                    "Content-Type": "application/json"
-                  },
-                  body: JSON.stringify({
-                    username,
-                    password
-                  })
-                };
-
-
-                insomnia.sendRequest(loginRequest, function (err, response) {
-                  if (err) {
-                    console.log("Error while logging in:", err);
-                    return;
-                  }
-
-                  try {
-                    const json = JSON.parse(response.body);
-                    const token = json.token;
-
-                    if (!token) {
-                      console.log("No token found in login response");
-                      return;
-                    }
-
-                    insomnia.environment.set("render_admin_token", token);
-                    console.log("Login successful, token saved");
-                  } catch (e) {
-                    console.log("Failed to parse login response:", e);
-                  }
-                });
-            settings:
-              renderRequestBody: true
-              encodeUrl: true
-              followRedirects: global
-              cookies:
-                send: true
-                store: true
-              rebuildPath: true
-          - url: "{{render_admin_domain}}/rangeOptions/25"
-            name: retrieve range option
-            meta:
-              id: req_0e927e1167e94b6ebbc5f9a5031e302e
-              created: 1764496106183
-              modified: 1764510629294
-              isPrivate: false
-              description: ""
-              sortKey: -1764496102490
-            method: GET
-            headers:
-              - name: Authorization
-                value: Bearer {{render_admin_token}}
-            authentication:
-              type: bearer
-              disabled: false
-              token: "{{render_admin_token}}"
-              prefix: ""
-            scripts:
-              preRequest: >
-                const loginEndpoint =
-                insomnia.variables.get("render_admin_domain") + "/login";
-
-                const username =
-                insomnia.variables.get("render_admin_username");
-
-                const password =
-                insomnia.variables.get("render_admin_password");
-
-
-                const loginRequest = {
-                  method: "POST",
-                  url: loginEndpoint,
-                  headers: {
-                    "Content-Type": "application/json"
-                  },
-                  body: JSON.stringify({
-                    username,
-                    password
-                  })
-                };
-
-
-                insomnia.sendRequest(loginRequest, function (err, response) {
-                  if (err) {
-                    console.log("Error while logging in:", err);
-                    return;
-                  }
-
-                  try {
-                    const json = JSON.parse(response.body);
-                    const token = json.token;
-
-                    if (!token) {
-                      console.log("No token found in login response");
-                      return;
-                    }
-
-                    insomnia.environment.set("render_admin_token", token);
-                    console.log("Login successful, token saved");
-                  } catch (e) {
-                    console.log("Failed to parse login response:", e);
-                  }
-                });
-            settings:
-              renderRequestBody: true
-              encodeUrl: true
-              followRedirects: global
-              cookies:
-                send: true
-                store: true
-              rebuildPath: true
-          - url: "{{render_admin_domain}}/rangeOptions/1"
-            name: update range option
-            meta:
-              id: req_391f78eeafc54888baf0df4bb52f076d
-              created: 1764496106185
-              modified: 1764510631979
-              isPrivate: false
-              description: ""
-              sortKey: -1764496102489
-            method: PUT
-            body:
-              mimeType: application/json
-              text: |-
-                {
-                    "name": "Range opt 1 upd",
-                    "max": 100,
-                    "min": 0,
-                    "def": 0.5,
-                    "enabled": true
-                }
-            headers:
-              - name: Authorization
-                value: Bearer {{render_admin_token}}
-              - name: Content-Type
-                value: application/json
-            authentication:
-              type: bearer
-              disabled: false
-              token: "{{render_admin_token}}"
-              prefix: ""
-            scripts:
-              preRequest: >
-                const loginEndpoint =
-                insomnia.variables.get("render_admin_domain") + "/login";
-
-                const username =
-                insomnia.variables.get("render_admin_username");
-
-                const password =
-                insomnia.variables.get("render_admin_password");
-
-
-                const loginRequest = {
-                  method: "POST",
-                  url: loginEndpoint,
-                  headers: {
-                    "Content-Type": "application/json"
-                  },
-                  body: JSON.stringify({
-                    username,
-                    password
-                  })
-                };
-
-
-                insomnia.sendRequest(loginRequest, function (err, response) {
-                  if (err) {
-                    console.log("Error while logging in:", err);
-                    return;
-                  }
-
-                  try {
-                    const json = JSON.parse(response.body);
-                    const token = json.token;
-
-                    if (!token) {
-                      console.log("No token found in login response");
-                      return;
-                    }
-
-                    insomnia.environment.set("render_admin_token", token);
-                    console.log("Login successful, token saved");
-                  } catch (e) {
-                    console.log("Failed to parse login response:", e);
-                  }
-                });
-            settings:
-              renderRequestBody: true
-              encodeUrl: true
-              followRedirects: global
-              cookies:
-                send: true
-                store: true
-              rebuildPath: true
-          - url: "{{render_admin_domain}}/rangeOptions/2"
-            name: delete range option
-            meta:
-              id: req_4de6b1710ddb4208bb4a50dea7ac2309
-              created: 1764496106187
-              modified: 1764510634905
-              isPrivate: false
-              description: ""
-              sortKey: -1764496102488
-            method: DELETE
-            headers:
-              - name: Authorization
-                value: Bearer {{render_admin_token}}
-            authentication:
-              type: bearer
-              disabled: false
-              token: "{{render_admin_token}}"
-              prefix: ""
-            scripts:
-              preRequest: >
-                const loginEndpoint =
-                insomnia.variables.get("render_admin_domain") + "/login";
-
-                const username =
-                insomnia.variables.get("render_admin_username");
-
-                const password =
-                insomnia.variables.get("render_admin_password");
-
-
-                const loginRequest = {
-                  method: "POST",
-                  url: loginEndpoint,
-                  headers: {
-                    "Content-Type": "application/json"
-                  },
-                  body: JSON.stringify({
-                    username,
-                    password
-                  })
-                };
-
-
-                insomnia.sendRequest(loginRequest, function (err, response) {
-                  if (err) {
-                    console.log("Error while logging in:", err);
-                    return;
-                  }
-
-                  try {
-                    const json = JSON.parse(response.body);
-                    const token = json.token;
-
-                    if (!token) {
-                      console.log("No token found in login response");
-                      return;
-                    }
-
-                    insomnia.environment.set("render_admin_token", token);
-                    console.log("Login successful, token saved");
-                  } catch (e) {
-                    console.log("Failed to parse login response:", e);
-                  }
-                });
-            settings:
-              renderRequestBody: true
-              encodeUrl: true
-              followRedirects: global
-              cookies:
-                send: true
-                store: true
-              rebuildPath: true
-          - url: "{{render_admin_domain}}/rangeOptions/duplicate/1"
-            name: duplicate
-            meta:
-              id: req_901fa9b303864b57aa916f1eb64b6e25
-              created: 1764496106188
-              modified: 1764510638387
-              isPrivate: false
-              description: ""
-              sortKey: -1764496102487
             method: POST
             scripts:
               preRequest: >
@@ -8168,7 +7699,7 @@ collection:
         meta:
           id: fld_5794dd65ebce4d5da02c0efde2d1f6fe
           created: 1764496106200
-          modified: 1764496106200
+          modified: 1768486516726
           sortKey: -1764496102479
           description: ""
         children:
@@ -8177,7 +7708,7 @@ collection:
             meta:
               id: req_3cc344392d294358949b642d9642115a
               created: 1764496106201
-              modified: 1764510674848
+              modified: 1768486514390
               isPrivate: false
               description: ""
               sortKey: -1764496102478
@@ -8186,7 +7717,7 @@ collection:
               mimeType: multipart/form-data
               params:
                 - name: name
-                  value: No
+                  value: No (2)
                   disabled: false
                   type: text
                 - name: image
@@ -8194,7 +7725,7 @@ collection:
                   fileName: /home/pavlo/Downloads/image.png
                   type: file
                 - name: geometryOptionId
-                  value: "1"
+                  value: "2"
                   disabled: false
                   type: text
                 - name: model
@@ -10153,7 +9684,7 @@ collection:
         meta:
           id: fld_3c26558d58f14e80aa0f427e6ac43eef
           created: 1764496106260
-          modified: 1765384356105
+          modified: 1768486553509
           sortKey: -1764496102437
           description: ""
         children:
@@ -10809,7 +10340,7 @@ collection:
             meta:
               id: fld_e575ee0d16ac4b5b8764e43b88045622
               created: 1764496106272
-              modified: 1764496106272
+              modified: 1768486553509
               sortKey: -1764496102427
               description: ""
             children:
@@ -12044,7 +11575,7 @@ collection:
         meta:
           id: fld_01de6ee4db55489a9879f1ebe98c4d5d
           created: 1764496106302
-          modified: 1767774658670
+          modified: 1767956595503
           sortKey: -1764496102404
           description: ""
         children:
@@ -13046,7 +12577,7 @@ collection:
             meta:
               id: fld_2344b631a9a44ef284e5ddb1018ae730
               created: 1764496106321
-              modified: 1767774658670
+              modified: 1767956595503
               sortKey: -1764496102389
               description: ""
             children:
@@ -13054,16 +12585,16 @@ collection:
                 meta:
                   id: fld_156c3339741d4a66b841df6535bcee09
                   created: 1764496106323
-                  modified: 1764853867404
+                  modified: 1767956580667
                   sortKey: -1764496102388
                   description: ""
                 children:
-                  - url: "{{render_admin_domain}}/stageBundles/1/organizations"
+                  - url: "{{render_admin_domain}}/stageBundles/16/organizations"
                     name: connect bundles to organization
                     meta:
                       id: req_5c31fad015d7475a81b0793b3b386cf2
                       created: 1764496106324
-                      modified: 1764853780414
+                      modified: 1767956548001
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102387
@@ -13072,7 +12603,7 @@ collection:
                       mimeType: application/json
                       text: |-
                         {
-                            "organizationIds": [1]
+                            "organizationIds": [1, 2]
                         }
                     headers:
                       - name: Authorization
@@ -13222,12 +12753,12 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{render_admin_domain}}/organizations/1/stageBundles"
+                  - url: "{{render_admin_domain}}/stageBundles/4/organizations"
                     name: disconnect organizations from bundle
                     meta:
                       id: req_1bc8d556b07541cc992d775747340c4b
                       created: 1764496106327
-                      modified: 1764690258769
+                      modified: 1767956068713
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102385
@@ -13236,7 +12767,7 @@ collection:
                       mimeType: application/json
                       text: |-
                         {
-                            "stageBundleIds": [1]
+                            "organizationIds": [1, 2]
                         }
                     headers:
                       - name: Authorization
@@ -13480,7 +13011,7 @@ collection:
                 meta:
                   id: fld_cdaf37033f19427cb5bcc81ef357f490
                   created: 1764496106331
-                  modified: 1767774658670
+                  modified: 1767956595503
                   sortKey: -1764496102381
                   description: ""
                 children:
@@ -13580,7 +13111,7 @@ collection:
                     meta:
                       id: req_fa5e702863f640778cfeb774345fd388
                       created: 1764496106334
-                      modified: 1767696682007
+                      modified: 1767953960934
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102379
@@ -13669,12 +13200,12 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{render_admin_domain}}/bundles/stageBundles/4"
+                  - url: "{{render_admin_domain}}/bundles/stageBundles/16"
                     name: retieve stageBundle
                     meta:
                       id: req_26699fe071184fcfa70b56ed391eb289
                       created: 1764496106336
-                      modified: 1767696282664
+                      modified: 1767956594465
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102378
@@ -14564,21 +14095,348 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
+      - name: standardOptions
+        meta:
+          id: fld_f433cc805eee404294e87f8c5aa6b622
+          created: 1767968265081
+          modified: 1767969101460
+          sortKey: -1764509708775
+          description: ""
+        children:
+          - url: "{{render_admin_domain}}/standard-options"
+            name: create
+            meta:
+              id: req_10c9a1f32cfd4848bf9c7f9bb280834f
+              created: 1767711483047
+              modified: 1767969156060
+              isPrivate: false
+              description: ""
+              sortKey: -1767968274208
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "name": "Waypoints",
+                  "type": "vectorArray",
+                  "value": [
+                    { "X": 0, "Y": 0, "Z": 0 },
+                    { "X": 10, "Y": 5, "Z": 0 },
+                    { "X": 20, "Y": 10, "Z": 5 }
+                  ],
+                  "description": "Array of 3D positions"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NzcxMTQzNiwiZXhwIjoxNzY3NzExNzM2fQ.SMIjpvNIGKh_4R-3_DYKEDN_2vC2ONczgECjan4X0dk
+              prefix: bearer
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{render_admin_domain}}/standard-options"
+            name: list
+            meta:
+              id: req_f0fbc7c229724114aac814e111859b69
+              created: 1767711734918
+              modified: 1767969142737
+              isPrivate: false
+              description: ""
+              sortKey: -1767968274508
+            method: GET
+            parameters:
+              - name: type
+                value: vector
+                description: ""
+                disabled: true
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2Nzc5MjIzMCwiZXhwIjoxNzY3NzkyNTMwfQ.tyRqgMYCaFzB1KV-m-d2jHSGAUPxjOImdS5vvpj-A2s
+              prefix: bearer
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{render_admin_domain}}/standard-options/2"
+            name: retrieve
+            meta:
+              id: req_e91db05625da44f9b139daabdc6a0b20
+              created: 1767711772686
+              modified: 1767969370429
+              isPrivate: false
+              description: ""
+              sortKey: -1767968274358
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2Nzc5MjIzMCwiZXhwIjoxNzY3NzkyNTMwfQ.tyRqgMYCaFzB1KV-m-d2jHSGAUPxjOImdS5vvpj-A2s
+              prefix: bearer
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{render_admin_domain}}/standard-options/1"
+            name: update
+            meta:
+              id: req_ce628f8eae8a48a08c0aa7181b70364e
+              created: 1767711809693
+              modified: 1767969152293
+              isPrivate: false
+              description: ""
+              sortKey: -1767968274308
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"name": "Is Visible UPD"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2Nzc5MjIzMCwiZXhwIjoxNzY3NzkyNTMwfQ.tyRqgMYCaFzB1KV-m-d2jHSGAUPxjOImdS5vvpj-A2s
+              prefix: bearer
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{render_admin_domain}}/standard-options/sync"
+            name: sync
+            meta:
+              id: req_9ddc0e37079d45a7bdd642d9db4f4534
+              created: 1767797834584
+              modified: 1767969133133
+              isPrivate: false
+              description: ""
+              sortKey: -1767968274708
+            method: POST
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NzcxMTQzNiwiZXhwIjoxNzY3NzExNzM2fQ.SMIjpvNIGKh_4R-3_DYKEDN_2vC2ONczgECjan4X0dk
+              prefix: bearer
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: productStandartOptions
+        meta:
+          id: fld_68236639212747889bea7712f8a72d6a
+          created: 1767969441421
+          modified: 1768371746551
+          sortKey: -1764509708875
+          description: ""
+        children:
+          - url: ""
+            name: New Request
+            meta:
+              id: req_d63c522ee35b4d83aa266103ed496571
+              created: 1767969464304
+              modified: 1767969464304
+              isPrivate: false
+              description: ""
+              sortKey: -1767969464304
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.2.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{render_admin_domain}}/products/1/standard-options"
+            name: connect standart option to product
+            meta:
+              id: req_2a66e7ee6d0b4be7bf12afc365b5a63d
+              created: 1767969504490
+              modified: 1768371850943
+              isPrivate: false
+              description: ""
+              sortKey: -1767969464404
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"standardOptionId": 1,
+                	"proxyName": "isRotates",
+                	"value": false
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NzcxMTQzNiwiZXhwIjoxNzY3NzExNzM2fQ.SMIjpvNIGKh_4R-3_DYKEDN_2vC2ONczgECjan4X0dk
+              prefix: bearer
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{render_admin_domain}}/products/1/standard-options/5"
+            name: update association
+            meta:
+              id: req_5f04e42ac76740529a368b2fe180fd82
+              created: 1767969891659
+              modified: 1768372207726
+              isPrivate: false
+              description: ""
+              sortKey: -1767969464354
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"proxyName": "isVisible",
+                	"value": true,
+                	"enabled": false
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NzcxMTQzNiwiZXhwIjoxNzY3NzExNzM2fQ.SMIjpvNIGKh_4R-3_DYKEDN_2vC2ONczgECjan4X0dk
+              prefix: bearer
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{render_admin_domain}}/products/1/standard-options"
+            name: disconnect standart option to product
+            meta:
+              id: req_1fe5fd781c4f4fe491c649be6e6cdd26
+              created: 1767970214631
+              modified: 1768371784044
+              isPrivate: false
+              description: ""
+              sortKey: -1767969464379
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"productStandardOptionIds": [
+                		1
+                	]
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NzcxMTQzNiwiZXhwIjoxNzY3NzExNzM2fQ.SMIjpvNIGKh_4R-3_DYKEDN_2vC2ONczgECjan4X0dk
+              prefix: bearer
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
 cookieJar:
   name: Default Jar
   meta:
     id: jar_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496108720
-    modified: 1767774658668
+    modified: 1768487914717
 environments:
   name: Base Environment
   meta:
     id: env_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496106422
-    modified: 1767774658669
+    modified: 1768487914722
     isPrivate: false
   data:
-    render_admin_domain: https://renderadmin-dev.vivid3d.tech
+    render_admin_domain: http://127.0.0.1:3000
     render_admin_token: ""
     render_admin_username: admin
     render_admin_password: RmxJ8UjtE3aY4czn
+  subEnvironments:
+    - name: local
+      meta:
+        id: env_fc6ae7f918174d8da3346682e43d0af4
+        created: 1764509217083
+        modified: 1767796982969
+        isPrivate: false
+        sortKey: 1764509217083
+      data:
+        render-admin-domain: http://localhost:3000
+        render-admin-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2Nzc5MjIzMCwiZXhwIjoxNzY3NzkyNTMwfQ.tyRqgMYCaFzB1KV-m-d2jHSGAUPxjOImdS5vvpj-A2s
+        render-admin-username: admin
+        render-admin-password: RmxJ8UjtE3aY4czn
+      color: "#ffffff"
