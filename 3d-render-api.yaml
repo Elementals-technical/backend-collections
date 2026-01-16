@@ -893,12 +893,12 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: "{{_['studio-api-domain']}}/3d/listGLBs"
+              - url: "{{_['studio-api-domain']}}/3d-demo/listGLBs"
                 name: list GLBs
                 meta:
                   id: req_12eb3852d4f44e8ebeb6c2cce93a1c04
                   created: 1764495957354
-                  modified: 1764495957354
+                  modified: 1768548308123
                   isPrivate: false
                   description: ""
                   sortKey: -1764495952659
@@ -3162,13 +3162,13 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: "{{_['studio-api-domain']}}/3d/attachGLB/cd6cd22b0b539f138b2d6896def9e923c\
-                  f30df0633f7733b9807e22040e51a0e"
-                name: attachGlb
+              - url: "{{_['studio-api-domain']}}/3d/attachGLB/559cef29c52ec7359cdce75b2e8514730\
+                  dcb7999bb66b8d0ccc0c83e3701ebc3"
+                name: attachGlb (JSON)
                 meta:
                   id: req_84b69ce68bb84d6eadf78faeb2ae807d
                   created: 1764495957451
-                  modified: 1764495957451
+                  modified: 1768562028538
                   isPrivate: false
                   description: ""
                   sortKey: -1764495952625
@@ -3184,6 +3184,39 @@ collection:
                     value: zCxGZgV3iVUR93C2Cua2lTgZZZppRL1z32VifmzwdPgcP
                   - name: Content-Type
                     value: application/json
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: "{{_['studio-api-domain']}}/3d/attachGLB/a82625d85fa052a416086f16a9b6dc93d\
+                  c375ceac237ba2f7e292bf7bea620de"
+                name: attachGlb (FORM-DATA)
+                meta:
+                  id: req_d5b4bcda301447b88ac5fabec533138d
+                  created: 1768562068912
+                  modified: 1768562143676
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1764495952624
+                method: POST
+                body:
+                  mimeType: multipart/form-data
+                  params:
+                    - name: glb
+                      value: ""
+                      description: ""
+                      disabled: false
+                      fileName: /home/pavlo/Desktop/559cef29c52ec7359cdce75b2e8514730dcb7999bb66b8d0ccc0c83e3701ebc3.glb
+                      type: file
+                headers:
+                  - name: Content-Type
+                    value: multipart/form-data
+                  - name: Authorization
+                    value: zCxGZgV3iVUR93C2Cua2lTgZZZppRL1z32VifmzwdPgcP
                 settings:
                   renderRequestBody: true
                   encodeUrl: true
@@ -3362,5 +3395,7 @@ environments:
   meta:
     id: env_0a37bb006d526ec09ba26c96fd6fe5f77375a9b2
     created: 1764495957742
-    modified: 1764495957742
+    modified: 1768561878794
     isPrivate: false
+  data:
+    studio-api-domain: https://renderapi-dev.vivid3d.tech
