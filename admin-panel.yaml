@@ -11,7 +11,7 @@ collection:
     meta:
       id: fld_28943f57796445899fa604513d7a262d
       created: 1764496106015
-      modified: 1768487914752
+      modified: 1768976627739
       sortKey: -1764496102719
       description: ""
     children:
@@ -255,12 +255,12 @@ collection:
           sortKey: -1764496102607
           description: ""
         children:
-          - url: http://localhost:3000/login
+          - url: " https://renderadmin-dev.vivid3d.tech/login"
             name: jwt create
             meta:
               id: req_d79048f09baf4b189499c3087e3971fb
               created: 1764496106031
-              modified: 1765384035914
+              modified: 1768822993700
               isPrivate: false
               description: ""
               sortKey: -1764496102606
@@ -314,7 +314,7 @@ collection:
         meta:
           id: fld_7c339ab8605c47cdbdf97c858583629e
           created: 1764496106033
-          modified: 1767956011831
+          modified: 1768833151382
           sortKey: -1764496102604
           description: ""
         children:
@@ -323,7 +323,7 @@ collection:
             meta:
               id: req_13d16746fd0c4ed1a1d3386c4e604e7a
               created: 1764496106034
-              modified: 1767956010335
+              modified: 1768546097297
               isPrivate: false
               description: ""
               sortKey: -1764496102603
@@ -332,7 +332,7 @@ collection:
               mimeType: application/json
               text: |-
                 {
-                    "name": "TEST_PLO"
+                    "name": "LS FP Demo"
                 }
             headers:
               - name: Authorization
@@ -770,16 +770,16 @@ collection:
         meta:
           id: fld_5225bd9336c44ebbafabf30c45bb80f1
           created: 1764496106042
-          modified: 1764496106042
+          modified: 1768546136071
           sortKey: -1764496102597
           description: ""
         children:
-          - url: "{{render_admin_domain}}/organizations/13/users"
+          - url: "{{render_admin_domain}}/organizations/16/users"
             name: add organization users
             meta:
               id: req_f4a50fe036064d4aa3f8ca63edf6fd09
               created: 1764496106044
-              modified: 1764510142886
+              modified: 1768546135250
               isPrivate: false
               description: ""
               sortKey: -1764496102596
@@ -4350,7 +4350,7 @@ collection:
         meta:
           id: fld_08a3fd395fdf497e94fce863e68fd478
           created: 1764496106114
-          modified: 1768487778010
+          modified: 1768976270587
           sortKey: -1764496102544
           description: ""
         children:
@@ -4359,7 +4359,7 @@ collection:
             meta:
               id: req_3b601a8558d84994b39a57d729a17ae6
               created: 1764496106115
-              modified: 1768487775587
+              modified: 1768976267796
               isPrivate: false
               description: ""
               sortKey: -1764496102543
@@ -4368,7 +4368,7 @@ collection:
               mimeType: multipart/form-data
               params:
                 - name: name
-                  value: Variant 2 (2)
+                  value: New Variant
                   disabled: false
                   type: text
                 - name: image
@@ -4376,7 +4376,7 @@ collection:
                   fileName: /home/pavlo/Downloads/image.png
                   type: file
                 - name: optionId
-                  value: "2"
+                  value: "1"
                   disabled: false
                   type: text
                 - name: materialJSON
@@ -4452,7 +4452,7 @@ collection:
             meta:
               id: req_d7e496fc076941388d6e7d145e3bee24
               created: 1764496106117
-              modified: 1764510406419
+              modified: 1768976244936
               isPrivate: false
               description: ""
               sortKey: -1764496102542
@@ -4460,6 +4460,10 @@ collection:
             parameters:
               - name: pageSize
                 value: "100"
+                disabled: false
+              - name: optionId
+                value: "1"
+                description: ""
                 disabled: false
             headers:
               - name: Authorization
@@ -7699,7 +7703,7 @@ collection:
         meta:
           id: fld_5794dd65ebce4d5da02c0efde2d1f6fe
           created: 1764496106200
-          modified: 1768486516726
+          modified: 1768976627739
           sortKey: -1764496102479
           description: ""
         children:
@@ -7708,7 +7712,7 @@ collection:
             meta:
               id: req_3cc344392d294358949b642d9642115a
               created: 1764496106201
-              modified: 1768486514390
+              modified: 1768976625980
               isPrivate: false
               description: ""
               sortKey: -1764496102478
@@ -7717,7 +7721,7 @@ collection:
               mimeType: multipart/form-data
               params:
                 - name: name
-                  value: No (2)
+                  value: No
                   disabled: false
                   type: text
                 - name: image
@@ -7725,7 +7729,7 @@ collection:
                   fileName: /home/pavlo/Downloads/image.png
                   type: file
                 - name: geometryOptionId
-                  value: "2"
+                  value: "1"
                   disabled: false
                   type: text
                 - name: model
@@ -11152,7 +11156,7 @@ collection:
         meta:
           id: fld_50f83070d6ad490caddf8baa07924382
           created: 1764496106294
-          modified: 1764496106294
+          modified: 1768833618881
           sortKey: -1764496102410
           description: ""
         children:
@@ -11161,7 +11165,7 @@ collection:
             meta:
               id: req_9317b4ea0fd04e20948ca7fceb657e0c
               created: 1764496106295
-              modified: 1764510894641
+              modified: 1768833272583
               isPrivate: false
               description: ""
               sortKey: -1764496102409
@@ -11170,13 +11174,17 @@ collection:
               mimeType: multipart/form-data
               params:
                 - name: file
-                  disabled: false
-                  fileName: /home/pavlo/Downloads/MasterFile tooltip - Sheet1.csv
+                  disabled: true
+                  fileName: /home/pavlo/Downloads/Tooltip_hasting - Sheet1 (1).csv
                   type: file
                 - name: organizationId
-                  value: "1"
+                  value: "5"
                   disabled: false
                   type: text
+                - name: name
+                  value: matrix-cabiten-logic
+                  description: ""
+                  disabled: false
             headers:
               - name: Authorization
                 value: Bearer {{render_admin_token}}
@@ -11241,12 +11249,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/datatables/22/overwrite"
+          - url: "{{render_admin_domain}}/datatables/439/overwrite"
             name: overwrite data table
             meta:
               id: req_d38b89a74b6f4fc7ab542a5d155fe671
               created: 1764496106296
-              modified: 1764510897962
+              modified: 1768833456825
               isPrivate: false
               description: ""
               sortKey: -1764496102408
@@ -11256,8 +11264,7 @@ collection:
               params:
                 - name: file
                   disabled: false
-                  fileName: /home/pavlo/Downloads/Hasting Swatches Cart [ List - product] - Data
-                    Product Hasting.csv
+                  fileName: /home/pavlo/Downloads/matrix-cabiten-logic.csv
                   type: file
             headers:
               - name: Authorization
@@ -11408,12 +11415,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/datatables/8"
+          - url: "{{render_admin_domain}}/datatables/439"
             name: retrieve datatable
             meta:
               id: req_7b7aace3c21849f398288bc6792e5e36
               created: 1764496106299
-              modified: 1764510904656
+              modified: 1768833498226
               isPrivate: false
               description: ""
               sortKey: -1764496102406
@@ -11509,6 +11516,97 @@ collection:
               description: ""
               sortKey: -1764496102405
             method: DELETE
+            headers:
+              - name: Authorization
+                value: Bearer {{render_admin_token}}
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{render_admin_token}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render_admin_domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render_admin_username");
+
+                const password =
+                insomnia.variables.get("render_admin_password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render_admin_token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{render_admin_domain}}/datatables/439/rows?page=1&pageSize=1"
+            name: retrieve datatable rows
+            meta:
+              id: req_b1d491f4ecb0434c828a5f9f7bf2840a
+              created: 1768583947084
+              modified: 1768833617628
+              isPrivate: false
+              description: ""
+              sortKey: -1764496102405.5
+            method: GET
+            parameters:
+              - name: filterField[]
+                value: Product
+                disabled: true
+              - name: filterValue[]
+                value: Urban%20Duplex
+                disabled: true
+              - name: filterField[]
+                value: Material
+                disabled: true
+              - name: filterValue[]
+                value: HPL
+                disabled: true
+              - name: filterField[]
+                value: Material
+                disabled: true
+              - name: filterValue[]
+                value: Fenix
+                disabled: true
             headers:
               - name: Authorization
                 value: Bearer {{render_admin_token}}
@@ -14408,18 +14506,653 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
+      - name: configurators
+        meta:
+          id: fld_b482ec67e82143fba97e00e98f4eded9
+          created: 1768889358805
+          modified: 1768889358805
+          sortKey: -1768889358806
+          description: ""
+        children:
+          - url: "{{render_admin_domain}}/configurators"
+            name: create
+            meta:
+              id: req_fd09a02f1c50463481cbd069d60f313d
+              created: 1768889385187
+              modified: 1768889460089
+              isPrivate: false
+              description: ""
+              sortKey: -1768889389483
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "name": "Test Configurator",
+                	"organizationId": 1
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NzcxMTQzNiwiZXhwIjoxNzY3NzExNzM2fQ.SMIjpvNIGKh_4R-3_DYKEDN_2vC2ONczgECjan4X0dk
+              prefix: bearer
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{render_admin_domain}}/configurators"
+            name: list
+            meta:
+              id: req_510d945ccea943ae9bfa4dad875211b4
+              created: 1768889492805
+              modified: 1768889507430
+              isPrivate: false
+              description: ""
+              sortKey: -1768889389583
+            method: GET
+            parameters:
+              - name: type
+                value: vector
+                description: ""
+                disabled: true
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2Nzc5MjIzMCwiZXhwIjoxNzY3NzkyNTMwfQ.tyRqgMYCaFzB1KV-m-d2jHSGAUPxjOImdS5vvpj-A2s
+              prefix: bearer
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{render_admin_domain}}/configurators/1"
+            name: retrieve
+            meta:
+              id: req_2b64808432854a93bef5f502765fd0b6
+              created: 1768889639573
+              modified: 1768920627405
+              isPrivate: false
+              description: ""
+              sortKey: -1768889389533
+            method: GET
+            parameters:
+              - name: serialize
+                value: "true"
+                description: ""
+                disabled: false
+              - name: view
+                value: full
+                description: ""
+                disabled: false
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2Nzc5MjIzMCwiZXhwIjoxNzY3NzkyNTMwfQ.tyRqgMYCaFzB1KV-m-d2jHSGAUPxjOImdS5vvpj-A2s
+              prefix: bearer
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{render_admin_domain}}/configurators/1"
+            name: update
+            meta:
+              id: req_d8cec482b402450b8ac4950ab96eaf5a
+              created: 1768889666155
+              modified: 1768889690159
+              isPrivate: false
+              description: ""
+              sortKey: -1768889389508
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"name": "Configurator UPD"
+                }
+            parameters:
+              - name: type
+                value: vector
+                description: ""
+                disabled: true
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2Nzc5MjIzMCwiZXhwIjoxNzY3NzkyNTMwfQ.tyRqgMYCaFzB1KV-m-d2jHSGAUPxjOImdS5vvpj-A2s
+              prefix: bearer
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{render_admin_domain}}/configurators/1"
+            name: delete
+            meta:
+              id: req_6f17a420c4714f42bb110684fcdec90d
+              created: 1768889713156
+              modified: 1768889716353
+              isPrivate: false
+              description: ""
+              sortKey: -1768889389520.5
+            method: DELETE
+            parameters:
+              - name: type
+                value: vector
+                description: ""
+                disabled: true
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2Nzc5MjIzMCwiZXhwIjoxNzY3NzkyNTMwfQ.tyRqgMYCaFzB1KV-m-d2jHSGAUPxjOImdS5vvpj-A2s
+              prefix: bearer
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - name: configurator - geometryOptions
+            meta:
+              id: fld_dcb72a52cbf249a28f5abdd3fb44f088
+              created: 1768889763598
+              modified: 1768889763598
+              sortKey: -1768889763598
+              description: ""
+            children:
+              - url: "{{render_admin_domain}}/configurators/1/geometry-options"
+                name: add geometry options
+                meta:
+                  id: req_490bd91fc33e490fa8b9b4099e8d2da8
+                  created: 1768889796913
+                  modified: 1768890254048
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1768889801367
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |
+                    {
+                      "geometryOptions": [
+                        {
+                          "geometryOptionIds": [1],
+                          "proxyName": "Test Proxy"
+                        }
+                      ]
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/12.1.0
+                    description: ""
+                    disabled: false
+                authentication:
+                  type: bearer
+                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NzcxMTQzNiwiZXhwIjoxNzY3NzExNzM2fQ.SMIjpvNIGKh_4R-3_DYKEDN_2vC2ONczgECjan4X0dk
+                  prefix: bearer
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: "{{render_admin_domain}}/configurators/1/geometry-options"
+                name: delete geometry options
+                meta:
+                  id: req_7e9c583b377948d3a1fd527c06e30692
+                  created: 1768890395745
+                  modified: 1768890644369
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1768889595475
+                method: DELETE
+                body:
+                  mimeType: application/json
+                  text: |
+                    {
+                      "geometryOptions": [
+                        2
+                      ]
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/12.1.0
+                    description: ""
+                    disabled: false
+                authentication:
+                  type: bearer
+                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NzcxMTQzNiwiZXhwIjoxNzY3NzExNzM2fQ.SMIjpvNIGKh_4R-3_DYKEDN_2vC2ONczgECjan4X0dk
+                  prefix: bearer
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: "{{render_admin_domain}}/configurators/1/geometry-options/3"
+                name: update association
+                meta:
+                  id: req_2b785d16050149849d0a55db264d3681
+                  created: 1768920325551
+                  modified: 1768920450484
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1768889698421
+                method: PATCH
+                body:
+                  mimeType: application/json
+                  text: |
+                    {
+                    	"enabled": false,
+                      "proxyName": "Test Proxy upd"
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/12.1.0
+                    description: ""
+                    disabled: false
+                authentication:
+                  type: bearer
+                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NzcxMTQzNiwiZXhwIjoxNzY3NzExNzM2fQ.SMIjpvNIGKh_4R-3_DYKEDN_2vC2ONczgECjan4X0dk
+                  prefix: bearer
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+          - name: configurator - options
+            meta:
+              id: fld_8704063c9b254588ac82bdd584a284d5
+              created: 1768890488117
+              modified: 1768890488117
+              sortKey: -1768889561202
+              description: ""
+            children:
+              - url: "{{render_admin_domain}}/configurators/1/options"
+                name: add options
+                meta:
+                  id: req_b60a2fe0ab2542da9a464a248b14f232
+                  created: 1768890488121
+                  modified: 1768976159659
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1768889801367
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |
+                    {
+                      "options": [
+                        {
+                          "optionIds": [1],
+                          "proxyName": "Test Proxy mt vars"
+                        }
+                      ]
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/12.1.0
+                    description: ""
+                    disabled: false
+                authentication:
+                  type: bearer
+                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NzcxMTQzNiwiZXhwIjoxNzY3NzExNzM2fQ.SMIjpvNIGKh_4R-3_DYKEDN_2vC2ONczgECjan4X0dk
+                  prefix: bearer
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: "{{render_admin_domain}}/configurators/1/options"
+                name: delete options
+                meta:
+                  id: req_65b6698da4914395a25ff7085f3d9890
+                  created: 1768890488136
+                  modified: 1768976131954
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1768889595475
+                method: DELETE
+                body:
+                  mimeType: application/json
+                  text: |
+                    {
+                      "options": [
+                        2
+                      ]
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/12.1.0
+                    description: ""
+                    disabled: false
+                authentication:
+                  type: bearer
+                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NzcxMTQzNiwiZXhwIjoxNzY3NzExNzM2fQ.SMIjpvNIGKh_4R-3_DYKEDN_2vC2ONczgECjan4X0dk
+                  prefix: bearer
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: "{{render_admin_domain}}/configurators/1/material-options/3"
+                name: update association
+                meta:
+                  id: req_b4020b10d6e6456c830994af9b36a075
+                  created: 1768920470041
+                  modified: 1768976353602
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1768889698421
+                method: PATCH
+                body:
+                  mimeType: application/json
+                  text: |
+                    {
+                    	"enabled": false,
+                      "proxyName": "Test Proxy upd"
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/12.1.0
+                    description: ""
+                    disabled: false
+                authentication:
+                  type: bearer
+                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NzcxMTQzNiwiZXhwIjoxNzY3NzExNzM2fQ.SMIjpvNIGKh_4R-3_DYKEDN_2vC2ONczgECjan4X0dk
+                  prefix: bearer
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+          - name: configurator - standartOptions
+            meta:
+              id: fld_7d50f29216d348918b6f1ba9a008268f
+              created: 1768890831884
+              modified: 1768890831884
+              sortKey: -1768889460004
+              description: ""
+            children:
+              - url: "{{render_admin_domain}}/configurators/1/standard-options"
+                name: add standart options
+                meta:
+                  id: req_8edfb67d19544922b6dda355796f0102
+                  created: 1768890831885
+                  modified: 1768920084899
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1768889801367
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |
+                    {
+                      "standardOptions": [
+                        {
+                          "standardOptionId": 20,
+                          "proxyName": "Test Proxy Standart",
+                    			"value": "abc"
+                        }
+                      ]
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/12.1.0
+                    description: ""
+                    disabled: false
+                authentication:
+                  type: bearer
+                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NzcxMTQzNiwiZXhwIjoxNzY3NzExNzM2fQ.SMIjpvNIGKh_4R-3_DYKEDN_2vC2ONczgECjan4X0dk
+                  prefix: bearer
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: "{{render_admin_domain}}/configurators/1/standard-options"
+                name: delete standart options
+                meta:
+                  id: req_1fed5f1cc2a84d31ae778eed322f9cc7
+                  created: 1768890831887
+                  modified: 1768920166563
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1768889595475
+                method: DELETE
+                body:
+                  mimeType: application/json
+                  text: |
+                    {
+                      "configuratorStandardOptionIds": [
+                        1
+                      ]
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/12.1.0
+                    description: ""
+                    disabled: false
+                authentication:
+                  type: bearer
+                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NzcxMTQzNiwiZXhwIjoxNzY3NzExNzM2fQ.SMIjpvNIGKh_4R-3_DYKEDN_2vC2ONczgECjan4X0dk
+                  prefix: bearer
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: "{{render_admin_domain}}/configurators/1/standard-options/2"
+                name: update association
+                meta:
+                  id: req_bb71b6d2e2c24abe8d8067d9b21ab5df
+                  created: 1768920541357
+                  modified: 1768920595727
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1768889698421
+                method: PATCH
+                body:
+                  mimeType: application/json
+                  text: |
+                    {
+                    	"enabled": false,
+                      "proxyName": "Test Proxy upd",
+                    	"value": "str"
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/12.1.0
+                    description: ""
+                    disabled: false
+                authentication:
+                  type: bearer
+                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NzcxMTQzNiwiZXhwIjoxNzY3NzExNzM2fQ.SMIjpvNIGKh_4R-3_DYKEDN_2vC2ONczgECjan4X0dk
+                  prefix: bearer
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+          - name: configurator - geometryOptions - geometryVariants
+            meta:
+              id: fld_6fb999960cf54825b882fcbbce66a821
+              created: 1768976382938
+              modified: 1768976382938
+              sortKey: -1768889662400
+              description: ""
+            children:
+              - url: "{{render_admin_domain}}/configurators/1/geometry-options/3/variants/6"
+                name: update association
+                meta:
+                  id: req_dde868bae545468cb4bc5578921e2ef8
+                  created: 1768976382957
+                  modified: 1768976652235
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1768889698421
+                method: PATCH
+                body:
+                  mimeType: application/json
+                  text: |
+                    {
+                    	"enabled": false
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/12.1.0
+                    description: ""
+                    disabled: false
+                authentication:
+                  type: bearer
+                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NzcxMTQzNiwiZXhwIjoxNzY3NzExNzM2fQ.SMIjpvNIGKh_4R-3_DYKEDN_2vC2ONczgECjan4X0dk
+                  prefix: bearer
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+          - name: configurator - materialOptions - materialVariants
+            meta:
+              id: fld_2e076454c2784512a028cbefe8003cdf
+              created: 1768976556159
+              modified: 1768976556159
+              sortKey: -1768889611801
+              description: ""
+            children:
+              - url: "{{render_admin_domain}}/configurators/1/options/3/variants/7"
+                name: update association
+                meta:
+                  id: req_2840a995bf59499b9dba52ba6d65c41f
+                  created: 1768976556161
+                  modified: 1768976556161
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1768889698421
+                method: PATCH
+                body:
+                  mimeType: application/json
+                  text: |
+                    {
+                    	"enabled": false
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/12.1.0
+                    description: ""
+                    disabled: false
+                authentication:
+                  type: bearer
+                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NzcxMTQzNiwiZXhwIjoxNzY3NzExNzM2fQ.SMIjpvNIGKh_4R-3_DYKEDN_2vC2ONczgECjan4X0dk
+                  prefix: bearer
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
 cookieJar:
   name: Default Jar
   meta:
     id: jar_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496108720
-    modified: 1768487914717
+    modified: 1768976627719
 environments:
   name: Base Environment
   meta:
     id: env_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496106422
-    modified: 1768487914722
+    modified: 1768976627724
     isPrivate: false
   data:
     render_admin_domain: http://127.0.0.1:3000
