@@ -23,12 +23,12 @@ collection:
           sortKey: -1764497142378
           description: ""
         children:
-          - url: "{{_['swatch-card-api']}}/products/13e6d315-0611-4191-aafd-2f77358bdcb6"
+          - url: "{{_['swatch-card-api']}}/products/4b6e51e5-8fb5-485d-b144-048c19ec771e"
             name: retrieve
             meta:
               id: req_9b8c5f7832784842950080a2cb613059
               created: 1764497144260
-              modified: 1764497144260
+              modified: 1769072588232
               isPrivate: false
               description: ""
               sortKey: -1764497142377
@@ -46,7 +46,7 @@ collection:
             meta:
               id: req_8c9f56a654a5468fac69bfcccbc6ede7
               created: 1764497144262
-              modified: 1766587013550
+              modified: 1766589753650
               isPrivate: false
               description: ""
               sortKey: -1764497142376
@@ -72,7 +72,26 @@ collection:
               - name: assetId[]
                 value: 949ccd8f-c023-448b-96e7-8cf5ba86d9a6
                 description: ""
-                disabled: false
+                disabled: true
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['swatch-card-api']}}/products/4b6e51e5-8fb5-485d-b144-048c19ec771e/co\
+              untMaterials"
+            name: count materials
+            meta:
+              id: req_e6ac183d76f8421998ebd9ef41020cb0
+              created: 1769074280417
+              modified: 1769074622939
+              isPrivate: false
+              description: ""
+              sortKey: -1764497142376.5
+            method: GET
             settings:
               renderRequestBody: true
               encodeUrl: true
@@ -158,7 +177,7 @@ environments:
       meta:
         id: env_52b2ce25b7fd433695c5f6b9bc39b358
         created: 1764943556197
-        modified: 1766586501654
+        modified: 1769073901836
         isPrivate: false
         sortKey: 1764943556197
       data:
