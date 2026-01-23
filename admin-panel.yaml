@@ -11,7 +11,7 @@ collection:
     meta:
       id: fld_28943f57796445899fa604513d7a262d
       created: 1764496106015
-      modified: 1767796982970
+      modified: 1769010088289
       sortKey: -1764496102719
       description: ""
     children:
@@ -1372,7 +1372,7 @@ collection:
         meta:
           id: fld_a6a1513b5d204d29a79a6f171de34655
           created: 1764496106054
-          modified: 1767796982970
+          modified: 1768809236172
           sortKey: -1764496102588
           description: ""
         children:
@@ -1381,7 +1381,7 @@ collection:
             meta:
               id: req_cdca2a252e0e4a858139cc5bbf93817f
               created: 1764496106055
-              modified: 1764510172296
+              modified: 1768558248007
               isPrivate: false
               description: ""
               sortKey: -1764496102587
@@ -1390,7 +1390,7 @@ collection:
               mimeType: multipart/form-data
               params:
                 - name: name
-                  value: Bugout 533
+                  value: Bugout 53356
                   disabled: false
                   type: text
                 - name: enabled
@@ -1398,8 +1398,8 @@ collection:
                   disabled: false
                   type: text
                 - name: resource
-                  disabled: true
-                  fileName: /home/pavlo/Downloads/rendersv2.zip
+                  disabled: false
+                  fileName: F:\pakchunk1002-Windows.pak
                   type: file
                 - name: imgCover
                   disabled: true
@@ -1441,7 +1441,7 @@ collection:
               - name: Authorization
                 value: Bearer {{_['render-admin-token']}}
               - name: Content-Type
-                value: multipart/form-data
+                value: multpart/form-data
             authentication:
               type: bearer
               disabled: false
@@ -1506,7 +1506,7 @@ collection:
             meta:
               id: req_a3b075dced984740b8e5563c29e619a1
               created: 1764496106057
-              modified: 1767796858720
+              modified: 1768313432067
               isPrivate: false
               description: ""
               sortKey: -1764496102586
@@ -1552,7 +1552,7 @@ collection:
             authentication:
               type: bearer
               disabled: false
-              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2Nzc5MjIzMCwiZXhwIjoxNzY3NzkyNTMwfQ.tyRqgMYCaFzB1KV-m-d2jHSGAUPxjOImdS5vvpj-A2s
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2ODIwNzYzNCwiZXhwIjoxNzY4MjA3OTM0fQ.6xZJta0n4PY3yjexPz52RjG16wB2yi9LRgiAXRygm1M
               prefix: "bearer "
             scripts:
               preRequest: >
@@ -2045,7 +2045,7 @@ collection:
         meta:
           id: fld_b2eeba39f96a4791a703f6c8afb2357f
           created: 1764496106065
-          modified: 1766073732949
+          modified: 1768811284583
           sortKey: -1764496102580
           description: ""
         children:
@@ -3849,7 +3849,7 @@ collection:
         meta:
           id: fld_55cc98209eb540f8b3fe3e41e7d6f5d2
           created: 1764496106103
-          modified: 1767168980694
+          modified: 1768811416036
           sortKey: -1764496102551
           description: ""
         children:
@@ -4354,7 +4354,7 @@ collection:
         meta:
           id: fld_08a3fd395fdf497e94fce863e68fd478
           created: 1764496106114
-          modified: 1767795950445
+          modified: 1768928236148
           sortKey: -1764496102544
           description: ""
         children:
@@ -4363,7 +4363,7 @@ collection:
             meta:
               id: req_3b601a8558d84994b39a57d729a17ae6
               created: 1764496106115
-              modified: 1765451345527
+              modified: 1768928235833
               isPrivate: false
               description: ""
               sortKey: -1764496102543
@@ -4372,7 +4372,7 @@ collection:
               mimeType: multipart/form-data
               params:
                 - name: name
-                  value: White
+                  value: Blue
                   disabled: false
                   type: text
                 - name: image
@@ -4395,7 +4395,7 @@ collection:
             authentication:
               type: bearer
               disabled: false
-              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NTQ1MDk4NywiZXhwIjoxNzY1NDUxMjg3fQ.gSroGjb0eVkU3o6Frb0FfmPekUW1R_XCLkLtxR4hstM
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2ODkyODE4OSwiZXhwIjoxNzY4OTI4NDg5fQ.CKpsn6eR2Vhd_XIKa2aqQ0xmKgGQw9E2uQdsZjUDOcM
               prefix: bearer
             scripts:
               preRequest: >
@@ -6769,7 +6769,7 @@ collection:
         meta:
           id: fld_a19fb513562d4b12a463f5b5ecb6eb89
           created: 1764496106170
-          modified: 1765787576532
+          modified: 1768811305558
           sortKey: -1764496102500
           description: ""
         children:
@@ -6778,7 +6778,7 @@ collection:
             meta:
               id: req_6a2ba93908134ba8a1a6c04e54399895
               created: 1764496106171
-              modified: 1765787569188
+              modified: 1768811305266
               isPrivate: false
               description: ""
               sortKey: -1764496102499
@@ -6787,7 +6787,7 @@ collection:
               mimeType: application/json
               text: |-
                 {
-                    "name": "Clip",
+                    "name": "Clio",
                     "enabled": true,
                     "organizationId": 1
                 }
@@ -6860,7 +6860,7 @@ collection:
             meta:
               id: req_f91d4928690f4fc9ba50139eba7618e9
               created: 1764496106172
-              modified: 1764510594840
+              modified: 1768811289551
               isPrivate: false
               description: ""
               sortKey: -1764496102498
@@ -6874,7 +6874,7 @@ collection:
                 disabled: true
               - name: id
                 value: desc
-                disabled: false
+                disabled: true
               - name: organizationId
                 value: "2"
                 disabled: true
@@ -8660,7 +8660,7 @@ collection:
         meta:
           id: fld_3b90d584921d4367bc6b3f0d3c17e814
           created: 1764496106211
-          modified: 1767366732122
+          modified: 1768207765776
           sortKey: -1764496102472
           description: ""
         children:
@@ -8668,7 +8668,7 @@ collection:
             meta:
               id: fld_5d8975ec169f4d1fb510be91fa36765e
               created: 1764496106212
-              modified: 1767174765876
+              modified: 1768207765776
               sortKey: -1764496102471
               description: ""
             children:
@@ -8905,7 +8905,7 @@ collection:
                 meta:
                   id: req_4662b27ddc054f969d2da32d65a3d7aa
                   created: 1764496106217
-                  modified: 1767189583072
+                  modified: 1768207763575
                   isPrivate: false
                   description: ""
                   sortKey: -1764496102468
@@ -8923,7 +8923,7 @@ collection:
                 authentication:
                   type: bearer
                   disabled: false
-                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NzE2ODczNywiZXhwIjoxNzY3MTY5MDM3fQ.-alDOV2RyxcfG64OPP0Rilq-C4Xwp5PeDVLlBvvMiyw
+                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2ODIwNzYzNCwiZXhwIjoxNzY4MjA3OTM0fQ.6xZJta0n4PY3yjexPz52RjG16wB2yi9LRgiAXRygm1M
                   prefix: "bearer "
                 scripts:
                   preRequest: >
@@ -9379,7 +9379,7 @@ collection:
             meta:
               id: fld_008c3b370fdd4606bbdf7336cc4b26c3
               created: 1764496106227
-              modified: 1767366432384
+              modified: 1768207735777
               sortKey: -1764496102461
               description: ""
             children:
@@ -9388,7 +9388,7 @@ collection:
                 meta:
                   id: req_fa86c54eee6246e390792d4dfb5f964d
                   created: 1764496106228
-                  modified: 1767365621361
+                  modified: 1768207735165
                   isPrivate: false
                   description: ""
                   sortKey: -1764496102460
@@ -9416,7 +9416,7 @@ collection:
                 authentication:
                   type: bearer
                   disabled: false
-                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NzE2ODczNywiZXhwIjoxNzY3MTY5MDM3fQ.-alDOV2RyxcfG64OPP0Rilq-C4Xwp5PeDVLlBvvMiyw
+                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2ODIwNzYzNCwiZXhwIjoxNzY4MjA3OTM0fQ.6xZJta0n4PY3yjexPz52RjG16wB2yi9LRgiAXRygm1M
                   prefix: bearer
                 scripts:
                   preRequest: >
@@ -9478,7 +9478,7 @@ collection:
                 meta:
                   id: req_b0b552036d99455c9153146463fd97bd
                   created: 1767004995207
-                  modified: 1767190754718
+                  modified: 1768207675120
                   isPrivate: false
                   description: ""
                   sortKey: -1764496102454
@@ -9489,7 +9489,7 @@ collection:
                 authentication:
                   type: bearer
                   disabled: false
-                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NzAwMzg1MCwiZXhwIjoxNzY3MDA0MTUwfQ.R2jQOldL-RIe5HaCyFyydYXZX5msXMneMsIUAtdVHAI
+                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2ODIwNzYzNCwiZXhwIjoxNzY4MjA3OTM0fQ.6xZJta0n4PY3yjexPz52RjG16wB2yi9LRgiAXRygm1M
                   prefix: bearer
                 scripts:
                   preRequest: >
@@ -9551,7 +9551,7 @@ collection:
                 meta:
                   id: req_4b546f29d0fe433fbd4c5759c363e1df
                   created: 1767190251484
-                  modified: 1767190266276
+                  modified: 1768207684591
                   isPrivate: false
                   description: ""
                   sortKey: -1764496102457
@@ -9579,7 +9579,7 @@ collection:
                 authentication:
                   type: bearer
                   disabled: false
-                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NzE2ODczNywiZXhwIjoxNzY3MTY5MDM3fQ.-alDOV2RyxcfG64OPP0Rilq-C4Xwp5PeDVLlBvvMiyw
+                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2ODIwNzYzNCwiZXhwIjoxNzY4MjA3OTM0fQ.6xZJta0n4PY3yjexPz52RjG16wB2yi9LRgiAXRygm1M
                   prefix: bearer
                 scripts:
                   preRequest: >
@@ -11702,7 +11702,7 @@ collection:
         meta:
           id: fld_50f83070d6ad490caddf8baa07924382
           created: 1764496106294
-          modified: 1764496106294
+          modified: 1769000950782
           sortKey: -1764496102410
           description: ""
         children:
@@ -11711,7 +11711,7 @@ collection:
             meta:
               id: req_9317b4ea0fd04e20948ca7fceb657e0c
               created: 1764496106295
-              modified: 1764510894641
+              modified: 1768228453240
               isPrivate: false
               description: ""
               sortKey: -1764496102409
@@ -11721,12 +11721,17 @@ collection:
               params:
                 - name: file
                   disabled: false
-                  fileName: /home/pavlo/Downloads/MasterFile tooltip - Sheet1.csv
+                  fileName: C:\Users\user\Downloads\Hasting Swatches Cart [ List - product] - Data
+                    Product Hasting.csv
                   type: file
                 - name: organizationId
                   value: "1"
                   disabled: false
                   type: text
+                - name: name
+                  value: Hashting Swatches Cart [List of product] 2
+                  description: ""
+                  disabled: false
             headers:
               - name: Authorization
                 value: Bearer {{_['render-admin-token']}}
@@ -11736,7 +11741,7 @@ collection:
               type: bearer
               disabled: false
               token: "{{_['render-admin-token']}}"
-              prefix: ""
+              prefix: bearer
             scripts:
               preRequest: >
                 const loginEndpoint =
@@ -11791,12 +11796,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render-admin-domain']}}/datatables/22/overwrite"
+          - url: "{{_['render-admin-domain']}}/datatables/1/overwrite"
             name: overwrite data table
             meta:
               id: req_d38b89a74b6f4fc7ab542a5d155fe671
               created: 1764496106296
-              modified: 1764510897962
+              modified: 1768227408888
               isPrivate: false
               description: ""
               sortKey: -1764496102408
@@ -11806,7 +11811,7 @@ collection:
               params:
                 - name: file
                   disabled: false
-                  fileName: /home/pavlo/Downloads/Hasting Swatches Cart [ List - product] - Data
+                  fileName: C:\Users\user\Downloads\Hasting Swatches Cart [ List - product] - Data
                     Product Hasting.csv
                   type: file
             headers:
@@ -11878,7 +11883,7 @@ collection:
             meta:
               id: req_ed4e0fc26c1348c4ae6562b2a10dbf6b
               created: 1764496106297
-              modified: 1764510901751
+              modified: 1768229623058
               isPrivate: false
               description: ""
               sortKey: -1764496102407
@@ -11886,15 +11891,16 @@ collection:
             parameters:
               - name: organizationId
                 value: "1"
-                disabled: false
-              - name: name
-                value: asc
                 disabled: true
               - name: createdAt
                 value: desc
                 disabled: true
               - name: id
                 value: desc
+                disabled: true
+              - name: name
+                value: "2"
+                description: ""
                 disabled: true
             headers:
               - name: Authorization
@@ -11958,12 +11964,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render-admin-domain']}}/datatables/8"
+          - url: "{{_['render-admin-domain']}}/datatables/2"
             name: retrieve datatable
             meta:
               id: req_7b7aace3c21849f398288bc6792e5e36
               created: 1764496106299
-              modified: 1764510904656
+              modified: 1768228367717
               isPrivate: false
               description: ""
               sortKey: -1764496102406
@@ -12049,16 +12055,99 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['render-admin-domain']}}/datatables/10"
+          - url: "{{_['render-admin-domain']}}/datatables/1"
             name: delete datatable
             meta:
               id: req_c0cee3b38cfb4a0199c96de28000f54a
               created: 1764496106301
-              modified: 1764510907830
+              modified: 1768227461614
               isPrivate: false
               description: ""
               sortKey: -1764496102405
             method: DELETE
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/datatables/2/rows"
+            name: retrieve datatable with rows
+            meta:
+              id: req_66b75f466fab443fad22a8e87770ca7e
+              created: 1768229235107
+              modified: 1768229595327
+              isPrivate: false
+              description: ""
+              sortKey: -1764496102405.5
+            method: GET
+            parameters:
+              - name: page
+                value: "1"
+                disabled: false
+              - name: pageSize
+                value: "25"
+                disabled: false
+              - name: name
+                value: Cruise
+                description: ""
+                disabled: true
             headers:
               - name: Authorization
                 value: Bearer {{_['render-admin-token']}}
@@ -14551,16 +14640,16 @@ collection:
         meta:
           id: fld_2303de6c512c4f49af8751a9017dfd16
           created: 1767968265081
-          modified: 1767968265081
+          modified: 1767968443291
           sortKey: -1767968265081
           description: ""
         children:
           - url: http://localhost:3000/standard-options
-            name: New Request
+            name: Create option
             meta:
               id: req_ed6a9f0001f94c14a40449e026d11add
               created: 1767711483047
-              modified: 1767968274275
+              modified: 1767968451973
               isPrivate: false
               description: ""
               sortKey: -1767968274208
@@ -14602,7 +14691,7 @@ collection:
             meta:
               id: req_cad7a0522d914b209467f0cd085ece3c
               created: 1767711734918
-              modified: 1767968301919
+              modified: 1768308277519
               isPrivate: false
               description: ""
               sortKey: -1767968274508
@@ -14612,6 +14701,14 @@ collection:
                 value: vector
                 description: ""
                 disabled: true
+              - name: page
+                value: "1"
+                description: ""
+                disabled: false
+              - name: pageSize
+                value: "5"
+                description: ""
+                disabled: false
             headers:
               - name: User-Agent
                 value: insomnia/12.1.0
@@ -14619,7 +14716,7 @@ collection:
                 disabled: false
             authentication:
               type: bearer
-              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2Nzc5MjIzMCwiZXhwIjoxNzY3NzkyNTMwfQ.tyRqgMYCaFzB1KV-m-d2jHSGAUPxjOImdS5vvpj-A2s
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2ODIwNzYzNCwiZXhwIjoxNzY4MjA3OTM0fQ.6xZJta0n4PY3yjexPz52RjG16wB2yi9LRgiAXRygm1M
               prefix: bearer
             settings:
               renderRequestBody: true
@@ -14696,7 +14793,7 @@ collection:
             meta:
               id: req_2fa0789047994933b9eff208322ae76c
               created: 1767797834584
-              modified: 1767968283011
+              modified: 1767968411510
               isPrivate: false
               description: ""
               sortKey: -1767968274708
@@ -14718,12 +14815,1936 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
+      - name: Configurator
+        meta:
+          id: fld_10a71feb61e545488a6ece6027e13614
+          created: 1768809219028
+          modified: 1769010088289
+          sortKey: -1768809219029
+          description: ""
+        children:
+          - url: "{{_['render-admin-domain']}}/configurators"
+            name: create configurator
+            meta:
+              id: req_3e3df03629994e2397145d2077418511
+              created: 1768809260144
+              modified: 1768810387131
+              isPrivate: false
+              description: ""
+              sortKey: -1768809263189
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "name": "VR Badroom Configurator",
+                  "organizationId": 1,
+                  "enabled": false,
+                  "description": "VR configurator for badroom products"
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators"
+            name: get list of configurators
+            meta:
+              id: req_0b5b7f700eba4e2eba46b8ae5273daae
+              created: 1768810450303
+              modified: 1768810601361
+              isPrivate: false
+              description: ""
+              sortKey: -1768388768948.5
+            method: GET
+            parameters:
+              - name: page
+                value: "1"
+                description: ""
+                disabled: false
+              - name: pageSize
+                value: "10"
+                description: ""
+                disabled: false
+              - name: organizationId
+                value: "1"
+                description: ""
+                disabled: true
+              - name: enabled
+                value: "true"
+                description: ""
+                disabled: true
+              - name: searchByName
+                value: vr
+                description: ""
+                disabled: true
+              - name: sortByName
+                value: asc
+                description: ""
+                disabled: true
+              - name: sortById
+                value: desc
+                description: ""
+                disabled: true
+              - name: sortByCreatedAt
+                value: desc
+                description: ""
+                disabled: true
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1"
+            name: get configurator by id
+            meta:
+              id: req_6248590f8b924f808f216965763e6dc6
+              created: 1768810615995
+              modified: 1768989499001
+              isPrivate: false
+              description: ""
+              sortKey: -1768178521828.25
+            method: GET
+            parameters:
+              - name: serialize
+                value: "true"
+                description: ""
+                disabled: false
+              - name: view
+                value: full
+                description: ""
+                disabled: false
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/2"
+            name: update configurator
+            meta:
+              id: req_cdfc105d17b749fca401a01d597db4ae
+              created: 1768810643474
+              modified: 1768810668262
+              isPrivate: false
+              description: ""
+              sortKey: -1768599016068.75
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "name": "VR Kitchen Configurator",
+                  "description": "VR configurator for kitchen products"
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/geometry-options"
+            name: add geometry options to configurator
+            meta:
+              id: req_f8002706f1b94ace833734bb43e9cb39
+              created: 1768811242467
+              modified: 1768811320758
+              isPrivate: false
+              description: ""
+              sortKey: -1768704139628.875
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "geometryOptions": [
+                    {
+                      "geometryOptionIds": [1, 2],
+                      "proxyName": "UI_Model"
+                    },
+                    {
+                      "geometryOptionIds": [3],
+                      "proxyName": "UI_Size"
+                    }
+                  ]
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/geometry-options"
+            name: remove geometry options to configurator
+            meta:
+              id: req_7dbe35b35b384f43b879a33540985d46
+              created: 1768811358781
+              modified: 1768811375948
+              isPrivate: false
+              description: ""
+              sortKey: -1768651577848.8125
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "geometryOptions": [2]
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/options"
+            name: add material options to configurator
+            meta:
+              id: req_4b79a385318b4a5a804601979c0b566e
+              created: 1768811404554
+              modified: 1768811453401
+              isPrivate: false
+              description: ""
+              sortKey: -1768677858738.8438
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "options": [
+                    {
+                      "optionIds": [1, 2],
+                      "proxyName": "UI_Color"
+                    },
+                    {
+                      "optionIds": [3],
+                      "proxyName": "UI_Finish"
+                    }
+                  ]
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/options"
+            name: remove material options to configurator
+            meta:
+              id: req_01a2e051c465497ca84a38d41bd6aaae
+              created: 1768811479614
+              modified: 1768811490556
+              isPrivate: false
+              description: ""
+              sortKey: -1768625296958.7812
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "options": [2]
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/organizations/1/configurators/1/geometry-opt\
+              ions/1"
+            name: get configurator by id with geometry proxy option
+            meta:
+              id: req_326efc03128a49a7847791d154f72c76
+              created: 1768811538272
+              modified: 1768811584174
+              isPrivate: false
+              description: ""
+              sortKey: -1768073398268.125
+            method: GET
+            parameters:
+              - name: serialize
+                value: "true"
+                description: ""
+                disabled: false
+              - name: view
+                value: full
+                description: ""
+                disabled: false
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/organizations/1/configurators/1/options/1"
+            name: get configurator by id with material proxy option
+            meta:
+              id: req_a1210a64a3634e96a6261fe447d99c52
+              created: 1768811624224
+              modified: 1768811628266
+              isPrivate: false
+              description: ""
+              sortKey: -1768020836488.0625
+            method: GET
+            parameters:
+              - name: serialize
+                value: "true"
+                description: ""
+                disabled: false
+              - name: view
+                value: full
+                description: ""
+                disabled: false
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/3"
+            name: remove configurator
+            meta:
+              id: req_f0dd2059e5f84c49b1218d59f2fca841
+              created: 1768811662039
+              modified: 1768811672815
+              isPrivate: false
+              description: ""
+              sortKey: -1768612156513.7656
+            method: DELETE
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/material-options/1"
+            name: update material proxy option (enabled/proxyName)
+            meta:
+              id: req_170e8fcd45e1401582c09daaebd70ada
+              created: 1768897176075
+              modified: 1768928618296
+              isPrivate: false
+              description: ""
+              sortKey: -1768493892508.625
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "enabled": false,
+                  "proxyName": "BE_COLOR"
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/geometry-options/1"
+            name: update geometry proxy option (enabled/proxyName)
+            meta:
+              id: req_f473b66babf34c47a80a946ecd86a4df
+              created: 1768897276762
+              modified: 1768897297595
+              isPrivate: false
+              description: ""
+              sortKey: -1768441330728.5625
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "enabled": false,
+                  "proxyName": "BE_Model"
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/options/1/variants/3"
+            name: update material option variant (enabled)
+            meta:
+              id: req_11c997109f6b4a0986a1bbd46cd0b599
+              created: 1768897332116
+              modified: 1768928718602
+              isPrivate: false
+              description: ""
+              sortKey: -1768415049838.5312
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "enabled": false
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/geometry-options/1/variants/\
+              1"
+            name: update geometry option variant (enabled)
+            meta:
+              id: req_79e50aa29c4c47e9a220fe45a71d99ab
+              created: 1768897394948
+              modified: 1768928741098
+              isPrivate: false
+              description: ""
+              sortKey: -1768401909393.5156
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "enabled": false
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/standard-options"
+            name: add standard options to configurator
+            meta:
+              id: req_cdb473bf808449ebb25b113e062597d9
+              created: 1768903473801
+              modified: 1768903517962
+              isPrivate: false
+              description: ""
+              sortKey: -1768664718293.8281
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "standardOptions": [
+                    {
+                      "standardOptionId": 3,
+                      "proxyName": "isVisibles",
+                      "value": true
+                    },
+                    {
+                      "standardOptionId": 4,
+                      "proxyName": "opacitys",
+                      "value": 0.8
+                    }
+                  ]
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/standard-options"
+            name: remove standard options to configurator
+            meta:
+              id: req_d0aee268c9704684978e2f7c3831f2d5
+              created: 1768903557870
+              modified: 1768903583502
+              isPrivate: false
+              description: ""
+              sortKey: -1768618726736.2734
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "configuratorStandardOptionIds": [5, 6]
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/standard-options/1"
+            name: update standard option association
+            meta:
+              id: req_b28b08cc2bf3460fa8e3e158a09829aa
+              created: 1768903615736
+              modified: 1768903669148
+              isPrivate: false
+              description: ""
+              sortKey: -1768467611618.5938
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "enabled": false,
+                  "proxyName": "invisible",
+                	"value": false
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/material-options/1/metadata"
+            name: add metadata to material proxy option
+            meta:
+              id: req_92f9b273d2a54b788387a75c521bf91a
+              created: 1768988881450
+              modified: 1768988998061
+              isPrivate: false
+              description: ""
+              sortKey: -1768395339171.0078
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "metadata": {
+                    "field": "Test value"
+                  }
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/geometry-options/1/metadata"
+            name: add metadata to geometry proxy option
+            meta:
+              id: req_d1c4110e55cb4eddb096c803b54aa075
+              created: 1768989017997
+              modified: 1768989021869
+              isPrivate: false
+              description: ""
+              sortKey: -1768392054059.754
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "metadata": {
+                    "field": "Test value"
+                  }
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/options/1/variants/3/metadat\
+              a"
+            name: "add metadata to material variant "
+            meta:
+              id: req_7395722753574594bd355260d966bed8
+              created: 1768989057755
+              modified: 1769010042371
+              isPrivate: false
+              description: ""
+              sortKey: -1768393696615.3809
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "metadata": {
+                    "test1": "Test value 1",
+                		"test2": "Test value 2",
+                		"test3": "Test value 3"
+                  }
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/geometry-options/1/variants/\
+              3/metadata"
+            name: "add metadata to geometry variant "
+            meta:
+              id: req_f61192bf7de44d7ea209e57a4a91ff8c
+              created: 1768989256665
+              modified: 1768989273673
+              isPrivate: false
+              description: ""
+              sortKey: -1768392875337.5674
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "metadata": {
+                    "field": "Test value"
+                  }
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/standard-options/{% hash
+              'sha256', 'hex', '' %}/metadata"
+            name: add metadata to standard option
+            meta:
+              id: req_77e5a635e04b4ab6b1225891e0773d59
+              created: 1768990278289
+              modified: 1769075392599
+              isPrivate: false
+              description: ""
+              sortKey: -1768390411504.127
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "metadata": {
+                    "test1": "Test value 1",
+                		"test2": "Test value 2",
+                		"test3": "Test value 3"
+                  }
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
 cookieJar:
   name: Default Jar
   meta:
     id: jar_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496108720
-    modified: 1767796982967
+    modified: 1769010088286
   cookies:
     - id: 8c074d63-5ba4-457b-9eee-efcacc20f5fc
       key: __cf_bm
@@ -14737,19 +16758,19 @@ environments:
   meta:
     id: env_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496106422
-    modified: 1767796982970
+    modified: 1769010088287
     isPrivate: false
   subEnvironments:
     - name: local
       meta:
         id: env_b8191c95ca5148239e99bdd5400c1ad6
         created: 1764509217083
-        modified: 1767796982969
+        modified: 1769010088286
         isPrivate: false
         sortKey: 1764509217083
       data:
         render-admin-domain: http://localhost:3000
-        render-admin-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2Nzc5MjIzMCwiZXhwIjoxNzY3NzkyNTMwfQ.tyRqgMYCaFzB1KV-m-d2jHSGAUPxjOImdS5vvpj-A2s
+        render-admin-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2ODIwNzYzNCwiZXhwIjoxNzY4MjA3OTM0fQ.6xZJta0n4PY3yjexPz52RjG16wB2yi9LRgiAXRygm1M
         render-admin-username: admin
         render-admin-password: RmxJ8UjtE3aY4czn
       color: "#ffffff"
