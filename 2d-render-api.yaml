@@ -85,49 +85,73 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: 127.0.0.1:3000/2d/getConfigurationLayers
+              - url: https://renderapi.vivid3d.tech/2d/getConfigurationLayers
                 name: retrieve layer configuration
                 meta:
                   id: req_c0a98e52fd4943229f78d4fce3dccf17
                   created: 1764496000476
-                  modified: 1764496000476
+                  modified: 1768296035394
                   isPrivate: false
                   description: ""
                   sortKey: -1764495998073
                 method: GET
                 parameters:
                   - name: config
-                    value: '{ "config": { "stage": { "id": 1, "name": "Stage 1", "resourceUrl":
-                      null, "paramString": "" }, "camera": { "id": 1,
-                      "rotationAngle": 360, "backgroundType": "Scene",
-                      "backgroundColor": "F1F1F1", "renderShadow": false,
-                      "renderDimensions": true, "dimensionsColor": "2F2F2F",
-                      "lineOffset": 4, "lineWidth": 2, "capsLength": 2,
-                      "fontSize": 14, "fontName": "Arial", "fovCorrection": 0,
-                      "fov": 5, "name": "Camera 1", "enabled": true, "360steps":
-                      { "total": 12, "current": 7 }, "position": { "x": -500,
-                      "y": 0, "z": 0 }, "rotation": { "roll": 0, "pitch": -30,
-                      "yaw": 10 }, "productRotation": { "roll": 0, "pitch": 0,
-                      "yaw": 0 }, "rotationType": "Camera", "exposure": null,
-                      "nearClipPlane": 15, "rotationSteps": 12, "paramString":
-                      "test", "renderHeight": 3001, "renderWidth": 3001,
-                      "imageHeight": 3000, "imageWidth": 3000, "renderType":
-                      "raster", "imageType": "png", "renderWarmup": 50,
-                      "antiAliasing": "TAA" }, "products": [ { "id": 1, "name":
-                      "Product 1", "projectId": 1, "resourceUrl": null,
-                      "paramString": "", "options": [ { "name": "Option 3
-                      Depended from 2", "layerOrder": 2, "shadowEnabled": false,
-                      "shadow": 0, "proxyName": "Option 3 Depended from 2",
-                      "type": "material", "paramString": "", "dependencies": [ {
-                      "id": 1, "type": "material" } ], "proxyOptionId": 3,
-                      "val": 5, "resourceUrl": null, "valName": "Variant 1 of
-                      Option 3" }, { "name": "Option 1", "layerOrder": 1,
-                      "shadowEnabled": true, "shadow": 50, "proxyName": "Option
-                      1", "type": "material", "paramString": "", "dependencies":
-                      [ ], "proxyOptionId": 1, "val": 2, "resourceUrl": null,
-                      "valName": "Variant 2 of Option 1" } ] } ] },
-                      "massrenderJobId": 8 }'
+                    value: '{ "config": { "stage": { "id": 218, "name": "40_49_2DW", "paramString":
+                      "", "resourceUrl":
+                      "https://2d-render-admin-storage.fra1.digitaloceanspaces.com/organizations/5/stages/218/1753556443957_dUPLEX_sCENE.pak"
+                      }, "camera": { "id": 581, "rotationAngle": 60,
+                      "backgroundType": "Transparent", "backgroundColor":
+                      "ffffff", "renderShadow": false, "renderDimensions":
+                      false, "dimensionsColor": "000000", "lineOffset": 3,
+                      "lineWidth": 1, "capsLength": 0, "fontSize": 14,
+                      "fontName": "", "fovCorrection": 0, "fov": 12, "name":
+                      "Top", "enabled": true, "position": { "x": 0, "y":
+                      287.72315, "z": 869.372821 }, "rotation": { "roll": 0,
+                      "pitch": -70, "yaw": -90 }, "productRotation": { "roll":
+                      0, "pitch": 0, "yaw": 0 }, "rotationType": "Disabled",
+                      "exposure": null, "nearClipPlane": 400, "paramString": "",
+                      "renderHeight": 1600, "renderWidth": 2000, "imageHeight":
+                      1600, "imageWidth": 2000, "renderType": "pathTracing",
+                      "imageType": "png", "renderWarmup": 100, "antiAliasing":
+                      "FXAA", "360steps": { "total": 3, "current": 1 },
+                      "rotationSteps": 1 }, "products": [ { "id": 414, "name":
+                      "48 1DW Double_40", "projectId": 144, "resourceUrl":
+                      "https://2d-render-admin-storage.fra1.digitaloceanspaces.com/projects/144/products/414/1759746667992_2025_10_03_17_03_BP_48_1DW_Double.pak",
+                      "layeredRender": true, "paramString": "", "options": [ {
+                      "name": "Basin Style Duplex", "proxyOptionId": 956,
+                      "layerOrder": 1, "shadow": 0, "shadowEnabled": false,
+                      "proxyName": "Basin Style", "type": "geometry",
+                      "paramString": "", "dependencies": [ { "id": 786, "type":
+                      "material" } ], "requirements": [], "geometryOptionId":
+                      169, "val": 827, "resourceUrl": "", "valName": "HPL:
+                      Cover" }, { "name": "MT&GL White", "proxyOptionId": 786,
+                      "layerOrder": 2, "shadow": 0, "shadowEnabled": false,
+                      "proxyName": "Counertops materials", "type": "material",
+                      "paramString": "", "dependencies": [], "requirements": [],
+                      "optionId": 146, "val": 1459, "resourceUrl":
+                      "https://2d-render-admin-storage.fra1.digitaloceanspaces.com/organizations/5/options/146/1752943530743_pakchunk1022-Windows.pak",
+                      "valName": "Matte White" }, { "name": "Azzurra:Lacquered
+                      MT", "proxyOptionId": 788, "layerOrder": 3, "shadow": 0,
+                      "shadowEnabled": false, "proxyName": "Lateral Panel",
+                      "type": "material", "paramString": "", "dependencies": [],
+                      "requirements": [], "optionId": 157, "val": 1517,
+                      "resourceUrl":
+                      "https://2d-render-admin-storage.fra1.digitaloceanspaces.com/organizations/5/options/157/1754418771601_2025_08_05_21_31_DA_Lacquered_MT.pak",
+                      "valName": "Terra DB MT" }, { "name": "Azzurra:Lacquered
+                      GL", "proxyOptionId": 787, "layerOrder": 4, "shadow": 0,
+                      "shadowEnabled": false, "proxyName": "Base Panel", "type":
+                      "material", "paramString": "", "dependencies": [],
+                      "requirements": [], "optionId": 165, "val": 1582,
+                      "resourceUrl":
+                      "https://2d-render-admin-storage.fra1.digitaloceanspaces.com/organizations/5/options/165/1754419326944_2025_08_05_21_41_DA_Lacquered_GL.pak",
+                      "valName": "Tortora BE GL" } ] } ] }, "massrenderJobId": 0
+                      }'
                     disabled: false
+                  - name: strictMode
+                    value: "true"
+                    description: ""
+                    disabled: true
                 headers:
                   - name: Authorization
                     value: zCxGZgV3iVUR93C2Cua2lTgZZZppRL1z32VifmzwdPgcP
@@ -198,21 +222,21 @@ collection:
                 meta:
                   id: req_4293b8aba5e24ebba891ac7e502fa512
                   created: 1764496000481
-                  modified: 1764496000481
+                  modified: 1767966342388
                   isPrivate: false
                   description: ""
                   sortKey: -1764495998069
                 method: GET
                 parameters:
                   - name: status
-                    value: all
+                    value: processing
                     disabled: false
                   - name: page
                     value: "1"
-                    disabled: true
+                    disabled: false
                   - name: pageSize
-                    value: "10"
-                    disabled: true
+                    value: "1000"
+                    disabled: false
                   - name: sortByUpdatedAt
                     value: desc
                     disabled: true
@@ -223,11 +247,11 @@ collection:
                     value: '[{"proxyOptionId":43,"val":12,"type":"material"}]'
                     disabled: true
                   - name: type
-                    value: all
-                    disabled: true
+                    value: image
+                    disabled: false
                   - name: productId[]
                     value: "1"
-                    disabled: false
+                    disabled: true
                   - name: productId[]
                     value: "45"
                     disabled: true
@@ -412,12 +436,12 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: https://renderapi-dev.vivid3d.tech/2d/renderConfigurationLayers
+              - url: https://renderapi.vivid3d.tech/2d/renderConfigurationLayers
                 name: renderConfigurationLayers
                 meta:
                   id: req_b3561751e24443788f79da97b4ab42e2
                   created: 1764496000487
-                  modified: 1764496000487
+                  modified: 1767193968718
                   isPrivate: false
                   description: ""
                   sortKey: -1764495998065
@@ -426,135 +450,121 @@ collection:
                   mimeType: application/json
                   text: >-
                     {
-                        "config": {
-                            "stage": {
-                                "id": 30,
-                                "name": "AllegroConsole(2016)",
-                                "paramString": "-ForcePTShadows=150",
-                                "resourceUrl": "https://2d-render-admin-storage.fra1.digitaloceanspaces.com/projects/36/stages/30/1751447123854_pakchunk2016-Windows.pak"
-                            },
-                            "camera": {
-                                "id": 132,
-                                "name": "Dimensions",
-                                "position": {
-                                    "x": 0.004697,
-                                    "y": 753.88672,
-                                    "z": 283.905162
-                                },
-                                "rotation": {
-                                    "roll": 0,
-                                    "pitch": -17.2,
-                                    "yaw": -90
-                                },
-                                "productRotation": {
-                                    "roll": 0,
-                                    "pitch": 0,
-                                    "yaw": -30
-                                },
-                                "rotationAngle": 360,
-                                "backgroundType": "Transparent",
-                                "backgroundColor": "FFFFFF",
-                                "renderShadow": false,
-                                "renderDimensions": true,
-                                "dimensionsColor": "000000",
-                                "lineOffset": 3,
-                                "lineWidth": 8,
-                                "capsLength": 0,
-                                "fontSize": 50,
-                                "fontName": "",
-                                "fovCorrection": 0,
-                                "fov": 12,
-                                "rotationSteps": 7,
-                                "rotationType": "Disabled",
-                                "exposure": null,
-                                "nearClipPlane": 10,
-                                "renderHeight": 3200,
-                                "renderWidth": 4000,
-                                "imageHeight": 1600,
-                                "imageWidth": 2000,
-                                "renderType": "raster",
-                                "imageType": "png",
-                                "renderWarmup": 15,
-                                "antiAliasing": "FXAA",
+                      "config": {
+                        "annotations": false,
+                        "threshold": 0,
+                        "stage": {
+                          "id": 531,
+                          "name": "GB: Lame_vanity 80-89_NoLegs",
+                          "paramString": "",
+                          "resourceUrl": "https://2d-render-admin-storage.fra1.digitaloceanspaces.com/organizations/5/stages/531/1767022007435_uploaded_file"
+                        },
+                        "camera": {
+                          "id": 1554,
+                          "rotationAngle": 180,
+                          "backgroundType": "Transparent",
+                          "backgroundColor": "ffffff",
+                          "renderShadow": true,
+                          "renderDimensions": true,
+                          "dimensionsColor": "000000",
+                          "lineOffset": 3,
+                          "lineWidth": 4,
+                          "capsLength": 0,
+                          "fontSize": 25,
+                          "fontName": "",
+                          "fovCorrection": 0,
+                          "fov": 12,
+                          "name": "Dimension",
+                          "enabled": true,
+                          "position": {
+                            "x": 0,
+                            "y": 1401.900835,
+                            "z": 400.364267
+                          },
+                          "rotation": {
+                            "roll": 0,
+                            "pitch": -14,
+                            "yaw": -90
+                          },
+                          "productRotation": {
+                            "roll": 0,
+                            "pitch": 0,
+                            "yaw": -30
+                          },
+                          "rotationType": "Disabled",
+                          "exposure": null,
+                          "nearClipPlane": 10,
+                          "paramString": "",
+                          "renderHeight": 1600,
+                          "renderWidth": 2000,
+                          "imageHeight": 1600,
+                          "imageWidth": 2000,
+                          "renderType": "pathTracing",
+                          "imageType": "png",
+                          "renderWarmup": 150,
+                          "antiAliasing": "FXAA",
+                          "360steps": {
+                            "total": 7,
+                            "current": 1
+                          },
+                          "rotationSteps": 1
+                        },
+                        "products": [
+                          {
+                            "id": 2119,
+                            "name": "Lame 87 2DW_80",
+                            "projectId": 336,
+                            "resourceUrl": "https://2d-render-admin-storage.fra1.digitaloceanspaces.com/projects/336/products/2119/1767122159669_2025_12_30_20_54_Lame_87_2DW_80_Fullside.pak",
+                            "paramString": "",
+                            "options": [
+                              {
+                                "name": "Cabinet Patterns_Lame",
+                                "layerOrder": 3,
+                                "shadow": 0,
+                                "shadowEnabled": false,
+                                "proxyName": "Cabinet Patterns",
+                                "proxyOptionId": 3647,
+                                "type": "geometry",
                                 "paramString": "",
-                                "enabled": true,
-                                "order": 0,
-                                "360steps": {
-                                    "total": 7,
-                                    "current": 1
-                                }
-                            },
-                            "products": [
-                                {
-                                    "id": 238,
-                                    "name": "Allegro Console_16",
-                                    "projectId": 61,
-                                    "paramString": "",
-                                    "resourceUrl": "https://2d-render-admin-storage.fra1.digitaloceanspaces.com/projects/61/products/238/1750780266846_pakchunk3004-Windows.pak",
-                                    "options": [
-                                        {
-                                            "name": "Switch",
-                                            "layerOrder": 1,
-                                            "shadow": 0,
-                                            "shadowEnabled": true,
-                                            "proxyName": "Faucet",
-                                            "type": "geometry",
-                                            "paramString": "",
-                                            "dependencies": [],
-                                            "proxyOptionId": 679,
-                                            "val": 31,
-                                            "valName": "Off"
-                                        },
-                                        {
-                                            "name": "Accessories side",
-                                            "layerOrder": 2,
-                                            "shadow": 0,
-                                            "shadowEnabled": true,
-                                            "proxyName": "Towel Knob",
-                                            "type": "geometry",
-                                            "paramString": "",
-                                            "dependencies": [
-                                                {
-                                                    "id": 416,
-                                                    "type": "material"
-                                                }
-                                            ],
-                                            "proxyOptionId": 681,
-                                            "val": 20,
-                                            "valName": "Both sides"
-                                        },
-                                        {
-                                            "name": "Metal",
-                                            "layerOrder": 3,
-                                            "shadow": 0,
-                                            "shadowEnabled": false,
-                                            "proxyName": "Frame",
-                                            "type": "material",
-                                            "paramString": "",
-                                            "dependencies": [],
-                                            "proxyOptionId": 416,
-                                            "val": 237,
-                                            "resourceUrl": "https://2d-render-admin-storage.fra1.digitaloceanspaces.com/projects/36/options/12/1745919431442_pakchunk1002-Windows.pak",
-                                            "valName": "Black"
-                                        },
-                                        {
-                                            "name": "Trendy",
-                                            "layerOrder": 4,
-                                            "shadow": 0,
-                                            "shadowEnabled": false,
-                                            "proxyName": "Basin",
-                                            "type": "material",
-                                            "paramString": "",
-                                            "dependencies": [],
-                                            "proxyOptionId": 417,
-                                            "val": 1148,
-                                            "resourceUrl": "https://2d-render-admin-storage.fra1.digitaloceanspaces.com/projects/41/options/55/1750329861368_pakchunk1006-Windows.pak",
-                                            "valName": "PT1001"
-                                        }
-                                    ]
-                                }
+                                "dependencies": [
+                                  {
+                                    "id": 4239,
+                                    "type": "material"
+                                  }
+                                ],
+                                "requirements": [
+                                  
+                                ],
+                                "geometryOptionId": 275,
+                                "val": 1345,
+                                "resourceUrl": "",
+                                "valName": "Oxford"
+                              },
+                              {
+                                "name": "GB: Lacquered GL",
+                                "layerOrder": 4,
+                                "shadow": 0,
+                                "shadowEnabled": false,
+                                "proxyName": "Cabinet Color",
+                                "proxyOptionId": 4239,
+                                "type": "material",
+                                "paramString": "",
+                                "dependencies": [
+                                  
+                                ],
+                                "requirements": [
+                                  
+                                ],
+                                "optionId": 145,
+                                "val": 1443,
+                                "resourceUrl": "https://2d-render-admin-storage.fra1.digitaloceanspaces.com/projects/101/options/145/1749752835976_pakchunk1028-Windows.pak",
+                                "valName": "Ponente 418 GL"
+                              }
                             ]
-                        }
+                          }
+                        ]
+                      },
+                      "massrenderJobId": 9865
                     }
                 headers:
                   - name: Authorization
@@ -640,12 +650,12 @@ collection:
               sortKey: -1764495998061
               description: ""
             children:
-              - url: https://renderapi-dev.vivid3d.tech/2d/listConfigurations
+              - url: https://renderapi.vivid3d.tech/2d/listConfigurations
                 name: count configurations
                 meta:
                   id: req_7e99766c502e4965b8dc85bc35898d7a
                   created: 1764496000495
-                  modified: 1764496000495
+                  modified: 1767966126407
                   isPrivate: false
                   description: ""
                   sortKey: -1764495998060
@@ -653,6 +663,10 @@ collection:
                 parameters:
                   - name: projectId
                     value: "120"
+                    disabled: true
+                  - name: productId
+                    value: "273"
+                    description: ""
                     disabled: true
                 headers:
                   - name: Authorization
@@ -1796,11 +1810,11 @@ collection:
                 store: true
               rebuildPath: true
           - url: https://renderapi-dev.vivid3d.tech/2d/attachRender/2d57e6a62f10843254eb83e3e5aff31f98cc26cbef804ada12c419daefc5a73e
-            name: attachRender
+            name: attachRender (JSON)
             meta:
               id: req_e7323c2071ca4b82bc054434dfb21a8b
               created: 1764496000526
-              modified: 1764496000526
+              modified: 1768564750941
               isPrivate: false
               description: ""
               sortKey: -1764495998042
@@ -1850,6 +1864,48 @@ collection:
                 value: zCxGZgV3iVUR93C2Cua2lTgZZZppRL1z32VifmzwdPgcP
               - name: Content-Type
                 value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://renderapi-dev.vivid3d.tech/2d/attachRender/ba68b3bf3661bef1cd4faed56b4078f0d3a8b22b2bcebc66a85de43fb9c69ea7
+            name: attachRender (FORM-DATA)
+            meta:
+              id: req_9a1221b0547143718f2a8e86ce72cea4
+              created: 1768564591894
+              modified: 1768564693264
+              isPrivate: false
+              description: ""
+              sortKey: -1764495998041.5
+            method: POST
+            body:
+              mimeType: multipart/form-data
+              params:
+                - name: image
+                  value: ""
+                  description: ""
+                  disabled: false
+                  fileName: /home/pavlo/Downloads/1763982862040_34_20251117184358448287_20251117155246744726_e85d35a0d262ea383bf9f879f7086629188509907832a9da0fc398da61792280.png
+                  type: file
+                - name: annotation
+                  value: ""
+                  description: ""
+                  disabled: false
+                  fileName: /home/pavlo/Downloads/1a0a3de619f6f38ad6faaa93a4fb44531a6a7650bc478dd31834fab3d74ea282.txt
+                  type: file
+            parameters:
+              - name: compressImage
+                value: "false"
+                disabled: false
+            headers:
+              - name: Content-Type
+                value: multipart/form-data
+              - name: Authorization
+                value: zCxGZgV3iVUR93C2Cua2lTgZZZppRL1z32VifmzwdPgcP
             settings:
               renderRequestBody: true
               encodeUrl: true
