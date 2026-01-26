@@ -28,7 +28,7 @@ collection:
             meta:
               id: req_ad3b6dd8659b449294121669e9c49c00
               created: 1764497027845
-              modified: 1765380056129
+              modified: 1769417098860
               isPrivate: false
               description: ""
               sortKey: -1764497025254
@@ -38,7 +38,7 @@ collection:
               params:
                 - name: name
                   value: P1 upd
-                  disabled: false
+                  disabled: true
                   type: text
                 - name: image
                   disabled: true
@@ -51,10 +51,22 @@ collection:
               - name: sortBy
                 value: desc
                 description: ""
-                disabled: false
+                disabled: true
               - name: searchByName
                 value: ""
                 disabled: true
+              - name: tagId
+                value: ""
+                description: ""
+                disabled: true
+              - name: sortByTagId
+                value: "3"
+                description: ""
+                disabled: true
+              - name: sortByTagId
+                value: "2"
+                description: ""
+                disabled: false
             headers:
               - name: Content-Type
                 value: multipart/form-data
@@ -327,7 +339,7 @@ collection:
             meta:
               id: req_6e28ce03b11f4946b600a165d91b8d85
               created: 1764497027861
-              modified: 1764497027861
+              modified: 1769416980628
               isPrivate: false
               description: ""
               sortKey: -1764497025242
@@ -336,8 +348,8 @@ collection:
               mimeType: application/json
               text: |-
                 {
-                    "name": "T8",
-                    "categoryId": 10
+                    "name": "Q8",
+                    "categoryId": 1
                 }
             headers:
               - name: Content-Type
@@ -483,7 +495,7 @@ collection:
             meta:
               id: req_56893e60e5d84e9a8a925feb95eeb1a5
               created: 1764497027868
-              modified: 1764497027868
+              modified: 1769417054666
               isPrivate: false
               description: ""
               sortKey: -1764497025235
@@ -494,7 +506,7 @@ collection:
                 {
                     "productId": 1,
                     "tagIds": [
-                        1,3
+                        1,2,3
                     ]
                 }
             headers:
@@ -643,5 +655,7 @@ environments:
   meta:
     id: env_25b0e58f34e6a34db98431d90dbd4f1c09e878ac
     created: 1764497027872
-    modified: 1764497027872
+    modified: 1769416824139
     isPrivate: false
+  data:
+    tagging-tool-domain: http://localhost:3000
