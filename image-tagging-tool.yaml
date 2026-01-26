@@ -23,12 +23,12 @@ collection:
           sortKey: -1764497025255
           description: ""
         children:
-          - url: "{{_['tagging-tool-domain']}}/products/"
+          - url: "{{_['tagging-tool-domain']}}/products"
             name: list
             meta:
               id: req_ad3b6dd8659b449294121669e9c49c00
               created: 1764497027845
-              modified: 1764497027845
+              modified: 1769421729634
               isPrivate: false
               description: ""
               sortKey: -1764497025254
@@ -50,6 +50,22 @@ collection:
                 disabled: true
               - name: searchByName
                 value: ""
+                disabled: true
+              - name: ""
+                value: "2"
+                description: ""
+                disabled: false
+              - name: pageSize
+                value: "50"
+                description: ""
+                disabled: false
+              - name: sortByTagId
+                value: "90"
+                description: ""
+                disabled: false
+              - name: sortByTagId
+                value: "38"
+                description: ""
                 disabled: false
             headers:
               - name: Content-Type
@@ -67,7 +83,7 @@ collection:
             meta:
               id: req_a04319d1bb4c4d92a26a8723668e1618
               created: 1764497027847
-              modified: 1764497027847
+              modified: 1767984875553
               isPrivate: false
               description: ""
               sortKey: -1764497025253
@@ -103,7 +119,7 @@ collection:
             meta:
               id: req_9d49da8fea0a4ef9abf686fa24b4b62d
               created: 1764497027849
-              modified: 1764497027849
+              modified: 1767980816709
               isPrivate: false
               description: ""
               sortKey: -1764497025251
@@ -112,12 +128,12 @@ collection:
               mimeType: multipart/form-data
               params:
                 - name: name
-                  value: P7
+                  value: test plo 1
                   disabled: false
                   type: text
                 - name: image
                   disabled: false
-                  fileName: /home/pavlo/Downloads/0b2d95aa6b2117b1698b65c90c7e3fcd304e8ad5aac13b963d3b799ea91c3a1c.png
+                  fileName: /home/pavlo/Desktop/example.webp
                   type: file
                 - name: markers
                   value: "{[1,2,3]}"
@@ -166,6 +182,24 @@ collection:
             headers:
               - name: Content-Type
                 value: multipart/form-data
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['tagging-tool-domain']}}/products/calculate-metadata"
+            name: calculateImageMetadata
+            meta:
+              id: req_f8dc1ef65a104f108505b62936c26b6a
+              created: 1767985260722
+              modified: 1767985277333
+              isPrivate: false
+              description: ""
+              sortKey: -1764497025252.5
+            method: POST
             settings:
               renderRequestBody: true
               encodeUrl: true
@@ -542,12 +576,12 @@ collection:
           sortKey: -1764497025355
           description: ""
         children:
-          - url: http://localhost:3000/archive/bulk-upload
+          - url: "{{_['tagging-tool-domain']}}/archive/bulk-upload"
             name: bulk upload + converted + archive
             meta:
               id: req_34deb40a7ac94e2195ef2a7885ba45e3
               created: 1764859525386
-              modified: 1764859775537
+              modified: 1767967551010
               isPrivate: false
               description: ""
               sortKey: -1764859525386
@@ -559,12 +593,12 @@ collection:
                   value: ""
                   description: ""
                   disabled: false
-                  fileName: F:\ElementalsWeb\фото для тесту\2019_azzurra_c12_p07.tif
+                  fileName: /home/pavlo/Desktop/example.webp
                   type: file
                 - name: files
                   value: ""
                   description: ""
-                  disabled: false
+                  disabled: true
                   fileName: F:\ElementalsWeb\фото для тесту\2019_azzurra_c12_p04.tif
                   type: file
             headers:
@@ -605,12 +639,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: http://localhost:3000/archive/jobs/11
+          - url: "{{_['tagging-tool-domain']}}/archive/jobs/10"
             name: get archive job by id
             meta:
               id: req_de8422826bf745a8adb0567765726d90
               created: 1764859815964
-              modified: 1764859821477
+              modified: 1767967564289
               isPrivate: false
               description: ""
               sortKey: -1764811198713.75
@@ -639,5 +673,7 @@ environments:
   meta:
     id: env_25b0e58f34e6a34db98431d90dbd4f1c09e878ac
     created: 1764497027872
-    modified: 1764497027872
+    modified: 1767985310133
     isPrivate: false
+  data:
+    tagging-tool-domain: https://hbimagett.vivid3d.tech
