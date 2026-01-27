@@ -82,6 +82,33 @@ collection:
             send: true
             store: true
           rebuildPath: true
+      - url: "{{simulation_api_domain}}/simulations/1"
+        name: retrieve
+        meta:
+          id: req_841472fac7c94462816b1091e66ce440
+          created: 1769175553703
+          modified: 1769175563692
+          isPrivate: false
+          description: ""
+          sortKey: -1766366733291.25
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.2.0
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: zCxGZgV3iVUR93C2Cua2lTgZZZppRL1z32VifmzwdPgcP
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
   - name: queue-api
     meta:
       id: fld_8d65f7ef1340440684cdb31ea94dea27
