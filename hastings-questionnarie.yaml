@@ -15,12 +15,12 @@ collection:
       sortKey: -1765294882542
       description: ""
     children:
-      - url: http://localhost:3000/api/email/send
+      - url: https://hbquestionnaire.vivid3d.tech/api/email/send
         name: send
         meta:
           id: req_c36bbc2bd876411b9d193df8cebffb96
           created: 1765294886230
-          modified: 1765981299654
+          modified: 1766057549529
           isPrivate: false
           description: ""
           sortKey: -1765294886230
@@ -233,12 +233,12 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: http://localhost:3000/api/files
+      - url: " https://hbquestionnaire.vivid3d.tech/api/files"
         name: Get list of files
         meta:
           id: req_8bb7643cc13f41f3be66aff0352625ff
           created: 1765980582119
-          modified: 1765980613326
+          modified: 1766057505835
           isPrivate: false
           description: ""
           sortKey: -1765439438469.125
