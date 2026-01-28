@@ -28,7 +28,7 @@ collection:
             meta:
               id: req_ad3b6dd8659b449294121669e9c49c00
               created: 1764497027845
-              modified: 1769421729634
+              modified: 1769619752707
               isPrivate: false
               description: ""
               sortKey: -1764497025254
@@ -55,16 +55,24 @@ collection:
                 value: "2"
                 description: ""
                 disabled: false
-              - name: pageSize
-                value: "50"
+              - name: page
+                value: "1"
                 description: ""
                 disabled: false
               - name: sortByTagId
                 value: "90"
                 description: ""
-                disabled: false
+                disabled: true
               - name: sortByTagId
                 value: "38"
+                description: ""
+                disabled: true
+              - name: sortByTagIdsV2
+                value: '[{"tagId":128,"percentage":30}, {"tagId":131,"percentage":20}]'
+                description: ""
+                disabled: false
+              - name: limit
+                value: "10"
                 description: ""
                 disabled: false
             headers:
@@ -673,7 +681,7 @@ environments:
   meta:
     id: env_25b0e58f34e6a34db98431d90dbd4f1c09e878ac
     created: 1764497027872
-    modified: 1767985310133
+    modified: 1769437859570
     isPrivate: false
   data:
     tagging-tool-domain: https://hbimagett.vivid3d.tech
