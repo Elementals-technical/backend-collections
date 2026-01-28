@@ -23,12 +23,12 @@ collection:
           sortKey: -1764497142378
           description: ""
         children:
-          - url: "{{_['swatch-card-api']}}/products/13e6d315-0611-4191-aafd-2f77358bdcb6"
+          - url: "{{_['swatch-card-api']}}/products/2fd44a86-6356-47af-8d48-c4cf7431f853"
             name: retrieve
             meta:
               id: req_9b8c5f7832784842950080a2cb613059
               created: 1764497144260
-              modified: 1764497144260
+              modified: 1769528241143
               isPrivate: false
               description: ""
               sortKey: -1764497142377
@@ -46,7 +46,7 @@ collection:
             meta:
               id: req_8c9f56a654a5468fac69bfcccbc6ede7
               created: 1764497144262
-              modified: 1764945155456
+              modified: 1769525518550
               isPrivate: false
               description: ""
               sortKey: -1764497142376
@@ -64,7 +64,7 @@ collection:
               - name: available
                 value: "true"
                 description: ""
-                disabled: false
+                disabled: true
             settings:
               renderRequestBody: true
               encodeUrl: true
@@ -86,7 +86,7 @@ collection:
             meta:
               id: req_e9c36ff317004d8fbdcafa2001d13177
               created: 1764497144265
-              modified: 1764943545327
+              modified: 1769524685919
               isPrivate: false
               description: ""
               sortKey: -1764497142374
@@ -100,7 +100,7 @@ collection:
                 disabled: false
               - name: status
                 value: partial
-                disabled: false
+                disabled: true
             settings:
               renderRequestBody: true
               encodeUrl: true
@@ -141,10 +141,10 @@ environments:
   meta:
     id: env_216e1a018f6d6ca5e729ef720062e673dcdb52c6
     created: 1764497144269
-    modified: 1764943550371
+    modified: 1769524661660
     isPrivate: false
   data:
-    "": ""
+    swatch-card-api: http://localhost:3000
   subEnvironments:
     - name: local
       meta:
