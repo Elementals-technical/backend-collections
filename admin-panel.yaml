@@ -7266,6 +7266,476 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
+      - name: rangeOptions
+        meta:
+          id: fld_23a77b9a89f240689858286d395963e3
+          created: 1764496106180
+          modified: 1764496106180
+          sortKey: -1764496102493
+          description: ""
+        children:
+          - url: "{{_['render-admin-domain']}}/rangeOptions"
+            name: create range option
+            meta:
+              id: req_2d33edf61aa2495aa9b36e94c45188a0
+              created: 1764496106181
+              modified: 1764510622820
+              isPrivate: false
+              description: ""
+              sortKey: -1764496102492
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                    "name": "Range opt 1",
+                    "max": 100,
+                    "min": 0,
+                    "def": 0.5,
+                    "enabled": true,
+                    "organizationId": 1
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/rangeOptions"
+            name: list range options
+            meta:
+              id: req_afc466c882a3485b97b2a40190ddc732
+              created: 1764496106182
+              modified: 1764510626058
+              isPrivate: false
+              description: ""
+              sortKey: -1764496102491
+            method: GET
+            parameters:
+              - name: createdAt
+                value: asc
+                disabled: true
+              - name: name
+                value: desc
+                disabled: true
+              - name: id
+                value: desc
+                disabled: false
+              - name: organizationId
+                value: "2"
+                disabled: true
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/rangeOptions/25"
+            name: retrieve range option
+            meta:
+              id: req_0e927e1167e94b6ebbc5f9a5031e302e
+              created: 1764496106183
+              modified: 1764510629294
+              isPrivate: false
+              description: ""
+              sortKey: -1764496102490
+            method: GET
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/rangeOptions/1"
+            name: update range option
+            meta:
+              id: req_391f78eeafc54888baf0df4bb52f076d
+              created: 1764496106185
+              modified: 1764510631979
+              isPrivate: false
+              description: ""
+              sortKey: -1764496102489
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                    "name": "Range opt 1 upd",
+                    "max": 100,
+                    "min": 0,
+                    "def": 0.5,
+                    "enabled": true
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/rangeOptions/2"
+            name: delete range option
+            meta:
+              id: req_4de6b1710ddb4208bb4a50dea7ac2309
+              created: 1764496106187
+              modified: 1764510634905
+              isPrivate: false
+              description: ""
+              sortKey: -1764496102488
+            method: DELETE
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/rangeOptions/duplicate/1"
+            name: duplicate
+            meta:
+              id: req_901fa9b303864b57aa916f1eb64b6e25
+              created: 1764496106188
+              modified: 1764510638387
+              isPrivate: false
+              description: ""
+              sortKey: -1764496102487
+            method: POST
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
       - name: timeRangeOptions
         meta:
           id: fld_6f62aad775b04213b0c0845df3c6342b
@@ -9115,6 +9585,242 @@ collection:
                         }
 
                         insomnia.environment.set("render_admin_token", token);
+                        console.log("Login successful, token saved");
+                      } catch (e) {
+                        console.log("Failed to parse login response:", e);
+                      }
+                    });
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: http://localhost:3000/massrender/common/jobs/update-search-fields
+                name: update all list jobs (localhost)
+                meta:
+                  id: req_b0b552036d99455c9153146463fd97bd
+                  created: 1767004995207
+                  modified: 1769504221626
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1764496102454
+                method: PATCH
+                headers:
+                  - name: Authorization
+                    value: Bearer {{_['render-admin-token']}}
+                authentication:
+                  type: bearer
+                  disabled: false
+                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2ODIwNzYzNCwiZXhwIjoxNzY4MjA3OTM0fQ.6xZJta0n4PY3yjexPz52RjG16wB2yi9LRgiAXRygm1M
+                  prefix: bearer
+                scripts:
+                  preRequest: >
+                    const loginEndpoint =
+                    insomnia.variables.get("render-admin-domain") + "/login";
+
+                    const username =
+                    insomnia.variables.get("render-admin-username");
+
+                    const password =
+                    insomnia.variables.get("render-admin-password");
+
+
+                    const loginRequest = {
+                      method: "POST",
+                      url: loginEndpoint,
+                      headers: {
+                        "Content-Type": "application/json"
+                      },
+                      body: JSON.stringify({
+                        username,
+                        password
+                      })
+                    };
+
+
+                    insomnia.sendRequest(loginRequest, function (err, response)
+                    {
+                      if (err) {
+                        console.log("Error while logging in:", err);
+                        return;
+                      }
+
+                      try {
+                        const json = JSON.parse(response.body);
+                        const token = json.token;
+
+                        if (!token) {
+                          console.log("No token found in login response");
+                          return;
+                        }
+
+                        insomnia.environment.set("render-admin-token", token);
+                        console.log("Login successful, token saved");
+                      } catch (e) {
+                        console.log("Failed to parse login response:", e);
+                      }
+                    });
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://renderadmin-dev.vivid3d.tech/massrender/common/jobs
+                name: list jobs dev
+                meta:
+                  id: req_4b546f29d0fe433fbd4c5759c363e1df
+                  created: 1767190251484
+                  modified: 1768207684591
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1764496102457
+                method: GET
+                parameters:
+                  - name: pageSize
+                    value: "20"
+                    disabled: true
+                  - name: productId
+                    value: "1"
+                    disabled: true
+                  - name: organizationId
+                    value: "1"
+                    disabled: true
+                  - name: type
+                    value: 2d
+                    disabled: true
+                  - name: jobSearch
+                    value: Tulip
+                    description: ""
+                    disabled: false
+                headers:
+                  - name: Authorization
+                    value: Bearer {{_['render-admin-token']}}
+                authentication:
+                  type: bearer
+                  disabled: false
+                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2ODIwNzYzNCwiZXhwIjoxNzY4MjA3OTM0fQ.6xZJta0n4PY3yjexPz52RjG16wB2yi9LRgiAXRygm1M
+                  prefix: bearer
+                scripts:
+                  preRequest: >
+                    const loginEndpoint =
+                    insomnia.variables.get("render-admin-domain") + "/login";
+
+                    const username =
+                    insomnia.variables.get("render-admin-username");
+
+                    const password =
+                    insomnia.variables.get("render-admin-password");
+
+
+                    const loginRequest = {
+                      method: "POST",
+                      url: loginEndpoint,
+                      headers: {
+                        "Content-Type": "application/json"
+                      },
+                      body: JSON.stringify({
+                        username,
+                        password
+                      })
+                    };
+
+
+                    insomnia.sendRequest(loginRequest, function (err, response)
+                    {
+                      if (err) {
+                        console.log("Error while logging in:", err);
+                        return;
+                      }
+
+                      try {
+                        const json = JSON.parse(response.body);
+                        const token = json.token;
+
+                        if (!token) {
+                          console.log("No token found in login response");
+                          return;
+                        }
+
+                        insomnia.environment.set("render-admin-token", token);
+                        console.log("Login successful, token saved");
+                      } catch (e) {
+                        console.log("Failed to parse login response:", e);
+                      }
+                    });
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://renderadmin-dev.vivid3d.tech/massrender/common/jobs/update-search-fields
+                name: update all list jobs
+                meta:
+                  id: req_a9250dfcaf644e23a7a9e87e47e64027
+                  created: 1769504132253
+                  modified: 1769504215739
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1764496102451
+                method: PATCH
+                headers:
+                  - name: Authorization
+                    value: Bearer {{_['render-admin-token']}}
+                authentication:
+                  type: bearer
+                  disabled: false
+                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2ODIwNzYzNCwiZXhwIjoxNzY4MjA3OTM0fQ.6xZJta0n4PY3yjexPz52RjG16wB2yi9LRgiAXRygm1M
+                  prefix: bearer
+                scripts:
+                  preRequest: >
+                    const loginEndpoint =
+                    insomnia.variables.get("render-admin-domain") + "/login";
+
+                    const username =
+                    insomnia.variables.get("render-admin-username");
+
+                    const password =
+                    insomnia.variables.get("render-admin-password");
+
+
+                    const loginRequest = {
+                      method: "POST",
+                      url: loginEndpoint,
+                      headers: {
+                        "Content-Type": "application/json"
+                      },
+                      body: JSON.stringify({
+                        username,
+                        password
+                      })
+                    };
+
+
+                    insomnia.sendRequest(loginRequest, function (err, response)
+                    {
+                      if (err) {
+                        console.log("Error while logging in:", err);
+                        return;
+                      }
+
+                      try {
+                        const json = JSON.parse(response.body);
+                        const token = json.token;
+
+                        if (!token) {
+                          console.log("No token found in login response");
+                          return;
+                        }
+
+                        insomnia.environment.set("render-admin-token", token);
                         console.log("Login successful, token saved");
                       } catch (e) {
                         console.log("Failed to parse login response:", e);
@@ -11602,6 +12308,89 @@ collection:
                     }
 
                     insomnia.environment.set("render_admin_token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/datatables/2/rows"
+            name: retrieve datatable with rows
+            meta:
+              id: req_66b75f466fab443fad22a8e87770ca7e
+              created: 1768229235107
+              modified: 1768229595327
+              isPrivate: false
+              description: ""
+              sortKey: -1764496102405.5
+            method: GET
+            parameters:
+              - name: page
+                value: "1"
+                disabled: false
+              - name: pageSize
+                value: "25"
+                disabled: false
+              - name: name
+                value: Cruise
+                description: ""
+                disabled: true
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
                     console.log("Login successful, token saved");
                   } catch (e) {
                     console.log("Failed to parse login response:", e);
@@ -14230,6 +15019,185 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
+      - name: Standard options
+        meta:
+          id: fld_2303de6c512c4f49af8751a9017dfd16
+          created: 1767968265081
+          modified: 1767968443291
+          sortKey: -1767968265081
+          description: ""
+        children:
+          - url: http://localhost:3000/standard-options
+            name: Create option
+            meta:
+              id: req_ed6a9f0001f94c14a40449e026d11add
+              created: 1767711483047
+              modified: 1767968451973
+              isPrivate: false
+              description: ""
+              sortKey: -1767968274208
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "name": "Waypoints",
+                  "type": "vectorArray",
+                  "value": [
+                    { "X": 0, "Y": 0, "Z": 0 },
+                    { "X": 10, "Y": 5, "Z": 0 },
+                    { "X": 20, "Y": 10, "Z": 5 }
+                  ],
+                  "description": "Array of 3D positions"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NzcxMTQzNiwiZXhwIjoxNzY3NzExNzM2fQ.SMIjpvNIGKh_4R-3_DYKEDN_2vC2ONczgECjan4X0dk
+              prefix: bearer
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/standard-options
+            name: Get all options
+            meta:
+              id: req_cad7a0522d914b209467f0cd085ece3c
+              created: 1767711734918
+              modified: 1768308277519
+              isPrivate: false
+              description: ""
+              sortKey: -1767968274508
+            method: GET
+            parameters:
+              - name: type
+                value: vector
+                description: ""
+                disabled: true
+              - name: page
+                value: "1"
+                description: ""
+                disabled: false
+              - name: pageSize
+                value: "5"
+                description: ""
+                disabled: false
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2ODIwNzYzNCwiZXhwIjoxNzY4MjA3OTM0fQ.6xZJta0n4PY3yjexPz52RjG16wB2yi9LRgiAXRygm1M
+              prefix: bearer
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/standard-options/25
+            name: Get all options by id
+            meta:
+              id: req_543ae1d00b274839a412068671790ccf
+              created: 1767711772686
+              modified: 1767968277968
+              isPrivate: false
+              description: ""
+              sortKey: -1767968274358
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2Nzc5MjIzMCwiZXhwIjoxNzY3NzkyNTMwfQ.tyRqgMYCaFzB1KV-m-d2jHSGAUPxjOImdS5vvpj-A2s
+              prefix: bearer
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/standard-options/1
+            name: PATCH options by id
+            meta:
+              id: req_5217c06f01a54959b9ecf227dce24eab
+              created: 1767711809693
+              modified: 1767968275638
+              isPrivate: false
+              description: ""
+              sortKey: -1767968274308
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"name": "Is Visible UPD"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2Nzc5MjIzMCwiZXhwIjoxNzY3NzkyNTMwfQ.tyRqgMYCaFzB1KV-m-d2jHSGAUPxjOImdS5vvpj-A2s
+              prefix: bearer
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/standard-options/sync
+            name: Sync standard options
+            meta:
+              id: req_2fa0789047994933b9eff208322ae76c
+              created: 1767797834584
+              modified: 1767968411510
+              isPrivate: false
+              description: ""
+              sortKey: -1767968274708
+            method: POST
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NzcxMTQzNiwiZXhwIjoxNzY3NzExNzM2fQ.SMIjpvNIGKh_4R-3_DYKEDN_2vC2ONczgECjan4X0dk
+              prefix: bearer
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
       - name: standardOptions
         meta:
           id: fld_f433cc805eee404294e87f8c5aa6b622
@@ -14512,6 +15480,1930 @@ collection:
               type: bearer
               token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NzcxMTQzNiwiZXhwIjoxNzY3NzExNzM2fQ.SMIjpvNIGKh_4R-3_DYKEDN_2vC2ONczgECjan4X0dk
               prefix: bearer
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Configurator
+        meta:
+          id: fld_10a71feb61e545488a6ece6027e13614
+          created: 1768809219028
+          modified: 1769010088289
+          sortKey: -1768809219029
+          description: ""
+        children:
+          - url: "{{_['render-admin-domain']}}/configurators"
+            name: create configurator
+            meta:
+              id: req_3e3df03629994e2397145d2077418511
+              created: 1768809260144
+              modified: 1768810387131
+              isPrivate: false
+              description: ""
+              sortKey: -1768809263189
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "name": "VR Badroom Configurator",
+                  "organizationId": 1,
+                  "enabled": false,
+                  "description": "VR configurator for badroom products"
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators"
+            name: get list of configurators
+            meta:
+              id: req_0b5b7f700eba4e2eba46b8ae5273daae
+              created: 1768810450303
+              modified: 1768810601361
+              isPrivate: false
+              description: ""
+              sortKey: -1768388768948.5
+            method: GET
+            parameters:
+              - name: page
+                value: "1"
+                description: ""
+                disabled: false
+              - name: pageSize
+                value: "10"
+                description: ""
+                disabled: false
+              - name: organizationId
+                value: "1"
+                description: ""
+                disabled: true
+              - name: enabled
+                value: "true"
+                description: ""
+                disabled: true
+              - name: searchByName
+                value: vr
+                description: ""
+                disabled: true
+              - name: sortByName
+                value: asc
+                description: ""
+                disabled: true
+              - name: sortById
+                value: desc
+                description: ""
+                disabled: true
+              - name: sortByCreatedAt
+                value: desc
+                description: ""
+                disabled: true
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1"
+            name: get configurator by id
+            meta:
+              id: req_6248590f8b924f808f216965763e6dc6
+              created: 1768810615995
+              modified: 1768989499001
+              isPrivate: false
+              description: ""
+              sortKey: -1768178521828.25
+            method: GET
+            parameters:
+              - name: serialize
+                value: "true"
+                description: ""
+                disabled: false
+              - name: view
+                value: full
+                description: ""
+                disabled: false
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/2"
+            name: update configurator
+            meta:
+              id: req_cdfc105d17b749fca401a01d597db4ae
+              created: 1768810643474
+              modified: 1768810668262
+              isPrivate: false
+              description: ""
+              sortKey: -1768599016068.75
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "name": "VR Kitchen Configurator",
+                  "description": "VR configurator for kitchen products"
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/geometry-options"
+            name: add geometry options to configurator
+            meta:
+              id: req_f8002706f1b94ace833734bb43e9cb39
+              created: 1768811242467
+              modified: 1768811320758
+              isPrivate: false
+              description: ""
+              sortKey: -1768704139628.875
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "geometryOptions": [
+                    {
+                      "geometryOptionIds": [1, 2],
+                      "proxyName": "UI_Model"
+                    },
+                    {
+                      "geometryOptionIds": [3],
+                      "proxyName": "UI_Size"
+                    }
+                  ]
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/geometry-options"
+            name: remove geometry options to configurator
+            meta:
+              id: req_7dbe35b35b384f43b879a33540985d46
+              created: 1768811358781
+              modified: 1768811375948
+              isPrivate: false
+              description: ""
+              sortKey: -1768651577848.8125
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "geometryOptions": [2]
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/options"
+            name: add material options to configurator
+            meta:
+              id: req_4b79a385318b4a5a804601979c0b566e
+              created: 1768811404554
+              modified: 1768811453401
+              isPrivate: false
+              description: ""
+              sortKey: -1768677858738.8438
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "options": [
+                    {
+                      "optionIds": [1, 2],
+                      "proxyName": "UI_Color"
+                    },
+                    {
+                      "optionIds": [3],
+                      "proxyName": "UI_Finish"
+                    }
+                  ]
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/options"
+            name: remove material options to configurator
+            meta:
+              id: req_01a2e051c465497ca84a38d41bd6aaae
+              created: 1768811479614
+              modified: 1768811490556
+              isPrivate: false
+              description: ""
+              sortKey: -1768625296958.7812
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "options": [2]
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/organizations/1/configurators/1/geometry-opt\
+              ions/1"
+            name: get configurator by id with geometry proxy option
+            meta:
+              id: req_326efc03128a49a7847791d154f72c76
+              created: 1768811538272
+              modified: 1768811584174
+              isPrivate: false
+              description: ""
+              sortKey: -1768073398268.125
+            method: GET
+            parameters:
+              - name: serialize
+                value: "true"
+                description: ""
+                disabled: false
+              - name: view
+                value: full
+                description: ""
+                disabled: false
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/organizations/1/configurators/1/options/1"
+            name: get configurator by id with material proxy option
+            meta:
+              id: req_a1210a64a3634e96a6261fe447d99c52
+              created: 1768811624224
+              modified: 1768811628266
+              isPrivate: false
+              description: ""
+              sortKey: -1768020836488.0625
+            method: GET
+            parameters:
+              - name: serialize
+                value: "true"
+                description: ""
+                disabled: false
+              - name: view
+                value: full
+                description: ""
+                disabled: false
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/3"
+            name: remove configurator
+            meta:
+              id: req_f0dd2059e5f84c49b1218d59f2fca841
+              created: 1768811662039
+              modified: 1768811672815
+              isPrivate: false
+              description: ""
+              sortKey: -1768612156513.7656
+            method: DELETE
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/material-options/1"
+            name: update material proxy option (enabled/proxyName)
+            meta:
+              id: req_170e8fcd45e1401582c09daaebd70ada
+              created: 1768897176075
+              modified: 1768928618296
+              isPrivate: false
+              description: ""
+              sortKey: -1768493892508.625
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "enabled": false,
+                  "proxyName": "BE_COLOR"
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/geometry-options/1"
+            name: update geometry proxy option (enabled/proxyName)
+            meta:
+              id: req_f473b66babf34c47a80a946ecd86a4df
+              created: 1768897276762
+              modified: 1768897297595
+              isPrivate: false
+              description: ""
+              sortKey: -1768441330728.5625
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "enabled": false,
+                  "proxyName": "BE_Model"
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/options/1/variants/3"
+            name: update material option variant (enabled)
+            meta:
+              id: req_11c997109f6b4a0986a1bbd46cd0b599
+              created: 1768897332116
+              modified: 1768928718602
+              isPrivate: false
+              description: ""
+              sortKey: -1768415049838.5312
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "enabled": false
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/geometry-options/1/variants/\
+              1"
+            name: update geometry option variant (enabled)
+            meta:
+              id: req_79e50aa29c4c47e9a220fe45a71d99ab
+              created: 1768897394948
+              modified: 1768928741098
+              isPrivate: false
+              description: ""
+              sortKey: -1768401909393.5156
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "enabled": false
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/standard-options"
+            name: add standard options to configurator
+            meta:
+              id: req_cdb473bf808449ebb25b113e062597d9
+              created: 1768903473801
+              modified: 1768903517962
+              isPrivate: false
+              description: ""
+              sortKey: -1768664718293.8281
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "standardOptions": [
+                    {
+                      "standardOptionId": 3,
+                      "proxyName": "isVisibles",
+                      "value": true
+                    },
+                    {
+                      "standardOptionId": 4,
+                      "proxyName": "opacitys",
+                      "value": 0.8
+                    }
+                  ]
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/standard-options"
+            name: remove standard options to configurator
+            meta:
+              id: req_d0aee268c9704684978e2f7c3831f2d5
+              created: 1768903557870
+              modified: 1768903583502
+              isPrivate: false
+              description: ""
+              sortKey: -1768618726736.2734
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "configuratorStandardOptionIds": [5, 6]
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/standard-options/1"
+            name: update standard option association
+            meta:
+              id: req_b28b08cc2bf3460fa8e3e158a09829aa
+              created: 1768903615736
+              modified: 1768903669148
+              isPrivate: false
+              description: ""
+              sortKey: -1768467611618.5938
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "enabled": false,
+                  "proxyName": "invisible",
+                	"value": false
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/material-options/1/metadata"
+            name: add metadata to material proxy option
+            meta:
+              id: req_92f9b273d2a54b788387a75c521bf91a
+              created: 1768988881450
+              modified: 1768988998061
+              isPrivate: false
+              description: ""
+              sortKey: -1768395339171.0078
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "metadata": {
+                    "field": "Test value"
+                  }
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/geometry-options/1/metadata"
+            name: add metadata to geometry proxy option
+            meta:
+              id: req_d1c4110e55cb4eddb096c803b54aa075
+              created: 1768989017997
+              modified: 1768989021869
+              isPrivate: false
+              description: ""
+              sortKey: -1768392054059.754
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "metadata": {
+                    "field": "Test value"
+                  }
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/options/1/variants/3/metadat\
+              a"
+            name: "add metadata to material variant "
+            meta:
+              id: req_7395722753574594bd355260d966bed8
+              created: 1768989057755
+              modified: 1769010042371
+              isPrivate: false
+              description: ""
+              sortKey: -1768393696615.3809
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "metadata": {
+                    "test1": "Test value 1",
+                		"test2": "Test value 2",
+                		"test3": "Test value 3"
+                  }
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/geometry-options/1/variants/\
+              3/metadata"
+            name: "add metadata to geometry variant "
+            meta:
+              id: req_f61192bf7de44d7ea209e57a4a91ff8c
+              created: 1768989256665
+              modified: 1768989273673
+              isPrivate: false
+              description: ""
+              sortKey: -1768392875337.5674
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "metadata": {
+                    "field": "Test value"
+                  }
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['render-admin-domain']}}/configurators/1/standard-options/{% hash
+              'sha256', 'hex', '' %}/metadata"
+            name: add metadata to standard option
+            meta:
+              id: req_77e5a635e04b4ab6b1225891e0773d59
+              created: 1768990278289
+              modified: 1769075392599
+              isPrivate: false
+              description: ""
+              sortKey: -1768390411504.127
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "metadata": {
+                    "test1": "Test value 1",
+                		"test2": "Test value 2",
+                		"test3": "Test value 3"
+                  }
+                }
+            headers:
+              - name: Authorization
+                value: Bearer {{_['render-admin-token']}}
+              - name: Content-Type
+                value: application/json
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{_['render-admin-token']}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render-admin-domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render-admin-username");
+
+                const password =
+                insomnia.variables.get("render-admin-password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render-admin-token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
             settings:
               renderRequestBody: true
               encodeUrl: true
@@ -15285,6 +18177,19 @@ environments:
     render_admin_username: admin
     render_admin_password: RmxJ8UjtE3aY4czn
   subEnvironments:
+    - name: local
+      meta:
+        id: env_b8191c95ca5148239e99bdd5400c1ad6
+        created: 1764509217083
+        modified: 1769505488102
+        isPrivate: false
+        sortKey: 1764509217083
+      data:
+        render-admin-domain: http://localhost:3000
+        render-admin-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2ODIwNzYzNCwiZXhwIjoxNzY4MjA3OTM0fQ.6xZJta0n4PY3yjexPz52RjG16wB2yi9LRgiAXRygm1M
+        render-admin-username: admin
+        render-admin-password: RmxJ8UjtE3aY4czn
+      color: "#ffffff"
     - name: local
       meta:
         id: env_fc6ae7f918174d8da3346682e43d0af4
