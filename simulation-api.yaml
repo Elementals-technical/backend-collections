@@ -20,7 +20,7 @@ collection:
         meta:
           id: req_69e37307977f4185a2ec4f431b3d0d2d
           created: 1766396271007
-          modified: 1767690286224
+          modified: 1769178941069
           isPrivate: false
           description: ""
           sortKey: -1766396271007
@@ -29,10 +29,11 @@ collection:
           mimeType: application/json
           text: >
             {
-              "name": "Test_PLO",
+              "name": "Test_PLO Ephemeral 11",
+            	"executionMode": "persistent",
             	"organizationId": 1,
             	"iterationCount": 5,
-            	"framesPerIteration": 2,
+            	"framesPerIteration": 5,
             	"singleConfigMode": false,
               "simulationScript": "const stages:(()=>VividStageBase)[]=[S26.create];const stage:VividStageBase=stages[0]();stage.setAsCurrentStage();const classes:(()=>VividProductBase)[]=[P45.create,P42.create];const a=classes[1]();const camera:Camera=Camera.create();camera.setAsViewTarget();"
             }
@@ -66,6 +67,46 @@ collection:
           sortKey: -1766236280294.5
         method: DELETE
         headers:
+          - name: User-Agent
+            value: insomnia/12.2.0
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: zCxGZgV3iVUR93C2Cua2lTgZZZppRL1z32VifmzwdPgcP
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{simulation_api_domain}}/simulations"
+        name: list
+        meta:
+          id: req_118c153bfa7b432188abc8a4193dc91a
+          created: 1767798905988
+          modified: 1768213497718
+          isPrivate: false
+          description: ""
+          sortKey: -1766316275650.75
+        method: GET
+        body:
+          mimeType: application/json
+          text: >
+            {
+              "name": "Test_PLO 2",
+            	"organizationId": 1,
+            	"iterationCount": 5,
+            	"framesPerIteration": 2,
+            	"singleConfigMode": false,
+              "simulationScript": "const stages:(()=>VividStageBase)[]=[S26.create];const stage:VividStageBase=stages[0]();stage.setAsCurrentStage();const classes:(()=>VividProductBase)[]=[P45.create,P42.create];const a=classes[1]();const camera:Camera=Camera.create();camera.setAsViewTarget();"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
           - name: User-Agent
             value: insomnia/12.2.0
             description: ""
@@ -122,13 +163,13 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: "{{simulation_api_domain}}/queue-api/attachRender/iterations/60/configurat\
-          ions/144"
+      - url: "{{simulation_api_domain}}/queue-api/attachRender/iterations/125/configura\
+          tions/213"
         name: attach render
         meta:
           id: req_a8f4108cbc8c4b4aa7310252de12d57c
           created: 1766756117676
-          modified: 1767701130777
+          modified: 1769177774187
           isPrivate: false
           description: ""
           sortKey: -1766575742037.5
@@ -372,7 +413,7 @@ environments:
   meta:
     id: env_0778d97653bbaa944d0f3c704cd2a7c269044867
     created: 1766396256818
-    modified: 1766396325324
+    modified: 1769177140020
     isPrivate: false
   data:
-    simulation_api_domain: 127.0.0.1:3000
+    simulation_api_domain: http://127.0.0.1:3000

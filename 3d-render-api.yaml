@@ -3192,13 +3192,13 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: "{{_['studio-api-domain']}}/3d/attachGLB/a82625d85fa052a416086f16a9b6dc93d\
-                  c375ceac237ba2f7e292bf7bea620de"
+              - url: "{{_['studio-api-domain']}}/3d/attachGLB/a575f94b0a522fc247a5ae9810d970a7f\
+                  aeb9309589d2e4ce9bfa68bbd176ef6"
                 name: attachGlb (FORM-DATA)
                 meta:
                   id: req_d5b4bcda301447b88ac5fabec533138d
                   created: 1768562068912
-                  modified: 1768562143676
+                  modified: 1768924569541
                   isPrivate: false
                   description: ""
                   sortKey: -1764495952624
@@ -3395,7 +3395,7 @@ environments:
   meta:
     id: env_0a37bb006d526ec09ba26c96fd6fe5f77375a9b2
     created: 1764495957742
-    modified: 1768561878794
+    modified: 1768924552372
     isPrivate: false
   data:
-    studio-api-domain: https://renderapi-dev.vivid3d.tech
+    studio-api-domain: https://renderapi.vivid3d.tech
