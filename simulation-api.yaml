@@ -55,16 +55,68 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: "{{simulation_api_domain}}/simulations/8"
+      - url: "{{simulation_api_domain}}/simulations/23"
         name: delete
         meta:
           id: req_6c1280651fe24e69899edff35f49be63
           created: 1766578438199
-          modified: 1766579185922
+          modified: 1770197766211
           isPrivate: false
           description: ""
           sortKey: -1766236280294.5
         method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.2.0
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: zCxGZgV3iVUR93C2Cua2lTgZZZppRL1z32VifmzwdPgcP
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{simulation_api_domain}}/simulations"
+        name: list
+        meta:
+          id: req_51c607c4338f4bdab28d7bf3e3fc07c7
+          created: 1770196943878
+          modified: 1770197756786
+          isPrivate: false
+          description: ""
+          sortKey: -1766366733291.25
+        method: GET
+        parameters:
+          - name: organizationId
+            value: "1"
+            description: ""
+            disabled: false
+          - name: search
+            value: pl22
+            description: ""
+            disabled: true
+          - name: sortBy
+            value: name
+            description: ""
+            disabled: false
+          - name: sortOrder
+            value: asc
+            description: ""
+            disabled: false
+          - name: page
+            value: "1"
+            description: ""
+            disabled: false
+          - name: pageSize
+            value: "30"
+            description: ""
+            disabled: false
         headers:
           - name: User-Agent
             value: insomnia/12.2.0
@@ -303,7 +355,7 @@ collection:
         meta:
           id: req_9e72cbc1693743e0a39bcfffb24829e7
           created: 1767708570914
-          modified: 1767708582276
+          modified: 1770202283444
           isPrivate: false
           description: ""
           sortKey: -1767229274293.5
@@ -315,6 +367,26 @@ collection:
             disabled: true
           - name: iterationId
             value: "59"
+            description: ""
+            disabled: true
+          - name: simulationId
+            value: "22"
+            description: ""
+            disabled: false
+          - name: sortBy
+            value: name
+            description: ""
+            disabled: false
+          - name: sortOrder
+            value: desc
+            description: ""
+            disabled: false
+          - name: page
+            value: "1"
+            description: ""
+            disabled: false
+          - name: pageSize
+            value: "10"
             description: ""
             disabled: false
         headers:
