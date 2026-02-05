@@ -11,7 +11,7 @@ collection:
     meta:
       id: fld_28943f57796445899fa604513d7a262d
       created: 1764496106015
-      modified: 1770307236326
+      modified: 1770308406375
       sortKey: -1764496102719
       description: ""
     children:
@@ -314,7 +314,7 @@ collection:
         meta:
           id: fld_7c339ab8605c47cdbdf97c858583629e
           created: 1764496106033
-          modified: 1770285268173
+          modified: 1770308353027
           sortKey: -1764496102604
           description: ""
         children:
@@ -15492,7 +15492,7 @@ collection:
         meta:
           id: fld_10a71feb61e545488a6ece6027e13614
           created: 1768809219028
-          modified: 1770307236326
+          modified: 1770308406375
           sortKey: -1768809219029
           description: ""
         children:
@@ -15501,7 +15501,7 @@ collection:
             meta:
               id: req_3e3df03629994e2397145d2077418511
               created: 1768809260144
-              modified: 1770307233157
+              modified: 1770308399355
               isPrivate: false
               description: ""
               sortKey: -1768809263189
@@ -15511,8 +15511,8 @@ collection:
               text: |-
                 {
                   "name": "Test Configurator",
-                  "organizationId": 2,
-                  "enabled": true,
+                  "organizationId": 3,
+                  "enabled": false,
                   "description": "VR configurator for badroom products"
                 }
             headers:
@@ -17488,12 +17488,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/configurators/1"
+          - url: "{{render_admin_domain}}/configurators/2"
             name: retrieve
             meta:
               id: req_2b64808432854a93bef5f502765fd0b6
               created: 1768889639573
-              modified: 1769022505003
+              modified: 1770309410401
               isPrivate: false
               description: ""
               sortKey: -1768889389533
@@ -18171,7 +18171,7 @@ collection:
             meta:
               id: req_ba563e4688a74e5e873bfc32b4b16c1f
               created: 1770283753824
-              modified: 1770283920689
+              modified: 1770308529151
               isPrivate: false
               description: ""
               sortKey: -1770283761209
@@ -18183,12 +18183,17 @@ collection:
                   value: ""
                   description: ""
                   disabled: false
+                  multiline: true
+                  fileName: F:\ElementalsWeb\дані для імпорту у адмінку\data-material.csv
+                  type: file
                 - name: jsonFile
                   value: ""
                   description: ""
                   disabled: false
+                  fileName: F:\ElementalsWeb\дані для імпорту у адмінку\DataMaterial.JSON
+                  type: file
                 - name: configuratorId
-                  value: "3"
+                  value: "2"
                   description: ""
                   disabled: false
             headers:
@@ -18263,16 +18268,16 @@ cookieJar:
   meta:
     id: jar_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496108720
-    modified: 1770307236323
+    modified: 1770308406372
 environments:
   name: Base Environment
   meta:
     id: env_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496106422
-    modified: 1770307236325
+    modified: 1770309383209
     isPrivate: false
   data:
-    render_admin_domain: http://localhost:3000
+    render_admin_domain: https://renderadmin-dev.vivid3d.tech
     render_admin_token: ""
     render_admin_username: admin
     render_admin_password: RmxJ8UjtE3aY4czn
@@ -18281,7 +18286,7 @@ environments:
       meta:
         id: env_b8191c95ca5148239e99bdd5400c1ad6
         created: 1764509217083
-        modified: 1770307236324
+        modified: 1770308406374
         isPrivate: false
         sortKey: 1764509217083
       data:
