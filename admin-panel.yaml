@@ -11,7 +11,7 @@ collection:
     meta:
       id: fld_28943f57796445899fa604513d7a262d
       created: 1764496106015
-      modified: 1769417376750
+      modified: 1770307236326
       sortKey: -1764496102719
       description: ""
     children:
@@ -314,7 +314,7 @@ collection:
         meta:
           id: fld_7c339ab8605c47cdbdf97c858583629e
           created: 1764496106033
-          modified: 1768833151382
+          modified: 1770285268173
           sortKey: -1764496102604
           description: ""
         children:
@@ -323,7 +323,7 @@ collection:
             meta:
               id: req_13d16746fd0c4ed1a1d3386c4e604e7a
               created: 1764496106034
-              modified: 1768546097297
+              modified: 1770280301234
               isPrivate: false
               description: ""
               sortKey: -1764496102603
@@ -332,7 +332,7 @@ collection:
               mimeType: application/json
               text: |-
                 {
-                    "name": "LS FP Demo"
+                    "name": "Test i/e flow"
                 }
             headers:
               - name: Authorization
@@ -542,12 +542,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/organizations/1"
+          - url: "{{render_admin_domain}}/organizations/2"
             name: retrieve organization
             meta:
               id: req_23cff34f251040b1b8168b69a893046e
               created: 1764496106038
-              modified: 1764510128763
+              modified: 1770285266720
               isPrivate: false
               description: ""
               sortKey: -1764496102600
@@ -770,16 +770,16 @@ collection:
         meta:
           id: fld_5225bd9336c44ebbafabf30c45bb80f1
           created: 1764496106042
-          modified: 1768546136071
+          modified: 1770284071699
           sortKey: -1764496102597
           description: ""
         children:
-          - url: "{{render_admin_domain}}/organizations/16/users"
+          - url: "{{render_admin_domain}}/organizations/2/users"
             name: add organization users
             meta:
               id: req_f4a50fe036064d4aa3f8ca63edf6fd09
               created: 1764496106044
-              modified: 1768546135250
+              modified: 1770284070990
               isPrivate: false
               description: ""
               sortKey: -1764496102596
@@ -1372,7 +1372,7 @@ collection:
         meta:
           id: fld_a6a1513b5d204d29a79a6f171de34655
           created: 1764496106054
-          modified: 1768372249881
+          modified: 1770305683978
           sortKey: -1764496102588
           description: ""
         children:
@@ -1613,7 +1613,7 @@ collection:
             meta:
               id: req_a414b145c8914db9bb43222c9728d88a
               created: 1764496106058
-              modified: 1768372247918
+              modified: 1770305683771
               isPrivate: false
               description: ""
               sortKey: -1764496102585
@@ -15492,7 +15492,7 @@ collection:
         meta:
           id: fld_10a71feb61e545488a6ece6027e13614
           created: 1768809219028
-          modified: 1769010088289
+          modified: 1770307236326
           sortKey: -1768809219029
           description: ""
         children:
@@ -15501,7 +15501,7 @@ collection:
             meta:
               id: req_3e3df03629994e2397145d2077418511
               created: 1768809260144
-              modified: 1768810387131
+              modified: 1770307233157
               isPrivate: false
               description: ""
               sortKey: -1768809263189
@@ -15510,9 +15510,9 @@ collection:
               mimeType: application/json
               text: |-
                 {
-                  "name": "VR Badroom Configurator",
-                  "organizationId": 1,
-                  "enabled": false,
+                  "name": "Test Configurator",
+                  "organizationId": 2,
+                  "enabled": true,
                   "description": "VR configurator for badroom products"
                 }
             headers:
@@ -18158,21 +18158,121 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
+      - name: import csv
+        meta:
+          id: fld_49face68d95143fe8a246b25e1112df3
+          created: 1770283743303
+          modified: 1770283743303
+          sortKey: -1770283743303
+          description: ""
+        children:
+          - url: "{{render_admin_domain}}/import/materials"
+            name: DEV import materials
+            meta:
+              id: req_ba563e4688a74e5e873bfc32b4b16c1f
+              created: 1770283753824
+              modified: 1770283920689
+              isPrivate: false
+              description: ""
+              sortKey: -1770283761209
+            method: POST
+            body:
+              mimeType: multipart/form-data
+              params:
+                - name: csvFile
+                  value: ""
+                  description: ""
+                  disabled: false
+                - name: jsonFile
+                  value: ""
+                  description: ""
+                  disabled: false
+                - name: configuratorId
+                  value: "3"
+                  description: ""
+                  disabled: false
+            headers:
+              - name: Content-Type
+                value: multipart/form-data
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NzcxMTQzNiwiZXhwIjoxNzY3NzExNzM2fQ.SMIjpvNIGKh_4R-3_DYKEDN_2vC2ONczgECjan4X0dk
+              prefix: bearer
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{render_admin_domain}}/import/materials"
+            name: LOCALHOST import materials
+            meta:
+              id: req_2157c2e9665d4a5dbc4fdf2a18283b42
+              created: 1770283929993
+              modified: 1770307250002
+              isPrivate: false
+              description: ""
+              sortKey: -1769863701154
+            method: POST
+            body:
+              mimeType: multipart/form-data
+              params:
+                - name: csvFile
+                  value: ""
+                  description: ""
+                  disabled: false
+                  fileName: F:\ElementalsWeb\дані для імпорту у адмінку\data-material.csv
+                  type: file
+                - name: jsonFile
+                  value: ""
+                  description: ""
+                  disabled: false
+                  fileName: F:\ElementalsWeb\дані для імпорту у адмінку\DataMaterial.JSON
+                  type: file
+                - name: configuratorId
+                  value: "4"
+                  description: ""
+                  disabled: false
+            headers:
+              - name: Content-Type
+                value: multipart/form-data
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NzcxMTQzNiwiZXhwIjoxNzY3NzExNzM2fQ.SMIjpvNIGKh_4R-3_DYKEDN_2vC2ONczgECjan4X0dk
+              prefix: bearer
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
 cookieJar:
   name: Default Jar
   meta:
     id: jar_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496108720
-    modified: 1769417376749
+    modified: 1770307236323
 environments:
   name: Base Environment
   meta:
     id: env_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496106422
-    modified: 1769417376749
+    modified: 1770307236325
     isPrivate: false
   data:
-    render_admin_domain: https://renderadmin.vivid3d.tech
+    render_admin_domain: http://localhost:3000
     render_admin_token: ""
     render_admin_username: admin
     render_admin_password: RmxJ8UjtE3aY4czn
@@ -18181,7 +18281,7 @@ environments:
       meta:
         id: env_b8191c95ca5148239e99bdd5400c1ad6
         created: 1764509217083
-        modified: 1769505488102
+        modified: 1770307236324
         isPrivate: false
         sortKey: 1764509217083
       data:
