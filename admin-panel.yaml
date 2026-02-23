@@ -11,7 +11,7 @@ collection:
     meta:
       id: fld_28943f57796445899fa604513d7a262d
       created: 1764496106015
-      modified: 1770308406375
+      modified: 1771239075874
       sortKey: -1764496102719
       description: ""
     children:
@@ -314,7 +314,7 @@ collection:
         meta:
           id: fld_7c339ab8605c47cdbdf97c858583629e
           created: 1764496106033
-          modified: 1770308353027
+          modified: 1770384818405
           sortKey: -1764496102604
           description: ""
         children:
@@ -323,7 +323,7 @@ collection:
             meta:
               id: req_13d16746fd0c4ed1a1d3386c4e604e7a
               created: 1764496106034
-              modified: 1770280301234
+              modified: 1770384813004
               isPrivate: false
               description: ""
               sortKey: -1764496102603
@@ -332,7 +332,7 @@ collection:
               mimeType: application/json
               text: |-
                 {
-                    "name": "Test i/e flow"
+                    "name": "Sandbox"
                 }
             headers:
               - name: Authorization
@@ -770,16 +770,16 @@ collection:
         meta:
           id: fld_5225bd9336c44ebbafabf30c45bb80f1
           created: 1764496106042
-          modified: 1770284071699
+          modified: 1770388559764
           sortKey: -1764496102597
           description: ""
         children:
-          - url: "{{render_admin_domain}}/organizations/2/users"
+          - url: "{{render_admin_domain}}/organizations/17/users"
             name: add organization users
             meta:
               id: req_f4a50fe036064d4aa3f8ca63edf6fd09
               created: 1764496106044
-              modified: 1770284070990
+              modified: 1770388557229
               isPrivate: false
               description: ""
               sortKey: -1764496102596
@@ -789,7 +789,7 @@ collection:
               text: |-
                 {
                     "users": [
-                        1
+                        7
                     ]
                 }
             headers:
@@ -1372,7 +1372,7 @@ collection:
         meta:
           id: fld_a6a1513b5d204d29a79a6f171de34655
           created: 1764496106054
-          modified: 1770305683978
+          modified: 1771156108390
           sortKey: -1764496102588
           description: ""
         children:
@@ -1608,12 +1608,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/products/1"
+          - url: "{{render_admin_domain}}/products/2192"
             name: retrieve product
             meta:
               id: req_a414b145c8914db9bb43222c9728d88a
               created: 1764496106058
-              modified: 1770305683771
+              modified: 1770372822697
               isPrivate: false
               description: ""
               sortKey: -1764496102585
@@ -1775,12 +1775,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/products/65"
+          - url: "{{render_admin_domain}}/products/46"
             name: update product
             meta:
               id: req_5e1d3d71ce4944bc8b95a4c60a60a928
               created: 1764496106061
-              modified: 1764510184226
+              modified: 1771156102077
               isPrivate: false
               description: ""
               sortKey: -1764496102583
@@ -1812,9 +1812,13 @@ collection:
                   value: "false"
                   disabled: true
                   type: text
+                - name: modifyPlaycanvasFiles
+                  value: "true"
+                  description: ""
+                  disabled: false
                 - name: playcanvas
-                  disabled: true
-                  fileName: /home/pavlo/Desktop/testfolder.zip
+                  disabled: false
+                  fileName: /home/pavlo/Downloads/Watch Demo.zip
                   type: file
                 - name: playcanvasString
                   value: ""
@@ -1830,11 +1834,11 @@ collection:
                   type: text
                 - name: library
                   value: "false"
-                  disabled: false
+                  disabled: true
                   type: text
                 - name: useCompositor
                   value: "false"
-                  disabled: false
+                  disabled: true
                   type: text
             headers:
               - name: Authorization
@@ -3845,7 +3849,7 @@ collection:
         meta:
           id: fld_55cc98209eb540f8b3fe3e41e7d6f5d2
           created: 1764496106103
-          modified: 1768487789664
+          modified: 1770636924629
           sortKey: -1764496102551
           description: ""
         children:
@@ -4210,12 +4214,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/options/1"
+          - url: "{{render_admin_domain}}/options/50"
             name: delete option
             meta:
               id: req_8d3b0f1b90e147c4b2859552883dd7e1
               created: 1764496106112
-              modified: 1764510387971
+              modified: 1770636922224
               isPrivate: false
               description: ""
               sortKey: -1764496102546
@@ -11899,7 +11903,7 @@ collection:
         meta:
           id: fld_50f83070d6ad490caddf8baa07924382
           created: 1764496106294
-          modified: 1769074145605
+          modified: 1771239075875
           sortKey: -1764496102410
           description: ""
         children:
@@ -11908,7 +11912,7 @@ collection:
             meta:
               id: req_9317b4ea0fd04e20948ca7fceb657e0c
               created: 1764496106295
-              modified: 1769074141034
+              modified: 1771166066542
               isPrivate: false
               description: ""
               sortKey: -1764496102409
@@ -11925,7 +11929,7 @@ collection:
                   disabled: false
                   type: text
                 - name: name
-                  value: test plo 1
+                  value: Hastings_Acessories_Pricing_4
                   description: ""
                   disabled: false
             headers:
@@ -11992,12 +11996,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/datatables/439/overwrite"
+          - url: "{{render_admin_domain}}/datatables/497/overwrite"
             name: overwrite data table
             meta:
               id: req_d38b89a74b6f4fc7ab542a5d155fe671
               created: 1764496106296
-              modified: 1768833456825
+              modified: 1771166921718
               isPrivate: false
               description: ""
               sortKey: -1764496102408
@@ -12007,7 +12011,7 @@ collection:
               params:
                 - name: file
                   disabled: false
-                  fileName: /home/pavlo/Downloads/matrix-cabiten-logic.csv
+                  fileName: /home/pavlo/Desktop/hastings_basin_pricing.csv
                   type: file
             headers:
               - name: Authorization
@@ -12078,7 +12082,7 @@ collection:
             meta:
               id: req_ed4e0fc26c1348c4ae6562b2a10dbf6b
               created: 1764496106297
-              modified: 1764510901751
+              modified: 1770392297719
               isPrivate: false
               description: ""
               sortKey: -1764496102407
@@ -12086,7 +12090,7 @@ collection:
             parameters:
               - name: organizationId
                 value: "1"
-                disabled: false
+                disabled: true
               - name: name
                 value: asc
                 disabled: true
@@ -12158,12 +12162,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/datatables/439"
+          - url: "{{render_admin_domain}}/datatables/493"
             name: retrieve datatable
             meta:
               id: req_7b7aace3c21849f398288bc6792e5e36
               created: 1764496106299
-              modified: 1768833498226
+              modified: 1771239065562
               isPrivate: false
               description: ""
               sortKey: -1764496102406
@@ -12404,12 +12408,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/datatables/1/rows"
+          - url: "{{render_admin_domain}}/datatables/493/rows"
             name: retrieve datatable rows
             meta:
               id: req_b1d491f4ecb0434c828a5f9f7bf2840a
               created: 1768583947084
-              modified: 1769007870908
+              modified: 1770392420030
               isPrivate: false
               description: ""
               sortKey: -1764496102405.5
@@ -12433,9 +12437,98 @@ collection:
               - name: filterValue[]
                 value: Fenix
                 disabled: true
+              - name: page
+                value: "1"
+                description: ""
+                disabled: false
+              - name: pageSize
+                value: "2"
+                description: ""
+                disabled: false
             headers:
               - name: Authorization
                 value: Bearer {{render_admin_token}}
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{render_admin_token}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render_admin_domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render_admin_username");
+
+                const password =
+                insomnia.variables.get("render_admin_password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render_admin_token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{render_admin_domain}}/datatables/1"
+            name: update data table
+            meta:
+              id: req_066015f99d3f4d1295f6c5fb3e03065a
+              created: 1771593476686
+              modified: 1771593588762
+              isPrivate: false
+              description: ""
+              sortKey: -1764496102408.5
+            method: PATCH
+            body:
+              mimeType: multipart/form-data
+              params:
+                - name: name
+                  value: Hastings_Acessories_Pricing_4
+                  description: ""
+                  disabled: false
+            headers:
+              - name: Authorization
+                value: Bearer {{render_admin_token}}
+              - name: Content-Type
+                value: multipart/form-data
             authentication:
               type: bearer
               disabled: false
@@ -14992,7 +15085,7 @@ collection:
             meta:
               id: req_66fd9b991b34410484f71249798fea30
               created: 1764509793476
-              modified: 1769083252706
+              modified: 1770388529441
               isPrivate: false
               description: ""
               sortKey: -1764500285890.25
@@ -15001,8 +15094,8 @@ collection:
               mimeType: application/json
               text: |-
                 {
-                	"username": "livingspaces",
-                	"password": "21nw73PHZpGoWqxU"
+                	"username": "sales",
+                	"password": "5G2QTMl45ruKIOe9"
                 }
             headers:
               - name: Content-Type
@@ -17425,7 +17518,7 @@ collection:
             meta:
               id: req_fd09a02f1c50463481cbd069d60f313d
               created: 1768889385187
-              modified: 1768889460089
+              modified: 1770638153699
               isPrivate: false
               description: ""
               sortKey: -1768889389483
@@ -17434,8 +17527,8 @@ collection:
               mimeType: application/json
               text: |-
                 {
-                  "name": "Test Configurator",
-                	"organizationId": 1
+                  "name": "Import Configurator New",
+                	"organizationId": 5
                 }
             headers:
               - name: Content-Type
@@ -17488,12 +17581,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/configurators/2"
+          - url: "{{render_admin_domain}}/configurators/4"
             name: retrieve
             meta:
               id: req_2b64808432854a93bef5f502765fd0b6
               created: 1768889639573
-              modified: 1770309410401
+              modified: 1770637050528
               isPrivate: false
               description: ""
               sortKey: -1768889389533
@@ -18162,7 +18255,7 @@ collection:
         meta:
           id: fld_49face68d95143fe8a246b25e1112df3
           created: 1770283743303
-          modified: 1770283743303
+          modified: 1770633312055
           sortKey: -1770283743303
           description: ""
         children:
@@ -18171,7 +18264,7 @@ collection:
             meta:
               id: req_ba563e4688a74e5e873bfc32b4b16c1f
               created: 1770283753824
-              modified: 1770308529151
+              modified: 1770637006317
               isPrivate: false
               description: ""
               sortKey: -1770283761209
@@ -18184,16 +18277,16 @@ collection:
                   description: ""
                   disabled: false
                   multiline: true
-                  fileName: F:\ElementalsWeb\дані для імпорту у адмінку\data-material.csv
+                  fileName: /home/pavlo/Desktop/materials_fixed_full.csv
                   type: file
                 - name: jsonFile
                   value: ""
                   description: ""
                   disabled: false
-                  fileName: F:\ElementalsWeb\дані для імпорту у адмінку\DataMaterial.JSON
+                  fileName: /home/pavlo/Downloads/DataMaterial.JSON
                   type: file
                 - name: configuratorId
-                  value: "2"
+                  value: "4"
                   description: ""
                   disabled: false
             headers:
@@ -18263,21 +18356,144 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
+          - url: ""
+            name: New Request
+            meta:
+              id: req_a36605029c704a13941190ebc7fd5f42
+              created: 1770366380724
+              modified: 1770366414969
+              isPrivate: false
+              description: ""
+              sortKey: -1770366380724
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.3.1
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{render_admin_domain}}/import/materials"
+            name: import
+            meta:
+              id: req_6f984eebb04247d59406341232937905
+              created: 1770366468534
+              modified: 1770366523797
+              isPrivate: false
+              description: ""
+              sortKey: -1770366380824
+            method: POST
+            body:
+              mimeType: multipart/form-data
+              params:
+                - name: configuratorId
+                  value: ""
+                  description: ""
+                  disabled: false
+            headers:
+              - name: Content-Type
+                value: multipart/form-data
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2NzcxMTQzNiwiZXhwIjoxNzY3NzExNzM2fQ.SMIjpvNIGKh_4R-3_DYKEDN_2vC2ONczgECjan4X0dk
+              prefix: bearer
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: pricing
+        meta:
+          id: fld_bc9b16260b2b42a3b0587610d14d42d2
+          created: 1770646236182
+          modified: 1770646236182
+          sortKey: -1770646236182
+          description: ""
+        children:
+          - url: "{{render_admin_domain}}/pricing/container/1/resolve"
+            name: request price (resolver 1)
+            meta:
+              id: req_3d2089ff83fc4065bcbb33e905bb59dd
+              created: 1770646242851
+              modified: 1770802461041
+              isPrivate: false
+              description: ""
+              sortKey: -1770646242851
+            method: GET
+            parameters:
+              - name: sku
+                value: VAN-URSTD-SB/2DW/UG/X-105W-56H-50D-HDL-HPL
+                description: ""
+                disabled: false
+            headers:
+              - name: User-Agent
+                value: insomnia/12.3.1
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{render_admin_domain}}/pricing/container/1/resolve"
+            name: request price (resolver 2)
+            meta:
+              id: req_7096251b2a2d42779f9847044860e4ad
+              created: 1770718249570
+              modified: 1770802473570
+              isPrivate: false
+              description: ""
+              sortKey: -1770506311837.5
+            method: GET
+            parameters:
+              - name: sku
+                value: CT-URFX-INTG-60W-.5H-50D-CT-HPL-TFF
+                description: ""
+                disabled: false
+            headers:
+              - name: User-Agent
+                value: insomnia/12.3.1
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
 cookieJar:
   name: Default Jar
   meta:
     id: jar_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496108720
-    modified: 1770308406372
+    modified: 1771239075872
 environments:
   name: Base Environment
   meta:
     id: env_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496106422
-    modified: 1770309383209
+    modified: 1771239075873
     isPrivate: false
   data:
-    render_admin_domain: https://renderadmin-dev.vivid3d.tech
+    render_admin_domain: https://renderadmin.vivid3d.tech
     render_admin_token: ""
     render_admin_username: admin
     render_admin_password: RmxJ8UjtE3aY4czn
