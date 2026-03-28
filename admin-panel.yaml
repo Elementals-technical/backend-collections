@@ -11,7 +11,7 @@ collection:
     meta:
       id: fld_28943f57796445899fa604513d7a262d
       created: 1764496106015
-      modified: 1773216502129
+      modified: 1774017020372
       sortKey: -1764496102719
       description: ""
     children:
@@ -255,12 +255,12 @@ collection:
           sortKey: -1764496102607
           description: ""
         children:
-          - url: " https://renderadmin-dev.vivid3d.tech/login"
+          - url: https://renderadmin.vivid3d.tech/login
             name: jwt create
             meta:
               id: req_d79048f09baf4b189499c3087e3971fb
               created: 1764496106031
-              modified: 1768822993700
+              modified: 1774701664342
               isPrivate: false
               description: ""
               sortKey: -1764496102606
@@ -942,7 +942,7 @@ collection:
         meta:
           id: fld_245392516b2c4cb081e82a819bb04587
           created: 1764496106046
-          modified: 1772183347557
+          modified: 1774004601728
           sortKey: -1764496102594
           description: ""
         children:
@@ -11903,7 +11903,7 @@ collection:
         meta:
           id: fld_50f83070d6ad490caddf8baa07924382
           created: 1764496106294
-          modified: 1773157645718
+          modified: 1773245539903
           sortKey: -1764496102410
           description: ""
         children:
@@ -11996,12 +11996,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/datatables/495/overwrite"
+          - url: "{{render_admin_domain}}/datatables/493/overwrite"
             name: overwrite data table
             meta:
               id: req_d38b89a74b6f4fc7ab542a5d155fe671
               created: 1764496106296
-              modified: 1773157642092
+              modified: 1773245511427
               isPrivate: false
               description: ""
               sortKey: -1764496102408
@@ -12011,7 +12011,7 @@ collection:
               params:
                 - name: file
                   disabled: false
-                  fileName: /home/pavlo/Downloads/colormap new.csv
+                  fileName: /home/pavlo/Desktop/cabinet_prices.csv
                   type: file
             headers:
               - name: Authorization
@@ -12162,12 +12162,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/datatables/4"
+          - url: "{{render_admin_domain}}/datatables/493"
             name: retrieve datatable
             meta:
               id: req_7b7aace3c21849f398288bc6792e5e36
               created: 1764496106299
-              modified: 1773157625204
+              modified: 1773245537980
               isPrivate: false
               description: ""
               sortKey: -1764496102406
@@ -12592,7 +12592,7 @@ collection:
         meta:
           id: fld_01de6ee4db55489a9879f1ebe98c4d5d
           created: 1764496106302
-          modified: 1767956595503
+          modified: 1774017020372
           sortKey: -1764496102404
           description: ""
         children:
@@ -12600,7 +12600,7 @@ collection:
             meta:
               id: fld_ebaa0b5371f14fe4a47ba743874c858e
               created: 1764496106303
-              modified: 1767685359400
+              modified: 1774016845372
               sortKey: -1764496102403
               description: ""
             children:
@@ -12863,16 +12863,16 @@ collection:
                 meta:
                   id: fld_7dbf9fdf6c6a43d69d9566aa0802c5b9
                   created: 1764496106310
-                  modified: 1764855116414
+                  modified: 1774004623649
                   sortKey: -1764496102398
                   description: ""
                 children:
-                  - url: "{{render_admin_domain}}/bundles/projectBundles/7/projects"
+                  - url: "{{render_admin_domain}}/bundles/projectBundles/16/projects"
                     name: add projects to bundle
                     meta:
                       id: req_01c4e3af6bd54d8fad9c1d474979cd78
                       created: 1764496106311
-                      modified: 1764767439583
+                      modified: 1774004618324
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102397
@@ -13035,7 +13035,7 @@ collection:
                 meta:
                   id: fld_972d3e10bdc34d3894b1876bc885621f
                   created: 1764496106314
-                  modified: 1767685359400
+                  modified: 1774016845372
                   sortKey: -1764496102395
                   description: ""
                 children:
@@ -13135,7 +13135,7 @@ collection:
                     meta:
                       id: req_3ac5385ab1dc45058f7228cae978896f
                       created: 1764496106316
-                      modified: 1764843779395
+                      modified: 1774016375469
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102393
@@ -13154,7 +13154,11 @@ collection:
                         value: "2"
                         disabled: false
                       - name: connectionType
-                        value: studio
+                        value: simulation
+                        description: ""
+                        disabled: false
+                      - name: sortByCreatedAt
+                        value: asc
                         description: ""
                         disabled: false
                     headers:
@@ -13480,7 +13484,7 @@ collection:
                 meta:
                   id: fld_f4d09a8ebe4c4f09bae6831208f80479
                   created: 1764580963761
-                  modified: 1764843320226
+                  modified: 1774004838498
                   sortKey: -1764496102502
                   description: ""
                 children:
@@ -13507,12 +13511,12 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{render_admin_domain}}/organizations/1/projectBundles/7/projects/2"
+                  - url: "{{render_admin_domain}}/organizations/1/projectBundles/16/projects/2"
                     name: update association
                     meta:
                       id: req_d7f76bb1eaa44d3386bb3a0c1fb43cb8
                       created: 1764581035886
-                      modified: 1764843318191
+                      modified: 1774004836741
                       isPrivate: false
                       description: ""
                       sortKey: -1764580968040
@@ -13526,7 +13530,8 @@ collection:
                         }
                     headers:
                       - name: Authorization
-                        value: Bearer {{render_admin_token}}
+                        value: Bearer
+                          eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NDAwNDgxNiwiZXhwIjoxNzc0MDA1MTE2fQ.JC3cRaN2Rad--U-GwgyWhrC5iH600MuiBr-rcgdDHKI
                       - name: Content-Type
                         value: application/json
                     authentication:
@@ -13594,7 +13599,7 @@ collection:
             meta:
               id: fld_2344b631a9a44ef284e5ddb1018ae730
               created: 1764496106321
-              modified: 1767956595503
+              modified: 1774017020372
               sortKey: -1764496102389
               description: ""
             children:
@@ -14028,7 +14033,7 @@ collection:
                 meta:
                   id: fld_cdaf37033f19427cb5bcc81ef357f490
                   created: 1764496106331
-                  modified: 1767956595503
+                  modified: 1774017020372
                   sortKey: -1764496102381
                   description: ""
                 children:
@@ -14128,7 +14133,7 @@ collection:
                     meta:
                       id: req_fa5e702863f640778cfeb774345fd388
                       created: 1764496106334
-                      modified: 1767953960934
+                      modified: 1774016876909
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102379
@@ -14153,6 +14158,10 @@ collection:
                         value: studio
                         description: ""
                         disabled: true
+                      - name: sortByCreatedAt
+                        value: asc
+                        description: ""
+                        disabled: false
                     headers:
                       - name: Authorization
                         value: Bearer {{render_admin_token}}
@@ -17631,12 +17640,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/configurators/8"
+          - url: "{{render_admin_domain}}/configurators/4"
             name: update
             meta:
               id: req_d8cec482b402450b8ac4950ab96eaf5a
               created: 1768889666155
-              modified: 1773242564815
+              modified: 1773243923436
               isPrivate: false
               description: ""
               sortKey: -1768889389508
@@ -17645,7 +17654,7 @@ collection:
               mimeType: multipart/form-data
               params:
                 - name: name
-                  value: Configurator upd
+                  value: Import Configurator New
                   description: ""
                   disabled: false
                 - name: playcanvas
@@ -18581,7 +18590,7 @@ collection:
             meta:
               id: req_d0310c09ad8c414db4b68b3c9ff823a7
               created: 1772621159489
-              modified: 1773236144802
+              modified: 1773929752248
               isPrivate: false
               description: ""
               sortKey: -1772621159489
@@ -18594,7 +18603,7 @@ collection:
                   description: ""
                   disabled: false
                 - name: organizationId
-                  value: "2"
+                  value: "5"
                   description: ""
                   disabled: false
                 - name: configFile
@@ -18641,12 +18650,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/ai-agents/1"
+          - url: "{{render_admin_domain}}/ai-agents/9"
             name: retrieve agent
             meta:
               id: req_259f329ad25742ff964795610013d647
               created: 1772621381992
-              modified: 1772621387425
+              modified: 1773932324115
               isPrivate: false
               description: ""
               sortKey: -1772490356863.25
@@ -18696,12 +18705,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/ai-agents/8"
+          - url: "{{render_admin_domain}}/ai-agents/9"
             name: update agent
             meta:
               id: req_4abd6e91e3c24a6380660226d9cbb41b
               created: 1772705381773
-              modified: 1772729772806
+              modified: 1774701680264
               isPrivate: false
               description: ""
               sortKey: -1772705381773
@@ -18726,6 +18735,11 @@ collection:
                 value: insomnia/12.4.0
                 description: ""
                 disabled: false
+              - name: Authorization
+                value: Bearer
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NDcwMTY2NiwiZXhwIjoxNzc0NzAxOTY2fQ.KbnFT2P0qSa7zndp1IURzlKL7X7fSYhcu8166yfP4NY
+                description: ""
+                disabled: false
             settings:
               renderRequestBody: true
               encodeUrl: true
@@ -18739,16 +18753,16 @@ cookieJar:
   meta:
     id: jar_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496108720
-    modified: 1773216502127
+    modified: 1774017020349
 environments:
   name: Base Environment
   meta:
     id: env_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496106422
-    modified: 1773240250534
+    modified: 1774701126121
     isPrivate: false
   data:
-    render_admin_domain: http://127.0.0.1:3000
+    render_admin_domain: https://renderadmin.vivid3d.tech
     render_admin_token: ""
     render_admin_username: admin
     render_admin_password: RmxJ8UjtE3aY4czn
