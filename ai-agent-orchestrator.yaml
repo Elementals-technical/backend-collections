@@ -1,0 +1,272 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Ai Agent Orchestrator
+meta:
+  id: wrk_313ce27efd0c4c1eae7c77f513e1cb02
+  created: 1772446728599
+  modified: 1772446728599
+  description: ""
+collection:
+  - name: agent-instances
+    meta:
+      id: fld_5c6c7fa6ef38489ba83775c15b2aabaf
+      created: 1772446741922
+      modified: 1772446741922
+      sortKey: -1772446741922
+      description: ""
+  - name: inference
+    meta:
+      id: fld_ed4aa46a733f4b4b81e7a6fbc1120ca7
+      created: 1772446749623
+      modified: 1772446749623
+      sortKey: -1772446749623
+      description: ""
+    children:
+      - url: "{{ _.domain }}/inference/1/infer"
+        name: infer agent
+        meta:
+          id: req_e04d5e9d45fe42568600ba6db9eadfd5
+          created: 1772446755988
+          modified: 1772530748630
+          isPrivate: false
+          description: ""
+          sortKey: -1772446755988
+        method: POST
+        headers:
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - url: https://ai-agent-orchestrator.vivid3d.tech/inference
+    name: New Socket.IO Request
+    meta:
+      id: socketio-req_e0b07b9d37114e9eb1ac7706ccf7979c
+      created: 1772807099555
+      modified: 1774257958631
+      description: ""
+      sortKey: -1772807099556
+    settings:
+      encodeUrl: true
+      cookies:
+        store: true
+        send: true
+    headers:
+      - name: User-Agent
+        value: insomnia/12.4.0
+        description: ""
+        disabled: false
+    eventListeners:
+      - id: socketIO-event_3bba4e74c9414d67bd8fdcf7f37601a0
+        eventName: infer
+        desc: ""
+        isOpen: true
+      - id: socketIO-event_ccca2461df624b63bd67c9c6489e6bf6
+        eventName: ready
+        desc: ""
+        isOpen: true
+      - id: socketIO-event_31ea4f92f9c6434084678dba2249c15c
+        eventName: ui:status
+        desc: ""
+        isOpen: true
+      - id: socketIO-event_17be107bc713484d84df9a2e5dc408de
+        eventName: ui:message
+        desc: ""
+        isOpen: true
+      - id: socketIO-event_0930456dd73e4a53a2070f217b63e9a8
+        eventName: ui:input_request
+        desc: ""
+        isOpen: true
+  - url: http://127.0.0.1:3000/inference
+    name: New Socket.IO Request (2)
+    meta:
+      id: socketio-req_f9653c987c8d436dae78db432596a520
+      created: 1772808092197
+      modified: 1773336384893
+      description: ""
+      sortKey: -1772807099506
+    settings:
+      encodeUrl: true
+      cookies:
+        store: true
+        send: true
+    headers:
+      - name: User-Agent
+        value: insomnia/12.4.0
+        description: ""
+        disabled: false
+    eventListeners:
+      - id: socketIO-event_3bba4e74c9414d67bd8fdcf7f37601a0
+        eventName: infer
+        desc: ""
+        isOpen: true
+      - id: socketIO-event_ccca2461df624b63bd67c9c6489e6bf6
+        eventName: result
+        desc: ""
+        isOpen: true
+      - id: socketIO-event_636b64daa4dc43f8b87318de02965728
+        eventName: ui:status
+        desc: ""
+        isOpen: true
+      - id: socketIO-event_28fed9cab5b64ad7be0b37644feaa4dd
+        eventName: ui:message
+        desc: ""
+        isOpen: true
+      - id: socketIO-event_8e6f05b88afe4df8884c2090ad1cfdc2
+        eventName: ui:input_request
+        desc: ""
+        isOpen: true
+      - id: socketIO-event_b1636241ab144def8041f7f7c2d9897e
+        eventName: error
+        desc: ""
+        isOpen: true
+  - url: https://llm2-api.eu.ngrok.io
+    name: llm api interface
+    meta:
+      id: socketio-req_7abc696544334691bb92370c48c5e1f4
+      created: 1773050261819
+      modified: 1773751742626
+      description: ""
+      sortKey: -1772807099456
+    settings:
+      encodeUrl: true
+      cookies:
+        store: true
+        send: true
+    headers:
+      - name: User-Agent
+        value: insomnia/12.4.0
+        description: ""
+        disabled: false
+    eventListeners:
+      - id: socketIO-event_ccca2461df624b63bd67c9c6489e6bf6
+        eventName: status_update
+        desc: ""
+        isOpen: true
+  - url: http://127.0.0.1:3000/inference
+    name: New Socket.IO Request (3)
+    meta:
+      id: socketio-req_eb897662e7d8470ba161b62dd0813869
+      created: 1773143799282
+      modified: 1773143799282
+      description: ""
+      sortKey: -1772807099481
+    settings:
+      encodeUrl: true
+      cookies:
+        store: true
+        send: true
+    headers:
+      - name: User-Agent
+        value: insomnia/12.4.0
+        description: ""
+        disabled: false
+    eventListeners:
+      - id: socketIO-event_3bba4e74c9414d67bd8fdcf7f37601a0
+        eventName: infer
+        desc: ""
+        isOpen: false
+      - id: socketIO-event_ccca2461df624b63bd67c9c6489e6bf6
+        eventName: ""
+        desc: ""
+        isOpen: false
+  - url: http://127.0.0.1:3001/execution
+    name: engine direct
+    meta:
+      id: socketio-req_33aff98cecb149c295f6512706df08de
+      created: 1773145404204
+      modified: 1773145404204
+      description: ""
+      sortKey: -1772807099406
+    settings:
+      encodeUrl: true
+      cookies:
+        store: true
+        send: true
+    headers:
+      - name: User-Agent
+        value: insomnia/12.4.0
+        description: ""
+        disabled: false
+    eventListeners:
+      - id: socketIO-event_3bba4e74c9414d67bd8fdcf7f37601a0
+        eventName: ui:input_request
+        desc: ""
+        isOpen: true
+      - id: socketIO-event_ccca2461df624b63bd67c9c6489e6bf6
+        eventName: ui:error
+        desc: ""
+        isOpen: true
+      - id: socketIO-event_291e92dd1b2e4e82b6a770ceeb09d135
+        eventName: debug:node_active
+        desc: ""
+        isOpen: false
+      - id: socketIO-event_afa1c785c870480bb60ba14207dd3dfd
+        eventName: debug:node_complete
+        desc: ""
+        isOpen: false
+      - id: socketIO-event_e0815e5226e74b09a417fbdd97cb95ba
+        eventName: debug:variable_change
+        desc: ""
+        isOpen: false
+  - url: http://127.0.0.1:3001/execution
+    name: engine direct
+    meta:
+      id: socketio-req_2967ef23b6064314a3539de61a08fbd8
+      created: 1773145410513
+      modified: 1773145410513
+      description: ""
+      sortKey: -1772807099356
+    settings:
+      encodeUrl: true
+      cookies:
+        store: true
+        send: true
+    headers:
+      - name: User-Agent
+        value: insomnia/12.4.0
+        description: ""
+        disabled: false
+    eventListeners:
+      - id: socketIO-event_3bba4e74c9414d67bd8fdcf7f37601a0
+        eventName: ui:input_request
+        desc: ""
+        isOpen: true
+      - id: socketIO-event_ccca2461df624b63bd67c9c6489e6bf6
+        eventName: ui:error
+        desc: ""
+        isOpen: true
+      - id: socketIO-event_291e92dd1b2e4e82b6a770ceeb09d135
+        eventName: debug:node_active
+        desc: ""
+        isOpen: false
+      - id: socketIO-event_afa1c785c870480bb60ba14207dd3dfd
+        eventName: debug:node_complete
+        desc: ""
+        isOpen: false
+      - id: socketIO-event_e0815e5226e74b09a417fbdd97cb95ba
+        eventName: debug:variable_change
+        desc: ""
+        isOpen: false
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_1c4d5a5a6165688a9967d49fad74679ae1d0085b
+    created: 1772446728637
+    modified: 1772446728637
+environments:
+  name: Base Environment
+  meta:
+    id: env_1c4d5a5a6165688a9967d49fad74679ae1d0085b
+    created: 1772446728626
+    modified: 1774258175046
+    isPrivate: false
+  data:
+    domain: https://ai-agent-orchestrator.vivid3d.tech

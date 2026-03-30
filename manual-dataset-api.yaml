@@ -1,0 +1,297 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Manual Dataset API
+meta:
+  id: wrk_77fa3d3c627d41dfb4fcec3fa3c14ac5
+  created: 1774619363567
+  modified: 1774619363567
+  description: ""
+collection:
+  - name: datasets
+    meta:
+      id: fld_96fbc57c0d9547fd95c280721707d4e5
+      created: 1774619372854
+      modified: 1774619372854
+      sortKey: -1774619372854
+      description: ""
+    children:
+      - url: "{{ _['manual-dataset-api-domain'] }}/datasets"
+        name: create
+        meta:
+          id: req_6856634be558425984fdfbefbe9642d0
+          created: 1774619383763
+          modified: 1774619542407
+          isPrivate: false
+          description: ""
+          sortKey: -1774619383763
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"organizationId": 1,
+            	"name": "PLO_DATASET 1"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _['manual-dataset-api-domain'] }}/datasets"
+        name: list
+        meta:
+          id: req_faf4b6de633d475b8d2c478c99a324e4
+          created: 1774619566598
+          modified: 1774619573713
+          isPrivate: false
+          description: ""
+          sortKey: -1774446850896
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _['manual-dataset-api-domain'] }}/datasets/1"
+        name: retrieve
+        meta:
+          id: req_e4e84f4c15624de4a625f3ecd46b9046
+          created: 1774619587829
+          modified: 1774619589914
+          isPrivate: false
+          description: ""
+          sortKey: -1774360584462.5
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _['manual-dataset-api-domain'] }}/datasets/3"
+        name: delete
+        meta:
+          id: req_3d3ce49c7a23466681561e6ee4985c33
+          created: 1774619603273
+          modified: 1774879709847
+          isPrivate: false
+          description: ""
+          sortKey: -1774360584362.5
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: images
+    meta:
+      id: fld_7bf1f061728b467bb5a8c47e7020e17f
+      created: 1774619378044
+      modified: 1774619378044
+      sortKey: -1774619378044
+      description: ""
+    children:
+      - url: "{{ _['manual-dataset-api-domain'] }}/images/bulk-upload"
+        name: bulk-upload
+        meta:
+          id: req_27255577ab924e71aafea7dfbaa475a3
+          created: 1774619667590
+          modified: 1774880084295
+          isPrivate: false
+          description: ""
+          sortKey: -1774619675398
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: images
+              value: ""
+              description: ""
+              disabled: false
+              fileName: /home/pavlo/Downloads/test_dataset_images/dataset_img.zip
+              type: file
+            - name: detectionAnnotation
+              value: ""
+              description: ""
+              disabled: false
+              type: file
+            - name: datasetId
+              value: "4"
+              description: ""
+              disabled: false
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _['manual-dataset-api-domain'] }}/images"
+        name: list
+        meta:
+          id: req_e4ac3db07bd046d697789303a7849783
+          created: 1774624722768
+          modified: 1774862117277
+          isPrivate: false
+          description: ""
+          sortKey: -1774619529580.5
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _['manual-dataset-api-domain'] }}/images"
+        name: single-upload
+        meta:
+          id: req_246b6b7ebc2344b78a6f831e2f728386
+          created: 1774860575285
+          modified: 1774880135478
+          isPrivate: false
+          description: ""
+          sortKey: -1774619602489.25
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: image
+              value: ""
+              description: ""
+              disabled: false
+              fileName: /home/pavlo/Downloads/CS-0034988 and CS-0034987_4005.png
+              type: file
+            - name: detectionAnnotation
+              value: ""
+              description: ""
+              disabled: false
+              fileName: /home/pavlo/Downloads/testDetectionAnnotation.txt
+              type: file
+            - name: datasetId
+              value: "4"
+              description: ""
+              disabled: false
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _['manual-dataset-api-domain'] }}/images/2"
+        name: retrieve
+        meta:
+          id: req_c011f08af33a485ea7e643dc1b346214
+          created: 1774862622372
+          modified: 1774876756689
+          isPrivate: false
+          description: ""
+          sortKey: -1774619456671.75
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _['manual-dataset-api-domain'] }}/images/3"
+        name: delete
+        meta:
+          id: req_aaff140be0d8429694fba777e87597ed
+          created: 1774875988082
+          modified: 1774879057153
+          isPrivate: false
+          description: ""
+          sortKey: -1774619566034.875
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_ccf3a3c46a68c0d66b54020298f90bceb83a40b1
+    created: 1774619363571
+    modified: 1774619363571
+environments:
+  name: Base Environment
+  meta:
+    id: env_ccf3a3c46a68c0d66b54020298f90bceb83a40b1
+    created: 1774619363570
+    modified: 1774619512132
+    isPrivate: false
+  data:
+    manual-dataset-api-domain: http://127.0.0.1:3000
