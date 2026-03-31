@@ -11,7 +11,7 @@ collection:
     meta:
       id: fld_28943f57796445899fa604513d7a262d
       created: 1764496106015
-      modified: 1774017020372
+      modified: 1774969275512
       sortKey: -1764496102719
       description: ""
     children:
@@ -11903,7 +11903,7 @@ collection:
         meta:
           id: fld_50f83070d6ad490caddf8baa07924382
           created: 1764496106294
-          modified: 1773245539903
+          modified: 1774969275513
           sortKey: -1764496102410
           description: ""
         children:
@@ -11912,7 +11912,7 @@ collection:
             meta:
               id: req_9317b4ea0fd04e20948ca7fceb657e0c
               created: 1764496106295
-              modified: 1772096854386
+              modified: 1774968422027
               isPrivate: false
               description: ""
               sortKey: -1764496102409
@@ -11929,7 +11929,7 @@ collection:
                   disabled: false
                   type: text
                 - name: name
-                  value: Hastings_Vessels_Pricing_5
+                  value: TEST PLO DATATABLE
                   description: ""
                   disabled: false
             headers:
@@ -12162,12 +12162,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/datatables/493"
+          - url: "{{render_admin_domain}}/datatables/9"
             name: retrieve datatable
             meta:
               id: req_7b7aace3c21849f398288bc6792e5e36
               created: 1764496106299
-              modified: 1773245537980
+              modified: 1774968870486
               isPrivate: false
               description: ""
               sortKey: -1764496102406
@@ -12408,12 +12408,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/datatables/503/rows"
+          - url: "{{render_admin_domain}}/datatables/9/rows"
             name: retrieve datatable rows
             meta:
               id: req_b1d491f4ecb0434c828a5f9f7bf2840a
               created: 1768583947084
-              modified: 1772096645936
+              modified: 1774969273508
               isPrivate: false
               description: ""
               sortKey: -1764496102405.5
@@ -12588,6 +12588,108 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
+          - name: rows
+            meta:
+              id: fld_7a692f84fbd24adfb4f3e0e87a1d6754
+              created: 1774968309339
+              modified: 1774969225836
+              sortKey: -1774968309339
+              description: ""
+            children:
+              - url: "{{render_admin_domain}}/datatables/9/rows"
+                name: create rows
+                meta:
+                  id: req_b1ef1b0b06f346049eb1316af86c2dfb
+                  created: 1774968322541
+                  modified: 1774969244933
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1774968322541
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                      "rows": [
+                        {
+                          "name": "John Smith",
+                          "age": 29,
+                          "city": "New York",
+                          "email": "john.smith@example.com",
+                          "isActive": true,
+                          "salary": 95000.00,
+                          "joinedAt": "2025-03-10",
+                          "department": null,
+                          "notes": ""
+                        }
+                      ]
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/12.4.0
+                    description: ""
+                    disabled: false
+                  - name: Authorization
+                    value: Bearer {{render_admin_token}}
+                    description: ""
+                    disabled: false
+                scripts:
+                  preRequest: >
+                    const loginEndpoint =
+                    insomnia.variables.get("render_admin_domain") + "/login";
+
+                    const username =
+                    insomnia.variables.get("render_admin_username");
+
+                    const password =
+                    insomnia.variables.get("render_admin_password");
+
+
+                    const loginRequest = {
+                      method: "POST",
+                      url: loginEndpoint,
+                      headers: {
+                        "Content-Type": "application/json"
+                      },
+                      body: JSON.stringify({
+                        username,
+                        password
+                      })
+                    };
+
+
+                    insomnia.sendRequest(loginRequest, function (err, response)
+                    {
+                      if (err) {
+                        console.log("Error while logging in:", err);
+                        return;
+                      }
+
+                      try {
+                        const json = JSON.parse(response.body);
+                        const token = json.token;
+
+                        if (!token) {
+                          console.log("No token found in login response");
+                          return;
+                        }
+
+                        insomnia.environment.set("render_admin_token", token);
+                        console.log("Login successful, token saved");
+                      } catch (e) {
+                        console.log("Failed to parse login response:", e);
+                      }
+                    });
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
       - name: bundles
         meta:
           id: fld_01de6ee4db55489a9879f1ebe98c4d5d
@@ -18753,16 +18855,16 @@ cookieJar:
   meta:
     id: jar_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496108720
-    modified: 1774017020349
+    modified: 1774969275502
 environments:
   name: Base Environment
   meta:
     id: env_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496106422
-    modified: 1774701126121
+    modified: 1774969275507
     isPrivate: false
   data:
-    render_admin_domain: https://renderadmin.vivid3d.tech
+    render_admin_domain: http://127.0.0.1:3000
     render_admin_token: ""
     render_admin_username: admin
     render_admin_password: RmxJ8UjtE3aY4czn
