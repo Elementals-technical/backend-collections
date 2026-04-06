@@ -11,7 +11,7 @@ collection:
     meta:
       id: fld_28943f57796445899fa604513d7a262d
       created: 1764496106015
-      modified: 1774969275512
+      modified: 1775471049353
       sortKey: -1764496102719
       description: ""
     children:
@@ -314,7 +314,7 @@ collection:
         meta:
           id: fld_7c339ab8605c47cdbdf97c858583629e
           created: 1764496106033
-          modified: 1773216492575
+          modified: 1775146336461
           sortKey: -1764496102604
           description: ""
         children:
@@ -475,11 +475,16 @@ collection:
             meta:
               id: req_197df4531d9a4b17aee3c280509defb5
               created: 1764496106037
-              modified: 1764510125008
+              modified: 1775055172080
               isPrivate: false
               description: ""
               sortKey: -1764496102601
             method: GET
+            parameters:
+              - name: pageSize
+                value: "100"
+                description: ""
+                disabled: false
             headers:
               - name: Authorization
                 value: Bearer {{render_admin_token}}
@@ -4354,7 +4359,7 @@ collection:
         meta:
           id: fld_08a3fd395fdf497e94fce863e68fd478
           created: 1764496106114
-          modified: 1772012581699
+          modified: 1775118376032
           sortKey: -1764496102544
           description: ""
         children:
@@ -4456,7 +4461,7 @@ collection:
             meta:
               id: req_d7e496fc076941388d6e7d145e3bee24
               created: 1764496106117
-              modified: 1768976244936
+              modified: 1775118373581
               isPrivate: false
               description: ""
               sortKey: -1764496102542
@@ -4468,7 +4473,7 @@ collection:
               - name: optionId
                 value: "1"
                 description: ""
-                disabled: false
+                disabled: true
             headers:
               - name: Authorization
                 value: Bearer {{render_admin_token}}
@@ -11903,7 +11908,7 @@ collection:
         meta:
           id: fld_50f83070d6ad490caddf8baa07924382
           created: 1764496106294
-          modified: 1774969275513
+          modified: 1775048996197
           sortKey: -1764496102410
           description: ""
         children:
@@ -11912,7 +11917,7 @@ collection:
             meta:
               id: req_9317b4ea0fd04e20948ca7fceb657e0c
               created: 1764496106295
-              modified: 1774968422027
+              modified: 1774970576457
               isPrivate: false
               description: ""
               sortKey: -1764496102409
@@ -11925,7 +11930,7 @@ collection:
                   fileName: /home/pavlo/Downloads/Tooltip_hasting - Sheet1 (1).csv
                   type: file
                 - name: organizationId
-                  value: "1"
+                  value: "5"
                   disabled: false
                   type: text
                 - name: name
@@ -12162,12 +12167,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/datatables/9"
+          - url: "{{render_admin_domain}}/datatables/520"
             name: retrieve datatable
             meta:
               id: req_7b7aace3c21849f398288bc6792e5e36
               created: 1764496106299
-              modified: 1774968870486
+              modified: 1774970630394
               isPrivate: false
               description: ""
               sortKey: -1764496102406
@@ -12408,12 +12413,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/datatables/9/rows"
+          - url: "{{render_admin_domain}}/datatables/22/rows"
             name: retrieve datatable rows
             meta:
               id: req_b1d491f4ecb0434c828a5f9f7bf2840a
               created: 1768583947084
-              modified: 1774969273508
+              modified: 1775048992805
               isPrivate: false
               description: ""
               sortKey: -1764496102405.5
@@ -12592,16 +12597,16 @@ collection:
             meta:
               id: fld_7a692f84fbd24adfb4f3e0e87a1d6754
               created: 1774968309339
-              modified: 1774969225836
+              modified: 1774970596963
               sortKey: -1774968309339
               description: ""
             children:
-              - url: "{{render_admin_domain}}/datatables/9/rows"
+              - url: "{{render_admin_domain}}/datatables/520/rows"
                 name: create rows
                 meta:
                   id: req_b1ef1b0b06f346049eb1316af86c2dfb
                   created: 1774968322541
-                  modified: 1774969244933
+                  modified: 1774970589824
                   isPrivate: false
                   description: ""
                   sortKey: -1774968322541
@@ -18683,7 +18688,7 @@ collection:
         meta:
           id: fld_467abfc4bdf54c5bb97a6904304159f4
           created: 1772621154814
-          modified: 1772621154814
+          modified: 1775471049353
           sortKey: -1772621154814
           description: ""
         children:
@@ -18692,7 +18697,7 @@ collection:
             meta:
               id: req_d0310c09ad8c414db4b68b3c9ff823a7
               created: 1772621159489
-              modified: 1773929752248
+              modified: 1775460863198
               isPrivate: false
               description: ""
               sortKey: -1772621159489
@@ -18701,7 +18706,7 @@ collection:
               mimeType: multipart/form-data
               params:
                 - name: name
-                  value: Test Agent
+                  value: Hastings AI Agent
                   description: ""
                   disabled: false
                 - name: organizationId
@@ -18712,7 +18717,7 @@ collection:
                   value: ""
                   description: ""
                   disabled: false
-                  fileName: /home/pavlo/Downloads/flow-schema.json
+                  fileName: /home/pavlo/Downloads/flow-schema_upd.json
                   type: file
             headers:
               - name: Content-Type
@@ -18721,6 +18726,57 @@ collection:
                 value: insomnia/12.3.1
                 description: ""
                 disabled: false
+              - name: Authorization
+                value: Bearer
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NTQ2MDgyOSwiZXhwIjoxNzc1NDYxMTI5fQ.TLjrY39VUjrLuVnkTlZe_owoWzHQ8J_eimEVfYrMEVU
+                description: ""
+                disabled: false
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render_admin_domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render_admin_username");
+
+                const password =
+                insomnia.variables.get("render_admin_password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render_admin_token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
             settings:
               renderRequestBody: true
               encodeUrl: true
@@ -18807,12 +18863,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/ai-agents/9"
+          - url: "{{render_admin_domain}}/ai-agents/10"
             name: update agent
             meta:
               id: req_4abd6e91e3c24a6380660226d9cbb41b
               created: 1772705381773
-              modified: 1774701680264
+              modified: 1775471047232
               isPrivate: false
               description: ""
               sortKey: -1772705381773
@@ -18828,7 +18884,25 @@ collection:
                   value: ""
                   description: ""
                   disabled: false
-                  fileName: /home/pavlo/Downloads/flow-schema.json
+                  fileName: /home/pavlo/Downloads/flow-schema_upd.json
+                  type: file
+                - name: proxyMaterialOptions
+                  value: ""
+                  description: ""
+                  disabled: false
+                  fileName: /home/pavlo/Downloads/flow-schema_upd.json
+                  type: file
+                - name: proxyGeometryOptions
+                  value: ""
+                  description: ""
+                  disabled: false
+                  fileName: /home/pavlo/Downloads/flow-schema_upd.json
+                  type: file
+                - name: products
+                  value: ""
+                  description: ""
+                  disabled: false
+                  fileName: /home/pavlo/Downloads/flow-schema_upd.json
                   type: file
             headers:
               - name: Content-Type
@@ -18839,9 +18913,129 @@ collection:
                 disabled: false
               - name: Authorization
                 value: Bearer
-                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NDcwMTY2NiwiZXhwIjoxNzc0NzAxOTY2fQ.KbnFT2P0qSa7zndp1IURzlKL7X7fSYhcu8166yfP4NY
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NTQ3MTAzMywiZXhwIjoxNzc1NDcxMzMzfQ.dk-CCU07kGaN4RiQlzg-LH_4goL9RLnC4yJUEQSP9Xk
                 description: ""
                 disabled: false
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render_admin_domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render_admin_username");
+
+                const password =
+                insomnia.variables.get("render_admin_password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render_admin_token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{render_admin_domain}}/ai-agents/10/retrain"
+            name: retrain agent
+            meta:
+              id: req_7fd75417523844ef903507d1f96ecf7b
+              created: 1775464311109
+              modified: 1775464610753
+              isPrivate: false
+              description: ""
+              sortKey: -1772599359051.375
+            method: POST
+            headers:
+              - name: User-Agent
+                value: insomnia/12.3.1
+                description: ""
+                disabled: false
+              - name: Authorization
+                value: Bearer
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NTQ2MDgyOSwiZXhwIjoxNzc1NDYxMTI5fQ.TLjrY39VUjrLuVnkTlZe_owoWzHQ8J_eimEVfYrMEVU
+                description: ""
+                disabled: false
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render_admin_domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render_admin_username");
+
+                const password =
+                insomnia.variables.get("render_admin_password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render_admin_token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
             settings:
               renderRequestBody: true
               encodeUrl: true
@@ -18855,16 +19049,16 @@ cookieJar:
   meta:
     id: jar_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496108720
-    modified: 1774969275502
+    modified: 1775471049351
 environments:
   name: Base Environment
   meta:
     id: env_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496106422
-    modified: 1774969275507
+    modified: 1775471049352
     isPrivate: false
   data:
-    render_admin_domain: http://127.0.0.1:3000
+    render_admin_domain: https://renderadmin.vivid3d.tech
     render_admin_token: ""
     render_admin_username: admin
     render_admin_password: RmxJ8UjtE3aY4czn
