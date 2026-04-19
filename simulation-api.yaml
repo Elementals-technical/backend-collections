@@ -20,7 +20,7 @@ collection:
         meta:
           id: req_431e2631f33f4a1dbbdc5643fc02d8f2
           created: 1766396271007
-          modified: 1776168538245
+          modified: 1776425157670
           isPrivate: false
           description: ""
           sortKey: -1766396271007
@@ -29,9 +29,9 @@ collection:
           mimeType: application/json
           text: >
             {
-              "name": "Test_PLO 108",
+              "name": "Test_PLO 119",
             	"sessionId": "550e8400-e29b-41d4-a716-446655440000",
-            	"organizationId": 2,
+            	"organizationId": 1,
             	"executionMode": "ephemeral",
             	"iterationCount": 1,
             	"iterationDuration": 1,
@@ -252,13 +252,13 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: "{{simulation_api_domain}}/queue-api/attachRender/iterations/361/configura\
-          tions/606"
+      - url: "{{simulation_api_domain}}/queue-api/attachRender/iterations/2657/configur\
+          ations/53468"
         name: attach render
         meta:
           id: req_90237828e699488b92713caec6e3f810
           created: 1766756117676
-          modified: 1773823847929
+          modified: 1776420358114
           isPrivate: false
           description: ""
           sortKey: -1766575742037.5
@@ -281,6 +281,86 @@ collection:
         headers:
           - name: Content-Type
             value: application/json
+          - name: User-Agent
+            value: insomnia/12.2.0
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: zCxGZgV3iVUR93C2Cua2lTgZZZppRL1z32VifmzwdPgcP
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{simulation_api_domain}}/queue-api/attachRenderV2/iterations/2657/config\
+          urations/53468"
+        name: attach render v2
+        meta:
+          id: req_dcfc4c5d19af442fbe6ee78e1f9c24cd
+          created: 1776420375728
+          modified: 1776584865905
+          isPrivate: false
+          description: ""
+          sortKey: -1766486006522.25
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: organizationId
+              value: "1"
+              description: ""
+              disabled: false
+            - name: frameOrder
+              value: "1"
+              description: ""
+              disabled: false
+            - name: metadata
+              value: '{"quality": "high", "version": "2.1"}'
+              description: ""
+              disabled: false
+            - name: customFilesMeta
+              value: '[{"prefix":"depth","extension":"png"},{"prefix":"print","extension":"svg"}]'
+              description: ""
+              disabled: false
+              multiline: false
+              type: text
+            - name: annotation
+              value: ""
+              description: ""
+              disabled: false
+              fileName: /home/pavlo/Desktop/annotation.txt
+              type: file
+            - name: image
+              value: ""
+              description: ""
+              disabled: false
+              fileName: /home/pavlo/Desktop/trailer.jpg
+              type: file
+            - name: customFiles
+              value: ""
+              description: ""
+              disabled: false
+              fileName: /home/pavlo/Desktop/trailer.jpg
+              type: file
+            - name: customFiles
+              value: ""
+              description: ""
+              disabled: false
+              fileName: /home/pavlo/Downloads/result.svg
+              type: file
+        parameters:
+          - name: pageSize
+            value: "1"
+            description: ""
+            disabled: false
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
           - name: User-Agent
             value: insomnia/12.2.0
             description: ""
@@ -337,7 +417,7 @@ collection:
         meta:
           id: req_aab170bd843d45c1935e9a6a12be3921
           created: 1767703356240
-          modified: 1773824084517
+          modified: 1776587087643
           isPrivate: false
           description: ""
           sortKey: -1767229274293.5
@@ -348,7 +428,11 @@ collection:
             description: ""
             disabled: true
           - name: iterationId
-            value: "361"
+            value: "2657"
+            description: ""
+            disabled: false
+          - name: includeCustomFiles
+            value: "true"
             description: ""
             disabled: false
         headers:
@@ -369,12 +453,12 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: "{{simulation_api_domain}}/images/"
+      - url: "{{simulation_api_domain}}/images/47"
         name: retrieve
         meta:
           id: req_6f1b980943b2488ba3d8407820b61ed5
           created: 1767703371672
-          modified: 1770720883743
+          modified: 1776586725658
           isPrivate: false
           description: ""
           sortKey: -1766992243680.75
@@ -962,7 +1046,7 @@ environments:
   meta:
     id: env_0778d97653bbaa944d0f3c704cd2a7c269044867
     created: 1766396256818
-    modified: 1776168648073
+    modified: 1776418368771
     isPrivate: false
   data:
-    simulation_api_domain: https://simulationapi-dev.vivid3d.tech
+    simulation_api_domain: http://127.0.0.1:3000
