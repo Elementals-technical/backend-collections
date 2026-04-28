@@ -20,7 +20,7 @@ collection:
         meta:
           id: req_431e2631f33f4a1dbbdc5643fc02d8f2
           created: 1766396271007
-          modified: 1776425157670
+          modified: 1777018144330
           isPrivate: false
           description: ""
           sortKey: -1766396271007
@@ -29,7 +29,7 @@ collection:
           mimeType: application/json
           text: >
             {
-              "name": "Test_PLO 119",
+              "name": "Test_PLO 8",
             	"sessionId": "550e8400-e29b-41d4-a716-446655440000",
             	"organizationId": 1,
             	"executionMode": "ephemeral",
@@ -43,7 +43,7 @@ collection:
             	"renderType": "raster",
             	"renderHeight": 1080,
             	"renderWidth": 1920,
-              "simulationScript": "const stage:VividStageBase= S73.create();stage.setAsCurrentStage();const camera:Camera=Camera.create();camera.setAsViewTarget();const ItRandom:RandomStream = new RandomStream(SIMULATION_SETTINGS.iteration);const CameraStartPosition:Vector=VectorUtils.createVector(-1500,ItRandom.randomFloatInRange(-800,1200),1200);const CameraEndPosition:Vector=VectorUtils.createVector(6800,ItRandom.randomFloatInRange(-800,1200),1200);camera.setProductPosition(VectorUtils.lerp(CameraStartPosition,CameraEndPosition,VividHelpers.getSimulationProgress()));const cameraRotation:Rotator= RotatorUtils.makeRotFromX(VectorUtils.normalize(VectorUtils.sub(CameraEndPosition,CameraStartPosition)));cameraRotation.pitch=-89;camera.setProductRotation(cameraRotation);const car:P199=P199.create();car.setProductPosition(VectorUtils.createVector(1792,391,0));car.Carpaint=M74.Blue;",
+              "simulationScript": "const rs=new RandomStream(SIMULATION_SETTINGS.iteration), sp=VividHelpers.getSimulationProgress(), stage=S595.create(); stage.setAsCurrentStage(); const camera=Camera.create(); camera.setAsViewTarget(); const car=P2701.create(); car.setProductPosition(0,0,0);",
             	"annotations": false,
             	"annotationThreshold": 12
             }
@@ -56,7 +56,7 @@ collection:
             disabled: false
           - name: Authorization
             value: Bearer
-              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NjE2ODUyNiwiZXhwIjoxNzc2NDI3NzI2fQ.gP3NA4MbrFRx5RcV_1b9VVxiVe29phNRfv3ZRYHadCY
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3Njg0NDk0OSwiZXhwIjoxNzc3MTA0MTQ5fQ.V2jIZSP5RH42H_4-nQxQc2pJOzbB5ZSpnDr_oS8w048
             description: ""
             disabled: false
         settings:
@@ -99,7 +99,7 @@ collection:
         meta:
           id: req_f53a6cedff00496cbf2c59d85e81b2ee
           created: 1770196943878
-          modified: 1775812911284
+          modified: 1777024371276
           isPrivate: false
           description: ""
           sortKey: -1766366733291.25
@@ -140,7 +140,7 @@ collection:
             disabled: false
           - name: Authorization
             value: Bearer
-              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NTY1MzgwOSwiZXhwIjoxNzc1OTEzMDA5fQ.z2TlgGW3wGm1NiPKxfn7fglqWgAfVPiSHTTvexQYHjI
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3Njk0Nzc2MiwiZXhwIjoxNzc3MjA2OTYyfQ.wVDxL8cW1ItokHtnNDRh_i007lH8WfefNndOuDXe7SY
             description: ""
             disabled: false
         authentication:
@@ -297,13 +297,13 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: "{{simulation_api_domain}}/queue-api/attachRenderV2/iterations/519/configu\
-          rations/3869"
+      - url: "{{simulation_api_domain}}/queue-api/attachRenderV2/iterations/2797/config\
+          urations/53575"
         name: attach render v2
         meta:
           id: req_dcfc4c5d19af442fbe6ee78e1f9c24cd
           created: 1776420375728
-          modified: 1776675580304
+          modified: 1776866210995
           isPrivate: false
           description: ""
           sortKey: -1766486006522.25
@@ -324,7 +324,7 @@ collection:
               description: ""
               disabled: false
             - name: customFilesMeta
-              value: '[{"prefix":"depth","extension":"png"},{"prefix":"print","extension":"svg"}]'
+              value: '[{"postfix":"__depth","extension":"png"},{"postfix":"__print","extension":"svg"}]'
               description: ""
               disabled: false
               multiline: false
@@ -417,7 +417,7 @@ collection:
         meta:
           id: req_aab170bd843d45c1935e9a6a12be3921
           created: 1767703356240
-          modified: 1776675638721
+          modified: 1777024464137
           isPrivate: false
           description: ""
           sortKey: -1767229274293.5
@@ -428,9 +428,9 @@ collection:
             description: ""
             disabled: true
           - name: iterationId
-            value: "2657"
+            value: "299"
             description: ""
-            disabled: true
+            disabled: false
           - name: includeCustomFiles
             value: "true"
             description: ""
@@ -442,7 +442,7 @@ collection:
             disabled: false
           - name: Authorization
             value: Bearer
-              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NjY3NTYyMSwiZXhwIjoxNzc2OTM0ODIxfQ.XfrWPQhO27d0y9MxZMSWHl-AlUl9RThJ2KpjqwRdnLE
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3Njk0Nzc2MiwiZXhwIjoxNzc3MjA2OTYyfQ.wVDxL8cW1ItokHtnNDRh_i007lH8WfefNndOuDXe7SY
             description: ""
             disabled: false
         settings:
@@ -520,7 +520,7 @@ collection:
         meta:
           id: req_9e72cbc1693743e0a39bcfffb24829e7
           created: 1767708570914
-          modified: 1774366877404
+          modified: 1777024431822
           isPrivate: false
           description: ""
           sortKey: -1767229274293.5
@@ -535,7 +535,7 @@ collection:
             description: ""
             disabled: true
           - name: simulationId
-            value: "16"
+            value: "356"
             description: ""
             disabled: false
           - name: sortBy
@@ -561,7 +561,7 @@ collection:
             disabled: false
           - name: Authorization
             value: Bearer
-              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NDM2Njg1NiwiZXhwIjoxNzc0NjI2MDU2fQ.rvQgdPbgJwIlSGNz6pQnnqnog-UXSSsA3mRGp1IT0ys
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3Njk0Nzc2MiwiZXhwIjoxNzc3MjA2OTYyfQ.wVDxL8cW1ItokHtnNDRh_i007lH8WfefNndOuDXe7SY
             description: ""
             disabled: false
         settings:
@@ -612,7 +612,7 @@ collection:
         meta:
           id: req_64556d7f5c0441cd9174775a92fdd39c
           created: 1770806571472
-          modified: 1770806622960
+          modified: 1776944936408
           isPrivate: false
           description: ""
           sortKey: -1770806576086
@@ -723,7 +723,7 @@ collection:
         meta:
           id: req_e55b1ed441e9478598a0c214ea74dee5
           created: 1770821992083
-          modified: 1770823705388
+          modified: 1777377823788
           isPrivate: false
           description: ""
           sortKey: -1770821511985
@@ -732,11 +732,11 @@ collection:
           mimeType: multipart/form-data
           params:
             - name: name
-              value: First test template
+              value: PLO TEMPLATE TEST 2
               description: ""
               disabled: false
             - name: folderId
-              value: "2"
+              value: "1"
               description: ""
               disabled: false
             - name: config
@@ -747,7 +747,7 @@ collection:
               value: ""
               description: ""
               disabled: false
-              fileName: /home/pavlo/Downloads/test_1129.png
+              fileName: /home/pavlo/Desktop/trailer.jpg
               type: file
         parameters:
           - name: pageSize
@@ -763,7 +763,7 @@ collection:
             disabled: false
           - name: Authorization
             value: Bearer
-              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3MDgyMTg1MSwiZXhwIjoxNzcxMDgxMDUxfQ.H2SorQCeH7Wem-YiLMmXGGdnMPAcX9cS7CyHnL6fhC8
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NzM3NzU0MywiZXhwIjoxNzc3NjM2NzQzfQ.UttVzGeuQuSV0xgcfGQxOy5FmubH24_doYi9qm_Zq0Y
             description: ""
             disabled: false
         settings:
@@ -779,7 +779,7 @@ collection:
         meta:
           id: req_e98fa3c25fa9499e88444703c5a1417d
           created: 1770822396631
-          modified: 1770822411132
+          modified: 1777377930560
           isPrivate: false
           description: ""
           sortKey: -1770821511935
@@ -796,7 +796,7 @@ collection:
             disabled: false
           - name: Authorization
             value: Bearer
-              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3MDgyMTg1MSwiZXhwIjoxNzcxMDgxMDUxfQ.H2SorQCeH7Wem-YiLMmXGGdnMPAcX9cS7CyHnL6fhC8
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NzM3Nzc3MywiZXhwIjoxNzc3NjM2OTczfQ.FqvKJ1zlD99C1CeSjoFIg9Pmf7Xdeq9QP4H-1Lg4oQM
             description: ""
             disabled: false
         settings:
@@ -840,6 +840,39 @@ collection:
             send: true
             store: true
           rebuildPath: true
+      - url: "{{simulation_api_domain}}/templates/5"
+        name: delete
+        meta:
+          id: req_76ec9132fd5e4be49c538c1825dd292a
+          created: 1777377494268
+          modified: 1777377867988
+          isPrivate: false
+          description: ""
+          sortKey: -1770821511897.5
+        method: DELETE
+        parameters:
+          - name: pageSize
+            value: "1"
+            description: ""
+            disabled: true
+        headers:
+          - name: User-Agent
+            value: insomnia/12.2.0
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NzM3NzU0MywiZXhwIjoxNzc3NjM2NzQzfQ.UttVzGeuQuSV0xgcfGQxOy5FmubH24_doYi9qm_Zq0Y
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
       - name: folders
         meta:
           id: fld_eeb7f5ebcd5d45ec90c859df960992df
@@ -853,7 +886,7 @@ collection:
             meta:
               id: req_9fa96c12a61b45289747ab49984f4171
               created: 1770821532364
-              modified: 1770823567108
+              modified: 1777377809537
               isPrivate: false
               description: ""
               sortKey: -1770821537486
@@ -862,8 +895,7 @@ collection:
               mimeType: application/json
               text: |-
                 {
-                	"name": "First test subfolder",
-                	"parentId": 1
+                	"name": "First test folder"
                 }
             parameters:
               - name: pageSize
@@ -879,7 +911,7 @@ collection:
                 disabled: false
               - name: Authorization
                 value: Bearer
-                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3MDgyMTg1MSwiZXhwIjoxNzcxMDgxMDUxfQ.H2SorQCeH7Wem-YiLMmXGGdnMPAcX9cS7CyHnL6fhC8
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NzM3Nzc3MywiZXhwIjoxNzc3NjM2OTczfQ.FqvKJ1zlD99C1CeSjoFIg9Pmf7Xdeq9QP4H-1Lg4oQM
                 description: ""
                 disabled: false
             settings:
@@ -895,7 +927,7 @@ collection:
             meta:
               id: req_7472f41124624a92aa6d5a9099809ac8
               created: 1770821941024
-              modified: 1775054847543
+              modified: 1777377785277
               isPrivate: false
               description: ""
               sortKey: -1770814056786
@@ -912,7 +944,7 @@ collection:
                 disabled: false
               - name: Authorization
                 value: Bearer
-                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NTA1NDgzNSwiZXhwIjoxNzc1MzE0MDM1fQ.l60lvpTMj_CwWuixCeQkSSYng1x0yM3ToTM1sLXEVAk
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NzM3Nzc3MywiZXhwIjoxNzc3NjM2OTczfQ.FqvKJ1zlD99C1CeSjoFIg9Pmf7Xdeq9QP4H-1Lg4oQM
                 description: ""
                 disabled: false
             settings:
@@ -956,6 +988,39 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
+          - url: "{{simulation_api_domain}}/templates/folders/1"
+            name: delete
+            meta:
+              id: req_1f420f0b886a49d5b903e378c80a0668
+              created: 1777377893099
+              modified: 1777377914233
+              isPrivate: false
+              description: ""
+              sortKey: -1770808446261
+            method: DELETE
+            parameters:
+              - name: pageSize
+                value: "1"
+                description: ""
+                disabled: true
+            headers:
+              - name: User-Agent
+                value: insomnia/12.2.0
+                description: ""
+                disabled: false
+              - name: Authorization
+                value: Bearer
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NzM3Nzc3MywiZXhwIjoxNzc3NjM2OTczfQ.FqvKJ1zlD99C1CeSjoFIg9Pmf7Xdeq9QP4H-1Lg4oQM
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
   - name: configurations
     meta:
       id: fld_708732cfd92c410aaf0f204c6e8c1af2
@@ -981,6 +1046,120 @@ collection:
             disabled: false
           - name: Authorization
             value: zCxGZgV3iVUR93C2Cua2lTgZZZppRL1z32VifmzwdPgcP
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{simulation_api_domain}}/configurations"
+        name: list
+        meta:
+          id: req_26c36ffd4c6d42f39ff211c6f8c3fb01
+          created: 1777032815131
+          modified: 1777119106276
+          isPrivate: false
+          description: ""
+          sortKey: -1775050216173
+        method: GET
+        parameters:
+          - name: configurationId
+            value: "142"
+            description: ""
+            disabled: true
+          - name: iterationId
+            value: "59"
+            description: ""
+            disabled: true
+          - name: iterationId
+            value: "366"
+            description: ""
+            disabled: false
+          - name: sortBy
+            value: name
+            description: ""
+            disabled: true
+          - name: sortOrder
+            value: desc
+            description: ""
+            disabled: true
+          - name: page
+            value: "1"
+            description: ""
+            disabled: false
+          - name: pageSize
+            value: "1"
+            description: ""
+            disabled: false
+        headers:
+          - name: User-Agent
+            value: insomnia/12.2.0
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3Njk0Nzc2MiwiZXhwIjoxNzc3MjA2OTYyfQ.wVDxL8cW1ItokHtnNDRh_i007lH8WfefNndOuDXe7SY
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{simulation_api_domain}}/configurations/53583"
+        name: retrieve
+        meta:
+          id: req_644a9e7a9a9940b18257d29ca7c92800
+          created: 1777046624623
+          modified: 1777046662082
+          isPrivate: false
+          description: ""
+          sortKey: -1775050216123
+        method: GET
+        parameters:
+          - name: configurationId
+            value: "142"
+            description: ""
+            disabled: true
+          - name: iterationId
+            value: "59"
+            description: ""
+            disabled: true
+          - name: iterationId
+            value: "2797"
+            description: ""
+            disabled: true
+          - name: sortBy
+            value: name
+            description: ""
+            disabled: true
+          - name: sortOrder
+            value: desc
+            description: ""
+            disabled: true
+          - name: page
+            value: "1"
+            description: ""
+            disabled: false
+          - name: pageSize
+            value: "1"
+            description: ""
+            disabled: true
+        headers:
+          - name: User-Agent
+            value: insomnia/12.2.0
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3Njk0Nzc2MiwiZXhwIjoxNzc3MjA2OTYyfQ.wVDxL8cW1ItokHtnNDRh_i007lH8WfefNndOuDXe7SY
             description: ""
             disabled: false
         settings:
@@ -1046,7 +1225,7 @@ environments:
   meta:
     id: env_0778d97653bbaa944d0f3c704cd2a7c269044867
     created: 1766396256818
-    modified: 1776675414641
+    modified: 1777118511215
     isPrivate: false
   data:
-    simulation_api_domain: https://simulationapi-dev.vivid3d.tech
+    simulation_api_domain: https://simulationapi.vivid3d.tech
