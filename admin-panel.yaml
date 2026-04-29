@@ -11,7 +11,7 @@ collection:
     meta:
       id: fld_28943f57796445899fa604513d7a262d
       created: 1764496106015
-      modified: 1775471049353
+      modified: 1777458856853
       sortKey: -1764496102719
       description: ""
     children:
@@ -255,12 +255,12 @@ collection:
           sortKey: -1764496102607
           description: ""
         children:
-          - url: https://renderadmin.vivid3d.tech/login
+          - url: https://renderadmin-dev.vivid3d.tech/login
             name: jwt create
             meta:
               id: req_d79048f09baf4b189499c3087e3971fb
               created: 1764496106031
-              modified: 1774701664342
+              modified: 1776682353738
               isPrivate: false
               description: ""
               sortKey: -1764496102606
@@ -314,7 +314,7 @@ collection:
         meta:
           id: fld_7c339ab8605c47cdbdf97c858583629e
           created: 1764496106033
-          modified: 1775146336461
+          modified: 1776843949710
           sortKey: -1764496102604
           description: ""
         children:
@@ -323,7 +323,7 @@ collection:
             meta:
               id: req_13d16746fd0c4ed1a1d3386c4e604e7a
               created: 1764496106034
-              modified: 1770384813004
+              modified: 1776263360833
               isPrivate: false
               description: ""
               sortKey: -1764496102603
@@ -332,7 +332,7 @@ collection:
               mimeType: application/json
               text: |-
                 {
-                    "name": "Sandbox"
+                    "name": "Simulations demo"
                 }
             headers:
               - name: Authorization
@@ -403,14 +403,20 @@ collection:
             meta:
               id: req_002af0d3d2e14636bd2f1651584ae2d0
               created: 1764496106035
-              modified: 1764510121860
+              modified: 1776843947224
               isPrivate: false
               description: ""
               sortKey: -1764496102602
             method: GET
+            parameters:
+              - name: pageSize
+                value: "100"
+                description: ""
+                disabled: false
             headers:
               - name: Authorization
-                value: Bearer {{render_admin_token}}
+                value: Bearer
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3Njg0MzY5MywiZXhwIjoxNzc3MTAyODkzfQ.tXLkPa30OQWvF9wbmUB5JIqM1vyAXcX27WLpXzxfj0k
             authentication:
               type: bearer
               disabled: false
@@ -775,16 +781,16 @@ collection:
         meta:
           id: fld_5225bd9336c44ebbafabf30c45bb80f1
           created: 1764496106042
-          modified: 1773216502129
+          modified: 1776263479782
           sortKey: -1764496102597
           description: ""
         children:
-          - url: "{{render_admin_domain}}/organizations/19/users"
+          - url: "{{render_admin_domain}}/organizations/20/users"
             name: add organization users
             meta:
               id: req_f4a50fe036064d4aa3f8ca63edf6fd09
               created: 1764496106044
-              modified: 1773216500126
+              modified: 1776263476899
               isPrivate: false
               description: ""
               sortKey: -1764496102596
@@ -794,7 +800,7 @@ collection:
               text: |-
                 {
                     "users": [
-                        8
+                        1,3,5
                     ]
                 }
             headers:
@@ -1377,7 +1383,7 @@ collection:
         meta:
           id: fld_a6a1513b5d204d29a79a6f171de34655
           created: 1764496106054
-          modified: 1772011794414
+          modified: 1777458789900
           sortKey: -1764496102588
           description: ""
         children:
@@ -1506,12 +1512,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/products"
+          - url: "{{ _.render_admin_domain }}/products"
             name: list products
             meta:
               id: req_a3b075dced984740b8e5563c29e619a1
               created: 1764496106057
-              modified: 1772011672535
+              modified: 1777454365204
               isPrivate: false
               description: ""
               sortKey: -1764496102586
@@ -1525,7 +1531,7 @@ collection:
                 disabled: true
               - name: organizationId
                 value: "1"
-                disabled: false
+                disabled: true
               - name: projectId
                 value: "2"
                 disabled: true
@@ -1548,7 +1554,7 @@ collection:
                 value: "100"
                 disabled: false
               - name: serialize
-                value: "true"
+                value: "false"
                 disabled: false
             headers:
               - name: Authorization
@@ -1613,12 +1619,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/products/1"
+          - url: "{{render_admin_domain}}/products/2"
             name: retrieve product
             meta:
               id: req_a414b145c8914db9bb43222c9728d88a
               created: 1764496106058
-              modified: 1772011792975
+              modified: 1777454409783
               isPrivate: false
               description: ""
               sortKey: -1764496102585
@@ -2045,11 +2051,83 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
+          - url: "{{render_admin_domain}}/products/41/code"
+            name: retrieve product code
+            meta:
+              id: req_96de89245df84757af85533aa70f0a9e
+              created: 1777454426644
+              modified: 1777458787631
+              isPrivate: false
+              description: ""
+              sortKey: -1764496102584.5
+            method: GET
+            headers:
+              - name: Authorization
+                value: Bearer {{render_admin_token}}
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{render_admin_token}}"
+              prefix: ""
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render_admin_domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render_admin_username");
+
+                const password =
+                insomnia.variables.get("render_admin_password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render_admin_token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
       - name: stages
         meta:
           id: fld_b2eeba39f96a4791a703f6c8afb2357f
           created: 1764496106065
-          modified: 1768487914752
+          modified: 1777458856853
           sortKey: -1764496102580
           description: ""
         children:
@@ -2155,7 +2233,7 @@ collection:
             meta:
               id: req_a62304dc1d0b451ab7fec37c2fef85a6
               created: 1764496106084
-              modified: 1768486368608
+              modified: 1776760519044
               isPrivate: false
               description: ""
               sortKey: -1764496102564
@@ -2172,7 +2250,7 @@ collection:
                 disabled: true
               - name: organizationId
                 value: "2"
-                disabled: true
+                disabled: false
             headers:
               - name: Authorization
                 value: Bearer {{render_admin_token}}
@@ -2235,12 +2313,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/stages/1"
+          - url: "{{render_admin_domain}}/stages/594"
             name: retieve stage
             meta:
               id: req_e7df2680212e4888932f49f769cfa111
               created: 1764496106086
-              modified: 1764510319293
+              modified: 1776867935955
               isPrivate: false
               description: ""
               sortKey: -1764496102563
@@ -2566,6 +2644,78 @@ collection:
               description: ""
               sortKey: -1764496102559
             method: POST
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render_admin_domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render_admin_username");
+
+                const password =
+                insomnia.variables.get("render_admin_password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render_admin_token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{render_admin_domain}}/stages/26/code"
+            name: retieve stage code
+            meta:
+              id: req_bd445cfd737944e286248688fcb8c591
+              created: 1777458812309
+              modified: 1777458854882
+              isPrivate: false
+              description: ""
+              sortKey: -1764496102562.5
+            method: GET
+            headers:
+              - name: Authorization
+                value: Bearer {{render_admin_token}}
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{render_admin_token}}"
+              prefix: ""
             scripts:
               preRequest: >
                 const loginEndpoint =
@@ -5119,11 +5269,50 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
+          - url: "{{ _.render_admin_domain }}/products/41/stages/reorder"
+            name: reorder
+            meta:
+              id: req_b87d5114b29e4b5c9c418bdcac5960f4
+              created: 1776687530300
+              modified: 1776687805491
+              isPrivate: false
+              description: ""
+              sortKey: -1776687530300
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "items": [
+                    { "id": 28, "order": 1 },
+                    { "id": 67, "order": 2 }
+                  ]
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.5.0
+                description: ""
+                disabled: false
+              - name: Authorization
+                value: Bearer
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NjY4NzczMywiZXhwIjozMDAwMDAwMDE3NzY2ODc3NDB9.9uwEIqJb8TiOkcyjIToG1XtECg4W2YEpBMSAIpZi5wQ
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
       - name: product - options
         meta:
           id: fld_63f415fc4e5a481e957ca75f92986f16
           created: 1764496106128
-          modified: 1772012689820
+          modified: 1776682911099
           sortKey: -1764496102533
           description: ""
         children:
@@ -5361,6 +5550,56 @@ collection:
                     console.log("Failed to parse login response:", e);
                   }
                 });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{render_admin_domain}}/products/76/options/reorder"
+            name: reorder
+            meta:
+              id: req_078f04636f3a4d77af454f57241b776f
+              created: 1776680983045
+              modified: 1776683441739
+              isPrivate: false
+              description: ""
+              sortKey: -1764496102531.5
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "items": [
+                    {
+                      "id": 67,
+                      "order": 1,
+                      "type": "material"
+                    },
+                    {
+                      "id": 65,
+                      "order": 3,
+                      "type": "material"
+                    },
+                		{
+                      "id": 64,
+                      "order": 2,
+                      "type": "material"
+                    }
+                  ]
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: Authorization
+                value: Bearer
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NjY4MzQxMiwiZXhwIjozMDAwMDAwMDE3NzY2ODM0MDB9.LGfPu5K_5287ZBFY-XGgtSxWqZb67S9nrBZp9hYeGDU
+                description: ""
+                disabled: false
+            authentication:
+              type: none
             settings:
               renderRequestBody: true
               encodeUrl: true
@@ -5623,7 +5862,7 @@ collection:
         meta:
           id: fld_c32e489aa3414f4c9dd9cbf803db2656
           created: 1764496106138
-          modified: 1764496106138
+          modified: 1776687395650
           sortKey: -1764496102525
           description: ""
         children:
@@ -5646,6 +5885,98 @@ collection:
             headers:
               - name: Content-Type
                 value: application/json
+            scripts:
+              preRequest: >
+                const loginEndpoint =
+                insomnia.variables.get("render_admin_domain") + "/login";
+
+                const username =
+                insomnia.variables.get("render_admin_username");
+
+                const password =
+                insomnia.variables.get("render_admin_password");
+
+
+                const loginRequest = {
+                  method: "POST",
+                  url: loginEndpoint,
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                  body: JSON.stringify({
+                    username,
+                    password
+                  })
+                };
+
+
+                insomnia.sendRequest(loginRequest, function (err, response) {
+                  if (err) {
+                    console.log("Error while logging in:", err);
+                    return;
+                  }
+
+                  try {
+                    const json = JSON.parse(response.body);
+                    const token = json.token;
+
+                    if (!token) {
+                      console.log("No token found in login response");
+                      return;
+                    }
+
+                    insomnia.environment.set("render_admin_token", token);
+                    console.log("Login successful, token saved");
+                  } catch (e) {
+                    console.log("Failed to parse login response:", e);
+                  }
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{render_admin_domain}}/products/39/options/33/variants/reorder"
+            name: reorder
+            meta:
+              id: req_e7a8997b2c8048079089a4c03b88130c
+              created: 1776687180128
+              modified: 1776687393676
+              isPrivate: false
+              description: ""
+              sortKey: -1764496102523
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "proxyOptionType": "material",
+                  "items": [
+                    {
+                      "id": 16,
+                      "order": 1
+                    },
+                    {
+                      "id": 14,
+                      "order": 2
+                    },
+                    {
+                      "id": 11,
+                      "order": 3
+                    }
+                  ]
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: Authorization
+                value: Bearer
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NjY4NzM3MiwiZXhwIjozMDAwMDAwMDE3NzY2ODczNjB9.z6j3YK08YY5XkLylm_TA3wymghNn9hqmJfRT9-ODnLg
+                description: ""
+                disabled: false
             scripts:
               preRequest: >
                 const loginEndpoint =
@@ -10440,7 +10771,7 @@ collection:
         meta:
           id: fld_3c26558d58f14e80aa0f427e6ac43eef
           created: 1764496106260
-          modified: 1768486553509
+          modified: 1776760110435
           sortKey: -1764496102437
           description: ""
         children:
@@ -10520,7 +10851,7 @@ collection:
             meta:
               id: fld_ff833b7849e5490eb60ee919832248f5
               created: 1764496106261
-              modified: 1765384356105
+              modified: 1776760110435
               sortKey: -1764496102436
               description: ""
             children:
@@ -12699,7 +13030,7 @@ collection:
         meta:
           id: fld_01de6ee4db55489a9879f1ebe98c4d5d
           created: 1764496106302
-          modified: 1774017020372
+          modified: 1776759986189
           sortKey: -1764496102404
           description: ""
         children:
@@ -12707,7 +13038,7 @@ collection:
             meta:
               id: fld_ebaa0b5371f14fe4a47ba743874c858e
               created: 1764496106303
-              modified: 1774016845372
+              modified: 1776759986190
               sortKey: -1764496102403
               description: ""
             children:
@@ -13142,7 +13473,7 @@ collection:
                 meta:
                   id: fld_972d3e10bdc34d3894b1876bc885621f
                   created: 1764496106314
-                  modified: 1774016845372
+                  modified: 1776759986190
                   sortKey: -1764496102395
                   description: ""
                 children:
@@ -13242,7 +13573,7 @@ collection:
                     meta:
                       id: req_3ac5385ab1dc45058f7228cae978896f
                       created: 1764496106316
-                      modified: 1774016375469
+                      modified: 1776758381653
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102393
@@ -13332,12 +13663,12 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{render_admin_domain}}/bundles/projectBundles/148"
+                  - url: "{{render_admin_domain}}/bundles/projectBundles/163"
                     name: retieve projectBundle
                     meta:
                       id: req_6ad44763dd1a45779c62b35277b11660
                       created: 1764496106318
-                      modified: 1767685357737
+                      modified: 1776759983378
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102392
@@ -14702,7 +15033,7 @@ collection:
         meta:
           id: fld_b5da3c83e7624e119ec9b51c9dce7029
           created: 1764496106339
-          modified: 1769417376750
+          modified: 1777385812085
           sortKey: -1764496102375
           description: ""
         children:
@@ -14710,7 +15041,7 @@ collection:
             meta:
               id: fld_a5c071b1098a4ab18e3c5b14a9c14741
               created: 1764496106341
-              modified: 1769417376750
+              modified: 1777385812085
               sortKey: -1764496102374
               description: ""
             children:
@@ -14719,7 +15050,7 @@ collection:
                 meta:
                   id: req_18385270ba9e45f19cdab615a079fcaf
                   created: 1764496106343
-                  modified: 1769417375372
+                  modified: 1777385593653
                   isPrivate: false
                   description: ""
                   sortKey: -1764496102373
@@ -14728,10 +15059,11 @@ collection:
                   mimeType: application/json
                   text: |-
                     {
-                    	"name": "Train jobs #1",
-                      "products": [1914],
-                      "organizationId": 14,
-                      "modelType": "Matching",
+                    	"name": "Train with two simulations",
+                      "organizationId": 2,
+                    	"products": [1914],
+                    	"simulations": [586, 633],
+                      "modelType": "FastRCNN",
                       "parameters": ""
                     }
                 parameters:
@@ -14972,12 +15304,12 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-              - url: "{{render_admin_domain}}/train/jobs/1"
+              - url: "{{render_admin_domain}}/train/jobs/85"
                 name: retrieve train job
                 meta:
                   id: req_1f1a18a39f104e3d925b8ca3f1c4ef8f
                   created: 1765295520292
-                  modified: 1766078105839
+                  modified: 1777385811334
                   isPrivate: false
                   description: ""
                   sortKey: -1764496102371.5
@@ -18688,7 +19020,7 @@ collection:
         meta:
           id: fld_467abfc4bdf54c5bb97a6904304159f4
           created: 1772621154814
-          modified: 1775471049353
+          modified: 1775729208325
           sortKey: -1772621154814
           description: ""
         children:
@@ -18697,7 +19029,7 @@ collection:
             meta:
               id: req_d0310c09ad8c414db4b68b3c9ff823a7
               created: 1772621159489
-              modified: 1775460863198
+              modified: 1775729205970
               isPrivate: false
               description: ""
               sortKey: -1772621159489
@@ -18706,7 +19038,7 @@ collection:
               mimeType: multipart/form-data
               params:
                 - name: name
-                  value: Hastings AI Agent
+                  value: Test Demo Agent (Hastings) 2
                   description: ""
                   disabled: false
                 - name: organizationId
@@ -18863,12 +19195,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/ai-agents/10"
+          - url: "{{render_admin_domain}}/ai-agents/9"
             name: update agent
             meta:
               id: req_4abd6e91e3c24a6380660226d9cbb41b
               created: 1772705381773
-              modified: 1775471047232
+              modified: 1775663632093
               isPrivate: false
               description: ""
               sortKey: -1772705381773
@@ -18889,19 +19221,19 @@ collection:
                 - name: proxyMaterialOptions
                   value: ""
                   description: ""
-                  disabled: false
+                  disabled: true
                   fileName: /home/pavlo/Downloads/flow-schema_upd.json
                   type: file
                 - name: proxyGeometryOptions
                   value: ""
                   description: ""
-                  disabled: false
+                  disabled: true
                   fileName: /home/pavlo/Downloads/flow-schema_upd.json
                   type: file
                 - name: products
                   value: ""
                   description: ""
-                  disabled: false
+                  disabled: true
                   fileName: /home/pavlo/Downloads/flow-schema_upd.json
                   type: file
             headers:
@@ -19049,16 +19381,16 @@ cookieJar:
   meta:
     id: jar_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496108720
-    modified: 1775471049351
+    modified: 1777458856828
 environments:
   name: Base Environment
   meta:
     id: env_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496106422
-    modified: 1775471049352
+    modified: 1777458856848
     isPrivate: false
   data:
-    render_admin_domain: https://renderadmin.vivid3d.tech
+    render_admin_domain: https://renderadmin-dev.vivid3d.tech
     render_admin_token: ""
     render_admin_username: admin
     render_admin_password: RmxJ8UjtE3aY4czn
@@ -19067,12 +19399,12 @@ environments:
       meta:
         id: env_b8191c95ca5148239e99bdd5400c1ad6
         created: 1764509217083
-        modified: 1770308406374
+        modified: 1777455206891
         isPrivate: false
         sortKey: 1764509217083
       data:
-        render-admin-domain: http://localhost:3000
-        render-admin-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2ODIwNzYzNCwiZXhwIjoxNzY4MjA3OTM0fQ.6xZJta0n4PY3yjexPz52RjG16wB2yi9LRgiAXRygm1M
+        render-admin-domain: https://simulationapi-dev.vivid3d.tech
+        render-admin-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NjY4MzQxMiwiZXhwIjozMDAwMDAwMDE3NzY2ODM0MDB9.LGfPu5K_5287ZBFY-XGgtSxWqZb67S9nrBZp9hYeGDU
         render-admin-username: admin
         render-admin-password: RmxJ8UjtE3aY4czn
       color: "#ffffff"
