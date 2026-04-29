@@ -723,7 +723,7 @@ collection:
         meta:
           id: req_e55b1ed441e9478598a0c214ea74dee5
           created: 1770821992083
-          modified: 1777377823788
+          modified: 1777463780665
           isPrivate: false
           description: ""
           sortKey: -1770821511985
@@ -863,6 +863,95 @@ collection:
           - name: Authorization
             value: Bearer
               eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NzM3NzU0MywiZXhwIjoxNzc3NjM2NzQzfQ.UttVzGeuQuSV0xgcfGQxOy5FmubH24_doYi9qm_Zq0Y
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{simulation_api_domain}}/templates/1"
+        name: update
+        meta:
+          id: req_e008e47414034a9a917173f135dd685e
+          created: 1777463438359
+          modified: 1777463984160
+          isPrivate: false
+          description: ""
+          sortKey: -1770821511903.75
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"name": "tempplate name upd",
+            	"config": "{\"key\": \"val\"}"
+            }
+        parameters:
+          - name: pageSize
+            value: "1"
+            description: ""
+            disabled: true
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.2.0
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NzQ2Mzk2NywiZXhwIjoxNzc3NzIzMTY3fQ.0Qnbu1cjL4yUCxeP8k6_Z54-7i288uU6MI2-xAKXNqw
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{simulation_api_domain}}/templates/1/overwrite"
+        name: overwrite
+        meta:
+          id: req_e5624d4ed02349308ed72e1015930e3c
+          created: 1777463665619
+          modified: 1777464073798
+          isPrivate: false
+          description: ""
+          sortKey: -1770821511900.625
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"config": "const a = 2;",
+            	"cameraPresets": [
+            		{
+            			"name": "pressetName16",
+            			"camera": {}
+            		}
+            	]
+            }
+        parameters:
+          - name: pageSize
+            value: "1"
+            description: ""
+            disabled: true
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.2.0
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NzQ2Mzk2NywiZXhwIjoxNzc3NzIzMTY3fQ.0Qnbu1cjL4yUCxeP8k6_Z54-7i288uU6MI2-xAKXNqw
             description: ""
             disabled: false
         settings:
