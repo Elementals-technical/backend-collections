@@ -20,7 +20,7 @@ collection:
         meta:
           id: req_431e2631f33f4a1dbbdc5643fc02d8f2
           created: 1766396271007
-          modified: 1777018144330
+          modified: 1777451612550
           isPrivate: false
           description: ""
           sortKey: -1766396271007
@@ -29,7 +29,7 @@ collection:
           mimeType: application/json
           text: >
             {
-              "name": "Test_PLO 8",
+              "name": "Test_PLO 10",
             	"sessionId": "550e8400-e29b-41d4-a716-446655440000",
             	"organizationId": 1,
             	"executionMode": "ephemeral",
@@ -43,7 +43,7 @@ collection:
             	"renderType": "raster",
             	"renderHeight": 1080,
             	"renderWidth": 1920,
-              "simulationScript": "const rs=new RandomStream(SIMULATION_SETTINGS.iteration), sp=VividHelpers.getSimulationProgress(), stage=S595.create(); stage.setAsCurrentStage(); const camera=Camera.create(); camera.setAsViewTarget(); const car=P2701.create(); car.setProductPosition(0,0,0);",
+              "simulationScript": "const stage:VividStageBase= S73.create();stage.setAsCurrentStage();const camera:Camera=Camera.create();camera.setAsViewTarget();const ItRandom:RandomStream = new RandomStream(SIMULATION_SETTINGS.iteration);const CameraStartPosition:Vector=VectorUtils.createVector(-1500,ItRandom.randomFloatInRange(-800,1200),1200);const CameraEndPosition:Vector=VectorUtils.createVector(6800,ItRandom.randomFloatInRange(-800,1200),1200);camera.setProductPosition(VectorUtils.lerp(CameraStartPosition,CameraEndPosition,VividHelpers.getSimulationProgress()));const cameraRotation:Rotator= RotatorUtils.makeRotFromX(VectorUtils.normalize(VectorUtils.sub(CameraEndPosition,CameraStartPosition)));cameraRotation.pitch=-89;camera.setProductRotation(cameraRotation);const car:P199=P199.create();car.setProductPosition(VectorUtils.createVector(1792,391,0));car.Carpaint=M74.Blue;",
             	"annotations": false,
             	"annotationThreshold": 12
             }
@@ -1021,6 +1021,47 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
+          - url: "{{simulation_api_domain}}/templates/folders/1"
+            name: update
+            meta:
+              id: req_db83e3a09e984b7cab038b95e29ffd7c
+              created: 1777462939518
+              modified: 1777463045081
+              isPrivate: false
+              description: ""
+              sortKey: -1770812186611
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"name": "new folder name"
+                }
+            parameters:
+              - name: pageSize
+                value: "1"
+                description: ""
+                disabled: true
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.2.0
+                description: ""
+                disabled: false
+              - name: Authorization
+                value: Bearer
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NzM3Nzc3MywiZXhwIjoxNzc3NjM2OTczfQ.FqvKJ1zlD99C1CeSjoFIg9Pmf7Xdeq9QP4H-1Lg4oQM
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
   - name: configurations
     meta:
       id: fld_708732cfd92c410aaf0f204c6e8c1af2
@@ -1225,7 +1266,7 @@ environments:
   meta:
     id: env_0778d97653bbaa944d0f3c704cd2a7c269044867
     created: 1766396256818
-    modified: 1777118511215
+    modified: 1777451269005
     isPrivate: false
   data:
-    simulation_api_domain: https://simulationapi.vivid3d.tech
+    simulation_api_domain: http://127.0.0.1:3000
