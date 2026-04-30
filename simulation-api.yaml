@@ -723,7 +723,7 @@ collection:
         meta:
           id: req_e55b1ed441e9478598a0c214ea74dee5
           created: 1770821992083
-          modified: 1777463780665
+          modified: 1777546431899
           isPrivate: false
           description: ""
           sortKey: -1770821511985
@@ -732,11 +732,11 @@ collection:
           mimeType: multipart/form-data
           params:
             - name: name
-              value: PLO TEMPLATE TEST 2
+              value: PLO TEMPLATE TEST 3
               description: ""
               disabled: false
             - name: folderId
-              value: "1"
+              value: "2"
               description: ""
               disabled: false
             - name: config
@@ -1016,7 +1016,7 @@ collection:
             meta:
               id: req_7472f41124624a92aa6d5a9099809ac8
               created: 1770821941024
-              modified: 1777377785277
+              modified: 1777548212976
               isPrivate: false
               description: ""
               sortKey: -1770814056786
@@ -1024,6 +1024,10 @@ collection:
             parameters:
               - name: pageSize
                 value: "1"
+                description: ""
+                disabled: true
+              - name: serialize
+                value: "true"
                 description: ""
                 disabled: true
             headers:
@@ -1355,7 +1359,7 @@ environments:
   meta:
     id: env_0778d97653bbaa944d0f3c704cd2a7c269044867
     created: 1766396256818
-    modified: 1777451269005
+    modified: 1777548168754
     isPrivate: false
   data:
-    simulation_api_domain: http://127.0.0.1:3000
+    simulation_api_domain: https://simulationapi-dev.vivid3d.tech
