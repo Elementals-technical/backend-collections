@@ -723,7 +723,7 @@ collection:
         meta:
           id: req_e55b1ed441e9478598a0c214ea74dee5
           created: 1770821992083
-          modified: 1777546431899
+          modified: 1777549628780
           isPrivate: false
           description: ""
           sortKey: -1770821511985
@@ -732,11 +732,11 @@ collection:
           mimeType: multipart/form-data
           params:
             - name: name
-              value: PLO TEMPLATE TEST 3
+              value: PLO TEMPLATE TEST 4
               description: ""
               disabled: false
             - name: folderId
-              value: "2"
+              value: "1177"
               description: ""
               disabled: false
             - name: config
@@ -975,7 +975,7 @@ collection:
             meta:
               id: req_9fa96c12a61b45289747ab49984f4171
               created: 1770821532364
-              modified: 1777377809537
+              modified: 1777898362738
               isPrivate: false
               description: ""
               sortKey: -1770821537486
@@ -984,7 +984,8 @@ collection:
               mimeType: application/json
               text: |-
                 {
-                	"name": "First test folder"
+                	"name": "PLO test folder",
+                	"organizationId": 1
                 }
             parameters:
               - name: pageSize
@@ -1000,7 +1001,7 @@ collection:
                 disabled: false
               - name: Authorization
                 value: Bearer
-                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NzM3Nzc3MywiZXhwIjoxNzc3NjM2OTczfQ.FqvKJ1zlD99C1CeSjoFIg9Pmf7Xdeq9QP4H-1Lg4oQM
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3Nzg5ODMyOSwiZXhwIjoxNzc4MTU3NTI5fQ.z__Mk2hIHcT5AfB-70_K0OdPoLbiRZpFbdvWITl935k
                 description: ""
                 disabled: false
             settings:
@@ -1016,7 +1017,7 @@ collection:
             meta:
               id: req_7472f41124624a92aa6d5a9099809ac8
               created: 1770821941024
-              modified: 1777548212976
+              modified: 1777898419708
               isPrivate: false
               description: ""
               sortKey: -1770814056786
@@ -1027,9 +1028,17 @@ collection:
                 description: ""
                 disabled: true
               - name: serialize
-                value: "true"
+                value: "false"
                 description: ""
-                disabled: true
+                disabled: false
+              - name: parentId
+                value: "null"
+                description: ""
+                disabled: false
+              - name: organizationId
+                value: "1"
+                description: ""
+                disabled: false
             headers:
               - name: User-Agent
                 value: insomnia/12.2.0
@@ -1037,7 +1046,7 @@ collection:
                 disabled: false
               - name: Authorization
                 value: Bearer
-                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3NzM3Nzc3MywiZXhwIjoxNzc3NjM2OTczfQ.FqvKJ1zlD99C1CeSjoFIg9Pmf7Xdeq9QP4H-1Lg4oQM
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc3Nzg5ODM5MiwiZXhwIjoxNzc4MTU3NTkyfQ.LPPjSras0kWrqJ6dYVR081ViOGDt9O4IOtEg-9TwVDo
                 description: ""
                 disabled: false
             settings:
@@ -1359,7 +1368,7 @@ environments:
   meta:
     id: env_0778d97653bbaa944d0f3c704cd2a7c269044867
     created: 1766396256818
-    modified: 1777548168754
+    modified: 1777549264054
     isPrivate: false
   data:
     simulation_api_domain: https://simulationapi-dev.vivid3d.tech
