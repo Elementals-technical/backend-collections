@@ -280,6 +280,301 @@ collection:
             send: true
             store: true
           rebuildPath: true
+  - name: categories
+    meta:
+      id: fld_0734831605e8422595dcf8835720d802
+      created: 1778573482152
+      modified: 1778573482152
+      sortKey: -1778573482152
+      description: ""
+    children:
+      - url: "{{ _['manual-dataset-api-domain'] }}/categories"
+        name: create
+        meta:
+          id: req_2afd954db0b54b55b676688d56e38097
+          created: 1778573499951
+          modified: 1778573553943
+          isPrivate: false
+          description: ""
+          sortKey: -1778573499951
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"name": "Test Category PLO"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _['manual-dataset-api-domain'] }}/categories/1"
+        name: retrieve
+        meta:
+          id: req_5145b89a61d640c2a2bda7425ae6f493
+          created: 1778573565109
+          modified: 1778573571318
+          isPrivate: false
+          description: ""
+          sortKey: -1777630515125.5
+        method: GET
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"name": "Test Category PLO"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _['manual-dataset-api-domain'] }}/categories"
+        name: list
+        meta:
+          id: req_2b5a9376c1e04bacb0ce6d4a4cd9e29a
+          created: 1778573585318
+          modified: 1778573588158
+          isPrivate: false
+          description: ""
+          sortKey: -1777159022712.75
+        method: GET
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"name": "Test Category PLO"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _['manual-dataset-api-domain'] }}/categories/1"
+        name: update
+        meta:
+          id: req_fa7cf4183dfe4d369fa93139706bc111
+          created: 1778573599570
+          modified: 1778573614800
+          isPrivate: false
+          description: ""
+          sortKey: -1776923276506.375
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"name": "Test Category PLO upd"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _['manual-dataset-api-domain'] }}/categories/1"
+        name: delete
+        meta:
+          id: req_ac73890a9a0648309526cba785c6be9b
+          created: 1778573630264
+          modified: 1778573638672
+          isPrivate: false
+          description: ""
+          sortKey: -1776805403403.1875
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: tags
+    meta:
+      id: fld_5d59f018c64a48fdbb89912489bfc341
+      created: 1778573647023
+      modified: 1778573647023
+      sortKey: -1778573647023
+      description: ""
+    children:
+      - url: "{{ _['manual-dataset-api-domain'] }}/tags"
+        name: create
+        meta:
+          id: req_d523e476a0454d5ea79592d8e89e38e0
+          created: 1778573667509
+          modified: 1778573705552
+          isPrivate: false
+          description: ""
+          sortKey: -1778573670553
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"name": "Test Teg PLO 2",
+            	"categoryId": 1
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _['manual-dataset-api-domain'] }}/tags"
+        name: list
+        meta:
+          id: req_3abe9752ebb844be92fb1d9897764d02
+          created: 1778573718161
+          modified: 1778573726238
+          isPrivate: false
+          description: ""
+          sortKey: -1778573585252
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _['manual-dataset-api-domain'] }}/tags/1"
+        name: retrieve
+        meta:
+          id: req_8cf74d559dd2489d8b8be43fe3446aba
+          created: 1778573739314
+          modified: 1778573742166
+          isPrivate: false
+          description: ""
+          sortKey: -1778573542601.5
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _['manual-dataset-api-domain'] }}/tags/2"
+        name: update
+        meta:
+          id: req_c39a47ead83e4de2b7131572bf934dfe
+          created: 1778573752432
+          modified: 1778573776672
+          isPrivate: false
+          description: ""
+          sortKey: -1778573542501.5
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"name": "Test Teg PLO 2 upd"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _['manual-dataset-api-domain'] }}/tags/2"
+        name: delete
+        meta:
+          id: req_a11cd823c31643ad9f261e21029bf44b
+          created: 1778573790903
+          modified: 1778573800773
+          isPrivate: false
+          description: ""
+          sortKey: -1778573521226.25
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
 cookieJar:
   name: Default Jar
   meta:
