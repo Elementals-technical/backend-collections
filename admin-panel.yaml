@@ -11,7 +11,7 @@ collection:
     meta:
       id: fld_28943f57796445899fa604513d7a262d
       created: 1764496106015
-      modified: 1777462738027
+      modified: 1779106099371
       sortKey: -1764496102719
       description: ""
     children:
@@ -314,7 +314,7 @@ collection:
         meta:
           id: fld_7c339ab8605c47cdbdf97c858583629e
           created: 1764496106033
-          modified: 1776843949710
+          modified: 1777620147981
           sortKey: -1764496102604
           description: ""
         children:
@@ -781,7 +781,7 @@ collection:
         meta:
           id: fld_5225bd9336c44ebbafabf30c45bb80f1
           created: 1764496106042
-          modified: 1776263479782
+          modified: 1777620167319
           sortKey: -1764496102597
           description: ""
         children:
@@ -790,7 +790,7 @@ collection:
             meta:
               id: req_f4a50fe036064d4aa3f8ca63edf6fd09
               created: 1764496106044
-              modified: 1776263476899
+              modified: 1777620121096
               isPrivate: false
               description: ""
               sortKey: -1764496102596
@@ -800,7 +800,7 @@ collection:
               text: |-
                 {
                     "users": [
-                        1,3,5
+                        41
                     ]
                 }
             headers:
@@ -1383,7 +1383,7 @@ collection:
         meta:
           id: fld_a6a1513b5d204d29a79a6f171de34655
           created: 1764496106054
-          modified: 1777462558540
+          modified: 1777882797470
           sortKey: -1764496102588
           description: ""
         children:
@@ -1623,12 +1623,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/products/2"
+          - url: "{{render_admin_domain}}/products/1"
             name: retrieve product
             meta:
               id: req_a414b145c8914db9bb43222c9728d88a
               created: 1764496106058
-              modified: 1777454409783
+              modified: 1777882525015
               isPrivate: false
               description: ""
               sortKey: -1764496102585
@@ -2055,12 +2055,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/products/41/code"
+          - url: "{{render_admin_domain}}/products/1/code"
             name: retrieve product code
             meta:
               id: req_96de89245df84757af85533aa70f0a9e
               created: 1777454426644
-              modified: 1777458787631
+              modified: 1777882322421
               isPrivate: false
               description: ""
               sortKey: -1764496102584.5
@@ -13038,7 +13038,7 @@ collection:
         meta:
           id: fld_01de6ee4db55489a9879f1ebe98c4d5d
           created: 1764496106302
-          modified: 1776759986189
+          modified: 1779106099371
           sortKey: -1764496102404
           description: ""
         children:
@@ -13046,7 +13046,7 @@ collection:
             meta:
               id: fld_ebaa0b5371f14fe4a47ba743874c858e
               created: 1764496106303
-              modified: 1776759986190
+              modified: 1779105997509
               sortKey: -1764496102403
               description: ""
             children:
@@ -13054,16 +13054,16 @@ collection:
                 meta:
                   id: fld_c98499e4a278476c9c718a83c681beea
                   created: 1764496106303
-                  modified: 1764843636055
+                  modified: 1779103617440
                   sortKey: -1764496102402
                   description: ""
                 children:
-                  - url: "{{render_admin_domain}}/projectBundles/7/organizations"
+                  - url: "{{render_admin_domain}}/projectBundles/185/organizations"
                     name: connect bundles to organization
                     meta:
                       id: req_f043b6a512334e1aadda6e599c38e874
                       created: 1764496106304
-                      modified: 1764837478537
+                      modified: 1779103613530
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102401
@@ -13481,7 +13481,7 @@ collection:
                 meta:
                   id: fld_972d3e10bdc34d3894b1876bc885621f
                   created: 1764496106314
-                  modified: 1776759986190
+                  modified: 1779105997509
                   sortKey: -1764496102395
                   description: ""
                 children:
@@ -13490,7 +13490,7 @@ collection:
                     meta:
                       id: req_db35f79ecbb145e8a50d3c326f4b82e8
                       created: 1764496106315
-                      modified: 1764510937453
+                      modified: 1779105995493
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102394
@@ -13499,17 +13499,25 @@ collection:
                       mimeType: multipart/form-data
                       params:
                         - name: name
-                          value: CPB_6
+                          value: PLO ROOT 1
                           disabled: false
                           type: text
                         - name: parentId
-                          value: "4"
+                          value: "162"
                           disabled: false
                           type: text
                         - name: image
                           disabled: false
-                          fileName: /home/pavlo/Downloads/34_20251117184358448287_20251117155246744726_e85d35a0d262ea383bf9f879f7086629188509907832a9da0fc398da61792280.png
+                          fileName: /home/pavlo/Downloads/urban_svela.png
                           type: file
+                        - name: studio
+                          value: "true"
+                          description: ""
+                          disabled: false
+                        - name: simulation
+                          value: "true"
+                          description: ""
+                          disabled: false
                     headers:
                       - name: Authorization
                         value: Bearer {{render_admin_token}}
@@ -13581,15 +13589,15 @@ collection:
                     meta:
                       id: req_3ac5385ab1dc45058f7228cae978896f
                       created: 1764496106316
-                      modified: 1776758381653
+                      modified: 1779103634706
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102393
                     method: GET
                     parameters:
                       - name: parentId
-                        value: "null"
-                        disabled: false
+                        value: "162"
+                        disabled: true
                       - name: organizationId
                         value: "1"
                         disabled: false
@@ -13597,7 +13605,7 @@ collection:
                         value: "false"
                         disabled: true
                       - name: pageSize
-                        value: "2"
+                        value: "100"
                         disabled: false
                       - name: connectionType
                         value: simulation
@@ -13671,12 +13679,12 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{render_admin_domain}}/bundles/projectBundles/163"
+                  - url: "{{render_admin_domain}}/bundles/projectBundles/162"
                     name: retieve projectBundle
                     meta:
                       id: req_6ad44763dd1a45779c62b35277b11660
                       created: 1764496106318
-                      modified: 1776759983378
+                      modified: 1779103055270
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102392
@@ -14045,7 +14053,7 @@ collection:
             meta:
               id: fld_2344b631a9a44ef284e5ddb1018ae730
               created: 1764496106321
-              modified: 1774017020372
+              modified: 1779106099371
               sortKey: -1764496102389
               description: ""
             children:
@@ -14479,7 +14487,7 @@ collection:
                 meta:
                   id: fld_cdaf37033f19427cb5bcc81ef357f490
                   created: 1764496106331
-                  modified: 1774017020372
+                  modified: 1779106099371
                   sortKey: -1764496102381
                   description: ""
                 children:
@@ -14488,7 +14496,7 @@ collection:
                     meta:
                       id: req_6a338a44c0d84a47a5209506c5c0aefd
                       created: 1764496106333
-                      modified: 1764853565472
+                      modified: 1779106097008
                       isPrivate: false
                       description: ""
                       sortKey: -1764496102380
@@ -14497,16 +14505,16 @@ collection:
                       mimeType: multipart/form-data
                       params:
                         - name: name
-                          value: CSB_3
+                          value: CSB_4
                           disabled: false
                           type: text
                         - name: parentId
-                          value: "1"
+                          value: "23"
                           disabled: false
                           type: text
                         - name: image
                           disabled: false
-                          fileName: /home/pavlo/Downloads/34_20251117184358448287_20251117155246744726_e85d35a0d262ea383bf9f879f7086629188509907832a9da0fc398da61792280.png
+                          fileName: /home/pavlo/Downloads/urban_svela.png
                           type: file
                     headers:
                       - name: Authorization
@@ -15541,7 +15549,7 @@ collection:
             meta:
               id: req_66fd9b991b34410484f71249798fea30
               created: 1764509793476
-              modified: 1773216427506
+              modified: 1777620075177
               isPrivate: false
               description: ""
               sortKey: -1764500285890.25
@@ -15550,8 +15558,8 @@ collection:
               mimeType: application/json
               text: |-
                 {
-                	"username": "jeep_boat_demos",
-                	"password": "75ohQwrYm8HSz2b1"
+                	"username": "viktoria_goncharova",
+                	"password": "N7Oz23I44ZGZD8qM"
                 }
             headers:
               - name: Content-Type
@@ -19389,13 +19397,13 @@ cookieJar:
   meta:
     id: jar_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496108720
-    modified: 1777462738026
+    modified: 1779106099360
 environments:
   name: Base Environment
   meta:
     id: env_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496106422
-    modified: 1777462738027
+    modified: 1779106099365
     isPrivate: false
   data:
     render_admin_domain: https://renderadmin-dev.vivid3d.tech
