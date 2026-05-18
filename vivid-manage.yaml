@@ -919,6 +919,10 @@
 							"response": []
 						}
 					]
+				},
+				{
+					"name": "reset password",
+					"item": []
 				}
 			]
 		},
@@ -1842,7 +1846,7 @@
 							"response": []
 						},
 						{
-							"name": "checklist-templates",
+							"name": "update checklist-templates",
 							"event": [
 								{
 									"listen": "prerequest",
