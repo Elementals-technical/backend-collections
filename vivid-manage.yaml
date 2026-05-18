@@ -290,82 +290,6 @@
 							"response": []
 						},
 						{
-							"name": "reset password",
-							"event": [
-								{
-									"listen": "prerequest",
-									"script": {
-										"exec": [
-											"const loginEndpoint = pm.variables.get(\"domain\") + \"/users/login\";",
-											"const email = pm.variables.get(\"email\");",
-											"const password = pm.variables.get(\"password\");",
-											"",
-											"const loginRequest = {",
-											"  method: \"POST\",",
-											"  url: loginEndpoint,",
-											"  header: {",
-											"    \"Content-Type\": \"application/json\"",
-											"  },",
-											"  body: {",
-											"    mode: \"raw\",",
-											"    raw: JSON.stringify({",
-											"      email: email,",
-											"      password: password",
-											"    })",
-											"  }",
-											"};",
-											"",
-											"pm.sendRequest(loginRequest, function (err, response) {",
-											"  if (err) {",
-											"    console.log(\"Error while logging in:\", err);",
-											"  } else {",
-											"    const responseBody = response.json();",
-											"    const token = responseBody.authData.token;",
-											"",
-											"    // Save the token to an environment variable",
-											"    pm.environment.set(\"token\", token);",
-											"",
-											"    console.log(\"Login successful. Token:\", token);",
-											"  }",
-											"});"
-										],
-										"type": "text/javascript",
-										"packages": {}
-									}
-								}
-							],
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{token}}",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"organization\": \"66697bd6d99a022be56a6728\",\n    \"email\": \"feryleeton@gmail.com\",\n    \"firstName\": \"PLO\",\n    \"lastName\": \"TEST_AUTOCREATE\",\n    \"role\": \"Client\"\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{domain}}/users/autoCreate",
-									"host": [
-										"{{domain}}"
-									],
-									"path": [
-										"users",
-										"autoCreate"
-									]
-								}
-							},
-							"response": []
-						},
-						{
 							"name": "users retrieve",
 							"event": [
 								{
@@ -922,7 +846,62 @@
 				},
 				{
 					"name": "reset password",
-					"item": []
+					"item": [
+						{
+							"name": "reset password [send-reset-code]",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"contact.loboda.pavel@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{domain}}/users/send-reset-code",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"users",
+										"send-reset-code"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "reset password [confirm-reset-code]",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"contact.loboda.pavel@gmail.com\",\n  \"code\": \"849833\",\n  \"newPassword\": \"mynewpassword1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{domain}}/users/confirm-reset-code",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"users",
+										"confirm-reset-code"
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		},
