@@ -907,7 +907,7 @@
 					"name": "user - organization settings",
 					"item": [
 						{
-							"name": "retrieve user organization settings",
+							"name": "retrieve user - organization settings",
 							"event": [
 								{
 									"listen": "prerequest",
@@ -977,7 +977,7 @@
 							"response": []
 						},
 						{
-							"name": "update checklist-templates Copy",
+							"name": "update user - organization settings",
 							"event": [
 								{
 									"listen": "prerequest",
