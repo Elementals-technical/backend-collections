@@ -854,7 +854,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"email\": \"contact.loboda.pavel@gmail.com\"\n}",
+									"raw": "{\n    \"email\": \"plo@elementalsweb.com\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -881,7 +881,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"email\": \"contact.loboda.pavel@gmail.com\",\n  \"code\": \"849833\",\n  \"newPassword\": \"mynewpassword1\"\n}",
+									"raw": "{\n  \"email\": \"plo@elementalsweb.com\",\n  \"code\": \"959578\",\n  \"newPassword\": \"gemYcxv2fS9EyQjX5NKuza\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -896,6 +896,160 @@
 									"path": [
 										"users",
 										"confirm-reset-code"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "user - organization settings",
+					"item": [
+						{
+							"name": "retrieve user organization settings",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"const loginEndpoint = pm.variables.get(\"domain\") + \"/users/login\";",
+											"const email = pm.variables.get(\"email\");",
+											"const password = pm.variables.get(\"password\");",
+											"",
+											"const loginRequest = {",
+											"  method: \"POST\",",
+											"  url: loginEndpoint,",
+											"  header: {",
+											"    \"Content-Type\": \"application/json\"",
+											"  },",
+											"  body: {",
+											"    mode: \"raw\",",
+											"    raw: JSON.stringify({",
+											"      email: email,",
+											"      password: password",
+											"    })",
+											"  }",
+											"};",
+											"",
+											"pm.sendRequest(loginRequest, function (err, response) {",
+											"  if (err) {",
+											"    console.log(\"Error while logging in:\", err);",
+											"  } else {",
+											"    const responseBody = response.json();",
+											"    const token = responseBody.authData.token;",
+											"",
+											"    // Save the token to an environment variable",
+											"    pm.environment.set(\"token\", token);",
+											"",
+											"    console.log(\"Login successful. Token:\", token);",
+											"  }",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{domain}}/users/settings/organizations/66697bd6d99a022be56a6728",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"users",
+										"settings",
+										"organizations",
+										"66697bd6d99a022be56a6728"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update checklist-templates Copy",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"const loginEndpoint = pm.variables.get(\"domain\") + \"/users/login\";",
+											"const email = pm.variables.get(\"email\");",
+											"const password = pm.variables.get(\"password\");",
+											"",
+											"const loginRequest = {",
+											"  method: \"POST\",",
+											"  url: loginEndpoint,",
+											"  header: {",
+											"    \"Content-Type\": \"application/json\"",
+											"  },",
+											"  body: {",
+											"    mode: \"raw\",",
+											"    raw: JSON.stringify({",
+											"      email: email,",
+											"      password: password",
+											"    })",
+											"  }",
+											"};",
+											"",
+											"pm.sendRequest(loginRequest, function (err, response) {",
+											"  if (err) {",
+											"    console.log(\"Error while logging in:\", err);",
+											"  } else {",
+											"    const responseBody = response.json();",
+											"    const token = responseBody.authData.token;",
+											"",
+											"    // Save the token to an environment variable",
+											"    pm.environment.set(\"token\", token);",
+											"",
+											"    console.log(\"Login successful. Token:\", token);",
+											"  }",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"allOrganizationNotifications\": true,\n  \"allProjectNotifications\": true,\n  \"allAssetNotifications\": true,\n  \"pushNotifications\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{domain}}/users/settings/organizations/66697bd6d99a022be56a6728",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"users",
+										"settings",
+										"organizations",
+										"66697bd6d99a022be56a6728"
 									]
 								}
 							},
