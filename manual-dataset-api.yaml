@@ -20,7 +20,7 @@ collection:
         meta:
           id: req_6856634be558425984fdfbefbe9642d0
           created: 1774619383763
-          modified: 1779361555793
+          modified: 1779364258905
           isPrivate: false
           description: ""
           sortKey: -1774619383763
@@ -30,7 +30,7 @@ collection:
           text: |-
             {
             	"organizationId": 1,
-            	"name": "PLO_DATASET"
+            	"name": "TEST_DATASET"
             }
         headers:
           - name: Content-Type
@@ -116,6 +116,37 @@ collection:
             send: true
             store: true
           rebuildPath: true
+      - url: "{{ _['manual-dataset-api-domain'] }}/datasets/4"
+        name: update
+        meta:
+          id: req_18fe524847254f6594a51ed1da422f27
+          created: 1779375381561
+          modified: 1779375397904
+          isPrivate: false
+          description: ""
+          sortKey: -1774533117329.5
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"name": "TEST_DATASET NAME UPD"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
   - name: images
     meta:
       id: fld_7bf1f061728b467bb5a8c47e7020e17f
@@ -129,7 +160,7 @@ collection:
         meta:
           id: req_27255577ab924e71aafea7dfbaa475a3
           created: 1774619667590
-          modified: 1779361570693
+          modified: 1779364272969
           isPrivate: false
           description: ""
           sortKey: -1774619675398
@@ -144,7 +175,7 @@ collection:
               fileName: /home/pavlo/Desktop/manual-datasets/test_bulk/bulk_upload.zip
               type: file
             - name: datasetId
-              value: "4"
+              value: "1"
               description: ""
               disabled: false
         headers:
@@ -167,7 +198,7 @@ collection:
         meta:
           id: req_e4ac3db07bd046d697789303a7849783
           created: 1774624722768
-          modified: 1779361592415
+          modified: 1779374807276
           isPrivate: false
           description: ""
           sortKey: -1774619529580.5
@@ -725,12 +756,12 @@ collection:
       sortKey: -1778583938931
       description: ""
     children:
-      - url: "{{ _['manual-dataset-api-domain'] }}/images/94/imageMarkers/sync"
+      - url: "{{ _['manual-dataset-api-domain'] }}/images/8/imageMarkers/sync"
         name: sync
         meta:
           id: req_9564a8c479b34758abd15b0570153d45
           created: 1778583943125
-          modified: 1778584347013
+          modified: 1779375298784
           isPrivate: false
           description: ""
           sortKey: -1778583943125
@@ -740,25 +771,23 @@ collection:
           text: |-
             {
               "markers": [
-                {
+            		{
                   "id": 38, 
                   "productId": 5,
                   "x": 15.5,
-                  "y": 25.5,
-                  "color": "#FF0000"
+                  "y": 25.5
                 },
                 {
                   "id": 39,
                   "productId": 8,
                   "x": 50.0,
-                  "y": 50.0,
-                  "color": "#00FF00"
+                  "y": 50.0
                 },
                 {
-                  "productId": 12,
-                  "x": 80.0,
-                  "y": 80.0,
-                  "color": "#0000FF"
+                  "id": 1,
+            			"productId": 12,
+                  "x": 0.81,
+                  "y": 0.66
                 }
               ]
             }
@@ -790,17 +819,17 @@ collection:
         meta:
           id: req_f78c7ebf59804edaa83568d47ddf47bf
           created: 1779356541066
-          modified: 1779361605563
+          modified: 1779366419348
           isPrivate: false
           description: ""
           sortKey: -1779356545830
         method: GET
         parameters:
           - name: imageId
-            value: "8"
+            value: "1"
             description: ""
             disabled: false
-          - name: ""
+          - name: page
             value: "1"
             description: ""
             disabled: false
@@ -934,7 +963,7 @@ environments:
   meta:
     id: env_ccf3a3c46a68c0d66b54020298f90bceb83a40b1
     created: 1774619363570
-    modified: 1774619512132
+    modified: 1779374773895
     isPrivate: false
   data:
-    manual-dataset-api-domain: http://127.0.0.1:3000
+    manual-dataset-api-domain: http://127.0.0.1:3000/manual-dataset
