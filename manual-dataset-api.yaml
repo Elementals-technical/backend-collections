@@ -93,12 +93,12 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: "{{ _['manual-dataset-api-domain'] }}/datasets/3"
+      - url: "{{ _['manual-dataset-api-domain'] }}/datasets/4"
         name: delete
         meta:
           id: req_3d3ce49c7a23466681561e6ee4985c33
           created: 1774619603273
-          modified: 1779361387182
+          modified: 1779457878120
           isPrivate: false
           description: ""
           sortKey: -1774360584362.5
@@ -198,20 +198,20 @@ collection:
         meta:
           id: req_e4ac3db07bd046d697789303a7849783
           created: 1774624722768
-          modified: 1779443521457
+          modified: 1779458103012
           isPrivate: false
           description: ""
           sortKey: -1774619529580.5
         method: GET
         parameters:
           - name: datasetId
-            value: "4"
+            value: "5"
             description: ""
             disabled: false
           - name: tagId
             value: "1"
             description: ""
-            disabled: false
+            disabled: true
         headers:
           - name: User-Agent
             value: insomnia/12.4.0
@@ -230,7 +230,7 @@ collection:
         meta:
           id: req_246b6b7ebc2344b78a6f831e2f728386
           created: 1774860575285
-          modified: 1779360123874
+          modified: 1779458085428
           isPrivate: false
           description: ""
           sortKey: -1774619602489.25
@@ -238,16 +238,40 @@ collection:
         body:
           mimeType: multipart/form-data
           params:
-            - name: image
+            - name: datasetId
+              value: "5"
+              description: ""
+              disabled: false
+            - name: files
               value: ""
               description: ""
               disabled: false
-              fileName: /home/pavlo/Downloads/CS-0034988 and CS-0034987_4005.png
+              fileName: /home/pavlo/Desktop/manual-datasets/test_bulk/imageName1.png
               type: file
-            - name: datasetId
-              value: "3"
+            - name: files
+              value: ""
               description: ""
               disabled: false
+              fileName: /home/pavlo/Desktop/manual-datasets/test_bulk/imageName1.detection.txt
+              type: file
+            - name: files
+              value: ""
+              description: ""
+              disabled: false
+              fileName: /home/pavlo/Desktop/manual-datasets/test_bulk/imageName1.report.pdf
+              type: file
+            - name: files
+              value: ""
+              description: ""
+              disabled: false
+              fileName: /home/pavlo/Desktop/manual-datasets/test_bulk/imageName2.report.pdf
+              type: file
+            - name: files
+              value: ""
+              description: ""
+              disabled: false
+              fileName: /home/pavlo/Desktop/manual-datasets/test_bulk/imageName2.segmentation.txt
+              type: file
         headers:
           - name: Content-Type
             value: multipart/form-data
