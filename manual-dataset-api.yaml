@@ -198,7 +198,7 @@ collection:
         meta:
           id: req_e4ac3db07bd046d697789303a7849783
           created: 1774624722768
-          modified: 1779374807276
+          modified: 1779443521457
           isPrivate: false
           description: ""
           sortKey: -1774619529580.5
@@ -211,7 +211,7 @@ collection:
           - name: tagId
             value: "1"
             description: ""
-            disabled: true
+            disabled: false
         headers:
           - name: User-Agent
             value: insomnia/12.4.0
@@ -322,7 +322,7 @@ collection:
         meta:
           id: req_2afd954db0b54b55b676688d56e38097
           created: 1778573499951
-          modified: 1778573553943
+          modified: 1779442304881
           isPrivate: false
           description: ""
           sortKey: -1778573499951
@@ -331,7 +331,8 @@ collection:
           mimeType: application/json
           text: |-
             {
-            	"name": "Test Category PLO"
+            	"name": "Test Category PLO",
+            	"organizationId": 2
             }
         headers:
           - name: Content-Type
@@ -384,17 +385,19 @@ collection:
         meta:
           id: req_2b5a9376c1e04bacb0ce6d4a4cd9e29a
           created: 1778573585318
-          modified: 1778573588158
+          modified: 1779442785292
           isPrivate: false
           description: ""
           sortKey: -1777159022712.75
         method: GET
         body:
           mimeType: application/json
-          text: |-
-            {
-            	"name": "Test Category PLO"
-            }
+          text: ""
+        parameters:
+          - name: organizationId
+            value: "2"
+            description: ""
+            disabled: false
         headers:
           - name: Content-Type
             value: application/json
@@ -477,7 +480,7 @@ collection:
         meta:
           id: req_d523e476a0454d5ea79592d8e89e38e0
           created: 1778573667509
-          modified: 1778573705552
+          modified: 1779442958230
           isPrivate: false
           description: ""
           sortKey: -1778573670553
@@ -689,7 +692,7 @@ collection:
         meta:
           id: req_61f9561714f649399716a12b4720ba78
           created: 1778574088847
-          modified: 1778574175041
+          modified: 1779443487379
           isPrivate: false
           description: ""
           sortKey: -1778574088847
@@ -698,8 +701,8 @@ collection:
           mimeType: application/json
           text: |-
             {
-            	"imageId": 94,
-            	"tagIds": [1, 2]
+            	"imageId": 8,
+            	"tagIds": [1]
             }
         headers:
           - name: Content-Type
