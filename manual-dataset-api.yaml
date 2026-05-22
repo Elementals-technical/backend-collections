@@ -346,7 +346,7 @@ collection:
         meta:
           id: req_2afd954db0b54b55b676688d56e38097
           created: 1778573499951
-          modified: 1779442304881
+          modified: 1779460400318
           isPrivate: false
           description: ""
           sortKey: -1778573499951
@@ -355,8 +355,8 @@ collection:
           mimeType: application/json
           text: |-
             {
-            	"name": "Test Category PLO",
-            	"organizationId": 2
+            	"name": "Test Category 2 PLO",
+            	"datasetId": 1
             }
         headers:
           - name: Content-Type
@@ -409,7 +409,7 @@ collection:
         meta:
           id: req_2b5a9376c1e04bacb0ce6d4a4cd9e29a
           created: 1778573585318
-          modified: 1779442785292
+          modified: 1779460417454
           isPrivate: false
           description: ""
           sortKey: -1777159022712.75
@@ -418,8 +418,8 @@ collection:
           mimeType: application/json
           text: ""
         parameters:
-          - name: organizationId
-            value: "2"
+          - name: datasetId
+            value: "1"
             description: ""
             disabled: false
         headers:
@@ -504,7 +504,7 @@ collection:
         meta:
           id: req_d523e476a0454d5ea79592d8e89e38e0
           created: 1778573667509
-          modified: 1779442958230
+          modified: 1779460506046
           isPrivate: false
           description: ""
           sortKey: -1778573670553
@@ -513,8 +513,8 @@ collection:
           mimeType: application/json
           text: |-
             {
-            	"name": "Test Teg PLO 2",
-            	"categoryId": 1
+            	"name": "Test Teg PLO 4",
+            	"categoryId": 2
             }
         headers:
           - name: Content-Type
@@ -536,11 +536,16 @@ collection:
         meta:
           id: req_3abe9752ebb844be92fb1d9897764d02
           created: 1778573718161
-          modified: 1778573726238
+          modified: 1779460521663
           isPrivate: false
           description: ""
           sortKey: -1778573585252
         method: GET
+        parameters:
+          - name: categoryId
+            value: "2"
+            description: ""
+            disabled: false
         headers:
           - name: User-Agent
             value: insomnia/12.5.0
