@@ -11493,7 +11493,8 @@
 									"});"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -11507,7 +11508,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{domain}}/notifications",
+							"raw": "{{domain}}/notifications?limit=1000&sortByCreatedAt=desc&projectId=667bfc87bd45ffa27ccd2c05",
 							"host": [
 								"{{domain}}"
 							],
@@ -11522,8 +11523,36 @@
 								},
 								{
 									"key": "limit",
-									"value": "1000",
+									"value": "1000"
+								},
+								{
+									"key": "type",
+									"value": "Project",
 									"disabled": true
+								},
+								{
+									"key": "type",
+									"value": "Asset",
+									"disabled": true
+								},
+								{
+									"key": "search",
+									"value": "001",
+									"disabled": true
+								},
+								{
+									"key": "sortByCreatedAt",
+									"value": "desc"
+								},
+								{
+									"key": "readStatus",
+									"value": "read",
+									"description": "read / unread",
+									"disabled": true
+								},
+								{
+									"key": "projectId",
+									"value": "667bfc87bd45ffa27ccd2c05"
 								}
 							]
 						}
