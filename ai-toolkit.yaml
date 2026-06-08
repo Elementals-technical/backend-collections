@@ -310,7 +310,7 @@ collection:
             meta:
               id: req_2a9c6abd1a5c418eb166623e5bc8dec3
               created: 1780914907685
-              modified: 1780921358114
+              modified: 1780921602248
               isPrivate: false
               description: ""
               sortKey: -1764569712764.5
@@ -323,10 +323,10 @@ collection:
                   "organizationId": "673db746bc626246cdc59022", 
                   "container": {
                     "type": "new",
-                    "name": "Concrete Texture Container 5"
+                    "name": "Concrete Texture Container 6"
                   },
                   "parameters": {
-                    "prompt": "old cracked concrete, rough gray surface, small rocks",
+                    "prompt": "old cracked concrete, rough gray surface, big red rocks",
                     "width": 1024,
                     "height": 1024,
                     "count": 1,

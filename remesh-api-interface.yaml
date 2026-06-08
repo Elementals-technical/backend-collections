@@ -63,6 +63,12 @@ collection:
             send: true
             store: true
           rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_48950132e054d58c52dfbcefe5ac2b894e682239
+    created: 1764673290943
+    modified: 1764673290943
 environments:
   name: Base Environment
   meta:
