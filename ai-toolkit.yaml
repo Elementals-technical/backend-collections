@@ -28,7 +28,7 @@ collection:
             meta:
               id: req_60fa8337a2d745b296a31f67bf193a3d
               created: 1764569715571
-              modified: 1764569715571
+              modified: 1764673360518
               isPrivate: false
               description: ""
               sortKey: -1764569712772
@@ -305,6 +305,92 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
+          - url: "{{_['ai-toolkit-domain']}}/jobs"
+            name: create [ GENERATE TEXTURE ]
+            meta:
+              id: req_2a9c6abd1a5c418eb166623e5bc8dec3
+              created: 1780914907685
+              modified: 1780918488475
+              isPrivate: false
+              description: ""
+              sortKey: -1764569712764.5
+            method: POST
+            body:
+              mimeType: application/json
+              text: >-
+                {
+                  "type": "generate_texture",
+                  "organizationId": "65f1a2b3c4d5e6f7a8b9c0d1", 
+                  "container": {
+                    "type": "new",
+                    "name": "Concrete Texture Container"
+                  },
+                  "parameters": {
+                    "prompt": "old cracked concrete, rough gray surface, small chips",
+                    "width": 1024,
+                    "height": 1024,
+                    "count": 1,
+                    "isNonTiling": false,
+                    "seed": 42
+                  }
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{_['ai-toolkit-domain']}}/jobs"
+            name: create [ UPSCALE TEXTURE ]
+            meta:
+              id: req_77c40a3ba4824895a3ff606cae619e67
+              created: 1780915060569
+              modified: 1780915242771
+              isPrivate: false
+              description: ""
+              sortKey: -1764569712764.25
+            method: POST
+            body:
+              mimeType: multipart/form-data
+              params:
+                - name: type
+                  value: upscale_texture
+                  description: ""
+                  disabled: false
+                - name: file
+                  value: ""
+                  description: ""
+                  disabled: false
+                  fileName: /home/pavlo/Downloads/texture_test.png
+                  type: file
+                - name: contai
+                  value: '{"type": "new", "name": "Upscaled Concrete Container"}'
+                  description: ""
+                  disabled: false
+                - name: parameters
+                  value: '{"scale": 4}'
+                  description: ""
+                  disabled: false
+                - name: organizationId
+                  value: 66698c6de1e07718b4904775
+                  description: ""
+                  disabled: false
+            headers:
+              - name: Content-Type
+                value: multipart/form-data
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
       - name: files
         meta:
           id: fld_1f06a40172004d42a2469c21fb5e1188
@@ -510,8 +596,10 @@ environments:
   meta:
     id: env_014cd0509dd47f7307b3fee7fde8a3fa500d07e2
     created: 1764569715698
-    modified: 1764575557171
+    modified: 1780915008181
     isPrivate: false
+  data:
+    ai-toolkit-domain: http://ai.vivid3d.tech
   subEnvironments:
     - name: local
       meta:
