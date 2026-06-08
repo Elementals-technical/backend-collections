@@ -97,7 +97,7 @@ collection:
             meta:
               id: req_61d06b5461494061aed66c2ac92a4920
               created: 1764569715593
-              modified: 1764575580051
+              modified: 1780919380460
               isPrivate: false
               description: ""
               sortKey: -1764569712768
@@ -105,10 +105,10 @@ collection:
             parameters:
               - name: containerId
                 value: "1"
-                disabled: false
+                disabled: true
               - name: serialize
                 value: "true"
-                disabled: false
+                disabled: true
             settings:
               renderRequestBody: true
               encodeUrl: true
@@ -310,7 +310,7 @@ collection:
             meta:
               id: req_2a9c6abd1a5c418eb166623e5bc8dec3
               created: 1780914907685
-              modified: 1780918488475
+              modified: 1780921358114
               isPrivate: false
               description: ""
               sortKey: -1764569712764.5
@@ -320,13 +320,13 @@ collection:
               text: >-
                 {
                   "type": "generate_texture",
-                  "organizationId": "65f1a2b3c4d5e6f7a8b9c0d1", 
+                  "organizationId": "673db746bc626246cdc59022", 
                   "container": {
                     "type": "new",
-                    "name": "Concrete Texture Container"
+                    "name": "Concrete Texture Container 5"
                   },
                   "parameters": {
-                    "prompt": "old cracked concrete, rough gray surface, small chips",
+                    "prompt": "old cracked concrete, rough gray surface, small rocks",
                     "width": 1024,
                     "height": 1024,
                     "count": 1,
@@ -350,7 +350,7 @@ collection:
             meta:
               id: req_77c40a3ba4824895a3ff606cae619e67
               created: 1780915060569
-              modified: 1780915242771
+              modified: 1780921114780
               isPrivate: false
               description: ""
               sortKey: -1764569712764.25
@@ -368,8 +368,8 @@ collection:
                   disabled: false
                   fileName: /home/pavlo/Downloads/texture_test.png
                   type: file
-                - name: contai
-                  value: '{"type": "new", "name": "Upscaled Concrete Container"}'
+                - name: container
+                  value: '{"type": "new", "name": "Upscaled Concrete Container 2"}'
                   description: ""
                   disabled: false
                 - name: parameters
@@ -377,7 +377,7 @@ collection:
                   description: ""
                   disabled: false
                 - name: organizationId
-                  value: 66698c6de1e07718b4904775
+                  value: 673db746bc626246cdc59022
                   description: ""
                   disabled: false
             headers:
@@ -596,10 +596,10 @@ environments:
   meta:
     id: env_014cd0509dd47f7307b3fee7fde8a3fa500d07e2
     created: 1764569715698
-    modified: 1780915008181
+    modified: 1780919348281
     isPrivate: false
   data:
-    ai-toolkit-domain: http://ai.vivid3d.tech
+    ai-toolkit-domain: https://ai.vivid3d.tech
   subEnvironments:
     - name: local
       meta:
