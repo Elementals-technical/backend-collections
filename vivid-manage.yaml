@@ -1904,6 +1904,74 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "migrateOrganizationSettings",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"const loginEndpoint = pm.variables.get(\"domain\") + \"/users/login\";",
+											"const email = pm.variables.get(\"email\");",
+											"const password = pm.variables.get(\"password\");",
+											"",
+											"const loginRequest = {",
+											"  method: \"POST\",",
+											"  url: loginEndpoint,",
+											"  header: {",
+											"    \"Content-Type\": \"application/json\"",
+											"  },",
+											"  body: {",
+											"    mode: \"raw\",",
+											"    raw: JSON.stringify({",
+											"      email: email,",
+											"      password: password",
+											"    })",
+											"  }",
+											"};",
+											"",
+											"pm.sendRequest(loginRequest, function (err, response) {",
+											"  if (err) {",
+											"    console.log(\"Error while logging in:\", err);",
+											"  } else {",
+											"    const responseBody = response.json();",
+											"    const token = responseBody.authData.token;",
+											"",
+											"    // Save the token to an environment variable",
+											"    pm.environment.set(\"token\", token);",
+											"",
+											"    console.log(\"Login successful. Token:\", token);",
+											"  }",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{domain}}/organizations/migrateOrganizationSettings",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"organizations",
+										"migrateOrganizationSettings"
+									]
+								}
+							},
+							"response": []
 						}
 					]
 				},
@@ -3043,6 +3111,89 @@
 											"key": "dueDate",
 											"value": "Overdue",
 											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "search",
+					"item": [
+						{
+							"name": "global search",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"const loginEndpoint = pm.variables.get(\"domain\") + \"/users/login\";",
+											"const email = pm.variables.get(\"email\");",
+											"const password = pm.variables.get(\"password\");",
+											"",
+											"const loginRequest = {",
+											"  method: \"POST\",",
+											"  url: loginEndpoint,",
+											"  header: {",
+											"    \"Content-Type\": \"application/json\"",
+											"  },",
+											"  body: {",
+											"    mode: \"raw\",",
+											"    raw: JSON.stringify({",
+											"      email: email,",
+											"      password: password",
+											"    })",
+											"  }",
+											"};",
+											"",
+											"pm.sendRequest(loginRequest, function (err, response) {",
+											"  if (err) {",
+											"    console.log(\"Error while logging in:\", err);",
+											"  } else {",
+											"    const responseBody = response.json();",
+											"    const token = responseBody.authData.token;",
+											"",
+											"    // Save the token to an environment variable",
+											"    pm.environment.set(\"token\", token);",
+											"",
+											"    console.log(\"Login successful. Token:\", token);",
+											"  }",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{domain}}/stats/global-search?keyword=test&organization=673db746bc626246cdc59022",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"stats",
+										"global-search"
+									],
+									"query": [
+										{
+											"key": "keyword",
+											"value": "test"
+										},
+										{
+											"key": "organization",
+											"value": "673db746bc626246cdc59022"
 										}
 									]
 								}
