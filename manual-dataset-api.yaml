@@ -20,7 +20,7 @@ collection:
         meta:
           id: req_6856634be558425984fdfbefbe9642d0
           created: 1774619383763
-          modified: 1779364258905
+          modified: 1779460825369
           isPrivate: false
           description: ""
           sortKey: -1774619383763
@@ -30,7 +30,7 @@ collection:
           text: |-
             {
             	"organizationId": 1,
-            	"name": "TEST_DATASET"
+            	"name": "TEST_DATASET_1"
             }
         headers:
           - name: Content-Type
@@ -160,7 +160,7 @@ collection:
         meta:
           id: req_27255577ab924e71aafea7dfbaa475a3
           created: 1774619667590
-          modified: 1779364272969
+          modified: 1779797401780
           isPrivate: false
           description: ""
           sortKey: -1774619675398
@@ -198,18 +198,38 @@ collection:
         meta:
           id: req_e4ac3db07bd046d697789303a7849783
           created: 1774624722768
-          modified: 1779458103012
+          modified: 1781186842255
           isPrivate: false
           description: ""
           sortKey: -1774619529580.5
         method: GET
         parameters:
           - name: datasetId
-            value: "5"
+            value: "1"
             description: ""
             disabled: false
           - name: tagId
-            value: "1"
+            value: "4"
+            description: ""
+            disabled: false
+          - name: tagId
+            value: "22"
+            description: ""
+            disabled: true
+          - name: productId
+            value: "8"
+            description: ""
+            disabled: true
+          - name: includeCategories
+            value: "true"
+            description: ""
+            disabled: true
+          - name: includeTags
+            value: "true"
+            description: ""
+            disabled: false
+          - name: includeCustomFiles
+            value: "true"
             description: ""
             disabled: true
         headers:
@@ -230,7 +250,7 @@ collection:
         meta:
           id: req_246b6b7ebc2344b78a6f831e2f728386
           created: 1774860575285
-          modified: 1779458085428
+          modified: 1779797888418
           isPrivate: false
           description: ""
           sortKey: -1774619602489.25
@@ -287,16 +307,33 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: "{{ _['manual-dataset-api-domain'] }}/images/3"
+      - url: "{{ _['manual-dataset-api-domain'] }}/images/1"
         name: retrieve
         meta:
           id: req_c011f08af33a485ea7e643dc1b346214
           created: 1774862622372
-          modified: 1779357808047
+          modified: 1781187229588
           isPrivate: false
           description: ""
           sortKey: -1774619456671.75
         method: GET
+        parameters:
+          - name: includeCategories
+            value: "true"
+            description: ""
+            disabled: false
+          - name: includeCustomFiles
+            value: "true"
+            description: ""
+            disabled: false
+          - name: includeTags
+            value: "true"
+            description: ""
+            disabled: false
+          - name: includeMarkers
+            value: "true"
+            description: ""
+            disabled: false
         headers:
           - name: User-Agent
             value: insomnia/12.4.0
@@ -346,7 +383,7 @@ collection:
         meta:
           id: req_2afd954db0b54b55b676688d56e38097
           created: 1778573499951
-          modified: 1779460400318
+          modified: 1779460870297
           isPrivate: false
           description: ""
           sortKey: -1778573499951
@@ -355,7 +392,7 @@ collection:
           mimeType: application/json
           text: |-
             {
-            	"name": "Test Category 2 PLO",
+            	"name": "Test Category 2",
             	"datasetId": 1
             }
         headers:
@@ -504,7 +541,7 @@ collection:
         meta:
           id: req_d523e476a0454d5ea79592d8e89e38e0
           created: 1778573667509
-          modified: 1779460506046
+          modified: 1779460910341
           isPrivate: false
           description: ""
           sortKey: -1778573670553
@@ -513,7 +550,7 @@ collection:
           mimeType: application/json
           text: |-
             {
-            	"name": "Test Teg PLO 4",
+            	"name": "Test Tag 3",
             	"categoryId": 2
             }
         headers:
@@ -649,7 +686,7 @@ collection:
         meta:
           id: req_3383269af6154fa0809d11f086a58a20
           created: 1778573940051
-          modified: 1778574050281
+          modified: 1781185885366
           isPrivate: false
           description: ""
           sortKey: -1778573940051
@@ -658,7 +695,7 @@ collection:
           mimeType: application/json
           text: |-
             {
-            	"imageId": 94,
+            	"imageId": 1,
             	"categoryIds": [1]
             }
         headers:
@@ -721,7 +758,7 @@ collection:
         meta:
           id: req_61f9561714f649399716a12b4720ba78
           created: 1778574088847
-          modified: 1779443487379
+          modified: 1781186036342
           isPrivate: false
           description: ""
           sortKey: -1778574088847
@@ -730,7 +767,7 @@ collection:
           mimeType: application/json
           text: |-
             {
-            	"imageId": 8,
+            	"imageId": 1,
             	"tagIds": [1]
             }
         headers:
@@ -788,12 +825,12 @@ collection:
       sortKey: -1778583938931
       description: ""
     children:
-      - url: "{{ _['manual-dataset-api-domain'] }}/images/8/imageMarkers/sync"
+      - url: "{{ _['manual-dataset-api-domain'] }}/images/1/imageMarkers/sync"
         name: sync
         meta:
           id: req_9564a8c479b34758abd15b0570153d45
           created: 1778583943125
-          modified: 1779375298784
+          modified: 1780993052680
           isPrivate: false
           description: ""
           sortKey: -1778583943125
@@ -803,24 +840,7 @@ collection:
           text: |-
             {
               "markers": [
-            		{
-                  "id": 38, 
-                  "productId": 5,
-                  "x": 15.5,
-                  "y": 25.5
-                },
-                {
-                  "id": 39,
-                  "productId": 8,
-                  "x": 50.0,
-                  "y": 50.0
-                },
-                {
-                  "id": 1,
-            			"productId": 12,
-                  "x": 0.81,
-                  "y": 0.66
-                }
+            		
               ]
             }
         headers:
@@ -995,7 +1015,7 @@ environments:
   meta:
     id: env_ccf3a3c46a68c0d66b54020298f90bceb83a40b1
     created: 1774619363570
-    modified: 1779374773895
+    modified: 1781185912476
     isPrivate: false
   data:
     manual-dataset-api-domain: http://127.0.0.1:3000/manual-dataset
