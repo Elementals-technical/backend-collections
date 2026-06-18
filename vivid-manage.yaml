@@ -489,7 +489,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"password\": \"iiWToKYV5S2a5AwW\"\n}",
+									"raw": "{\n    \"password\": \"YuvWVcT8HNJ9hys0\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -497,13 +497,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{domain}}/users/69c424280b655759ce2b7620/password",
+									"raw": "{{domain}}/users/67cb0c01142c4cb9e6b8655a/password",
 									"host": [
 										"{{domain}}"
 									],
 									"path": [
 										"users",
-										"69c424280b655759ce2b7620",
+										"67cb0c01142c4cb9e6b8655a",
 										"password"
 									]
 								}
@@ -3201,6 +3201,90 @@
 							"response": []
 						}
 					]
+				},
+				{
+					"name": "user-dashboard",
+					"item": [
+						{
+							"name": "dashboard",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"const loginEndpoint = pm.variables.get(\"domain\") + \"/users/login\";",
+											"const email = pm.variables.get(\"email\");",
+											"const password = pm.variables.get(\"password\");",
+											"",
+											"const loginRequest = {",
+											"  method: \"POST\",",
+											"  url: loginEndpoint,",
+											"  header: {",
+											"    \"Content-Type\": \"application/json\"",
+											"  },",
+											"  body: {",
+											"    mode: \"raw\",",
+											"    raw: JSON.stringify({",
+											"      email: email,",
+											"      password: password",
+											"    })",
+											"  }",
+											"};",
+											"",
+											"pm.sendRequest(loginRequest, function (err, response) {",
+											"  if (err) {",
+											"    console.log(\"Error while logging in:\", err);",
+											"  } else {",
+											"    const responseBody = response.json();",
+											"    const token = responseBody.authData.token;",
+											"",
+											"    // Save the token to an environment variable",
+											"    pm.environment.set(\"token\", token);",
+											"",
+											"    console.log(\"Login successful. Token:\", token);",
+											"  }",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{domain}}/stats/user-dashboard/main?projectType=Asset&organization=66697bd6d99a022be56a6728",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"stats",
+										"user-dashboard",
+										"main"
+									],
+									"query": [
+										{
+											"key": "projectType",
+											"value": "Asset"
+										},
+										{
+											"key": "organization",
+											"value": "66697bd6d99a022be56a6728"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		},
@@ -4242,7 +4326,8 @@
 											"});"
 										],
 										"type": "text/javascript",
-										"packages": {}
+										"packages": {},
+										"requests": {}
 									}
 								}
 							],
@@ -4257,12 +4342,114 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"project\": \"667bfc87bd45ffa27ccd2c05\",\n    \"modelName\": \"Test Priority\",\n    \"priority\": \"Medium\",\n    \"tags\": [\n    ],\n    \"connectedVividProduct\": 1\n}",
+									"raw": "{\n    \"project\": \"667bfc87bd45ffa27ccd2c05\",\n    \"modelName\": \"Test Asset Cover 1\",\n    \"priority\": \"Medium\",\n    \"tags\": [\n    ],\n    \"connectedVividProduct\": [1]\n}",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
+								},
+								"url": {
+									"raw": "{{domain}}/assets",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"assets"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "newcreateaset",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"const loginEndpoint = pm.variables.get(\"domain\") + \"/users/login\";",
+											"const email = pm.variables.get(\"email\");",
+											"const password = pm.variables.get(\"password\");",
+											"",
+											"const loginRequest = {",
+											"  method: \"POST\",",
+											"  url: loginEndpoint,",
+											"  header: {",
+											"    \"Content-Type\": \"application/json\"",
+											"  },",
+											"  body: {",
+											"    mode: \"raw\",",
+											"    raw: JSON.stringify({",
+											"      email: email,",
+											"      password: password",
+											"    })",
+											"  }",
+											"};",
+											"",
+											"pm.sendRequest(loginRequest, function (err, response) {",
+											"  if (err) {",
+											"    console.log(\"Error while logging in:\", err);",
+											"  } else {",
+											"    const responseBody = response.json();",
+											"    const token = responseBody.authData.token;",
+											"",
+											"    // Save the token to an environment variable",
+											"    pm.environment.set(\"token\", token);",
+											"",
+											"    console.log(\"Login successful. Token:\", token);",
+											"  }",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "project",
+											"value": "667bfc87bd45ffa27ccd2c05",
+											"type": "text"
+										},
+										{
+											"key": "cover",
+											"type": "file",
+											"src": "/home/pavlo/Downloads/texture_test.png"
+										},
+										{
+											"key": "modelName",
+											"value": "Test Asset Cover 6",
+											"type": "text"
+										},
+										{
+											"key": "priority",
+											"value": "Medium",
+											"type": "text"
+										},
+										{
+											"key": "connectedVividProduct",
+											"value": "[1]",
+											"type": "text"
+										},
+										{
+											"key": "tags",
+											"value": "[]",
+											"type": "text"
+										}
+									]
 								},
 								"url": {
 									"raw": "{{domain}}/assets",
@@ -4317,7 +4504,8 @@
 											"});"
 										],
 										"type": "text/javascript",
-										"packages": {}
+										"packages": {},
+										"requests": {}
 									}
 								}
 							],
@@ -4340,14 +4528,14 @@
 									}
 								},
 								"url": {
-									"raw": "{{domain}}/assets/duplicate/6794d74b72bcdf1868529690",
+									"raw": "{{domain}}/assets/duplicate/6a2a87631d4de0a1a05b1024",
 									"host": [
 										"{{domain}}"
 									],
 									"path": [
 										"assets",
 										"duplicate",
-										"6794d74b72bcdf1868529690"
+										"6a2a87631d4de0a1a05b1024"
 									]
 								}
 							},
@@ -4416,7 +4604,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "{{domain}}/assets?limit=1&organization=66697bd6d99a022be56a6728&includeLastComments=true&lastCommentsLimit=3&includeCommentStats=true&page=3",
+									"raw": "{{domain}}/assets?organization=66697bd6d99a022be56a6728",
 									"host": [
 										"{{domain}}"
 									],
@@ -4546,7 +4734,8 @@
 										},
 										{
 											"key": "limit",
-											"value": "1"
+											"value": "1",
+											"disabled": true
 										},
 										{
 											"key": "library",
@@ -4559,19 +4748,28 @@
 										},
 										{
 											"key": "includeLastComments",
-											"value": "true"
+											"value": "true",
+											"disabled": true
 										},
 										{
 											"key": "lastCommentsLimit",
-											"value": "3"
+											"value": "3",
+											"disabled": true
 										},
 										{
 											"key": "includeCommentStats",
-											"value": "true"
+											"value": "true",
+											"disabled": true
 										},
 										{
 											"key": "page",
-											"value": "3"
+											"value": "3",
+											"disabled": true
+										},
+										{
+											"key": "reported",
+											"value": "false",
+											"disabled": true
 										}
 									]
 								}
@@ -4619,7 +4817,8 @@
 											"});"
 										],
 										"type": "text/javascript",
-										"packages": {}
+										"packages": {},
+										"requests": {}
 									}
 								}
 							],
@@ -4686,7 +4885,8 @@
 											"});"
 										],
 										"type": "text/javascript",
-										"packages": {}
+										"packages": {},
+										"requests": {}
 									}
 								}
 							],
@@ -4716,6 +4916,89 @@
 									"path": [
 										"assets",
 										"6827048791b4113c0cb3decb"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "newupdateasset",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"const loginEndpoint = pm.variables.get(\"domain\") + \"/users/login\";",
+											"const email = pm.variables.get(\"email\");",
+											"const password = pm.variables.get(\"password\");",
+											"",
+											"const loginRequest = {",
+											"  method: \"POST\",",
+											"  url: loginEndpoint,",
+											"  header: {",
+											"    \"Content-Type\": \"application/json\"",
+											"  },",
+											"  body: {",
+											"    mode: \"raw\",",
+											"    raw: JSON.stringify({",
+											"      email: email,",
+											"      password: password",
+											"    })",
+											"  }",
+											"};",
+											"",
+											"pm.sendRequest(loginRequest, function (err, response) {",
+											"  if (err) {",
+											"    console.log(\"Error while logging in:\", err);",
+											"  } else {",
+											"    const responseBody = response.json();",
+											"    const token = responseBody.authData.token;",
+											"",
+											"    // Save the token to an environment variable",
+											"    pm.environment.set(\"token\", token);",
+											"",
+											"    console.log(\"Login successful. Token:\", token);",
+											"  }",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "modelName",
+											"value": "Test Asset Cover upd",
+											"type": "text"
+										},
+										{
+											"key": "cover",
+											"type": "file",
+											"src": "/home/pavlo/Downloads/10.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{domain}}/assets/6a2a87631d4de0a1a05b1024",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"assets",
+										"6a2a87631d4de0a1a05b1024"
 									]
 								}
 							},
@@ -7211,7 +7494,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{domain}}/tasks?limit=10&deliveryWithinDays=3",
+									"raw": "{{domain}}/tasks?limit=10&projectType=Dev Project",
 									"host": [
 										"{{domain}}"
 									],
@@ -7290,7 +7573,13 @@
 										},
 										{
 											"key": "deliveryWithinDays",
-											"value": "3"
+											"value": "3",
+											"disabled": true
+										},
+										{
+											"key": "projectType",
+											"value": "Dev Project",
+											"description": "Dev Project | Asset"
 										}
 									]
 								}
