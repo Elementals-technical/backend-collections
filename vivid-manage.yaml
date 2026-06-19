@@ -4414,7 +4414,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{domain}}/projects/folders?parent=null",
+									"raw": "{{domain}}/projects/folders?parent=null&organization=66697bd6d99a022be56a6728",
 									"host": [
 										"{{domain}}"
 									],
@@ -4426,6 +4426,10 @@
 										{
 											"key": "parent",
 											"value": "null"
+										},
+										{
+											"key": "organization",
+											"value": "66697bd6d99a022be56a6728"
 										}
 									]
 								}
