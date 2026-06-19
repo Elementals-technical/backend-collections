@@ -3410,7 +3410,8 @@
 											"});"
 										],
 										"type": "text/javascript",
-										"packages": {}
+										"packages": {},
+										"requests": {}
 									}
 								}
 							],
@@ -3424,7 +3425,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{domain}}/projects?limit=all&projectType[]=Dev Project",
+									"raw": "{{domain}}/projects?limit=all&organization=66697bd6d99a022be56a6728&folder=null",
 									"host": [
 										"{{domain}}"
 									],
@@ -3453,12 +3454,21 @@
 										},
 										{
 											"key": "projectType[]",
-											"value": "Dev Project"
+											"value": "Dev Project",
+											"disabled": true
 										},
 										{
 											"key": "projectType[]",
 											"value": "Asset",
 											"disabled": true
+										},
+										{
+											"key": "organization",
+											"value": "66697bd6d99a022be56a6728"
+										},
+										{
+											"key": "folder",
+											"value": "null"
 										}
 									]
 								}
@@ -4270,6 +4280,153 @@
 									"path": [
 										"projects",
 										"publishExisting"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update existing",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"const loginEndpoint = pm.variables.get(\"domain\") + \"/users/login\";",
+											"const email = pm.variables.get(\"email\");",
+											"const password = pm.variables.get(\"password\");",
+											"",
+											"const loginRequest = {",
+											"  method: \"POST\",",
+											"  url: loginEndpoint,",
+											"  header: {",
+											"    \"Content-Type\": \"application/json\"",
+											"  },",
+											"  body: {",
+											"    mode: \"raw\",",
+											"    raw: JSON.stringify({",
+											"      email: email,",
+											"      password: password",
+											"    })",
+											"  }",
+											"};",
+											"",
+											"pm.sendRequest(loginRequest, function (err, response) {",
+											"  if (err) {",
+											"    console.log(\"Error while logging in:\", err);",
+											"  } else {",
+											"    const responseBody = response.json();",
+											"    const token = responseBody.authData.token;",
+											"",
+											"    // Save the token to an environment variable",
+											"    pm.environment.set(\"token\", token);",
+											"",
+											"    console.log(\"Login successful. Token:\", token);",
+											"  }",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{domain}}/projects/updateExisting",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"projects",
+										"updateExisting"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "project-folder",
+					"item": [
+						{
+							"name": "list project folders",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"const loginEndpoint = pm.variables.get(\"domain\") + \"/users/login\";",
+											"const email = pm.variables.get(\"email\");",
+											"const password = pm.variables.get(\"password\");",
+											"",
+											"const loginRequest = {",
+											"  method: \"POST\",",
+											"  url: loginEndpoint,",
+											"  header: {",
+											"    \"Content-Type\": \"application/json\"",
+											"  },",
+											"  body: {",
+											"    mode: \"raw\",",
+											"    raw: JSON.stringify({",
+											"      email: email,",
+											"      password: password",
+											"    })",
+											"  }",
+											"};",
+											"",
+											"pm.sendRequest(loginRequest, function (err, response) {",
+											"  if (err) {",
+											"    console.log(\"Error while logging in:\", err);",
+											"  } else {",
+											"    const responseBody = response.json();",
+											"    const token = responseBody.authData.token;",
+											"",
+											"    // Save the token to an environment variable",
+											"    pm.environment.set(\"token\", token);",
+											"",
+											"    console.log(\"Login successful. Token:\", token);",
+											"  }",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{domain}}/projects/folders?parent=null",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"projects",
+										"folders"
+									],
+									"query": [
+										{
+											"key": "parent",
+											"value": "null"
+										}
 									]
 								}
 							},
