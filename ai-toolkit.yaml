@@ -97,7 +97,7 @@ collection:
             meta:
               id: req_61d06b5461494061aed66c2ac92a4920
               created: 1764569715593
-              modified: 1780919380460
+              modified: 1780923681093
               isPrivate: false
               description: ""
               sortKey: -1764569712768
@@ -109,6 +109,14 @@ collection:
               - name: serialize
                 value: "true"
                 disabled: true
+              - name: type
+                value: generate_texture
+                description: ""
+                disabled: false
+              - name: type
+                value: upscale_texture
+                description: ""
+                disabled: false
             settings:
               renderRequestBody: true
               encodeUrl: true
@@ -117,12 +125,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{_['ai-toolkit-domain']}}/jobs/1"
+          - url: "{{_['ai-toolkit-domain']}}/jobs/316"
             name: retrieve
             meta:
               id: req_44d34a98dfa243928a150fb8edd9d8c6
               created: 1764569715676
-              modified: 1764569715676
+              modified: 1782915248970
               isPrivate: false
               description: ""
               sortKey: -1764569712767
@@ -197,7 +205,7 @@ collection:
             meta:
               id: req_a1397e3a86d942668e7bcae465b8a1c4
               created: 1764569715692
-              modified: 1764569715692
+              modified: 1782821518196
               isPrivate: false
               description: ""
               sortKey: -1764569712763
@@ -211,14 +219,14 @@ collection:
                   type: text
                 - name: files
                   disabled: false
-                  fileName: /home/pavlo/Downloads/14c3c96f80bebaa85b70c9ba76ac51d45af67b26d2ca5982ec641324027e1ea1.glb
+                  fileName: /home/pavlo/Downloads/jeep-2d-default_data.glb
                   type: file
                 - name: organizationId
-                  value: 66698c6de1e07718b4904775
+                  value: 66697bd6d99a022be56a6728
                   disabled: false
                   type: text
                 - name: container
-                  value: '{"type": "new","name":"TEST_CONTAINER"}'
+                  value: '{"type": "new","name":"TEST_CONTAINER_UPLOAD_001"}'
                   disabled: false
                   type: text
             headers:
@@ -310,7 +318,7 @@ collection:
             meta:
               id: req_2a9c6abd1a5c418eb166623e5bc8dec3
               created: 1780914907685
-              modified: 1780921602248
+              modified: 1782912476659
               isPrivate: false
               description: ""
               sortKey: -1764569712764.5
@@ -320,10 +328,12 @@ collection:
               text: >-
                 {
                   "type": "generate_texture",
-                  "organizationId": "673db746bc626246cdc59022", 
+                  "organizationId": "66697bd6d99a022be56a6728", 
+                	"jobCount": 3,
+                	"createSeparateContainers": false,
                   "container": {
                     "type": "new",
-                    "name": "Concrete Texture Container 6"
+                    "name": "Concrete Texture Container 026 3pc"
                   },
                   "parameters": {
                     "prompt": "old cracked concrete, rough gray surface, big red rocks",
@@ -334,6 +344,11 @@ collection:
                     "seed": 42
                   }
                 }
+            parameters:
+              - name: env
+                value: dev
+                description: ""
+                disabled: false
             headers:
               - name: Content-Type
                 value: application/json
@@ -350,7 +365,7 @@ collection:
             meta:
               id: req_77c40a3ba4824895a3ff606cae619e67
               created: 1780915060569
-              modified: 1780921114780
+              modified: 1780925118921
               isPrivate: false
               description: ""
               sortKey: -1764569712764.25
@@ -369,7 +384,7 @@ collection:
                   fileName: /home/pavlo/Downloads/texture_test.png
                   type: file
                 - name: container
-                  value: '{"type": "new", "name": "Upscaled Concrete Container 2"}'
+                  value: '{"type": "new", "name": "Upscaled Concrete Container 3"}'
                   description: ""
                   disabled: false
                 - name: parameters
@@ -596,7 +611,7 @@ environments:
   meta:
     id: env_014cd0509dd47f7307b3fee7fde8a3fa500d07e2
     created: 1764569715698
-    modified: 1780919348281
+    modified: 1782915384360
     isPrivate: false
   data:
     ai-toolkit-domain: https://ai.vivid3d.tech
