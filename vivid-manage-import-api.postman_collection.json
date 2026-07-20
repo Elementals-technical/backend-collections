@@ -1,0 +1,229 @@
+{
+	"info": {
+		"_postman_id": "fe1f0d7c-6516-4f0b-8c4e-a9b4c3886197",
+		"name": "vivid-manage-import-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "53177976",
+		"_collection_link": "https://universal-shuttle-748943.postman.co/workspace/Team-Workspace~0528cfb8-cac4-44ad-8d53-01c1f67f61cb/collection/53177976-fe1f0d7c-6516-4f0b-8c4e-a9b4c3886197?action=share&source=collection_link&creator=53177976"
+	},
+	"item": [
+		{
+			"name": "import jobs",
+			"item": [
+				{
+					"name": "list import jobs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://import-api.vivid3d.tech/import-jobs",
+							"protocol": "https",
+							"host": [
+								"import-api",
+								"vivid3d",
+								"tech"
+							],
+							"path": [
+								"import-jobs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create import job",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "organizationId",
+									"value": "677bf8323ce1831d8bbad71f",
+									"type": "text"
+								},
+								{
+									"key": "assetsFile",
+									"type": "file",
+									"src": "/home/pavlo/Downloads/April_26.xlsx"
+								},
+								{
+									"key": "mappingFile",
+									"type": "file",
+									"src": "/home/pavlo/Downloads/mapping.json"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://import-api.vivid3d.tech/import-jobs",
+							"protocol": "https",
+							"host": [
+								"import-api",
+								"vivid3d",
+								"tech"
+							],
+							"path": [
+								"import-jobs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "retrieve import job",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://import-api.vivid3d.tech/import-jobs/1",
+							"protocol": "https",
+							"host": [
+								"import-api",
+								"vivid3d",
+								"tech"
+							],
+							"path": [
+								"import-jobs",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "analyse import job",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://import-api.vivid3d.tech/import-jobs/1/analyze",
+							"protocol": "https",
+							"host": [
+								"import-api",
+								"vivid3d",
+								"tech"
+							],
+							"path": [
+								"import-jobs",
+								"1",
+								"analyze"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "execute import job",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"projectId\": \"6a5cd5934e68963af9f697da\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://import-api.vivid3d.tech/import-jobs/1/import",
+							"protocol": "https",
+							"host": [
+								"import-api",
+								"vivid3d",
+								"tech"
+							],
+							"path": [
+								"import-jobs",
+								"1",
+								"import"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete import job",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://import-api.vivid3d.tech/import-jobs/1",
+							"protocol": "https",
+							"host": [
+								"import-api",
+								"vivid3d",
+								"tech"
+							],
+							"path": [
+								"import-jobs",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update import job",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "assetsFile",
+									"type": "file",
+									"src": "/home/pavlo/Downloads/April_26.xlsx"
+								},
+								{
+									"key": "mappingFile",
+									"type": "file",
+									"src": "/home/pavlo/Downloads/mapping.json"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://import-api.vivid3d.tech/import-jobs/1",
+							"protocol": "https",
+							"host": [
+								"import-api",
+								"vivid3d",
+								"tech"
+							],
+							"path": [
+								"import-jobs",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "approve import job",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://import-api.vivid3d.tech/import-jobs/1/approve",
+							"protocol": "https",
+							"host": [
+								"import-api",
+								"vivid3d",
+								"tech"
+							],
+							"path": [
+								"import-jobs",
+								"1",
+								"approve"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
