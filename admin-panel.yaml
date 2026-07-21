@@ -11,7 +11,7 @@ collection:
     meta:
       id: fld_28943f57796445899fa604513d7a262d
       created: 1764496106015
-      modified: 1779106099371
+      modified: 1784201960569
       sortKey: -1764496102719
       description: ""
     children:
@@ -314,7 +314,7 @@ collection:
         meta:
           id: fld_7c339ab8605c47cdbdf97c858583629e
           created: 1764496106033
-          modified: 1777620147981
+          modified: 1782112882857
           sortKey: -1764496102604
           description: ""
         children:
@@ -323,7 +323,7 @@ collection:
             meta:
               id: req_13d16746fd0c4ed1a1d3386c4e604e7a
               created: 1764496106034
-              modified: 1776263360833
+              modified: 1782112881207
               isPrivate: false
               description: ""
               sortKey: -1764496102603
@@ -332,7 +332,7 @@ collection:
               mimeType: application/json
               text: |-
                 {
-                    "name": "Simulations demo"
+                    "name": "Apartment Simulation demo"
                 }
             headers:
               - name: Authorization
@@ -781,16 +781,16 @@ collection:
         meta:
           id: fld_5225bd9336c44ebbafabf30c45bb80f1
           created: 1764496106042
-          modified: 1777620167319
+          modified: 1782112985408
           sortKey: -1764496102597
           description: ""
         children:
-          - url: "{{render_admin_domain}}/organizations/20/users"
+          - url: "{{render_admin_domain}}/organizations/24/users"
             name: add organization users
             meta:
               id: req_f4a50fe036064d4aa3f8ca63edf6fd09
               created: 1764496106044
-              modified: 1777620121096
+              modified: 1782112985124
               isPrivate: false
               description: ""
               sortKey: -1764496102596
@@ -800,7 +800,7 @@ collection:
               text: |-
                 {
                     "users": [
-                        41
+                        1
                     ]
                 }
             headers:
@@ -953,7 +953,7 @@ collection:
         meta:
           id: fld_245392516b2c4cb081e82a819bb04587
           created: 1764496106046
-          modified: 1774004601728
+          modified: 1782147071961
           sortKey: -1764496102594
           description: ""
         children:
@@ -1051,7 +1051,7 @@ collection:
             meta:
               id: req_9463d4c43ba84648a0f06de764349ebe
               created: 1764496106049
-              modified: 1772183244446
+              modified: 1781688496869
               isPrivate: false
               description: ""
               sortKey: -1764496102592
@@ -1138,12 +1138,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/projects/144"
+          - url: "{{render_admin_domain}}/projects/866"
             name: retrieve project
             meta:
               id: req_94efec7b5e03406793441209f0460013
               created: 1764496106050
-              modified: 1764510160764
+              modified: 1782147073735
               isPrivate: false
               description: ""
               sortKey: -1764496102591
@@ -1383,7 +1383,7 @@ collection:
         meta:
           id: fld_a6a1513b5d204d29a79a6f171de34655
           created: 1764496106054
-          modified: 1777882797470
+          modified: 1784201960569
           sortKey: -1764496102588
           description: ""
         children:
@@ -1517,7 +1517,7 @@ collection:
             meta:
               id: req_a3b075dced984740b8e5563c29e619a1
               created: 1764496106057
-              modified: 1777462564693
+              modified: 1780916652907
               isPrivate: false
               description: ""
               sortKey: -1764496102586
@@ -1532,9 +1532,9 @@ collection:
               - name: organizationId
                 value: "1"
                 disabled: true
-              - name: projectId
-                value: "2"
-                disabled: true
+              - name: productIds
+                value: "1180"
+                disabled: false
               - name: searchByName
                 value: Product
                 disabled: true
@@ -1545,8 +1545,8 @@ collection:
                 value: "144"
                 disabled: true
               - name: productIds
-                value: "45"
-                disabled: true
+                value: "2252"
+                disabled: false
               - name: pageSize
                 value: "2"
                 disabled: true
@@ -1623,12 +1623,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: "{{render_admin_domain}}/products/1"
+          - url: "{{render_admin_domain}}/products/3087"
             name: retrieve product
             meta:
               id: req_a414b145c8914db9bb43222c9728d88a
               created: 1764496106058
-              modified: 1777882525015
+              modified: 1784201951187
               isPrivate: false
               description: ""
               sortKey: -1764496102585
@@ -1700,7 +1700,7 @@ collection:
             meta:
               id: req_5bd56bf3b2a94806b00b1cec9f7dce39
               created: 1764496106060
-              modified: 1768366761096
+              modified: 1783937183021
               isPrivate: false
               description: ""
               sortKey: -1764496102584
@@ -15049,7 +15049,7 @@ collection:
         meta:
           id: fld_b5da3c83e7624e119ec9b51c9dce7029
           created: 1764496106339
-          modified: 1777385812085
+          modified: 1782310557104
           sortKey: -1764496102375
           description: ""
         children:
@@ -15057,7 +15057,7 @@ collection:
             meta:
               id: fld_a5c071b1098a4ab18e3c5b14a9c14741
               created: 1764496106341
-              modified: 1777385812085
+              modified: 1782310557104
               sortKey: -1764496102374
               description: ""
             children:
@@ -15066,7 +15066,7 @@ collection:
                 meta:
                   id: req_18385270ba9e45f19cdab615a079fcaf
                   created: 1764496106343
-                  modified: 1777385593653
+                  modified: 1782308351589
                   isPrivate: false
                   description: ""
                   sortKey: -1764496102373
@@ -15075,10 +15075,9 @@ collection:
                   mimeType: application/json
                   text: |-
                     {
-                    	"name": "Train with two simulations",
+                    	"name": "Manual Datasets Test 1",
                       "organizationId": 2,
-                    	"products": [1914],
-                    	"simulations": [586, 633],
+                    	"manualDatasets": [13],
                       "modelType": "FastRCNN",
                       "parameters": ""
                     }
@@ -15549,7 +15548,7 @@ collection:
             meta:
               id: req_66fd9b991b34410484f71249798fea30
               created: 1764509793476
-              modified: 1777620075177
+              modified: 1781268392029
               isPrivate: false
               description: ""
               sortKey: -1764500285890.25
@@ -15558,8 +15557,8 @@ collection:
               mimeType: application/json
               text: |-
                 {
-                	"username": "viktoria_goncharova",
-                	"password": "N7Oz23I44ZGZD8qM"
+                	"username": "christina_rusyn",
+                	"password": "6kX1P8CMYmh1DTY6"
                 }
             headers:
               - name: Content-Type
@@ -17982,7 +17981,7 @@ collection:
             meta:
               id: req_fd09a02f1c50463481cbd069d60f313d
               created: 1768889385187
-              modified: 1773241587891
+              modified: 1783613186647
               isPrivate: false
               description: ""
               sortKey: -1768889389483
@@ -17991,7 +17990,7 @@ collection:
               mimeType: multipart/form-data
               params:
                 - name: name
-                  value: Test Configurator
+                  value: Test Configurator (new upload) 2
                   description: ""
                   disabled: false
                 - name: organizationId
@@ -18740,6 +18739,150 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
+          - name: configurator - playcanvasVersions
+            meta:
+              id: fld_acc972f3cacd4df6a737c228a17c4a7d
+              created: 1784622679897
+              modified: 1784622679897
+              sortKey: -1784622679897
+              description: ""
+            children:
+              - url: "{{render_admin_domain}}/configurators/1/playcanvas-versions/1"
+                name: "delete "
+                meta:
+                  id: req_b9a7a3ff41524256bd0a29446d4a4e6d
+                  created: 1784622705261
+                  modified: 1784622767226
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1784622712575
+                method: DELETE
+                parameters:
+                  - name: type
+                    value: vector
+                    description: ""
+                    disabled: true
+                headers:
+                  - name: User-Agent
+                    value: insomnia/12.1.0
+                    description: ""
+                    disabled: false
+                authentication:
+                  type: bearer
+                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2Nzc5MjIzMCwiZXhwIjoxNzY3NzkyNTMwfQ.tyRqgMYCaFzB1KV-m-d2jHSGAUPxjOImdS5vvpj-A2s
+                  prefix: bearer
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: "{{render_admin_domain}}/configurators/1/playcanvas-versions"
+                name: list
+                meta:
+                  id: req_08747f6bbc6541d3b0c3bbfba7a6c41b
+                  created: 1784622775062
+                  modified: 1784622803988
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1781989629202.5
+                method: GET
+                parameters:
+                  - name: type
+                    value: vector
+                    description: ""
+                    disabled: true
+                headers:
+                  - name: User-Agent
+                    value: insomnia/12.1.0
+                    description: ""
+                    disabled: false
+                authentication:
+                  type: bearer
+                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2Nzc5MjIzMCwiZXhwIjoxNzY3NzkyNTMwfQ.tyRqgMYCaFzB1KV-m-d2jHSGAUPxjOImdS5vvpj-A2s
+                  prefix: bearer
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: "{{render_admin_domain}}/configurators/1/playcanvas-versions/1"
+                name: retrieve
+                meta:
+                  id: req_bf6efb1c782b45f89dac811c947217d8
+                  created: 1784622816027
+                  modified: 1784622830766
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1780673087516.25
+                method: GET
+                parameters:
+                  - name: type
+                    value: vector
+                    description: ""
+                    disabled: true
+                headers:
+                  - name: User-Agent
+                    value: insomnia/12.1.0
+                    description: ""
+                    disabled: false
+                authentication:
+                  type: bearer
+                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2Nzc5MjIzMCwiZXhwIjoxNzY3NzkyNTMwfQ.tyRqgMYCaFzB1KV-m-d2jHSGAUPxjOImdS5vvpj-A2s
+                  prefix: bearer
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: "{{render_admin_domain}}/configurators/1/playcanvas-versions/1"
+                name: update
+                meta:
+                  id: req_a43cbf1ac70a45c78190906a7b9ae524
+                  created: 1784622839598
+                  modified: 1784622885305
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1783306170888.75
+                method: PATCH
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                    	"environment": "production"
+                    }
+                parameters:
+                  - name: type
+                    value: vector
+                    description: ""
+                    disabled: true
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/12.1.0
+                    description: ""
+                    disabled: false
+                authentication:
+                  type: bearer
+                  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTc2Nzc5MjIzMCwiZXhwIjoxNzY3NzkyNTMwfQ.tyRqgMYCaFzB1KV-m-d2jHSGAUPxjOImdS5vvpj-A2s
+                  prefix: bearer
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
       - name: import csv
         meta:
           id: fld_49face68d95143fe8a246b25e1112df3
@@ -19397,16 +19540,16 @@ cookieJar:
   meta:
     id: jar_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496108720
-    modified: 1779106099360
+    modified: 1784201960564
 environments:
   name: Base Environment
   meta:
     id: env_00e2edc66e32e3ac4d7de6eaf131b521493259d7
     created: 1764496106422
-    modified: 1779106099365
+    modified: 1784201960566
     isPrivate: false
   data:
-    render_admin_domain: https://renderadmin-dev.vivid3d.tech
+    render_admin_domain: https://renderadmin.vivid3d.tech
     render_admin_token: ""
     render_admin_username: admin
     render_admin_password: RmxJ8UjtE3aY4czn
